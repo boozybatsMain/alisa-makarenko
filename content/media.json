@@ -1,0 +1,3551 @@
+{
+  "generated": "2026-11-21",
+  "root": "docs/assets",
+  "total_bytes": 29076219,
+  "file_count": 173,
+  "notes": [
+    "All numbers in alt text are copied from the screenshots/videos.json; frame them as in the source (e.g. “incl. Shorts”, “since launch”, “last 60 days”).",
+    "Excerpt transcripts come from YouTube auto-captions with light correction; proof-listen before quoting.",
+    "Host identity: the episode with lettered sweaters shows “A” and “K”; hosts introduce themselves as Катя and Алиса. Alt texts avoid saying which person is Alisa until she confirms.",
+    "Shorts loops/posters contain film footage and fan art (as published on her channel)."
+  ],
+  "unlisted_files": [],
+  "assets": [
+    {
+      "id": "hero",
+      "group": "hero",
+      "purpose": "Hero background (desktop): library window with pink blossom from the channel banner.",
+      "variants": [
+        {
+          "path": "docs/assets/hero/hero.avif",
+          "url": "assets/hero/hero.avif",
+          "bytes": 13382,
+          "format": "avif",
+          "type": "image",
+          "width": 1600,
+          "height": 1212,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/hero/hero.webp",
+          "url": "assets/hero/hero.webp",
+          "bytes": 28046,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 1212,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/hero/hero.jpg",
+          "url": "assets/hero/hero.jpg",
+          "bytes": 69819,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 1212,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Книжные полки и лампа в тёплом полумраке",
+        "en": "Bookshelves and a lamp in warm half-light"
+      },
+      "source": {
+        "file": "source/youtube/channel/banner.jpg",
+        "crop": [
+          0,
+          24,
+          896,
+          504
+        ],
+        "flip": "horizontal",
+        "note": "Only the lamp-lit shelves; the window with the castle and the floating book are cropped out. Rebuilt by scripts/hero.mjs."
+      },
+      "processing": "Small owl figurine on the windowsill retouched out (clone from adjacent blossom); exposure lowered, mids deepened, warm shift, blacks lifted to #110c0a, soft brown vignette. Exported at native crop size 896x504 (no upscale, no blur); shown at about 1x as a feathered right-hand panel."
+    },
+    {
+      "id": "hero-mobile",
+      "group": "hero",
+      "purpose": "Hero background for portrait/mobile viewports.",
+      "variants": [
+        {
+          "path": "docs/assets/hero/hero-mobile.avif",
+          "url": "assets/hero/hero-mobile.avif",
+          "bytes": 9765,
+          "format": "avif",
+          "type": "image",
+          "width": 900,
+          "height": 1266,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/hero/hero-mobile.webp",
+          "url": "assets/hero/hero-mobile.webp",
+          "bytes": 23030,
+          "format": "webp",
+          "type": "image",
+          "width": 900,
+          "height": 1266,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/hero/hero-mobile.jpg",
+          "url": "assets/hero/hero-mobile.jpg",
+          "bytes": 55913,
+          "format": "jpg",
+          "type": "image",
+          "width": 900,
+          "height": 1266,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Книжные полки и настольная лампа в полумраке",
+        "en": "Bookshelves and a table lamp in half-light"
+      },
+      "source": {
+        "file": "source/youtube/channel/banner.jpg",
+        "crop": [
+          1428,
+          100,
+          620,
+          868
+        ],
+        "note": "Right-hand shelves only. Rebuilt by scripts/hero.mjs."
+      },
+      "processing": "Same grade as hero; native crop size 620x868, no upscale."
+    },
+    {
+      "id": "thumb-X8abHp0ekss",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: newest episode (comeback after a 7-month break); №1 on the channel in the last 28 days.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/X8abHp0ekss-960.webp",
+          "url": "assets/thumbs/X8abHp0ekss-960.webp",
+          "bytes": 60598,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/X8abHp0ekss-960.jpg",
+          "url": "assets/thumbs/X8abHp0ekss-960.jpg",
+          "bytes": 93600,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/X8abHp0ekss-480.webp",
+          "url": "assets/thumbs/X8abHp0ekss-480.webp",
+          "bytes": 22230,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/X8abHp0ekss-480.jpg",
+          "url": "assets/thumbs/X8abHp0ekss-480.jpg",
+          "bytes": 30146,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск»",
+        "en": "Thumbnail of the episode “ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/X8abHp0ekss.jpg",
+        "youtube_id": "X8abHp0ekss",
+        "title": "ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск",
+        "kind": "video",
+        "upload_date": "2026-11-05",
+        "view_count": 8259,
+        "url": "https://www.youtube.com/watch?v=X8abHp0ekss"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-uKxovctmQHI",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: recent.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/uKxovctmQHI-960.webp",
+          "url": "assets/thumbs/uKxovctmQHI-960.webp",
+          "bytes": 88422,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/uKxovctmQHI-960.jpg",
+          "url": "assets/thumbs/uKxovctmQHI-960.jpg",
+          "bytes": 116557,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/uKxovctmQHI-480.webp",
+          "url": "assets/thumbs/uKxovctmQHI-480.webp",
+          "bytes": 26744,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/uKxovctmQHI-480.jpg",
+          "url": "assets/thumbs/uKxovctmQHI-480.jpg",
+          "bytes": 35017,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «СЕСТРЫ БЛЭК. Жизнь Нарциссы, Андромеды и Беллатрисы»",
+        "en": "Thumbnail of the episode “СЕСТРЫ БЛЭК. Жизнь Нарциссы, Андромеды и Беллатрисы” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/uKxovctmQHI.jpg",
+        "youtube_id": "uKxovctmQHI",
+        "title": "СЕСТРЫ БЛЭК. Жизнь Нарциссы, Андромеды и Беллатрисы",
+        "kind": "video",
+        "upload_date": "2026-03-31",
+        "view_count": 6482,
+        "url": "https://www.youtube.com/watch?v=uKxovctmQHI"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-Kc8jJC2onB4",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: recent.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/Kc8jJC2onB4-960.webp",
+          "url": "assets/thumbs/Kc8jJC2onB4-960.webp",
+          "bytes": 46964,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/Kc8jJC2onB4-960.jpg",
+          "url": "assets/thumbs/Kc8jJC2onB4-960.jpg",
+          "bytes": 83247,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/Kc8jJC2onB4-480.webp",
+          "url": "assets/thumbs/Kc8jJC2onB4-480.webp",
+          "bytes": 18402,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/Kc8jJC2onB4-480.jpg",
+          "url": "assets/thumbs/Kc8jJC2onB4-480.jpg",
+          "bytes": 28620,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «ПАТРОНУСЫ. Внутренние защитники, телесная магия и сила счастливых воспоминаний»",
+        "en": "Thumbnail of the episode “ПАТРОНУСЫ. Внутренние защитники, телесная магия и сила счастливых воспоминаний” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/Kc8jJC2onB4.jpg",
+        "youtube_id": "Kc8jJC2onB4",
+        "title": "ПАТРОНУСЫ. Внутренние защитники, телесная магия и сила счастливых воспоминаний",
+        "kind": "video",
+        "upload_date": "2026-02-21",
+        "view_count": 6373,
+        "url": "https://www.youtube.com/watch?v=Kc8jJC2onB4"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-JdAoMKIe3vQ",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: recent.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/JdAoMKIe3vQ-960.webp",
+          "url": "assets/thumbs/JdAoMKIe3vQ-960.webp",
+          "bytes": 93768,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/JdAoMKIe3vQ-960.jpg",
+          "url": "assets/thumbs/JdAoMKIe3vQ-960.jpg",
+          "bytes": 122804,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/JdAoMKIe3vQ-480.webp",
+          "url": "assets/thumbs/JdAoMKIe3vQ-480.webp",
+          "bytes": 30808,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/JdAoMKIe3vQ-480.jpg",
+          "url": "assets/thumbs/JdAoMKIe3vQ-480.jpg",
+          "bytes": 38407,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «ГОДРИКОВА ВПАДИНА. История и жители заснеженной деревушки»",
+        "en": "Thumbnail of the episode “ГОДРИКОВА ВПАДИНА. История и жители заснеженной деревушки” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/JdAoMKIe3vQ.jpg",
+        "youtube_id": "JdAoMKIe3vQ",
+        "title": "ГОДРИКОВА ВПАДИНА. История и жители заснеженной деревушки",
+        "kind": "video",
+        "upload_date": "2026-01-10",
+        "view_count": 5339,
+        "url": "https://www.youtube.com/watch?v=JdAoMKIe3vQ"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-RrNkgi3dJuE",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: recent.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/RrNkgi3dJuE-960.webp",
+          "url": "assets/thumbs/RrNkgi3dJuE-960.webp",
+          "bytes": 38792,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/RrNkgi3dJuE-960.jpg",
+          "url": "assets/thumbs/RrNkgi3dJuE-960.jpg",
+          "bytes": 65833,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/RrNkgi3dJuE-480.webp",
+          "url": "assets/thumbs/RrNkgi3dJuE-480.webp",
+          "bytes": 15108,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/RrNkgi3dJuE-480.jpg",
+          "url": "assets/thumbs/RrNkgi3dJuE-480.jpg",
+          "bytes": 23486,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «АНИМАГИ. Известные анимаги, тайны превращения и опасный ритуал»",
+        "en": "Thumbnail of the episode “АНИМАГИ. Известные анимаги, тайны превращения и опасный ритуал” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/RrNkgi3dJuE.jpg",
+        "youtube_id": "RrNkgi3dJuE",
+        "title": "АНИМАГИ. Известные анимаги, тайны превращения и опасный ритуал",
+        "kind": "video",
+        "upload_date": "2025-11-16",
+        "view_count": 4387,
+        "url": "https://www.youtube.com/watch?v=RrNkgi3dJuE"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-FuSKSb_aRnQ",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/FuSKSb_aRnQ-960.webp",
+          "url": "assets/thumbs/FuSKSb_aRnQ-960.webp",
+          "bytes": 62882,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/FuSKSb_aRnQ-960.jpg",
+          "url": "assets/thumbs/FuSKSb_aRnQ-960.jpg",
+          "bytes": 94240,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/FuSKSb_aRnQ-480.webp",
+          "url": "assets/thumbs/FuSKSb_aRnQ-480.webp",
+          "bytes": 21410,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/FuSKSb_aRnQ-480.jpg",
+          "url": "assets/thumbs/FuSKSb_aRnQ-480.jpg",
+          "bytes": 30151,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости»",
+        "en": "Thumbnail of the episode “ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/FuSKSb_aRnQ.jpg",
+        "youtube_id": "FuSKSb_aRnQ",
+        "title": "ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости",
+        "kind": "video",
+        "upload_date": "2024-04-27",
+        "view_count": 20081,
+        "url": "https://www.youtube.com/watch?v=FuSKSb_aRnQ"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-HLP-JC3EkW4",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/HLP-JC3EkW4-960.webp",
+          "url": "assets/thumbs/HLP-JC3EkW4-960.webp",
+          "bytes": 95960,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/HLP-JC3EkW4-960.jpg",
+          "url": "assets/thumbs/HLP-JC3EkW4-960.jpg",
+          "bytes": 124517,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/HLP-JC3EkW4-480.webp",
+          "url": "assets/thumbs/HLP-JC3EkW4-480.webp",
+          "bytes": 33362,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/HLP-JC3EkW4-480.jpg",
+          "url": "assets/thumbs/HLP-JC3EkW4-480.jpg",
+          "bytes": 39764,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «Магическая СВОЯ ИГРА по Гарри Поттеру. ТУРНИР ЧЕТЫРЕХ ВОЛШЕБНИЦ»",
+        "en": "Thumbnail of the episode “Магическая СВОЯ ИГРА по Гарри Поттеру. ТУРНИР ЧЕТЫРЕХ ВОЛШЕБНИЦ” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/HLP-JC3EkW4.jpg",
+        "youtube_id": "HLP-JC3EkW4",
+        "title": "Магическая СВОЯ ИГРА по Гарри Поттеру. ТУРНИР ЧЕТЫРЕХ ВОЛШЕБНИЦ",
+        "kind": "video",
+        "upload_date": "2024-06-02",
+        "view_count": 16426,
+        "url": "https://www.youtube.com/watch?v=HLP-JC3EkW4"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-UOoRy3X91Ys",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/UOoRy3X91Ys-960.webp",
+          "url": "assets/thumbs/UOoRy3X91Ys-960.webp",
+          "bytes": 51076,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/UOoRy3X91Ys-960.jpg",
+          "url": "assets/thumbs/UOoRy3X91Ys-960.jpg",
+          "bytes": 83550,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/UOoRy3X91Ys-480.webp",
+          "url": "assets/thumbs/UOoRy3X91Ys-480.webp",
+          "bytes": 20082,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/UOoRy3X91Ys-480.jpg",
+          "url": "assets/thumbs/UOoRy3X91Ys-480.jpg",
+          "bytes": 29252,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец»",
+        "en": "Thumbnail of the episode “ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/UOoRy3X91Ys.jpg",
+        "youtube_id": "UOoRy3X91Ys",
+        "title": "ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец",
+        "kind": "video",
+        "upload_date": "2024-07-09",
+        "view_count": 13196,
+        "url": "https://www.youtube.com/watch?v=UOoRy3X91Ys"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-yedhFA9C0Vo",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/yedhFA9C0Vo-960.webp",
+          "url": "assets/thumbs/yedhFA9C0Vo-960.webp",
+          "bytes": 47380,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/yedhFA9C0Vo-960.jpg",
+          "url": "assets/thumbs/yedhFA9C0Vo-960.jpg",
+          "bytes": 76707,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/yedhFA9C0Vo-480.webp",
+          "url": "assets/thumbs/yedhFA9C0Vo-480.webp",
+          "bytes": 17586,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/yedhFA9C0Vo-480.jpg",
+          "url": "assets/thumbs/yedhFA9C0Vo-480.jpg",
+          "bytes": 25552,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел»",
+        "en": "Thumbnail of the episode “СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/yedhFA9C0Vo.jpg",
+        "youtube_id": "yedhFA9C0Vo",
+        "title": "СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел",
+        "kind": "video",
+        "upload_date": "2024-05-19",
+        "view_count": 11249,
+        "url": "https://www.youtube.com/watch?v=yedhFA9C0Vo"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-mgyuUI8Z_4k",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/mgyuUI8Z_4k-960.webp",
+          "url": "assets/thumbs/mgyuUI8Z_4k-960.webp",
+          "bytes": 63626,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/mgyuUI8Z_4k-960.jpg",
+          "url": "assets/thumbs/mgyuUI8Z_4k-960.jpg",
+          "bytes": 90278,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/mgyuUI8Z_4k-480.webp",
+          "url": "assets/thumbs/mgyuUI8Z_4k-480.webp",
+          "bytes": 19660,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/mgyuUI8Z_4k-480.jpg",
+          "url": "assets/thumbs/mgyuUI8Z_4k-480.jpg",
+          "bytes": 27893,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных»",
+        "en": "Thumbnail of the episode “СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/mgyuUI8Z_4k.jpg",
+        "youtube_id": "mgyuUI8Z_4k",
+        "title": "СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных",
+        "kind": "video",
+        "upload_date": "2024-06-15",
+        "view_count": 11058,
+        "url": "https://www.youtube.com/watch?v=mgyuUI8Z_4k"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-2mLq8gz0ig8",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/2mLq8gz0ig8-960.webp",
+          "url": "assets/thumbs/2mLq8gz0ig8-960.webp",
+          "bytes": 83594,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/2mLq8gz0ig8-960.jpg",
+          "url": "assets/thumbs/2mLq8gz0ig8-960.jpg",
+          "bytes": 117807,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/2mLq8gz0ig8-480.webp",
+          "url": "assets/thumbs/2mLq8gz0ig8-480.webp",
+          "bytes": 31886,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/2mLq8gz0ig8-480.jpg",
+          "url": "assets/thumbs/2mLq8gz0ig8-480.jpg",
+          "bytes": 39186,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «Рождественская СВОЯ ИГРА по Гарри Поттеру»",
+        "en": "Thumbnail of the episode “Рождественская СВОЯ ИГРА по Гарри Поттеру” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/2mLq8gz0ig8.jpg",
+        "youtube_id": "2mLq8gz0ig8",
+        "title": "Рождественская СВОЯ ИГРА по Гарри Поттеру",
+        "kind": "video",
+        "upload_date": "2024-12-31",
+        "view_count": 10891,
+        "url": "https://www.youtube.com/watch?v=2mLq8gz0ig8"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-wSxYefgjYag",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: top-7 long video by YouTube views.",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/wSxYefgjYag-960.webp",
+          "url": "assets/thumbs/wSxYefgjYag-960.webp",
+          "bytes": 77328,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/wSxYefgjYag-960.jpg",
+          "url": "assets/thumbs/wSxYefgjYag-960.jpg",
+          "bytes": 108796,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/wSxYefgjYag-480.webp",
+          "url": "assets/thumbs/wSxYefgjYag-480.webp",
+          "bytes": 26668,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/wSxYefgjYag-480.jpg",
+          "url": "assets/thumbs/wSxYefgjYag-480.jpg",
+          "bytes": 34842,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «ИСТОРИЯ ВЗРОСЛЫХ МАРОДЕРОВ. Трагичная судьба Сохатого, Лунатика, Бродяги и Хвоста»",
+        "en": "Thumbnail of the episode “ИСТОРИЯ ВЗРОСЛЫХ МАРОДЕРОВ. Трагичная судьба Сохатого, Лунатика, Бродяги и Хвоста” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/wSxYefgjYag.jpg",
+        "youtube_id": "wSxYefgjYag",
+        "title": "ИСТОРИЯ ВЗРОСЛЫХ МАРОДЕРОВ. Трагичная судьба Сохатого, Лунатика, Бродяги и Хвоста",
+        "kind": "video",
+        "upload_date": "2024-05-04",
+        "view_count": 9409,
+        "url": "https://www.youtube.com/watch?v=wSxYefgjYag"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "thumb-cLOwip8PLOg",
+      "group": "episode-thumbnails",
+      "purpose": "Episode card thumbnail. Selected as: most-listened episode of 2025 on Yandex Music (18 407 plays in 2025).",
+      "variants": [
+        {
+          "path": "docs/assets/thumbs/cLOwip8PLOg-960.webp",
+          "url": "assets/thumbs/cLOwip8PLOg-960.webp",
+          "bytes": 85288,
+          "format": "webp",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/cLOwip8PLOg-960.jpg",
+          "url": "assets/thumbs/cLOwip8PLOg-960.jpg",
+          "bytes": 115871,
+          "format": "jpg",
+          "type": "image",
+          "width": 960,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/cLOwip8PLOg-480.webp",
+          "url": "assets/thumbs/cLOwip8PLOg-480.webp",
+          "bytes": 30070,
+          "format": "webp",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/thumbs/cLOwip8PLOg-480.jpg",
+          "url": "assets/thumbs/cLOwip8PLOg-480.jpg",
+          "bytes": 37218,
+          "format": "jpg",
+          "type": "image",
+          "width": 480,
+          "height": 270,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка выпуска «СВЯТОЧНЫЙ БАЛ. Рождественский выпуск о традиции Турнира Трех Волшебников»",
+        "en": "Thumbnail of the episode “СВЯТОЧНЫЙ БАЛ. Рождественский выпуск о традиции Турнира Трех Волшебников” (Russian title)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/cLOwip8PLOg.jpg",
+        "youtube_id": "cLOwip8PLOg",
+        "title": "СВЯТОЧНЫЙ БАЛ. Рождественский выпуск о традиции Турнира Трех Волшебников",
+        "kind": "video",
+        "upload_date": "2024-12-31",
+        "view_count": 4512,
+        "url": "https://www.youtube.com/watch?v=cLOwip8PLOg"
+      },
+      "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
+    },
+    {
+      "id": "short-poster-o4-YEJW9ar8",
+      "group": "shorts",
+      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/o4-YEJW9ar8-poster.webp",
+          "url": "assets/shorts/o4-YEJW9ar8-poster.webp",
+          "bytes": 9910,
+          "format": "webp",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/o4-YEJW9ar8-poster.jpg",
+          "url": "assets/shorts/o4-YEJW9ar8-poster.jpg",
+          "bytes": 24942,
+          "format": "jpg",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Кадр из Shorts «Почему Римус Люпин ехал на поезде в Хогвартс? 🤔»",
+        "en": "Frame from the Short “Почему Римус Люпин ехал на поезде в Хогвартс? 🤔” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/shorts/o4-YEJW9ar8.mp4",
+        "timecode": 27.5,
+        "youtube_id": "o4-YEJW9ar8",
+        "title": "Почему Римус Люпин ехал на поезде в Хогвартс? 🤔 #shorts #гаррипоттер #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-26",
+        "view_count": 1755182,
+        "url": "https://www.youtube.com/shorts/o4-YEJW9ar8"
+      },
+      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
+    },
+    {
+      "id": "short-cover-o4-YEJW9ar8",
+      "group": "shorts",
+      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/o4-YEJW9ar8-cover.webp",
+          "url": "assets/shorts/o4-YEJW9ar8-cover.webp",
+          "bytes": 71618,
+          "format": "webp",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/o4-YEJW9ar8-cover.jpg",
+          "url": "assets/shorts/o4-YEJW9ar8-cover.jpg",
+          "bytes": 73458,
+          "format": "jpg",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка Shorts «Почему Римус Люпин ехал на поезде в Хогвартс? 🤔»",
+        "en": "Cover of the Short “Почему Римус Люпин ехал на поезде в Хогвартс? 🤔” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/o4-YEJW9ar8.jpg",
+        "crop": [
+          437,
+          0,
+          405,
+          720
+        ],
+        "youtube_id": "o4-YEJW9ar8",
+        "title": "Почему Римус Люпин ехал на поезде в Хогвартс? 🤔 #shorts #гаррипоттер #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-26",
+        "view_count": 1755182,
+        "url": "https://www.youtube.com/shorts/o4-YEJW9ar8"
+      }
+    },
+    {
+      "id": "short-poster-g6jqNWzJrNw",
+      "group": "shorts",
+      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/g6jqNWzJrNw-poster.webp",
+          "url": "assets/shorts/g6jqNWzJrNw-poster.webp",
+          "bytes": 14246,
+          "format": "webp",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/g6jqNWzJrNw-poster.jpg",
+          "url": "assets/shorts/g6jqNWzJrNw-poster.jpg",
+          "bytes": 33449,
+          "format": "jpg",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Кадр из Shorts «Фильмы испортили Рона Уизли? 🤔🤔»",
+        "en": "Frame from the Short “Фильмы испортили Рона Уизли? 🤔🤔” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/shorts/g6jqNWzJrNw.mp4",
+        "timecode": 4,
+        "youtube_id": "g6jqNWzJrNw",
+        "title": "Фильмы испортили Рона Уизли? 🤔🤔 #shorts #гаррипоттер #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-25",
+        "view_count": 1571888,
+        "url": "https://www.youtube.com/shorts/g6jqNWzJrNw"
+      },
+      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
+    },
+    {
+      "id": "short-cover-g6jqNWzJrNw",
+      "group": "shorts",
+      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/g6jqNWzJrNw-cover.webp",
+          "url": "assets/shorts/g6jqNWzJrNw-cover.webp",
+          "bytes": 66280,
+          "format": "webp",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/g6jqNWzJrNw-cover.jpg",
+          "url": "assets/shorts/g6jqNWzJrNw-cover.jpg",
+          "bytes": 78553,
+          "format": "jpg",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка Shorts «Фильмы испортили Рона Уизли? 🤔🤔»",
+        "en": "Cover of the Short “Фильмы испортили Рона Уизли? 🤔🤔” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/g6jqNWzJrNw.jpg",
+        "crop": [
+          437,
+          0,
+          405,
+          720
+        ],
+        "youtube_id": "g6jqNWzJrNw",
+        "title": "Фильмы испортили Рона Уизли? 🤔🤔 #shorts #гаррипоттер #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-25",
+        "view_count": 1571888,
+        "url": "https://www.youtube.com/shorts/g6jqNWzJrNw"
+      }
+    },
+    {
+      "id": "short-poster-r2u0yEV-QU8",
+      "group": "shorts",
+      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/r2u0yEV-QU8-poster.webp",
+          "url": "assets/shorts/r2u0yEV-QU8-poster.webp",
+          "bytes": 17508,
+          "format": "webp",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/r2u0yEV-QU8-poster.jpg",
+          "url": "assets/shorts/r2u0yEV-QU8-poster.jpg",
+          "bytes": 44539,
+          "format": "jpg",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Кадр из Shorts «Министр магии плохо делает свою работу?»",
+        "en": "Frame from the Short “Министр магии плохо делает свою работу?” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/shorts/r2u0yEV-QU8.mp4",
+        "timecode": 35,
+        "youtube_id": "r2u0yEV-QU8",
+        "title": "Министр магии плохо делает свою работу? #гермиона #гаррипоттер #shorts #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-19",
+        "view_count": 415055,
+        "url": "https://www.youtube.com/shorts/r2u0yEV-QU8"
+      },
+      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
+    },
+    {
+      "id": "short-cover-r2u0yEV-QU8",
+      "group": "shorts",
+      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/r2u0yEV-QU8-cover.webp",
+          "url": "assets/shorts/r2u0yEV-QU8-cover.webp",
+          "bytes": 67276,
+          "format": "webp",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/r2u0yEV-QU8-cover.jpg",
+          "url": "assets/shorts/r2u0yEV-QU8-cover.jpg",
+          "bytes": 72250,
+          "format": "jpg",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка Shorts «Министр магии плохо делает свою работу?»",
+        "en": "Cover of the Short “Министр магии плохо делает свою работу?” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/r2u0yEV-QU8.jpg",
+        "crop": [
+          437,
+          0,
+          405,
+          720
+        ],
+        "youtube_id": "r2u0yEV-QU8",
+        "title": "Министр магии плохо делает свою работу? #гермиона #гаррипоттер #shorts #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-19",
+        "view_count": 415055,
+        "url": "https://www.youtube.com/shorts/r2u0yEV-QU8"
+      }
+    },
+    {
+      "id": "short-poster-C7uxzve2wv8",
+      "group": "shorts",
+      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/C7uxzve2wv8-poster.webp",
+          "url": "assets/shorts/C7uxzve2wv8-poster.webp",
+          "bytes": 34434,
+          "format": "webp",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/C7uxzve2wv8-poster.jpg",
+          "url": "assets/shorts/C7uxzve2wv8-poster.jpg",
+          "bytes": 64558,
+          "format": "jpg",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Кадр из Shorts «Гермиона была права 🧹🐕»",
+        "en": "Frame from the Short “Гермиона была права 🧹🐕” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/shorts/C7uxzve2wv8.mp4",
+        "timecode": 14.5,
+        "youtube_id": "C7uxzve2wv8",
+        "title": "Гермиона была права 🧹🐕 #гаррипоттер #ведьминчас #книги",
+        "kind": "short",
+        "upload_date": "2024-07-15",
+        "view_count": 342846,
+        "url": "https://www.youtube.com/shorts/C7uxzve2wv8"
+      },
+      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
+    },
+    {
+      "id": "short-cover-C7uxzve2wv8",
+      "group": "shorts",
+      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/C7uxzve2wv8-cover.webp",
+          "url": "assets/shorts/C7uxzve2wv8-cover.webp",
+          "bytes": 73502,
+          "format": "webp",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/C7uxzve2wv8-cover.jpg",
+          "url": "assets/shorts/C7uxzve2wv8-cover.jpg",
+          "bytes": 75233,
+          "format": "jpg",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка Shorts «Гермиона была права 🧹🐕»",
+        "en": "Cover of the Short “Гермиона была права 🧹🐕” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/C7uxzve2wv8.jpg",
+        "crop": [
+          437,
+          0,
+          405,
+          720
+        ],
+        "youtube_id": "C7uxzve2wv8",
+        "title": "Гермиона была права 🧹🐕 #гаррипоттер #ведьминчас #книги",
+        "kind": "short",
+        "upload_date": "2024-07-15",
+        "view_count": 342846,
+        "url": "https://www.youtube.com/shorts/C7uxzve2wv8"
+      }
+    },
+    {
+      "id": "short-poster-SENI8JOCuc0",
+      "group": "shorts",
+      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/SENI8JOCuc0-poster.webp",
+          "url": "assets/shorts/SENI8JOCuc0-poster.webp",
+          "bytes": 17358,
+          "format": "webp",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/SENI8JOCuc0-poster.jpg",
+          "url": "assets/shorts/SENI8JOCuc0-poster.jpg",
+          "bytes": 39809,
+          "format": "jpg",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Кадр из Shorts «Римус ЛЮпин или ЛюпИн? 🐺🌕»",
+        "en": "Frame from the Short “Римус ЛЮпин или ЛюпИн? 🐺🌕” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/shorts/SENI8JOCuc0.mp4",
+        "timecode": 0.5,
+        "youtube_id": "SENI8JOCuc0",
+        "title": "Римус ЛЮпин или ЛюпИн? 🐺🌕 #witchinghour #гаррипоттер #интересныефакты #книги",
+        "kind": "short",
+        "upload_date": "2024-06-30",
+        "view_count": 160193,
+        "url": "https://www.youtube.com/shorts/SENI8JOCuc0"
+      },
+      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
+    },
+    {
+      "id": "short-cover-SENI8JOCuc0",
+      "group": "shorts",
+      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/SENI8JOCuc0-cover.webp",
+          "url": "assets/shorts/SENI8JOCuc0-cover.webp",
+          "bytes": 76040,
+          "format": "webp",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/SENI8JOCuc0-cover.jpg",
+          "url": "assets/shorts/SENI8JOCuc0-cover.jpg",
+          "bytes": 76110,
+          "format": "jpg",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка Shorts «Римус ЛЮпин или ЛюпИн? 🐺🌕»",
+        "en": "Cover of the Short “Римус ЛЮпин или ЛюпИн? 🐺🌕” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/SENI8JOCuc0.jpg",
+        "crop": [
+          437,
+          0,
+          405,
+          720
+        ],
+        "youtube_id": "SENI8JOCuc0",
+        "title": "Римус ЛЮпин или ЛюпИн? 🐺🌕 #witchinghour #гаррипоттер #интересныефакты #книги",
+        "kind": "short",
+        "upload_date": "2024-06-30",
+        "view_count": 160193,
+        "url": "https://www.youtube.com/shorts/SENI8JOCuc0"
+      }
+    },
+    {
+      "id": "short-poster-ZMJpa_P8vKQ",
+      "group": "shorts",
+      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/ZMJpa_P8vKQ-poster.webp",
+          "url": "assets/shorts/ZMJpa_P8vKQ-poster.webp",
+          "bytes": 53270,
+          "format": "webp",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/ZMJpa_P8vKQ-poster.jpg",
+          "url": "assets/shorts/ZMJpa_P8vKQ-poster.jpg",
+          "bytes": 81391,
+          "format": "jpg",
+          "type": "image",
+          "width": 540,
+          "height": 960,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Кадр из Shorts «Кто из них был гениальным зельеваром?»",
+        "en": "Frame from the Short “Кто из них был гениальным зельеваром?” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/shorts/ZMJpa_P8vKQ.mp4",
+        "timecode": 7.5,
+        "youtube_id": "ZMJpa_P8vKQ",
+        "title": "Кто из них был гениальным зельеваром? #гаррипоттер #witchinghour",
+        "kind": "short",
+        "upload_date": "2024-07-02",
+        "view_count": 137853,
+        "url": "https://www.youtube.com/shorts/ZMJpa_P8vKQ"
+      },
+      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
+    },
+    {
+      "id": "short-cover-ZMJpa_P8vKQ",
+      "group": "shorts",
+      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
+      "variants": [
+        {
+          "path": "docs/assets/shorts/ZMJpa_P8vKQ-cover.webp",
+          "url": "assets/shorts/ZMJpa_P8vKQ-cover.webp",
+          "bytes": 62602,
+          "format": "webp",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/shorts/ZMJpa_P8vKQ-cover.jpg",
+          "url": "assets/shorts/ZMJpa_P8vKQ-cover.jpg",
+          "bytes": 79484,
+          "format": "jpg",
+          "type": "image",
+          "width": 405,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Обложка Shorts «Кто из них был гениальным зельеваром?»",
+        "en": "Cover of the Short “Кто из них был гениальным зельеваром?” (Russian)"
+      },
+      "source": {
+        "file": "source/youtube/thumbs/ZMJpa_P8vKQ.jpg",
+        "crop": [
+          437,
+          0,
+          405,
+          720
+        ],
+        "youtube_id": "ZMJpa_P8vKQ",
+        "title": "Кто из них был гениальным зельеваром? #гаррипоттер #witchinghour",
+        "kind": "short",
+        "upload_date": "2024-07-02",
+        "view_count": 137853,
+        "url": "https://www.youtube.com/shorts/ZMJpa_P8vKQ"
+      }
+    },
+    {
+      "id": "loop-short-o4-YEJW9ar8",
+      "group": "hover-loops",
+      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/short-o4-YEJW9ar8.mp4",
+          "url": "assets/loops/short-o4-YEJW9ar8.mp4",
+          "bytes": 102333,
+          "format": "mp4",
+          "type": "video",
+          "width": 360,
+          "height": 640,
+          "duration": 5,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент Shorts «Почему Римус Люпин ехал на поезде в Хогвартс? 🤔» без звука",
+        "en": "Muted excerpt of the Short “Почему Римус Люпин ехал на поезде в Хогвартс? 🤔”"
+      },
+      "source": {
+        "file": "source/youtube/shorts/o4-YEJW9ar8.mp4",
+        "in_sec": 23.95,
+        "out_sec": 28.95,
+        "youtube_id": "o4-YEJW9ar8",
+        "title": "Почему Римус Люпин ехал на поезде в Хогвартс? 🤔 #shorts #гаррипоттер #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-26",
+        "view_count": 1755182,
+        "url": "https://www.youtube.com/shorts/o4-YEJW9ar8"
+      },
+      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
+    },
+    {
+      "id": "loop-short-g6jqNWzJrNw",
+      "group": "hover-loops",
+      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/short-g6jqNWzJrNw.mp4",
+          "url": "assets/loops/short-g6jqNWzJrNw.mp4",
+          "bytes": 119672,
+          "format": "mp4",
+          "type": "video",
+          "width": 360,
+          "height": 640,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент Shorts «Фильмы испортили Рона Уизли? 🤔🤔» без звука",
+        "en": "Muted excerpt of the Short “Фильмы испортили Рона Уизли? 🤔🤔”"
+      },
+      "source": {
+        "file": "source/youtube/shorts/g6jqNWzJrNw.mp4",
+        "in_sec": 4,
+        "out_sec": 10,
+        "youtube_id": "g6jqNWzJrNw",
+        "title": "Фильмы испортили Рона Уизли? 🤔🤔 #shorts #гаррипоттер #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-25",
+        "view_count": 1571888,
+        "url": "https://www.youtube.com/shorts/g6jqNWzJrNw"
+      },
+      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
+    },
+    {
+      "id": "loop-short-r2u0yEV-QU8",
+      "group": "hover-loops",
+      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/short-r2u0yEV-QU8.mp4",
+          "url": "assets/loops/short-r2u0yEV-QU8.mp4",
+          "bytes": 134931,
+          "format": "mp4",
+          "type": "video",
+          "width": 360,
+          "height": 640,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент Shorts «Министр магии плохо делает свою работу?» без звука",
+        "en": "Muted excerpt of the Short “Министр магии плохо делает свою работу?”"
+      },
+      "source": {
+        "file": "source/youtube/shorts/r2u0yEV-QU8.mp4",
+        "in_sec": 33,
+        "out_sec": 39,
+        "youtube_id": "r2u0yEV-QU8",
+        "title": "Министр магии плохо делает свою работу? #гермиона #гаррипоттер #shorts #интересныефакты",
+        "kind": "short",
+        "upload_date": "2024-06-19",
+        "view_count": 415055,
+        "url": "https://www.youtube.com/shorts/r2u0yEV-QU8"
+      },
+      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
+    },
+    {
+      "id": "loop-short-C7uxzve2wv8",
+      "group": "hover-loops",
+      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/short-C7uxzve2wv8.mp4",
+          "url": "assets/loops/short-C7uxzve2wv8.mp4",
+          "bytes": 142645,
+          "format": "mp4",
+          "type": "video",
+          "width": 360,
+          "height": 640,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент Shorts «Гермиона была права 🧹🐕» без звука",
+        "en": "Muted excerpt of the Short “Гермиона была права 🧹🐕”"
+      },
+      "source": {
+        "file": "source/youtube/shorts/C7uxzve2wv8.mp4",
+        "in_sec": 12,
+        "out_sec": 18,
+        "youtube_id": "C7uxzve2wv8",
+        "title": "Гермиона была права 🧹🐕 #гаррипоттер #ведьминчас #книги",
+        "kind": "short",
+        "upload_date": "2024-07-15",
+        "view_count": 342846,
+        "url": "https://www.youtube.com/shorts/C7uxzve2wv8"
+      },
+      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
+    },
+    {
+      "id": "loop-short-SENI8JOCuc0",
+      "group": "hover-loops",
+      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/short-SENI8JOCuc0.mp4",
+          "url": "assets/loops/short-SENI8JOCuc0.mp4",
+          "bytes": 124555,
+          "format": "mp4",
+          "type": "video",
+          "width": 360,
+          "height": 640,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент Shorts «Римус ЛЮпин или ЛюпИн? 🐺🌕» без звука",
+        "en": "Muted excerpt of the Short “Римус ЛЮпин или ЛюпИн? 🐺🌕”"
+      },
+      "source": {
+        "file": "source/youtube/shorts/SENI8JOCuc0.mp4",
+        "in_sec": 0.5,
+        "out_sec": 6.5,
+        "youtube_id": "SENI8JOCuc0",
+        "title": "Римус ЛЮпин или ЛюпИн? 🐺🌕 #witchinghour #гаррипоттер #интересныефакты #книги",
+        "kind": "short",
+        "upload_date": "2024-06-30",
+        "view_count": 160193,
+        "url": "https://www.youtube.com/shorts/SENI8JOCuc0"
+      },
+      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
+    },
+    {
+      "id": "loop-short-ZMJpa_P8vKQ",
+      "group": "hover-loops",
+      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/short-ZMJpa_P8vKQ.mp4",
+          "url": "assets/loops/short-ZMJpa_P8vKQ.mp4",
+          "bytes": 215809,
+          "format": "mp4",
+          "type": "video",
+          "width": 360,
+          "height": 640,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент Shorts «Кто из них был гениальным зельеваром?» без звука",
+        "en": "Muted excerpt of the Short “Кто из них был гениальным зельеваром?”"
+      },
+      "source": {
+        "file": "source/youtube/shorts/ZMJpa_P8vKQ.mp4",
+        "in_sec": 6.05,
+        "out_sec": 12.05,
+        "youtube_id": "ZMJpa_P8vKQ",
+        "title": "Кто из них был гениальным зельеваром? #гаррипоттер #witchinghour",
+        "kind": "short",
+        "upload_date": "2024-07-02",
+        "view_count": 137853,
+        "url": "https://www.youtube.com/shorts/ZMJpa_P8vKQ"
+      },
+      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
+    },
+    {
+      "id": "loop-ep-X8abHp0ekss",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-X8abHp0ekss.mp4",
+          "url": "assets/loops/ep-X8abHp0ekss.mp4",
+          "bytes": 207653,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Ведущие в хэллоуинских свитерах с буквами «А» и «К» в осенней студии",
+        "en": "The two hosts in Halloween sweaters lettered “A” and “K” in an autumn set"
+      },
+      "source": {
+        "file": "source/youtube/long/X8abHp0ekss.mp4",
+        "in_sec": 200,
+        "out_sec": 206,
+        "youtube_id": "X8abHp0ekss",
+        "title": "ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск",
+        "kind": "video",
+        "upload_date": "2026-11-05",
+        "view_count": 8259,
+        "url": "https://www.youtube.com/watch?v=X8abHp0ekss"
+      }
+    },
+    {
+      "id": "loop-ep-uKxovctmQHI",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-uKxovctmQHI.mp4",
+          "url": "assets/loops/ep-uKxovctmQHI.mp4",
+          "bytes": 234496,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Три ведущие в костюмах сестёр Блэк за столом со свечами",
+        "en": "Three hosts dressed as the Black sisters at a candle-lit table"
+      },
+      "source": {
+        "file": "source/youtube/long/uKxovctmQHI.mp4",
+        "in_sec": 484,
+        "out_sec": 490,
+        "youtube_id": "uKxovctmQHI",
+        "title": "СЕСТРЫ БЛЭК. Жизнь Нарциссы, Андромеды и Беллатрисы",
+        "kind": "video",
+        "upload_date": "2026-03-31",
+        "view_count": 6482,
+        "url": "https://www.youtube.com/watch?v=uKxovctmQHI"
+      }
+    },
+    {
+      "id": "loop-ep-FuSKSb_aRnQ",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-FuSKSb_aRnQ.mp4",
+          "url": "assets/loops/ep-FuSKSb_aRnQ.mp4",
+          "bytes": 192464,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Две ведущие у микрофонов, разговор в эфире",
+        "en": "The two hosts talking at their microphones"
+      },
+      "source": {
+        "file": "source/youtube/long/FuSKSb_aRnQ.mp4",
+        "in_sec": 120,
+        "out_sec": 126,
+        "youtube_id": "FuSKSb_aRnQ",
+        "title": "ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости",
+        "kind": "video",
+        "upload_date": "2024-04-27",
+        "view_count": 20081,
+        "url": "https://www.youtube.com/watch?v=FuSKSb_aRnQ"
+      }
+    },
+    {
+      "id": "loop-ep-HLP-JC3EkW4",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-HLP-JC3EkW4.mp4",
+          "url": "assets/loops/ep-HLP-JC3EkW4.mp4",
+          "bytes": 309943,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Ведущие вдвоём у микрофонов, одна держит кошку",
+        "en": "The two hosts together at the microphones, one holding a cat"
+      },
+      "source": {
+        "file": "source/youtube/long/HLP-JC3EkW4.mp4",
+        "in_sec": 42,
+        "out_sec": 48,
+        "youtube_id": "HLP-JC3EkW4",
+        "title": "Магическая СВОЯ ИГРА по Гарри Поттеру. ТУРНИР ЧЕТЫРЕХ ВОЛШЕБНИЦ",
+        "kind": "video",
+        "upload_date": "2024-06-02",
+        "view_count": 16426,
+        "url": "https://www.youtube.com/watch?v=HLP-JC3EkW4"
+      }
+    },
+    {
+      "id": "loop-ep-UOoRy3X91Ys",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-UOoRy3X91Ys.mp4",
+          "url": "assets/loops/ep-UOoRy3X91Ys.mp4",
+          "bytes": 190949,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Две ведущие у микрофонов, улыбаются",
+        "en": "The two hosts at their microphones, smiling"
+      },
+      "source": {
+        "file": "source/youtube/long/UOoRy3X91Ys.mp4",
+        "in_sec": 59,
+        "out_sec": 65,
+        "youtube_id": "UOoRy3X91Ys",
+        "title": "ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец",
+        "kind": "video",
+        "upload_date": "2024-07-09",
+        "view_count": 13196,
+        "url": "https://www.youtube.com/watch?v=UOoRy3X91Ys"
+      }
+    },
+    {
+      "id": "loop-ep-yedhFA9C0Vo",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-yedhFA9C0Vo.mp4",
+          "url": "assets/loops/ep-yedhFA9C0Vo.mp4",
+          "bytes": 138424,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Две ведущие у микрофонов в синем и зелёном свете",
+        "en": "The two hosts at their microphones in blue and green light"
+      },
+      "source": {
+        "file": "source/youtube/long/yedhFA9C0Vo.mp4",
+        "in_sec": 330,
+        "out_sec": 336,
+        "youtube_id": "yedhFA9C0Vo",
+        "title": "СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел",
+        "kind": "video",
+        "upload_date": "2024-05-19",
+        "view_count": 11249,
+        "url": "https://www.youtube.com/watch?v=yedhFA9C0Vo"
+      }
+    },
+    {
+      "id": "loop-ep-mgyuUI8Z_4k",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-mgyuUI8Z_4k.mp4",
+          "url": "assets/loops/ep-mgyuUI8Z_4k.mp4",
+          "bytes": 194750,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Две ведущие у микрофонов, зелёный свет",
+        "en": "The two hosts at their microphones, green light"
+      },
+      "source": {
+        "file": "source/youtube/long/mgyuUI8Z_4k.mp4",
+        "in_sec": 165,
+        "out_sec": 171,
+        "youtube_id": "mgyuUI8Z_4k",
+        "title": "СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных",
+        "kind": "video",
+        "upload_date": "2024-06-15",
+        "view_count": 11058,
+        "url": "https://www.youtube.com/watch?v=mgyuUI8Z_4k"
+      }
+    },
+    {
+      "id": "loop-ep-2mLq8gz0ig8",
+      "group": "hover-loops",
+      "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
+      "variants": [
+        {
+          "path": "docs/assets/loops/ep-2mLq8gz0ig8.mp4",
+          "url": "assets/loops/ep-2mLq8gz0ig8.mp4",
+          "bytes": 280590,
+          "format": "mp4",
+          "type": "video",
+          "width": 854,
+          "height": 480,
+          "duration": 6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": null
+        }
+      ],
+      "alt": {
+        "ru": "Экран викторины «Своя игра» и веб-камеры участников",
+        "en": "The quiz-show board and the players’ webcams"
+      },
+      "source": {
+        "file": "source/youtube/long/2mLq8gz0ig8.mp4",
+        "in_sec": 4,
+        "out_sec": 10,
+        "youtube_id": "2mLq8gz0ig8",
+        "title": "Рождественская СВОЯ ИГРА по Гарри Поттеру",
+        "kind": "video",
+        "upload_date": "2024-12-31",
+        "view_count": 10891,
+        "url": "https://www.youtube.com/watch?v=2mLq8gz0ig8"
+      }
+    },
+    {
+      "id": "moment-halloween-comeback",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/halloween-comeback.mp4",
+          "url": "assets/moments/halloween-comeback.mp4",
+          "bytes": 4163481,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 40.8,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/halloween-comeback-poster.webp",
+          "url": "assets/moments/halloween-comeback-poster.webp",
+          "bytes": 60954,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/halloween-comeback-poster.jpg",
+          "url": "assets/moments/halloween-comeback-poster.jpg",
+          "bytes": 107697,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск» со звуком",
+        "en": "Excerpt with sound from the episode “ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск”"
+      },
+      "source": {
+        "file": "source/youtube/long/X8abHp0ekss.mp4",
+        "youtube_id": "X8abHp0ekss",
+        "title": "ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск",
+        "kind": "video",
+        "upload_date": "2026-11-05",
+        "view_count": 8259,
+        "url": "https://www.youtube.com/watch?v=X8abHp0ekss"
+      },
+      "in_tc": "00:00:40.09",
+      "out_tc": "00:01:20.89",
+      "in_sec": 40.09,
+      "out_sec": 80.89,
+      "transcript_ru": "Мы всё думали, как бы нам ворваться в YouTube спустя полгода отсутствия. То есть нас не было семь месяцев на Ютубе. Чего бы такого интересного, осеннего, такого хэллоуинского вам принести? И думали, пока не поняли, что самое осеннее, что есть, — это противостояние вампиров и оборотней, где бы оно ни было. Потому что я сейчас пересматривала «Дневники вампира». В кино сейчас показывают «Сумерки». То есть сейчас вот эта тема, вампиры и оборотни, она такая ежегодно актуальная. Поэтому даже в Гарри Поттере не объединить их было бы преступлением против осени.",
+      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added. Proof-listen before publishing a quote.",
+      "why": "The editorial logic of the comeback episode in the hosts’ own words: why return after 7 months with this topic, tied to the season and to what audiences are watching right now. Warm, confident, complete sentences; ends on a clean punchline (“преступлением против осени”). This is the episode that became №1 on the channel (8.2K+ views in 14 days).",
+      "speaker_note": "The speaker mentions rewatching The Vampire Diaries; a public viewer comment on this episode addresses Alisa about exactly that, so this voice is most likely Alisa — confirm with her.",
+      "poster_timecode_in_clip": 18,
+      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
+      "duration_sec": 40.8
+    },
+    {
+      "id": "moment-werewolf-vampire-myths",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/werewolf-vampire-myths.mp4",
+          "url": "assets/moments/werewolf-vampire-myths.mp4",
+          "bytes": 3305999,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 37.2,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/werewolf-vampire-myths-poster.webp",
+          "url": "assets/moments/werewolf-vampire-myths-poster.webp",
+          "bytes": 66806,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/werewolf-vampire-myths-poster.jpg",
+          "url": "assets/moments/werewolf-vampire-myths-poster.jpg",
+          "bytes": 114390,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск» со звуком",
+        "en": "Excerpt with sound from the episode “ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск”"
+      },
+      "source": {
+        "file": "source/youtube/long/X8abHp0ekss.mp4",
+        "youtube_id": "X8abHp0ekss",
+        "title": "ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск",
+        "kind": "video",
+        "upload_date": "2026-11-05",
+        "view_count": 8259,
+        "url": "https://www.youtube.com/watch?v=X8abHp0ekss"
+      },
+      "in_tc": "00:04:04.71",
+      "out_tc": "00:04:41.90",
+      "in_sec": 244.71,
+      "out_sec": 281.9,
+      "transcript_ru": "В мифах Древней Греции встречаются истории о людях, превращённых в волков. Например, в «Метаморфозах» римского поэта Овидия рассказывается о царе Ликаоне, которого Зевс превратил в волка в наказание за жестокость. А в фольклоре Восточной Европы на протяжении столетий существовали поверья о мертвецах, которые возвращаются из могил, чтобы мучить живых и пить их кровь. Именно в славянских преданиях постепенно складывался образ вампира, который и позднее завоевал европейскую литературу и стал одним из самых узнаваемых монстров в массовой культуре.",
+      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: captions read «превращённых во волков» — normalised to «в волков». Proof-listen before publishing a quote.",
+      "why": "Shows research and scriptwriting: a compact, well-sourced cultural-history beat (Ovid’s Lycaon → Slavic folklore → the modern vampire) delivered fluently in one take. No in-jokes; makes sense to a viewer who is not a Potter fan.",
+      "speaker_note": null,
+      "poster_timecode_in_clip": 0.5,
+      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
+      "duration_sec": 37.19
+    },
+    {
+      "id": "moment-eleven-schools",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/eleven-schools.mp4",
+          "url": "assets/moments/eleven-schools.mp4",
+          "bytes": 1990213,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 27.6,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/eleven-schools-poster.webp",
+          "url": "assets/moments/eleven-schools-poster.webp",
+          "bytes": 44582,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/eleven-schools-poster.jpg",
+          "url": "assets/moments/eleven-schools-poster.jpg",
+          "bytes": 86782,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец» со звуком",
+        "en": "Excerpt with sound from the episode “ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец”"
+      },
+      "source": {
+        "file": "source/youtube/long/UOoRy3X91Ys.mp4",
+        "youtube_id": "UOoRy3X91Ys",
+        "title": "ШКОЛЫ МАГИИ. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец",
+        "kind": "video",
+        "upload_date": "2024-07-09",
+        "view_count": 13196,
+        "url": "https://www.youtube.com/watch?v=UOoRy3X91Ys"
+      },
+      "in_tc": "00:03:14.04",
+      "out_tc": "00:03:41.64",
+      "in_sec": 194.04,
+      "out_sec": 221.64,
+      "transcript_ru": "Впервые Джоан Роулинг поделилась с нами тем, что кроме всем известной тройки — Хогвартс, Дурмстранг, Шармбатон — в мире существуют ещё многие другие школы магии. В 2016 году она на Pottermore опубликовала статью о других школах магии и в этой статье рассказала, что всего в мире Поттерианы существует 11 древних и престижных школ магии, каждая из которых зарегистрирована в Международной конфедерации магов.",
+      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: auto-captions: «Джон ролинг» → Джоан Роулинг, «Потер мор» → Pottermore, «в мире патриа» → в мире Поттерианы. Proof-listen before publishing a quote.",
+      "why": "A clear, checkable fact with a source and a date (Pottermore, 2016; 11 registered schools). Opens a new chapter of the episode (the clip starts on the series’ own chapter wipe), so it reads as a self-contained segment.",
+      "speaker_note": null,
+      "poster_timecode_in_clip": 12,
+      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
+      "duration_sec": 27.6
+    },
+    {
+      "id": "moment-house-system",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/house-system.mp4",
+          "url": "assets/moments/house-system.mp4",
+          "bytes": 2821150,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 30.13,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/house-system-poster.webp",
+          "url": "assets/moments/house-system-poster.webp",
+          "bytes": 48430,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/house-system-poster.jpg",
+          "url": "assets/moments/house-system-poster.jpg",
+          "bytes": 94504,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных» со звуком",
+        "en": "Excerpt with sound from the episode “СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных”"
+      },
+      "source": {
+        "file": "source/youtube/long/mgyuUI8Z_4k.mp4",
+        "youtube_id": "mgyuUI8Z_4k",
+        "title": "СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных",
+        "kind": "video",
+        "upload_date": "2024-06-15",
+        "view_count": 11058,
+        "url": "https://www.youtube.com/watch?v=mgyuUI8Z_4k"
+      },
+      "in_tc": "00:02:35.71",
+      "out_tc": "00:03:05.84",
+      "in_sec": 155.71,
+      "out_sec": 185.84,
+      "transcript_ru": "Я хотела для начала сказать, почему это дом, а не факультет. В общем, в Британии в университетах есть House System — это создание для школьников настоящего дома, то есть место, куда хочется возвращаться, а с кем можно разделить горести, там, завести друзей, радость разделить с другими жителями. Это не только школа, это не университет, это не деканы, это не факультет — это именно дом. Такова британская система houses в университетах Британии, то есть так даже Роулинг училась.",
+      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: auto-captions: «Хаос» → houses. Proof-listen before publishing a quote.",
+      "why": "An original angle rather than a retelling: why the Russian translation “факультет” loses the British idea of a “house”. Shows cultural/translation literacy and a personal point of view; complete thought from first to last sentence.",
+      "speaker_note": "Just before this clip the co-host jokes that “Alisa already started saying дом”, so the speaker here is most likely Alisa — confirm.",
+      "poster_timecode_in_clip": 10,
+      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
+      "duration_sec": 30.13
+    },
+    {
+      "id": "moment-marauders",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/marauders.mp4",
+          "url": "assets/moments/marauders.mp4",
+          "bytes": 3482596,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 38.17,
+          "video_codec": "h264",
+          "fps": "30/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/marauders-poster.webp",
+          "url": "assets/moments/marauders-poster.webp",
+          "bytes": 48966,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/marauders-poster.jpg",
+          "url": "assets/moments/marauders-poster.jpg",
+          "bytes": 95940,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости» со звуком",
+        "en": "Excerpt with sound from the episode “ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости”"
+      },
+      "source": {
+        "file": "source/youtube/long/FuSKSb_aRnQ.mp4",
+        "youtube_id": "FuSKSb_aRnQ",
+        "title": "ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости",
+        "kind": "video",
+        "upload_date": "2024-04-27",
+        "view_count": 20081,
+        "url": "https://www.youtube.com/watch?v=FuSKSb_aRnQ"
+      },
+      "in_tc": "00:01:43.14",
+      "out_tc": "00:02:21.29",
+      "in_sec": 103.14,
+      "out_sec": 141.29,
+      "transcript_ru": "Ну, мы все знаем, что мародёрами себя называла вот эта четвёрка из Гриффиндора. Они стали легендарными, были легендарными, такими же, наверное, как Золотое трио или близнецы Уизли, их постоянно вспоминали даже через много лет. Мародёрами были Джеймс Поттер — это отец Гарри Поттера, удивительно; Сириус Блэк — крёстный отец Гарри Поттера, ну и отцовская фигура, потому что Гарри с ним общался и взаимодействовал уже в сознательном возрасте; Римус Люпин — учитель Гарри, тоже в каком-то смысле отцовская фигура; и Питер Петтигрю — это их приятель из детства, тоже человек, который… ну, из-за которого вся история вообще по сути началась.",
+      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: auto-captions: «отец ри Поттера» → отец Гарри Поттера, «Сириус бл» → Сириус Блэк, «Пети Грю» → Петтигрю, «из детство» → из детства. Proof-listen before publishing a quote.",
+      "why": "From the channel’s most-viewed long episode (20K+ views). A tidy character set-up that a newcomer can follow, with a light dry joke (“отец Гарри Поттера, удивительно”) and a strong closing hook about Peter.",
+      "speaker_note": null,
+      "poster_timecode_in_clip": 19,
+      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
+      "duration_sec": 38.15
+    },
+    {
+      "id": "moment-snape-prophecy",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/snape-prophecy.mp4",
+          "url": "assets/moments/snape-prophecy.mp4",
+          "bytes": 2110383,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 25.68,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/snape-prophecy-poster.webp",
+          "url": "assets/moments/snape-prophecy-poster.webp",
+          "bytes": 43014,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/snape-prophecy-poster.jpg",
+          "url": "assets/moments/snape-prophecy-poster.jpg",
+          "bytes": 84267,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел» со звуком",
+        "en": "Excerpt with sound from the episode “СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел”"
+      },
+      "source": {
+        "file": "source/youtube/long/yedhFA9C0Vo.mp4",
+        "youtube_id": "yedhFA9C0Vo",
+        "title": "СЕВЕРУС СНЕЙП. Храбрость, скверный характер и мотивы хороших дел",
+        "kind": "video",
+        "upload_date": "2024-05-19",
+        "view_count": 11249,
+        "url": "https://www.youtube.com/watch?v=yedhFA9C0Vo"
+      },
+      "in_tc": "00:05:18.24",
+      "out_tc": "00:05:43.91",
+      "in_sec": 318.24,
+      "out_sec": 343.91,
+      "transcript_ru": "Вернёмся к событиям 1980 года, когда Северус принял одно из самых худших решений в своей жизни, о котором он будет жалеть до самой смерти. [неразборчиво в автосубтитрах: «он пио даром в кабане голове»] и подслушал разговор Альбуса с профессором Сивиллой Трелони — она как раз проходила собеседование на должность профессора прорицания, — и она неожиданно, вдруг произнесла своё первое настоящее пророчество.",
+      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: auto-captions: «срти» → смерти, «сивий трини» → Сивиллой Трелони; one phrase is garbled in the captions (likely about being in the “Hog’s Head” / «Кабанья голова» inn) and must be transcribed by ear. Proof-listen before publishing a quote.",
+      "why": "Storytelling: a dramatic beat narrated with tension, ending on a cliffhanger at a sentence boundary (“…своё первое настоящее пророчество”). From one of the top-4 episodes (11K+ views).",
+      "speaker_note": null,
+      "poster_timecode_in_clip": 14,
+      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
+      "duration_sec": 25.67
+    },
+    {
+      "id": "evidence-yt-all-time",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yt-all-time.webp",
+          "url": "assets/evidence/yt-all-time.webp",
+          "bytes": 19160,
+          "format": "webp",
+          "type": "image",
+          "width": 1105,
+          "height": 688,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yt-all-time.jpg",
+          "url": "assets/evidence/yt-all-time.jpg",
+          "bytes": 39102,
+          "format": "jpg",
+          "type": "image",
+          "width": 1105,
+          "height": 688,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "YouTube Studio, «Все время» (1 дек. 2023 – 19 нояб. 2026): 4,9 млн просмотров с учётом Shorts, 141,4 тыс. часов просмотра, +7,8 тыс. подписчиков",
+        "en": "YouTube Studio, all time (Dec 2023 – Nov 2026): 4.9M views incl. Shorts, 141.4K watch hours, +7.8K subscribers"
+      },
+      "source": {
+        "file": "source/disk-ascii/yt-draft-6.jpg",
+        "crop": [
+          0,
+          0,
+          1105,
+          688
+        ]
+      },
+      "privacy": "Revenue card («Расчетный доход … KZT») painted out with the page background.",
+      "redactions": [
+        [
+          748,
+          546,
+          1105,
+          697
+        ]
+      ]
+    },
+    {
+      "id": "evidence-yt-dashboard-halloween",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yt-dashboard-halloween.webp",
+          "url": "assets/evidence/yt-dashboard-halloween.webp",
+          "bytes": 52066,
+          "format": "webp",
+          "type": "image",
+          "width": 920,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yt-dashboard-halloween.jpg",
+          "url": "assets/evidence/yt-dashboard-halloween.jpg",
+          "bytes": 88440,
+          "format": "jpg",
+          "type": "image",
+          "width": 920,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Панель YouTube Studio: хэллоуинский выпуск — 8,3 тыс. просмотров через 14 дней 17 часов после выхода, 1-е место из 10; 7 768 подписчиков",
+        "en": "YouTube Studio dashboard: the Halloween episode at 8.3K views 14 days 17 hours after release, ranked 1 of 10; 7,768 subscribers"
+      },
+      "source": {
+        "file": "source/disk-ascii/yt-stats-6.png",
+        "crop": [
+          300,
+          160,
+          920,
+          720
+        ]
+      },
+      "privacy": "Sidebar with channel avatar cropped out.",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yt-halloween-daily",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yt-halloween-daily.webp",
+          "url": "assets/evidence/yt-halloween-daily.webp",
+          "bytes": 66976,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 837,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yt-halloween-daily.jpg",
+          "url": "assets/evidence/yt-halloween-daily.jpg",
+          "bytes": 129244,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 837,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Ежедневные просмотры за 28 дней: пик хэллоуинского выпуска 6 нояб. 2026 — 2 318 просмотров",
+        "en": "Daily views over 28 days: the Halloween episode peaks at 2,318 views on 6 Nov 2026"
+      },
+      "source": {
+        "file": "source/disk-ascii/yt-stats-2.png",
+        "crop": [
+          268,
+          58,
+          1623,
+          849
+        ]
+      },
+      "privacy": "Left settings panel (with channel avatar) cropped out; revenue column is empty («—»).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yt-audience-cards",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yt-audience-cards.webp",
+          "url": "assets/evidence/yt-audience-cards.webp",
+          "bytes": 48468,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 723,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yt-audience-cards.jpg",
+          "url": "assets/evidence/yt-audience-cards.jpg",
+          "bytes": 91888,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 723,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Карточки YouTube Studio за 28 дней: источники трафика, новые/случайные/постоянные зрители, основные зрители — женщины 25–34",
+        "en": "YouTube Studio cards (28 days): traffic sources, new/casual/regular viewers, core audience women 25–34"
+      },
+      "source": {
+        "file": "source/disk-ascii/yt-stats-3.png",
+        "crop": [
+          0,
+          0,
+          1660,
+          750
+        ]
+      },
+      "privacy": "Nothing private in frame (checked visually).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yt-demographics",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yt-demographics.webp",
+          "url": "assets/evidence/yt-demographics.webp",
+          "bytes": 18486,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 540,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yt-demographics.jpg",
+          "url": "assets/evidence/yt-demographics.jpg",
+          "bytes": 46794,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 540,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Аудитория YouTube по полу и возрасту: женщины 53,4 % просмотров и 76,2 % времени просмотра",
+        "en": "YouTube audience by gender and age: women are 53.4% of views and 76.2% of watch time"
+      },
+      "source": {
+        "file": "source/disk-ascii/yt-draft-3.jpg",
+        "crop": [
+          0,
+          0,
+          1280,
+          540
+        ]
+      },
+      "privacy": "Nothing private in frame (checked visually).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yandex-lifetime",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yandex-lifetime.webp",
+          "url": "assets/evidence/yandex-lifetime.webp",
+          "bytes": 45602,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 560,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yandex-lifetime.jpg",
+          "url": "assets/evidence/yandex-lifetime.jpg",
+          "bytes": 75843,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 560,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Яндекс Музыка, вся статистика с запуска: 1 202 499 стартов, 74 698 слушателей, 338 351 час",
+        "en": "Yandex Music, all-time since launch: 1,202,499 starts, 74,698 listeners, 338,351 hours"
+      },
+      "source": {
+        "file": "source/disk-ascii/yandex-stats-2.png",
+        "crop": [
+          0,
+          0,
+          1829,
+          640
+        ]
+      },
+      "privacy": "Nothing private in frame (checked visually).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yandex-growth",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yandex-growth.webp",
+          "url": "assets/evidence/yandex-growth.webp",
+          "bytes": 43896,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 458,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yandex-growth.jpg",
+          "url": "assets/evidence/yandex-growth.jpg",
+          "bytes": 70482,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 458,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Яндекс Музыка: рост стартов и стримов с января 2024 по октябрь 2026",
+        "en": "Yandex Music: growth of starts and streams, Jan 2024 – Oct 2026"
+      },
+      "source": {
+        "file": "source/disk-ascii/yandex-stats-1.png",
+        "crop": [
+          0,
+          0,
+          1840,
+          527
+        ]
+      },
+      "privacy": "Nothing private in frame (checked visually).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yandex-2025-summary",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yandex-2025-summary.webp",
+          "url": "assets/evidence/yandex-2025-summary.webp",
+          "bytes": 32026,
+          "format": "webp",
+          "type": "image",
+          "width": 1179,
+          "height": 700,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yandex-2025-summary.jpg",
+          "url": "assets/evidence/yandex-2025-summary.jpg",
+          "bytes": 62390,
+          "format": "jpg",
+          "type": "image",
+          "width": 1179,
+          "height": 700,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Итоги 2025 года в Яндекс Музыке: 30 581 слушатель, 7 460 814 минут, 28 484 новых слушателя",
+        "en": "Yandex Music 2025 recap: 30,581 listeners, 7,460,814 minutes, 28,484 new listeners"
+      },
+      "source": {
+        "file": "source/disk-ascii/yandex-2025-6.jpg",
+        "crop": [
+          0,
+          1290,
+          1179,
+          700
+        ]
+      },
+      "privacy": "Podcast cover art (cartoon avatar) cropped out.",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yandex-2025-listeners",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yandex-2025-listeners.webp",
+          "url": "assets/evidence/yandex-2025-listeners.webp",
+          "bytes": 47976,
+          "format": "webp",
+          "type": "image",
+          "width": 1179,
+          "height": 885,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yandex-2025-listeners.jpg",
+          "url": "assets/evidence/yandex-2025-listeners.jpg",
+          "bytes": 93443,
+          "format": "jpg",
+          "type": "image",
+          "width": 1179,
+          "height": 885,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Карточка «Распаковка 2025»: 30 581 слушатель",
+        "en": "Yandex Music 2025 card: 30,581 listeners"
+      },
+      "source": {
+        "file": "source/disk-ascii/yandex-2025-1.jpg",
+        "crop": [
+          0,
+          765,
+          1179,
+          885
+        ]
+      },
+      "privacy": "Logo and small cover icon cropped out.",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yandex-2025-minutes",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yandex-2025-minutes.webp",
+          "url": "assets/evidence/yandex-2025-minutes.webp",
+          "bytes": 44802,
+          "format": "webp",
+          "type": "image",
+          "width": 1179,
+          "height": 885,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yandex-2025-minutes.jpg",
+          "url": "assets/evidence/yandex-2025-minutes.jpg",
+          "bytes": 86227,
+          "format": "jpg",
+          "type": "image",
+          "width": 1179,
+          "height": 885,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Карточка «Распаковка 2025»: 7 460 814 минут прослушивания",
+        "en": "Yandex Music 2025 card: 7,460,814 minutes listened"
+      },
+      "source": {
+        "file": "source/disk-ascii/yandex-2025-3.jpg",
+        "crop": [
+          0,
+          765,
+          1179,
+          885
+        ]
+      },
+      "privacy": "Logo and small cover icon cropped out.",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yandex-2025-new",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yandex-2025-new.webp",
+          "url": "assets/evidence/yandex-2025-new.webp",
+          "bytes": 49434,
+          "format": "webp",
+          "type": "image",
+          "width": 1179,
+          "height": 885,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yandex-2025-new.jpg",
+          "url": "assets/evidence/yandex-2025-new.jpg",
+          "bytes": 95925,
+          "format": "jpg",
+          "type": "image",
+          "width": 1179,
+          "height": 885,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Карточка «Распаковка 2025»: 28 484 новых слушателя",
+        "en": "Yandex Music 2025 card: 28,484 new listeners"
+      },
+      "source": {
+        "file": "source/disk-ascii/yandex-2025-5.jpg",
+        "crop": [
+          0,
+          765,
+          1179,
+          885
+        ]
+      },
+      "privacy": "Logo and small cover icon cropped out.",
+      "redactions": []
+    },
+    {
+      "id": "evidence-apple-overview",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/apple-overview.webp",
+          "url": "assets/evidence/apple-overview.webp",
+          "bytes": 53134,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 816,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/apple-overview.jpg",
+          "url": "assets/evidence/apple-overview.jpg",
+          "bytes": 92770,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 816,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Apple Podcasts Connect, последние 60 дней: 1,1 тыс. подписчиков, 9,0 тыс. воспроизведений, 1,3 тыс. часов",
+        "en": "Apple Podcasts Connect, last 60 days: 1.1K followers, 9.0K plays, 1.3K hours"
+      },
+      "source": {
+        "file": "source/disk-ascii/apple-1.png",
+        "crop": [
+          0,
+          60,
+          1615,
+          824
+        ]
+      },
+      "privacy": "Account name/Apple ID header cropped out; podcast cover icon painted white.",
+      "redactions": [
+        [
+          34,
+          86,
+          94,
+          146
+        ]
+      ]
+    },
+    {
+      "id": "evidence-apple-episodes",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/apple-episodes.webp",
+          "url": "assets/evidence/apple-episodes.webp",
+          "bytes": 47058,
+          "format": "webp",
+          "type": "image",
+          "width": 1600,
+          "height": 768,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/apple-episodes.jpg",
+          "url": "assets/evidence/apple-episodes.jpg",
+          "bytes": 90360,
+          "format": "jpg",
+          "type": "image",
+          "width": 1600,
+          "height": 768,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Apple Podcasts: четыре последних выпуска выше медианы шоу на 63–85 %",
+        "en": "Apple Podcasts: the four latest episodes beat the show median by 63–85%"
+      },
+      "source": {
+        "file": "source/disk-ascii/apple-2.png",
+        "crop": [
+          0,
+          62,
+          1691,
+          812
+        ]
+      },
+      "privacy": "Account name/Apple ID header cropped out; podcast cover icon painted white.",
+      "redactions": [
+        [
+          44,
+          89,
+          102,
+          149
+        ]
+      ]
+    },
+    {
+      "id": "evidence-notion-workspace",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/notion-workspace.webp",
+          "url": "assets/evidence/notion-workspace.webp",
+          "bytes": 15448,
+          "format": "webp",
+          "type": "image",
+          "width": 792,
+          "height": 806,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/notion-workspace.jpg",
+          "url": "assets/evidence/notion-workspace.jpg",
+          "bytes": 31844,
+          "format": "jpg",
+          "type": "image",
+          "width": 792,
+          "height": 806,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Рабочее пространство шоу в Notion: сценарии, Shorts, статьи, архив выпусков, «Своя игра», шаблоны, PR",
+        "en": "The show’s Notion workspace: scripts, Shorts, articles, episode archive, quiz, templates, PR"
+      },
+      "source": {
+        "file": "source/disk-ascii/notion-workspace.png",
+        "crop": [
+          0,
+          0,
+          792,
+          806
+        ]
+      },
+      "privacy": "The «ПАРОЛИ И ССЫЛКИ» row (100,622,230,30 in the original) is blurred; rebuilt by scripts/redact.mjs.",
+      "redactions": []
+    },
+    {
+      "id": "evidence-notion-script-forest",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/notion-script-forest.webp",
+          "url": "assets/evidence/notion-script-forest.webp",
+          "bytes": 100054,
+          "format": "webp",
+          "type": "image",
+          "width": 1026,
+          "height": 770,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/notion-script-forest.jpg",
+          "url": "assets/evidence/notion-script-forest.jpg",
+          "bytes": 137092,
+          "format": "jpg",
+          "type": "image",
+          "width": 1026,
+          "height": 770,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Сценарий выпуска «Запретный лес» в Notion: структура и вступление",
+        "en": "Notion script for the “Forbidden Forest” episode: structure and intro"
+      },
+      "source": {
+        "file": "source/disk-ascii/notion-scripts-3.png",
+        "crop": [
+          0,
+          0,
+          1026,
+          770
+        ]
+      },
+      "privacy": "Nothing private in frame (checked visually).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-notion-script-snape",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/notion-script-snape.webp",
+          "url": "assets/evidence/notion-script-snape.webp",
+          "bytes": 70576,
+          "format": "webp",
+          "type": "image",
+          "width": 929,
+          "height": 783,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/notion-script-snape.jpg",
+          "url": "assets/evidence/notion-script-snape.jpg",
+          "bytes": 108219,
+          "format": "jpg",
+          "type": "image",
+          "width": 929,
+          "height": 783,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Сценарий выпуска о Северусе Снейпе: вступление с опорой на главы книг",
+        "en": "Script for the Severus Snape episode: intro grounded in specific book chapters"
+      },
+      "source": {
+        "file": "source/disk-ascii/notion-scripts-2.png",
+        "crop": [
+          0,
+          0,
+          929,
+          783
+        ]
+      },
+      "privacy": "Nothing private in frame (checked visually).",
+      "redactions": []
+    },
+    {
+      "id": "evidence-yt-shorts-shelf",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/yt-shorts-shelf.webp",
+          "url": "assets/evidence/yt-shorts-shelf.webp",
+          "bytes": 179326,
+          "format": "webp",
+          "type": "image",
+          "width": 1533,
+          "height": 570,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/yt-shorts-shelf.jpg",
+          "url": "assets/evidence/yt-shorts-shelf.jpg",
+          "bytes": 226720,
+          "format": "jpg",
+          "type": "image",
+          "width": 1533,
+          "height": 570,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Вкладка Shorts канала: 1,7 млн и 1,5 млн просмотров у двух самых популярных роликов",
+        "en": "The channel’s Shorts tab: the top two Shorts at 1.7M and 1.5M views"
+      },
+      "source": {
+        "file": "source/disk-ascii/shorts.png",
+        "crop": [
+          0,
+          236,
+          1533,
+          570
+        ]
+      },
+      "privacy": "Channel header with avatar and owner-only buttons cropped out.",
+      "redactions": []
+    },
+    {
+      "id": "videography-valley",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/valley.webp",
+          "url": "assets/videography/valley.webp",
+          "bytes": 11596,
+          "format": "webp",
+          "type": "image",
+          "width": 297,
+          "height": 434,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/valley.jpg",
+          "url": "assets/videography/valley.jpg",
+          "bytes": 20622,
+          "format": "jpg",
+          "type": "image",
+          "width": 297,
+          "height": 434,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Туманная горная долина с елями",
+        "en": "A misty mountain valley with fir trees"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-1.jpg",
+        "crop": [
+          398,
+          3,
+          297,
+          434
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-waterfall",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/waterfall.webp",
+          "url": "assets/videography/waterfall.webp",
+          "bytes": 35802,
+          "format": "webp",
+          "type": "image",
+          "width": 304,
+          "height": 439,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/waterfall.jpg",
+          "url": "assets/videography/waterfall.jpg",
+          "bytes": 43276,
+          "format": "jpg",
+          "type": "image",
+          "width": 304,
+          "height": 439,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Горный водопад и перила смотровой площадки",
+        "en": "A mountain waterfall and a viewing-deck railing"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-1.jpg",
+        "crop": [
+          3,
+          523,
+          304,
+          439
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-koi",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/koi.webp",
+          "url": "assets/videography/koi.webp",
+          "bytes": 15148,
+          "format": "webp",
+          "type": "image",
+          "width": 304,
+          "height": 440,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/koi.jpg",
+          "url": "assets/videography/koi.jpg",
+          "bytes": 25439,
+          "format": "jpg",
+          "type": "image",
+          "width": 304,
+          "height": 440,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Карпы кои в тёмной воде, надпись «the art of bōtto suru»",
+        "en": "Koi in dark water with the caption “the art of bōtto suru”"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-1.jpg",
+        "crop": [
+          3,
+          1047,
+          304,
+          440
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina.",
+      "show": false,
+      "show_note": "Hidden: the frame carries a baked-in Instagram caption."
+    },
+    {
+      "id": "videography-cat-meadow",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/cat-meadow.webp",
+          "url": "assets/videography/cat-meadow.webp",
+          "bytes": 15860,
+          "format": "webp",
+          "type": "image",
+          "width": 305,
+          "height": 440,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/cat-meadow.jpg",
+          "url": "assets/videography/cat-meadow.jpg",
+          "bytes": 24913,
+          "format": "jpg",
+          "type": "image",
+          "width": 305,
+          "height": 440,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Трёхцветная кошка в траве",
+        "en": "A calico cat in tall grass"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-1.jpg",
+        "crop": [
+          792,
+          1047,
+          305,
+          440
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-quiet-days",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/quiet-days.webp",
+          "url": "assets/videography/quiet-days.webp",
+          "bytes": 14784,
+          "format": "webp",
+          "type": "image",
+          "width": 304,
+          "height": 441,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/quiet-days.jpg",
+          "url": "assets/videography/quiet-days.jpg",
+          "bytes": 24558,
+          "format": "jpg",
+          "type": "image",
+          "width": 304,
+          "height": 441,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Яблоко в руке у горного ручья, надпись «the art of quiet days»",
+        "en": "An apple held by a mountain stream, caption “the art of quiet days”"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-1.jpg",
+        "crop": [
+          398,
+          1571,
+          304,
+          441
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina.",
+      "show": false,
+      "show_note": "Hidden: the frame carries a baked-in Instagram caption."
+    },
+    {
+      "id": "videography-mountain-lake",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/mountain-lake.webp",
+          "url": "assets/videography/mountain-lake.webp",
+          "bytes": 17040,
+          "format": "webp",
+          "type": "image",
+          "width": 302,
+          "height": 441,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/mountain-lake.jpg",
+          "url": "assets/videography/mountain-lake.jpg",
+          "bytes": 26217,
+          "format": "jpg",
+          "type": "image",
+          "width": 302,
+          "height": 441,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Горное озеро, люпины и деревянная ограда",
+        "en": "A mountain lake, lupines and a wooden fence"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-1.jpg",
+        "crop": [
+          792,
+          1571,
+          302,
+          441
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-squirrel",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/squirrel.webp",
+          "url": "assets/videography/squirrel.webp",
+          "bytes": 28126,
+          "format": "webp",
+          "type": "image",
+          "width": 305,
+          "height": 435,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/squirrel.jpg",
+          "url": "assets/videography/squirrel.jpg",
+          "bytes": 36393,
+          "format": "jpg",
+          "type": "image",
+          "width": 305,
+          "height": 435,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Белка берёт орех с ладони",
+        "en": "A squirrel taking a nut from a hand"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-2.jpg",
+        "crop": [
+          3,
+          3,
+          305,
+          435
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-braid",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/braid.webp",
+          "url": "assets/videography/braid.webp",
+          "bytes": 28060,
+          "format": "webp",
+          "type": "image",
+          "width": 305,
+          "height": 438,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/braid.jpg",
+          "url": "assets/videography/braid.jpg",
+          "bytes": 37443,
+          "format": "jpg",
+          "type": "image",
+          "width": 305,
+          "height": 438,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Коса с венком из ромашек",
+        "en": "A braid with a daisy crown"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-2.jpg",
+        "crop": [
+          3,
+          527,
+          305,
+          438
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-sunset",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/sunset.webp",
+          "url": "assets/videography/sunset.webp",
+          "bytes": 5914,
+          "format": "webp",
+          "type": "image",
+          "width": 305,
+          "height": 436,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/sunset.jpg",
+          "url": "assets/videography/sunset.jpg",
+          "bytes": 14916,
+          "format": "jpg",
+          "type": "image",
+          "width": 305,
+          "height": 436,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Розово-лиловые закатные облака",
+        "en": "Pink and violet sunset clouds"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-2.jpg",
+        "crop": [
+          3,
+          1051,
+          305,
+          436
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "videography-book-by-lake",
+      "group": "videography",
+      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
+      "variants": [
+        {
+          "path": "docs/assets/videography/book-by-lake.webp",
+          "url": "assets/videography/book-by-lake.webp",
+          "bytes": 9018,
+          "format": "webp",
+          "type": "image",
+          "width": 308,
+          "height": 436,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/videography/book-by-lake.jpg",
+          "url": "assets/videography/book-by-lake.jpg",
+          "bytes": 18318,
+          "format": "jpg",
+          "type": "image",
+          "width": 308,
+          "height": 436,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Открытая книга и термос у озера",
+        "en": "An open book and a thermos by a lake"
+      },
+      "source": {
+        "file": "source/disk-ascii/insta-2.jpg",
+        "crop": [
+          396,
+          1051,
+          308,
+          436
+        ]
+      },
+      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
+    },
+    {
+      "id": "favicon",
+      "group": "brand",
+      "purpose": "Favicon: “AM” monogram in Cormorant 500 (outlined paths, no font dependency) on dark brown. Use <link rel=icon type=image/svg+xml> + PNG fallbacks.",
+      "variants": [
+        {
+          "path": "docs/assets/brand/favicon.svg",
+          "url": "assets/brand/favicon.svg",
+          "bytes": 1609,
+          "format": "svg",
+          "type": "image",
+          "width": 64,
+          "height": 64,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/brand/favicon-32.png",
+          "url": "assets/brand/favicon-32.png",
+          "bytes": 742,
+          "format": "png",
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/brand/apple-touch-icon.png",
+          "url": "assets/brand/apple-touch-icon.png",
+          "bytes": 4128,
+          "format": "png",
+          "type": "image",
+          "width": 180,
+          "height": 180,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Монограмма AM",
+        "en": "AM monogram"
+      },
+      "source": {
+        "file": "generated"
+      },
+      "note": "Channel avatar (two cartoon witches) intentionally NOT used anywhere."
+    },
+    {
+      "id": "og",
+      "group": "brand",
+      "purpose": "Open Graph / social preview 1200x630 (ru and en versions).",
+      "variants": [
+        {
+          "path": "docs/assets/brand/og.jpg",
+          "url": "assets/brand/og.jpg",
+          "bytes": 53497,
+          "format": "jpg",
+          "type": "image",
+          "width": 1200,
+          "height": 630,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/brand/og-en.jpg",
+          "url": "assets/brand/og-en.jpg",
+          "bytes": 53509,
+          "format": "jpg",
+          "type": "image",
+          "width": 1200,
+          "height": 630,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Алиса Макаренко — креативный продюсер: YouTube и подкасты",
+        "en": "Alisa Makarenko — creative producer: YouTube and podcasts"
+      },
+      "source": {
+        "file": "docs/assets/hero/hero.jpg",
+        "note": "Rendered by scripts/hero.mjs"
+      },
+      "note": "Rendered headless with Cormorant + Golos Text (Google Fonts) over the graded hero still."
+    }
+  ]
+}

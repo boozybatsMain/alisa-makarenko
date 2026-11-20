@@ -1,0 +1,14 @@
+{
+  "name": "alisa-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Static portfolio and CV of Alisa Makarenko. build.mjs has no dependencies; Playwright is only needed for PDF export.",
+  "scripts": {
+    "build": "node build.mjs",
+    "pdf": "node scripts/pdf.mjs",
+    "serve": "python3 -m http.server 8080 --directory docs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}

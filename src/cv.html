@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{v:lang}}">
+<head>
+{{v:head}}
+<link rel="stylesheet" href="{{v:P}}css/cv.css">
+</head>
+<body class="{{v:hasPhoto}}">
+<nav class="tools" aria-label="CV">
+  <a href="{{v:homeHref}}" class="tools__back" data-setlang="{{v:lang}}"><span aria-hidden="true">←</span> {{t:cta.back_to_site}}</a>
+  <div class="tools__right">
+    <a href="{{v:altHref}}" hreflang="{{v:altLang}}" lang="{{v:altLang}}" class="tools__lang" data-setlang="{{v:altLang}}" aria-label="{{t:meta.lang_label}}">{{v:altLangLabel}}</a>
+    <a href="{{v:cvPdf}}" download class="tools__pdf">{{t:cta.save_pdf}} <span aria-hidden="true">↓</span></a>
+  </div>
+</nav>
+
+<main class="sheet" id="cv">
+  <header class="cv__head">
+    {{part:cvPhoto}}
+    <div class="cv__id">
+      <h1 class="cv__name">{{t:cv.name}}</h1>
+      <p class="cv__headline">{{t:cv.headline}}</p>
+      {{part:cvLocation}}
+    </div>
+    <ul class="cv__contacts" aria-label="{{t:cv.labels.contacts}}">{{part:cvContacts}}</ul>
+  </header>
+
+  <!-- one reading column: the PDF text layer reads top to bottom, as ATS parsers expect -->
+  <section class="cv__sec">
+    <h2 class="cv__h">{{t:cv.labels.summary}}</h2>
+    <p class="cv__summary">{{t:cv.summary}}</p>
+    <p class="cv__also">{{t:cv.also}}</p>
+  </section>
+  <section class="cv__sec">
+    <h2 class="cv__h">{{t:cv.labels.experience}}</h2>
+    {{part:cvExp}}
+    <ul class="cv__bullets">{{part:cvBullets}}</ul>
+  </section>
+  <section class="cv__sec">
+    <h2 class="cv__h">{{t:cv.labels.key_numbers}}</h2>
+    <ul class="cv__key">{{part:cvKey}}</ul>
+  </section>
+  <section class="cv__sec">
+    <h2 class="cv__h">{{t:cv.labels.selected_work}} <small>· {{part:cvWorkNote}}</small></h2>
+    <table class="cv__work">
+      <thead><tr><th scope="col" class="sr">{{t:cv.labels.selected_work}}</th><th scope="col" class="sr">{{t:cv.labels.views}}</th></tr></thead>
+      <tbody>{{part:cvWork}}</tbody>
+    </table>
+  </section>
+  <section class="cv__sec cv__rows">
+    <h2 class="cv__h sr">{{t:cv.labels.skills}} · {{t:cv.labels.tools}} · {{t:cv.labels.links}}</h2>
+    <div class="cv__row"><h3>{{t:cv.labels.skills}}</h3><p>{{part:cvSkillsLine}}</p></div>
+    <div class="cv__row"><h3>{{t:cv.labels.tools}}</h3><p>{{t:cv.tools}}</p></div>
+    <div class="cv__row"><h3>{{t:cv.labels.links}}</h3><ul class="cv__links">{{part:cvLinks}}</ul></div>
+  </section>
+
+  <footer class="cv__foot">
+    <span>{{t:cv.name}} · CV</span>
+    <span>{{t:cv.labels.data_note}}</span>
+  </footer>
+</main>
+<script>document.querySelectorAll('[data-setlang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('am-lang',a.getAttribute('data-setlang'));}catch(e){}});});</script>
+</body>
+</html>

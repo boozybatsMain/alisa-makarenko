@@ -1,0 +1,4 @@
+{
+  "_note": "base_url: the full public address of the site, ending with a slash, e.g. https://username.github.io/alisa-portfolio/ . Leave empty until the site is published: links stay relative, and absolute og:image / hreflang URLs are added once it is filled in.",
+  "base_url": "https://boozybatsmain.github.io/alisa-makarenko/"
+}
