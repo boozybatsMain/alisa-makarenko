@@ -35,7 +35,7 @@ a{color:inherit;text-decoration:none}
 .tools__pdf:hover{background:#ecc0be}
 
 /* the sheet */
-.sheet{width:210mm;height:297mm;margin:0 auto 48px;background:var(--paper);padding:12mm 15mm 8.5mm;display:flex;flex-direction:column;gap:3.7mm;box-shadow:0 30px 90px rgba(0,0,0,.6);overflow:hidden;position:relative}
+.sheet{width:210mm;height:297mm;margin:0 auto 48px;background:var(--paper);padding:10.5mm 15mm 7.5mm;display:flex;flex-direction:column;gap:3.1mm;box-shadow:0 30px 90px rgba(0,0,0,.6);overflow:hidden;position:relative}
 .cv__head{display:flex;align-items:flex-end;gap:7mm;padding-bottom:4.6mm;border-bottom:1.2px solid var(--ink)}
 .cv__photo{width:24mm;height:30mm;object-fit:cover;border-radius:1.5mm;flex:none}
 .cv__id{flex:1;min-width:0}
