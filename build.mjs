@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /*
  * Static site build for Alisa Makarenko's portfolio. No dependencies.
+ * One command builds BOTH sites: site 1 (producer, below) and site 2 (videographer, src/video/build.mjs → docs/video/).
  *
  *   node build.mjs
  *
@@ -24,6 +25,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildVideo } from './src/video/build.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DOCS = path.join(ROOT, 'docs');
@@ -426,18 +428,36 @@ function makeParts(lang, V) {
     },
     videography: () => media.assets.filter((a) => a.group === 'videography' && a.show !== false)
       .map((a) => `<li>${pictureFromVariants(a.variants, L(a.alt, lang), P, {})}</li>`).join(''),
-    /* her own clips (content/copy.json videography.clips): muted loops at real size, shown only when files exist */
+    /* her own clips (content/copy.json videography.clips): posters at their real size; a muted loop plays on hover
+       (desktop), while in view (touch) or on press; the video file is only requested then */
     vgClips: () => {
       const clips = (copy.videography.clips || []).filter((c) => c.file && assetExists(c.file));
       (copy.videography.clips || []).filter((c) => c.file && !assetExists(c.file)).forEach((c) => warnings.push(`Videography clip not found: docs/${c.file}`));
       if (!clips.length) return '';
-      return `<ul class="vg__clips">${clips.map((c) => `<li class="rv"><figure><div class="vg__clip"><video src="${P}${c.file}"${c.poster && assetExists(c.poster) ? ` poster="${P}${c.poster}"` : ''} muted loop playsinline preload="none" data-autoloop aria-label="${t(c.title)}"></video></div>${c.title ? `<figcaption>${t(c.title)}</figcaption>` : ''}</figure></li>`).join('')}</ul>`;
+      return `<ul class="vg__clips">${clips.map((c) => {
+        const b = (c.poster || '').replace(/\.jpg$/, '');
+        const small = assetExists(`${b}-360.jpg`);
+        const webp = assetExists(`${b}.webp`) ? `<source type="image/webp" srcset="${small ? `${P}${b}-360.webp 360w, ` : ''}${P}${b}.webp 540w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 30vw, 200px">` : '';
+        const title = L(c.title, lang);
+        return `<li class="rv"><figure class="vgc" data-loop="${P}${c.file}">
+          <button type="button" class="vgc__frame" aria-pressed="false" aria-label="${t(copy.cta.play)}: ${esc(title)}"><picture>${webp}<img src="${P}${small ? `${b}-360.jpg` : c.poster}"${small ? ` srcset="${P}${b}-360.jpg 360w, ${P}${c.poster} 540w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 30vw, 200px"` : ''} width="540" height="960" alt="" loading="lazy" decoding="async"></picture><span class="vgc__play" aria-hidden="true">${icon.play}</span></button>
+          ${title ? `<figcaption>${esc(title)}</figcaption>` : ''}
+        </figure></li>`;
+      }).join('')}</ul>`;
+    },
+    vgLinks: () => {
+      const pr = copy.videography.profile, more = copy.videography.more;
+      const a = [];
+      if (more && more.label) a.push(`<a class="vg__more" href="${V.videoHref}">${t(more.label)} <span aria-hidden="true">→</span></a>`);
+      if (pr && pr.url) a.push(`<a href="${esc(pr.url)}" target="_blank" rel="noopener">${t(pr.label)} <span aria-hidden="true">↗</span></a>`);
+      return a.length ? `<p class="vg__links rv">${a.join('')}</p>` : '';
     },
     vgProfile: () => {
       const pr = copy.videography.profile;
       if (!pr || !pr.url) return '';
       return ` · <a href="${esc(pr.url)}" target="_blank" rel="noopener">${t(pr.label)} <span aria-hidden="true">↗</span></a>`;
     },
+    footVideo: () => (copy.videography.more && copy.videography.more.label ? `<a href="${V.videoHref}">${t(copy.videography.more.label)} <span aria-hidden="true">→</span></a>` : ''),
     heroRole: () => L(copy.hero.role, lang).split(' · ').map((x) => `<span class="nw">${esc(x)}</span>`).join(' · '),
     deliverables: () => copy.videography.deliverables.map((d) => `<li>${t(d)}</li>`).join(''),
     skills: () => copy.skills.groups.map((g) => `<div class="roll__row rv"><dt>${t(g.title)}</dt><dd><ul class="chips">${g.items.map((i) => `<li>${t(i)}</li>`).join('')}</ul></dd></div>`).join(''),
@@ -451,6 +471,7 @@ function makeParts(lang, V) {
     contactList: () => {
       const c = copy.contact;
       return `<li class="rv"><span>${t(c.telegram_label)}</span><a href="${esc(c.telegram_href)}" target="_blank" rel="noopener">${esc(c.telegram)}</a></li>
+        <li class="rv"><span>${t(c.instagram_label)}</span><a href="${esc(c.instagram_href)}" target="_blank" rel="noopener">${esc(c.instagram)}</a></li>
         <li class="rv"><span>${t(c.email_label)}</span><a href="${esc(c.email_href)}">${esc(c.email)}</a></li>
         <li class="rv"><span>${t(c.phone_label)}</span><a href="${esc(c.phone_href)}">${esc(c.phone).replace(/ /g, NB)}</a></li>`;
     },
@@ -578,6 +599,7 @@ for (const lang of ['ru', 'en']) {
     cvPage: lang === 'ru' ? 'cv/' : 'cv/',
     hasPhoto: photo ? 'has-photo' : 'no-photo',
     year: '2026',
+    videoHref: lang === 'ru' ? 'video/' : '../video/en/',
   };
   const parts = makeParts(lang, V);
   V.head = head(lang, V, { title: L(copy.meta.title, lang), description: L(copy.meta.description, lang) });
@@ -613,4 +635,7 @@ for (const p of Object.values(PDF)) {
 }
 if (!BASE) warnings.push('content/site.json base_url is EMPTY: the CV has no portfolio link, and og:image / hreflang / canonical stay relative (link previews show no image). Fill it in once the site address is known, then run node build.mjs && node scripts/pdf.mjs.');
 console.log(`Built docs/index.html, docs/en/index.html, docs/cv/index.html, docs/en/cv/index.html${photo ? ' (with portrait)' : ''}`);
+// ---- site 2: videographer portfolio (docs/video/)
+const videoPages = buildVideo({ ROOT, DOCS, BASE, esc, typo, plain, finish, isPair, warnings });
+console.log(`Built ${videoPages.join(', ')}`);
 for (const w of [...new Set(warnings)]) console.warn('  ! ' + w);

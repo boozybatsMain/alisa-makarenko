@@ -672,8 +672,8 @@
     "eyebrow": { "ru": "Личная съёмка", "en": "Videography" },
     "title": { "ru": "Спокойная съёмка: природа и предметы", "en": "Quiet footage: nature and still life" },
     "text": {
-      "ru": "Помимо шоу я снимаю короткие спокойные видео: горы, вода, животные, предметы и детали повседневной жизни. Снимаю, монтирую и цветокорректирую сама. Снимаю и передаю готовые материалы, которые гостевой дом, отель или локальный бизнес использует так, как ему нужно.",
-      "en": "Outside the show I shoot short, quiet videos: mountains, water, animals, objects and small everyday details. I shoot, edit and color-grade them myself. I shoot and deliver finished footage that a guest house, hotel or local business can use however it needs."
+      "ru": "Помимо шоу я снимаю короткие спокойные видео: горы, вода, животные, предметы и детали повседневной жизни. Снимаю, монтирую и цвет делаю сама — и отдаю готовый материал, который гостевой дом, отель или небольшой бизнес использует как ему нужно.",
+      "en": "Outside the show I shoot short, quiet videos: mountains, water, animals, objects and small everyday details. I shoot, edit and color-grade them myself, and hand over finished footage that a guest house, hotel or small business can use however it needs."
     },
     "deliverables_label": { "ru": "Что могу сделать", "en": "What I can deliver" },
     "deliverables": [
@@ -686,8 +686,16 @@
     "tools": { "ru": "iPhone, DaVinci Resolve, CapCut, Lightroom", "en": "iPhone, DaVinci Resolve, CapCut, Lightroom" },
     "strip_note": { "ru": "Кадры из личных видео", "en": "Frames from my personal videos" },
     "_clips_note": "clips: optional muted loops of her own footage. Add {\"file\": \"assets/videography/clip-name.mp4\", \"poster\": \"assets/videography/clip-name.jpg\", \"title\": {\"ru\": \"…\", \"en\": \"…\"}}. profile: optional link, e.g. {\"label\": {\"ru\": \"Instagram\", \"en\": \"Instagram\"}, \"url\": \"https://instagram.com/…\"}; leave null to show no link.",
-    "clips": [],
-    "profile": null
+    "clips": [
+      { "file": "assets/videography/clip-lake-above.mp4", "poster": "assets/videography/clip-lake-above.jpg", "title": { "ru": "Горное озеро", "en": "Mountain lake" } },
+      { "file": "assets/videography/clip-lavender.mp4", "poster": "assets/videography/clip-lavender.jpg", "title": { "ru": "Лаванда", "en": "Lavender" } },
+      { "file": "assets/videography/clip-willow-light.mp4", "poster": "assets/videography/clip-willow-light.jpg", "title": { "ru": "Свет сквозь иву", "en": "Light through the willow" } },
+      { "file": "assets/videography/clip-flowers-water.mp4", "poster": "assets/videography/clip-flowers-water.jpg", "title": { "ru": "Цветы на воде", "en": "Flowers on the water" } },
+      { "file": "assets/videography/clip-dog-eye.mp4", "poster": "assets/videography/clip-dog-eye.jpg", "title": { "ru": "Собака крупным планом", "en": "A dog, up close" } },
+      { "file": "assets/videography/clip-books-candles.mp4", "poster": "assets/videography/clip-books-candles.jpg", "title": { "ru": "Книги при свечах", "en": "Books by candlelight" } }
+    ],
+    "profile": { "label": { "ru": "Instagram @alissayeya", "en": "Instagram @alissayeya" }, "url": "https://www.instagram.com/alissayeya" },
+    "more": { "label": { "ru": "Портфолио видеографа", "en": "Videographer portfolio" } }
   },
 
   "skills": {
@@ -806,6 +814,9 @@
     "telegram_href": "https://t.me/alissayeya",
     "email": "alice.yeya@icloud.com",
     "email_href": "mailto:alice.yeya@icloud.com",
+    "instagram": "@alissayeya",
+    "instagram_href": "https://www.instagram.com/alissayeya",
+    "instagram_label": { "ru": "Instagram", "en": "Instagram" },
     "project_links_title": { "ru": "«Ведьмин час» на платформах", "en": "Witching Hour platforms" },
     "project_links": [
       { "label": { "ru": "YouTube", "en": "YouTube" }, "url": "https://www.youtube.com/@witchinghourcast" },

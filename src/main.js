@@ -275,13 +275,45 @@
     }));
   }
 
-  /* ---------- her own clips: muted loops play only while on screen ---------- */
-  const loops = [...document.querySelectorAll('video[data-autoloop]')];
-  if (loops.length && !reduce && 'IntersectionObserver' in window) {
-    const io3 = new IntersectionObserver((es) => es.forEach((e) => {
-      const v = e.target;
-      if (e.isIntersecting) { v.preload = 'auto'; const p = v.play(); if (p && p.catch) p.catch(() => {}); } else v.pause();
-    }), { threshold: 0.35 });
-    loops.forEach((v) => io3.observe(v));
-  } else loops.forEach((v) => { v.controls = true; });
+  /* ---------- her own clips: poster first; a muted loop on hover (desktop), while in view (touch) or on press ---------- */
+  const vgcs = [...document.querySelectorAll('.vgc[data-loop]')];
+  const saveData = !!(navigator.connection && navigator.connection.saveData);
+  if (vgcs.length) {
+    const playing = [];
+    const start = (f) => {
+      const btn = f.querySelector('.vgc__frame');
+      if (!f._v) {
+        const v = document.createElement('video');
+        v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'auto';
+        v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
+        v.src = f.dataset.loop;
+        btn.appendChild(v);
+        f._v = v;
+      }
+      const p = f._v.play();
+      if (p && p.then) p.then(() => { f.classList.add('is-looping'); btn.setAttribute('aria-pressed', 'true'); }).catch(() => {});
+      const k = playing.indexOf(f); if (k > -1) playing.splice(k, 1);
+      playing.push(f);
+      while (playing.length > 2) stop(playing.shift());
+    };
+    const stop = (f) => {
+      f.classList.remove('is-looping');
+      f.querySelector('.vgc__frame').setAttribute('aria-pressed', 'false');
+      if (f._v) f._v.pause();
+      const k = playing.indexOf(f); if (k > -1) playing.splice(k, 1);
+    };
+    vgcs.forEach((f) => {
+      const btn = f.querySelector('.vgc__frame');
+      btn.addEventListener('click', () => (f.classList.contains('is-looping') ? stop(f) : start(f)));
+      if (canHover && !reduce && !saveData) {
+        let timer = 0;
+        f.addEventListener('mouseenter', () => { clearTimeout(timer); timer = setTimeout(() => start(f), 120); });
+        f.addEventListener('mouseleave', () => { clearTimeout(timer); stop(f); });
+      }
+    });
+    if (!canHover && !reduce && !saveData && 'IntersectionObserver' in window) {
+      const io3 = new IntersectionObserver((es) => es.forEach((e) => (e.intersectionRatio >= 0.6 ? start(e.target) : stop(e.target))), { threshold: [0, 0.6] });
+      vgcs.forEach((f) => io3.observe(f));
+    }
+  }
 })();

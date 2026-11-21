@@ -2,9 +2,11 @@
 /*
  * Prints the CV pages to PDF with headless Chromium (Playwright).
  *
- *   node build.mjs && node scripts/pdf.mjs
+ *   node build.mjs && node scripts/pdf.mjs            (all four CVs)
+ *   node scripts/pdf.mjs video | producer              (only one site's CVs)
  *
- * Output: docs/cv/Alisa-Makarenko-CV-RU.pdf and docs/cv/Alisa-Makarenko-CV-EN.pdf
+ * Output: docs/cv/Alisa-Makarenko-CV-RU.pdf and docs/cv/Alisa-Makarenko-CV-EN.pdf (producer),
+ *         docs/video/cv/Alisa-Makarenko-Videographer-CV-RU.pdf and -EN.pdf (videographer)
  * A4, one page each, backgrounds on, selectable text, clickable links, fonts embedded.
  *
  * Needs:  npm install            (installs the playwright package)
@@ -66,7 +68,13 @@ catch {
 const jobs = [
   { url: 'cv/', out: 'cv/Alisa-Makarenko-CV-RU.pdf', title: 'Алиса Макаренко — CV' },
   { url: 'en/cv/', out: 'cv/Alisa-Makarenko-CV-EN.pdf', title: 'Alisa Makarenko — CV' },
+  // site 2: videographer
+  { url: 'video/cv/', out: 'video/cv/Alisa-Makarenko-Videographer-CV-RU.pdf', title: 'Алиса Макаренко — CV видеографа' },
+  { url: 'video/en/cv/', out: 'video/cv/Alisa-Makarenko-Videographer-CV-EN.pdf', title: 'Alisa Makarenko — Videographer CV' },
 ];
+// optional filter: "node scripts/pdf.mjs video" prints only site 2, "node scripts/pdf.mjs producer" only site 1
+const only = process.argv[2];
+if (only) jobs.splice(0, jobs.length, ...jobs.filter((j) => (only === 'video') === j.url.startsWith('video/')));
 let failed = false;
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/site.json'), 'utf8'));
 if (!(site.base_url || '').trim()) console.warn('  ! content/site.json base_url is empty: the PDFs have NO link to the portfolio site. Fill it in, then run node build.mjs && node scripts/pdf.mjs again.');
@@ -77,6 +85,7 @@ for (const j of jobs) {
   const page = await ctx.newPage();
   await page.goto(base + j.url, { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(() => Promise.all([...document.images].map((i) => (i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; })))));
   await page.emulateMedia({ media: 'print' });
   // overflow anywhere: the sheet, either column, or column content running into the footer
   const overflow = await page.evaluate(() => {

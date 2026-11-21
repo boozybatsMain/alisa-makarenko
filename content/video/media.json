@@ -1,0 +1,3883 @@
+{
+ "generated": "2026-11-21",
+ "root": "docs/video",
+ "total_bytes": 142982782,
+ "file_count": 224,
+ "budget_bytes": 160000000,
+ "url_note": "Every url is relative to docs/video/ (the RU page). Pages in docs/video/en/ or docs/video/cv/ prefix \"../\"; docs/video/en/cv/ prefixes \"../../\".",
+ "notes": [
+  "Personal footage only: no client work. Category = what the footage shows and who she wants to film for.",
+  "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+  "Colour is hers: frames were only cropped, scaled down (never up) and converted to 30 fps; no grading, no denoise.",
+  "Showreels are DRAFTS cut from her material (the page says «черновой монтаж»); the EDL for DaVinci is in source/disk2-notes.md and in each reel entry. Needs her sign-off and, ideally, her own music.",
+  "No burned-in captions on the page: mountain-dome is cropped below her Instagram caption; almaty-dacha is withdrawn until a clean export arrives.",
+  "Clips: 1920x1080 for horizontal sources, native size for vertical ones (Instagram downloads 720x1280, the dome crop 540x960, the «Ведьмин час» shoot 1080x1920). Loops: 360 px for small cards, -lg (720/540 px) for large ones.",
+  "Rebuild: python3 scripts/video_media.py (needs source/disk2/), OG: node scripts/video-og.mjs."
+ ],
+ "groups": [
+  {
+   "id": "hospitality",
+   "title": {
+    "ru": "Отдых и путешествия",
+    "en": "Hospitality & Tourism"
+   }
+  },
+  {
+   "id": "lifestyle",
+   "title": {
+    "ru": "Лайфстайл и места",
+    "en": "Lifestyle & Places"
+   }
+  },
+  {
+   "id": "brands",
+   "title": {
+    "ru": "Бренды и предметы",
+    "en": "Brands & Products"
+   }
+  },
+  {
+   "id": "nature",
+   "title": {
+    "ru": "Природа и животные",
+    "en": "Nature & Animals"
+   }
+  }
+ ],
+ "layout": {
+  "_note": "Where stills appear (ids from \"stills\"). Every frame has one home on the page and none is also a card poster. gallery_rows: each inner list is one row of the Kadry gallery; widths follow each frame's proportions. approach_still: the tall frame beside the Approach statements (shown 4:5). instagram_strip: 3 frames that are not on the page (moments outside the published cuts), 4:5 tiles in the Instagram block. cv_strip: 5 square frames on the CV (high contrast, print well). lake-from-above is the og.jpg background (scripts/video-og.mjs).",
+  "approach_still": "river-path",
+  "gallery_rows": [
+   [
+    "valley",
+    "mallow"
+   ],
+   [
+    "lupines",
+    "rock-sky",
+    "city-peaks"
+   ]
+  ],
+  "instagram_strip": [
+   "wreath",
+   "dog-portrait",
+   "lake-steps"
+  ],
+  "cv_strip": [
+   "candle-hand",
+   "dome-view",
+   "mallow",
+   "rock-sky",
+   "camper-bunting"
+  ]
+ },
+ "favicon": [
+  {
+   "rel": "icon",
+   "href": "../assets/brand/favicon.svg",
+   "type": "image/svg+xml"
+  },
+  {
+   "rel": "icon",
+   "href": "../assets/brand/favicon-32.png",
+   "sizes": "32x32",
+   "type": "image/png"
+  },
+  {
+   "rel": "apple-touch-icon",
+   "href": "../assets/brand/apple-touch-icon.png"
+  }
+ ],
+ "favicon_note": "Reuses site 1 files in docs/assets/brand/ (not duplicated). href is relative to docs/video/; add one more \"../\" per level deeper.",
+ "og": {
+  "ru": {
+   "path": "docs/video/assets/og.jpg",
+   "url": "assets/og.jpg",
+   "width": 1200,
+   "height": 630,
+   "bytes": 130691,
+   "duration": null,
+   "format": "jpg",
+   "alt": "Бирюзовое горное озеро сверху и имя: Алиса Макаренко, видеограф, Алматы"
+  },
+  "en": {
+   "path": "docs/video/assets/og-en.jpg",
+   "url": "assets/og-en.jpg",
+   "width": 1200,
+   "height": 630,
+   "bytes": 130189,
+   "duration": null,
+   "format": "jpg",
+   "alt": "A turquoise mountain lake from above with the name: Alisa Makarenko, videographer, Almaty"
+  }
+ },
+ "showreels": [
+  {
+   "id": "showreel-wide",
+   "kind": "showreel",
+   "draft": true,
+   "muted": true,
+   "muted_reason": "Silent by design: no music is licensed. She can lay her own track in DaVinci from the EDL.",
+   "encode": "vbr3415k",
+   "poster_t_in_reel": 14.0,
+   "files": {
+    "video": {
+     "path": "docs/video/assets/showreel/showreel-wide.mp4",
+     "url": "assets/showreel/showreel-wide.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 15140595,
+     "duration": 34.9,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/showreel-wide-poster.jpg",
+      "url": "assets/showreel/showreel-wide-poster.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 392929,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/showreel-wide-poster.webp",
+      "url": "assets/showreel/showreel-wide-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 289584,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_small": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/showreel-wide-poster-960.jpg",
+      "url": "assets/showreel/showreel-wide-poster-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 101843,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/showreel-wide-poster-960.webp",
+      "url": "assets/showreel/showreel-wide-poster-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 73476,
+      "duration": null,
+      "format": "webp"
+     }
+    }
+   },
+   "edl": [
+    {
+     "shot": 1,
+     "layout": "vertical source at full height on the dark matte",
+     "duration": 3.3,
+     "file": "source/disk2/product-vch.mov",
+     "original_name": "_предметка, самое важное, для ВЧ.mov",
+     "in": 0.3,
+     "out": 3.6,
+     "crop": null
+    },
+    {
+     "shot": 2,
+     "layout": "vertical source at full height on the dark matte",
+     "duration": 2.5,
+     "file": "source/disk2/travel-4.mp4",
+     "original_name": "тревел4.mp4",
+     "in": 11.65,
+     "out": 14.15,
+     "crop": "crop=552:980:84:300"
+    },
+    {
+     "shot": 3,
+     "layout": "full frame",
+     "duration": 3.25,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 32.85,
+     "out": 36.1,
+     "crop": "crop=1904:1072"
+    },
+    {
+     "shot": 4,
+     "layout": "vertical source at full height on the dark matte",
+     "duration": 1.87,
+     "file": "source/disk2/cabin-1.mp4",
+     "original_name": "домик для отдыха.mp4",
+     "in": 2.2,
+     "out": 4.07,
+     "crop": null
+    },
+    {
+     "shot": 5,
+     "layout": "vertical source at full height on the dark matte",
+     "duration": 1.95,
+     "file": "source/disk2/location-2.mp4",
+     "original_name": "локация2.mp4",
+     "in": 0.0,
+     "out": 1.95,
+     "crop": null
+    },
+    {
+     "shot": 6,
+     "layout": "full frame",
+     "duration": 2.8,
+     "file": "source/disk2/travel-3.mp4",
+     "original_name": "тревел3.mp4",
+     "in": 0.2,
+     "out": 3.0,
+     "crop": null
+    },
+    {
+     "shot": 7,
+     "layout": "full frame",
+     "duration": 1.6,
+     "file": "source/disk2/lifestyle-3.mp4",
+     "original_name": "лайфстайл3.mp4",
+     "in": 10.1,
+     "out": 11.7,
+     "crop": null
+    },
+    {
+     "shot": 8,
+     "layout": "full frame",
+     "duration": 3.0,
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "in": 14.3,
+     "out": 17.3,
+     "crop": null
+    },
+    {
+     "shot": 9,
+     "layout": "full frame",
+     "duration": 2.5,
+     "file": "source/disk2/festival.mp4",
+     "original_name": "фестиваль.mp4",
+     "in": 31.0,
+     "out": 33.5,
+     "crop": null
+    },
+    {
+     "shot": 10,
+     "layout": "full frame",
+     "duration": 1.0,
+     "file": "source/disk2/product.mp4",
+     "original_name": "предметка.mp4",
+     "in": 10.25,
+     "out": 11.25,
+     "crop": null
+    },
+    {
+     "shot": 11,
+     "layout": "full frame",
+     "duration": 2.45,
+     "file": "source/disk2/product.mp4",
+     "original_name": "предметка.mp4",
+     "in": 6.75,
+     "out": 9.2,
+     "crop": null
+    },
+    {
+     "shot": 12,
+     "layout": "vertical source at full height on the dark matte",
+     "duration": 2.05,
+     "file": "source/disk2/product-vch.mov",
+     "original_name": "_предметка, самое важное, для ВЧ.mov",
+     "in": 11.45,
+     "out": 13.5,
+     "crop": null
+    },
+    {
+     "shot": 13,
+     "layout": "full frame",
+     "duration": 2.0,
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "in": 11.95,
+     "out": 13.95,
+     "crop": null
+    },
+    {
+     "shot": 14,
+     "layout": "full frame",
+     "duration": 2.05,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 8.55,
+     "out": 10.6,
+     "crop": "crop=1904:1072"
+    },
+    {
+     "shot": 15,
+     "layout": "end card",
+     "duration": 2.6,
+     "file": "source/reel-card-*.png (scripts/reel-card.mjs)"
+    }
+   ],
+   "alt": {
+    "ru": "Шоурил: горы, озёра, детали, животные и предметы из личной съёмки Алисы",
+    "en": "Showreel: mountains, lakes, details, animals and objects from Alisa's personal footage"
+   }
+  },
+  {
+   "id": "showreel-vertical",
+   "kind": "showreel",
+   "draft": true,
+   "muted": true,
+   "muted_reason": "Silent by design: no music is licensed. She can lay her own track in DaVinci from the EDL.",
+   "encode": "vbr3215k",
+   "poster_t_in_reel": 10.0,
+   "files": {
+    "video": {
+     "path": "docs/video/assets/showreel/showreel-vertical.mp4",
+     "url": "assets/showreel/showreel-vertical.mp4",
+     "width": 1080,
+     "height": 1920,
+     "bytes": 15077130,
+     "duration": 37.07,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/showreel-vertical-poster.jpg",
+      "url": "assets/showreel/showreel-vertical-poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 259522,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/showreel-vertical-poster.webp",
+      "url": "assets/showreel/showreel-vertical-poster.webp",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 141242,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_small": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/showreel-vertical-poster-540.jpg",
+      "url": "assets/showreel/showreel-vertical-poster-540.jpg",
+      "width": 540,
+      "height": 960,
+      "bytes": 85061,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/showreel-vertical-poster-540.webp",
+      "url": "assets/showreel/showreel-vertical-poster-540.webp",
+      "width": 540,
+      "height": 960,
+      "bytes": 52532,
+      "duration": null,
+      "format": "webp"
+     }
+    }
+   },
+   "edl": [
+    {
+     "shot": 1,
+     "layout": "full frame",
+     "duration": 2.5,
+     "file": "source/disk2/travel-4.mp4",
+     "original_name": "тревел4.mp4",
+     "in": 11.65,
+     "out": 14.15,
+     "crop": "crop=552:980:84:300"
+    },
+    {
+     "shot": 2,
+     "layout": "full frame",
+     "duration": 2.45,
+     "file": "source/disk2/travel-4.mp4",
+     "original_name": "тревел4.mp4",
+     "in": 9.15,
+     "out": 11.6,
+     "crop": "crop=552:980:84:300"
+    },
+    {
+     "shot": 3,
+     "layout": "full frame",
+     "duration": 1.87,
+     "file": "source/disk2/cabin-1.mp4",
+     "original_name": "домик для отдыха.mp4",
+     "in": 2.2,
+     "out": 4.07,
+     "crop": null
+    },
+    {
+     "shot": 4,
+     "layout": "full frame",
+     "duration": 1.95,
+     "file": "source/disk2/location-2.mp4",
+     "original_name": "локация2.mp4",
+     "in": 0.0,
+     "out": 1.95,
+     "crop": null
+    },
+    {
+     "shot": 5,
+     "layout": "full frame",
+     "duration": 3.5,
+     "file": "source/disk2/product-vch.mov",
+     "original_name": "_предметка, самое важное, для ВЧ.mov",
+     "in": 0.3,
+     "out": 3.8,
+     "crop": null
+    },
+    {
+     "shot": 6,
+     "layout": "full frame",
+     "duration": 2.05,
+     "file": "source/disk2/product-vch.mov",
+     "original_name": "_предметка, самое важное, для ВЧ.mov",
+     "in": 11.45,
+     "out": 13.5,
+     "crop": null
+    },
+    {
+     "shot": 7,
+     "layout": "full frame",
+     "duration": 3.0,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 32.85,
+     "out": 35.85,
+     "crop": "crop=604:1072:658:0"
+    },
+    {
+     "shot": 8,
+     "layout": "full frame",
+     "duration": 2.8,
+     "file": "source/disk2/travel-3.mp4",
+     "original_name": "тревел3.mp4",
+     "in": 0.2,
+     "out": 3.0,
+     "crop": "crop=608:1080:424:0"
+    },
+    {
+     "shot": 9,
+     "layout": "full frame",
+     "duration": 3.0,
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "in": 14.3,
+     "out": 17.3,
+     "crop": "crop=850:1512:918:0"
+    },
+    {
+     "shot": 10,
+     "layout": "full frame",
+     "duration": 2.0,
+     "file": "source/disk2/lifestyle-3.mp4",
+     "original_name": "лайфстайл3.mp4",
+     "in": 10.1,
+     "out": 12.1,
+     "crop": "crop=608:1080:272:0"
+    },
+    {
+     "shot": 11,
+     "layout": "full frame",
+     "duration": 2.5,
+     "file": "source/disk2/festival.mp4",
+     "original_name": "фестиваль.mp4",
+     "in": 31.0,
+     "out": 33.5,
+     "crop": "crop=608:1080:656:0"
+    },
+    {
+     "shot": 12,
+     "layout": "full frame",
+     "duration": 2.45,
+     "file": "source/disk2/product.mp4",
+     "original_name": "предметка.mp4",
+     "in": 6.75,
+     "out": 9.2,
+     "crop": "crop=850:1512:1080:0"
+    },
+    {
+     "shot": 13,
+     "layout": "full frame",
+     "duration": 2.4,
+     "file": "source/disk2/travel-2.mp4",
+     "original_name": "тревел2.mp4",
+     "in": 7.6,
+     "out": 10.0,
+     "crop": "crop=720:1280:1368:2560"
+    },
+    {
+     "shot": 14,
+     "layout": "full frame",
+     "duration": 2.05,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 8.55,
+     "out": 10.6,
+     "crop": "crop=604:1072:658:0"
+    },
+    {
+     "shot": 15,
+     "layout": "end card",
+     "duration": 2.6,
+     "file": "source/reel-card-*.png (scripts/reel-card.mjs)"
+    }
+   ],
+   "alt": {
+    "ru": "Шоурил: горы, озёра, детали, животные и предметы из личной съёмки Алисы",
+    "en": "Showreel: mountains, lakes, details, animals and objects from Alisa's personal footage"
+   }
+  },
+  {
+   "id": "hero-wide",
+   "kind": "hero-loop",
+   "draft": true,
+   "muted": true,
+   "muted_reason": "Silent by design: no music is licensed. She can lay her own track in DaVinci from the EDL.",
+   "encode": "vbr1321k",
+   "poster_t_in_reel": 1.5,
+   "files": {
+    "video": {
+     "path": "docs/video/assets/showreel/hero-wide.mp4",
+     "url": "assets/showreel/hero-wide.mp4",
+     "width": 1280,
+     "height": 720,
+     "bytes": 2189587,
+     "duration": 12.97,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/hero-wide-poster.jpg",
+      "url": "assets/showreel/hero-wide-poster.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 222261,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/hero-wide-poster.webp",
+      "url": "assets/showreel/hero-wide-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 170134,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_small": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/hero-wide-poster-960.jpg",
+      "url": "assets/showreel/hero-wide-poster-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 126131,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/hero-wide-poster-960.webp",
+      "url": "assets/showreel/hero-wide-poster-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 98798,
+      "duration": null,
+      "format": "webp"
+     }
+    }
+   },
+   "edl": [
+    {
+     "shot": 1,
+     "layout": "full frame",
+     "duration": 3.25,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 32.85,
+     "out": 36.1,
+     "crop": "crop=1904:1072"
+    },
+    {
+     "shot": 2,
+     "layout": "full frame",
+     "duration": 1.65,
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "in": 10.2,
+     "out": 11.85,
+     "crop": null
+    },
+    {
+     "shot": 3,
+     "layout": "full frame",
+     "duration": 3.0,
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "in": 14.3,
+     "out": 17.3,
+     "crop": null
+    },
+    {
+     "shot": 4,
+     "layout": "full frame",
+     "duration": 3.0,
+     "file": "source/disk2/festival.mp4",
+     "original_name": "фестиваль.mp4",
+     "in": 31.0,
+     "out": 34.0,
+     "crop": null
+    },
+    {
+     "shot": 5,
+     "layout": "full frame",
+     "duration": 2.05,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 8.55,
+     "out": 10.6,
+     "crop": "crop=1904:1072"
+    }
+   ],
+   "alt": {
+    "ru": "Шоурил: горы, озёра, детали, животные и предметы из личной съёмки Алисы",
+    "en": "Showreel: mountains, lakes, details, animals and objects from Alisa's personal footage"
+   }
+  },
+  {
+   "id": "hero-vertical",
+   "kind": "hero-loop",
+   "draft": true,
+   "muted": true,
+   "muted_reason": "Silent by design: no music is licensed. She can lay her own track in DaVinci from the EDL.",
+   "encode": "vbr752k",
+   "poster_t_in_reel": 1.2,
+   "files": {
+    "video": {
+     "path": "docs/video/assets/showreel/hero-vertical.mp4",
+     "url": "assets/showreel/hero-vertical.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 1007223,
+     "duration": 10.4,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/showreel/hero-vertical-poster.jpg",
+      "url": "assets/showreel/hero-vertical-poster.jpg",
+      "width": 540,
+      "height": 960,
+      "bytes": 105858,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/showreel/hero-vertical-poster.webp",
+      "url": "assets/showreel/hero-vertical-poster.webp",
+      "width": 540,
+      "height": 960,
+      "bytes": 72590,
+      "duration": null,
+      "format": "webp"
+     }
+    }
+   },
+   "edl": [
+    {
+     "shot": 1,
+     "layout": "full frame",
+     "duration": 2.5,
+     "file": "source/disk2/travel-4.mp4",
+     "original_name": "тревел4.mp4",
+     "in": 11.65,
+     "out": 14.15,
+     "crop": "crop=552:980:84:300"
+    },
+    {
+     "shot": 2,
+     "layout": "full frame",
+     "duration": 2.4,
+     "file": "source/disk2/travel-4.mp4",
+     "original_name": "тревел4.mp4",
+     "in": 6.7,
+     "out": 9.1,
+     "crop": "crop=552:980:84:300"
+    },
+    {
+     "shot": 3,
+     "layout": "full frame",
+     "duration": 3.0,
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "in": 32.85,
+     "out": 35.85,
+     "crop": "crop=604:1072:658:0"
+    },
+    {
+     "shot": 4,
+     "layout": "full frame",
+     "duration": 2.5,
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "in": 14.3,
+     "out": 16.8,
+     "crop": "crop=850:1512:918:0"
+    }
+   ],
+   "alt": {
+    "ru": "Шоурил: горы, озёра, детали, животные и предметы из личной съёмки Алисы",
+    "en": "Showreel: mountains, lakes, details, animals and objects from Alisa's personal footage"
+   }
+  }
+ ],
+ "pieces": [
+  {
+   "id": "mountain-dome",
+   "group": "hospitality",
+   "orientation": "vertical",
+   "title": {
+    "ru": "Купол с видом на горы",
+    "en": "A dome with a mountain view"
+   },
+   "caption": {
+    "ru": "Облака над долиной, малина в пледе и вид из стеклянного купола.",
+    "en": "Clouds over the valley, raspberries in a blanket and the view from a glass dome."
+   },
+   "alt": {
+    "ru": "Двое в пледах смотрят на горы из стеклянного купола",
+    "en": "Two people wrapped in blankets look at the mountains from a glass dome"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 7.47,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/mountain-dome.mp4",
+     "url": "assets/clips/mountain-dome.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 1510553,
+     "duration": 7.47,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/mountain-dome.jpg",
+      "url": "assets/posters/mountain-dome.jpg",
+      "width": 540,
+      "height": 960,
+      "bytes": 93720,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/mountain-dome.webp",
+      "url": "assets/posters/mountain-dome.webp",
+      "width": 540,
+      "height": 960,
+      "bytes": 63194,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/mountain-dome-480.jpg",
+      "url": "assets/posters/mountain-dome-480.jpg",
+      "width": 480,
+      "height": 854,
+      "bytes": 79109,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/mountain-dome-480.webp",
+      "url": "assets/posters/mountain-dome-480.webp",
+      "width": 480,
+      "height": 854,
+      "bytes": 53706,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/mountain-dome.mp4",
+     "url": "assets/loops/mountain-dome.mp4",
+     "width": 360,
+     "height": 640,
+     "bytes": 205787,
+     "duration": 4.9,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/mountain-dome-lg.mp4",
+     "url": "assets/loops/mountain-dome-lg.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 572141,
+     "duration": 4.9,
+     "format": "mp4"
+    }
+   },
+   "encode": "crf22",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/travel-4.mp4",
+      "original_name": "тревел4.mp4",
+      "in": 6.65,
+      "out": 14.1,
+      "crop": "crop=552:980:84:300"
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/travel-4.mp4",
+     "t": 12.95
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/travel-4.mp4",
+      "original_name": "тревел4.mp4",
+      "in": 9.2,
+      "out": 14.1,
+      "crop": "crop=552:980:84:300"
+     }
+    ]
+   },
+   "note": "Her Instagram edit carries a caption in the upper fifth («как ощущается жизнь в горах»); the web version is cropped below it (552x980 of 720x1280, shown at 540x960). A clean export would allow the full frame."
+  },
+  {
+   "id": "camper",
+   "group": "hospitality",
+   "orientation": "vertical",
+   "title": {
+    "ru": "Кемпер в берёзовой роще",
+    "en": "A camper in a birch grove"
+   },
+   "caption": {
+    "ru": "Гирлянды, гамак, льняные флажки и постель у окна.",
+    "en": "String lights, a hammock, linen bunting and a bed by the window."
+   },
+   "alt": {
+    "ru": "Гамак и льняные флажки между берёзами",
+    "en": "A hammock and linen bunting between birch trees"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 3.73,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/camper.mp4",
+     "url": "assets/clips/camper.mp4",
+     "width": 720,
+     "height": 1280,
+     "bytes": 1768721,
+     "duration": 3.73,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/camper.jpg",
+      "url": "assets/posters/camper.jpg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 184809,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/camper.webp",
+      "url": "assets/posters/camper.webp",
+      "width": 720,
+      "height": 1280,
+      "bytes": 129182,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/camper-480.jpg",
+      "url": "assets/posters/camper-480.jpg",
+      "width": 480,
+      "height": 854,
+      "bytes": 101149,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/camper-480.webp",
+      "url": "assets/posters/camper-480.webp",
+      "width": 480,
+      "height": 854,
+      "bytes": 75214,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/camper.mp4",
+     "url": "assets/loops/camper.mp4",
+     "width": 360,
+     "height": 640,
+     "bytes": 227458,
+     "duration": 2.4,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/camper-lg.mp4",
+     "url": "assets/loops/camper-lg.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 574251,
+     "duration": 2.4,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/cabin-1.mp4",
+      "original_name": "домик для отдыха.mp4",
+      "in": 0.0,
+      "out": 1.33,
+      "crop": null
+     },
+     {
+      "file": "source/disk2/cabin-1.mp4",
+      "original_name": "домик для отдыха.mp4",
+      "in": 2.2,
+      "out": 4.57,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/cabin-1.mp4",
+     "t": 2.6
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/cabin-1.mp4",
+      "original_name": "домик для отдыха.mp4",
+      "in": 2.2,
+      "out": 4.57,
+      "crop": null
+     }
+    ]
+   },
+   "note": "The shot with the trailer maker's logo (1.33-2.2 s) is cut out of the clip, the poster and the loop."
+  },
+  {
+   "id": "rain-house",
+   "group": "hospitality",
+   "orientation": "vertical",
+   "stacked": true,
+   "title": {
+    "ru": "Дом в дождь",
+    "en": "A house in the rain"
+   },
+   "caption": {
+    "ru": "Стеклянная стена, мокрая терраса и тыква на перилах: уют в непогоду.",
+    "en": "A glass wall, a wet terrace and a pumpkin on the railing: comfort in bad weather."
+   },
+   "alt": {
+    "ru": "Три кадра друг над другом: терраса под дождём, гостиная, деревья в тумане",
+    "en": "Three stacked frames: a terrace in the rain, a living room, trees in the fog"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 5.97,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/rain-house.mp4",
+     "url": "assets/clips/rain-house.mp4",
+     "width": 720,
+     "height": 1280,
+     "bytes": 2851229,
+     "duration": 5.97,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/rain-house.jpg",
+      "url": "assets/posters/rain-house.jpg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 253325,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/rain-house.webp",
+      "url": "assets/posters/rain-house.webp",
+      "width": 720,
+      "height": 1280,
+      "bytes": 198962,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/rain-house-480.jpg",
+      "url": "assets/posters/rain-house-480.jpg",
+      "width": 480,
+      "height": 854,
+      "bytes": 127111,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/rain-house-480.webp",
+      "url": "assets/posters/rain-house-480.webp",
+      "width": 480,
+      "height": 854,
+      "bytes": 100656,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/rain-house.mp4",
+     "url": "assets/loops/rain-house.mp4",
+     "width": 360,
+     "height": 640,
+     "bytes": 409224,
+     "duration": 5.97,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/rain-house-lg.mp4",
+     "url": "assets/loops/rain-house-lg.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 1016090,
+     "duration": 5.97,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/location-2.mp4",
+      "original_name": "локация2.mp4",
+      "in": 0.0,
+      "out": 5.95,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/location-2.mp4",
+     "t": 1.05
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/location-2.mp4",
+      "original_name": "локация2.mp4",
+      "in": 0.0,
+      "out": 5.95,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "mountain-lake",
+   "group": "hospitality",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Горное озеро",
+    "en": "Mountain lake"
+   },
+   "caption": {
+    "ru": "Тропа, деревянные ступени и бирюзовая вода: день у горного озера.",
+    "en": "A trail, wooden steps and turquoise water: a day at a mountain lake."
+   },
+   "alt": {
+    "ru": "Бирюзовое озеро между лесистых гор, вид сверху с тропы",
+    "en": "A turquoise lake between forested mountains, seen from the trail above"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 10.6,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/mountain-lake.mp4",
+     "url": "assets/clips/mountain-lake.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 5214837,
+     "duration": 10.6,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/mountain-lake.jpg",
+      "url": "assets/posters/mountain-lake.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 282803,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/mountain-lake.webp",
+      "url": "assets/posters/mountain-lake.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 154484,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/mountain-lake-480.jpg",
+      "url": "assets/posters/mountain-lake-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 26701,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/mountain-lake-480.webp",
+      "url": "assets/posters/mountain-lake-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 18138,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/mountain-lake-960.jpg",
+      "url": "assets/posters/mountain-lake-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 97268,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/mountain-lake-960.webp",
+      "url": "assets/posters/mountain-lake-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 64808,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/mountain-lake.mp4",
+     "url": "assets/loops/mountain-lake.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 149348,
+     "duration": 5.0,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/mountain-lake-lg.mp4",
+     "url": "assets/loops/mountain-lake-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 692107,
+     "duration": 5.0,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/travel-1.mp4",
+      "original_name": "тревел.mp4",
+      "in": 0.0,
+      "out": 10.6,
+      "crop": "crop=1904:1072"
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/travel-1.mp4",
+     "t": 9.35
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/travel-1.mp4",
+      "original_name": "тревел.mp4",
+      "in": 5.6,
+      "out": 10.6,
+      "crop": "crop=1904:1072"
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "canyon",
+   "group": "hospitality",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Каньон в степи",
+    "en": "A canyon in the steppe"
+   },
+   "caption": {
+    "ru": "Красные скалы, сухие травы и полуденный свет.",
+    "en": "Red rock, dry grass and midday light."
+   },
+   "alt": {
+    "ru": "Красные скалы каньона под ярким небом",
+    "en": "Red canyon rocks under a bright sky"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 8.9,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/canyon.mp4",
+     "url": "assets/clips/canyon.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 4395282,
+     "duration": 8.9,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/canyon.jpg",
+      "url": "assets/posters/canyon.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 384402,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/canyon.webp",
+      "url": "assets/posters/canyon.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 247844,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/canyon-480.jpg",
+      "url": "assets/posters/canyon-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 33415,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/canyon-480.webp",
+      "url": "assets/posters/canyon-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 24398,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/canyon-960.jpg",
+      "url": "assets/posters/canyon-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 124709,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/canyon-960.webp",
+      "url": "assets/posters/canyon-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 91212,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/canyon.mp4",
+     "url": "assets/loops/canyon.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 115740,
+     "duration": 5.4,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/canyon-lg.mp4",
+     "url": "assets/loops/canyon-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 600039,
+     "duration": 5.4,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/travel-3.mp4",
+      "original_name": "тревел3.mp4",
+      "in": 0.0,
+      "out": 8.9,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/travel-3.mp4",
+     "t": 6.25
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/travel-3.mp4",
+      "original_name": "тревел3.mp4",
+      "in": 0.2,
+      "out": 5.6,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "lake-reading",
+   "group": "lifestyle",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Книга у озера",
+    "en": "A book by the lake"
+   },
+   "caption": {
+    "ru": "Термос, книга с картой, вороны на песке и горы за водой.",
+    "en": "A thermos, a book with a map, crows on the sand and mountains across the water."
+   },
+   "alt": {
+    "ru": "Рука с кружкой из термоса, плед и озеро",
+    "en": "A hand holding a thermos cup, a blanket and the lake"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 11.77,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/lake-reading.mp4",
+     "url": "assets/clips/lake-reading.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 5682438,
+     "duration": 11.77,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/lake-reading.jpg",
+      "url": "assets/posters/lake-reading.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 235997,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/lake-reading.webp",
+      "url": "assets/posters/lake-reading.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 110656,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/lake-reading-480.jpg",
+      "url": "assets/posters/lake-reading-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 28934,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/lake-reading-480.webp",
+      "url": "assets/posters/lake-reading-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 19300,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/lake-reading-960.jpg",
+      "url": "assets/posters/lake-reading-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 90600,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/lake-reading-960.webp",
+      "url": "assets/posters/lake-reading-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 52422,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/lake-reading.mp4",
+     "url": "assets/loops/lake-reading.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 121961,
+     "duration": 4.97,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/lake-reading-lg.mp4",
+     "url": "assets/loops/lake-reading-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 512077,
+     "duration": 4.97,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/lifestyle-3.mp4",
+      "original_name": "лайфстайл3.mp4",
+      "in": 10.05,
+      "out": 21.8,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/lifestyle-3.mp4",
+     "t": 11.8
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/lifestyle-3.mp4",
+      "original_name": "лайфстайл3.mp4",
+      "in": 10.1,
+      "out": 15.05,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "lavender-garden",
+   "group": "lifestyle",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Лаванда и горы",
+    "en": "Lavender and mountains"
+   },
+   "caption": {
+    "ru": "Терраса с видом на вершины, долина с рекой, мальвы и лаванда у каменной стены.",
+    "en": "A terrace facing the peaks, a river valley, mallows and lavender by a stone wall."
+   },
+   "alt": {
+    "ru": "Кусты лаванды у каменной стены",
+    "en": "Lavender bushes by a stone wall"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 9.4,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/lavender-garden.mp4",
+     "url": "assets/clips/lavender-garden.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 4395566,
+     "duration": 9.4,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/lavender-garden.jpg",
+      "url": "assets/posters/lavender-garden.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 325148,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/lavender-garden.webp",
+      "url": "assets/posters/lavender-garden.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 188232,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/lavender-garden-480.jpg",
+      "url": "assets/posters/lavender-garden-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 39974,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/lavender-garden-480.webp",
+      "url": "assets/posters/lavender-garden-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 32668,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/lavender-garden-960.jpg",
+      "url": "assets/posters/lavender-garden-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 121835,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/lavender-garden-960.webp",
+      "url": "assets/posters/lavender-garden-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 87116,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/lavender-garden.mp4",
+     "url": "assets/loops/lavender-garden.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 315718,
+     "duration": 4.07,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/lavender-garden-lg.mp4",
+     "url": "assets/loops/lavender-garden-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 1010572,
+     "duration": 4.07,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/lifestyle-4.mp4",
+      "original_name": "лайфстайл4.mp4",
+      "in": 8.85,
+      "out": 18.25,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/lifestyle-4.mp4",
+     "t": 15.55
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/lifestyle-4.mp4",
+      "original_name": "лайфстайл4.mp4",
+      "in": 14.24,
+      "out": 18.28,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "summer-festival",
+   "group": "lifestyle",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Летний праздник у воды",
+    "en": "A summer festival by the water"
+   },
+   "caption": {
+    "ru": "Свет сквозь иву, венки на воде, цветы в отражениях.",
+    "en": "Light through the willow, wreaths on the water, flowers in reflections."
+   },
+   "alt": {
+    "ru": "Люди в белом у пруда, лучи солнца сквозь иву",
+    "en": "People in white by a pond, sun rays through a willow"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 11.77,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/summer-festival.mp4",
+     "url": "assets/clips/summer-festival.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 5786008,
+     "duration": 11.77,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/summer-festival.jpg",
+      "url": "assets/posters/summer-festival.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 201730,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/summer-festival.webp",
+      "url": "assets/posters/summer-festival.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 95560,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/summer-festival-480.jpg",
+      "url": "assets/posters/summer-festival-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 24919,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/summer-festival-480.webp",
+      "url": "assets/posters/summer-festival-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 15842,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/summer-festival-960.jpg",
+      "url": "assets/posters/summer-festival-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 79441,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/summer-festival-960.webp",
+      "url": "assets/posters/summer-festival-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 46414,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/summer-festival.mp4",
+     "url": "assets/loops/summer-festival.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 125657,
+     "duration": 5.0,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/summer-festival-lg.mp4",
+     "url": "assets/loops/summer-festival-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 680556,
+     "duration": 5.0,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/festival.mp4",
+      "original_name": "фестиваль.mp4",
+      "in": 15.6,
+      "out": 22.85,
+      "crop": null
+     },
+     {
+      "file": "source/disk2/festival.mp4",
+      "original_name": "фестиваль.mp4",
+      "in": 26.35,
+      "out": 30.85,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/festival.mp4",
+     "t": 18.85
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/festival.mp4",
+      "original_name": "фестиваль.mp4",
+      "in": 16.0,
+      "out": 21.0,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "winter-triptych",
+   "group": "lifestyle",
+   "orientation": "vertical",
+   "stacked": true,
+   "title": {
+    "ru": "Зима в трёх кадрах",
+    "en": "Winter in three frames"
+   },
+   "caption": {
+    "ru": "Солнце в зимнем лесу, иней на шапке, снег на хвое.",
+    "en": "Sun in a winter forest, frost on a knitted hat, snow on pine needles."
+   },
+   "alt": {
+    "ru": "Три кадра друг над другом: заснеженный лес, глаз под вязаной шапкой, ветка в снегу",
+    "en": "Three stacked frames: a snowy forest, an eye under a knitted hat, a snowy branch"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 4.1,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/winter-triptych.mp4",
+     "url": "assets/clips/winter-triptych.mp4",
+     "width": 720,
+     "height": 1280,
+     "bytes": 1653319,
+     "duration": 4.1,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/winter-triptych.jpg",
+      "url": "assets/posters/winter-triptych.jpg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 244200,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/winter-triptych.webp",
+      "url": "assets/posters/winter-triptych.webp",
+      "width": 720,
+      "height": 1280,
+      "bytes": 192696,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/winter-triptych-480.jpg",
+      "url": "assets/posters/winter-triptych-480.jpg",
+      "width": 480,
+      "height": 854,
+      "bytes": 126896,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/winter-triptych-480.webp",
+      "url": "assets/posters/winter-triptych-480.webp",
+      "width": 480,
+      "height": 854,
+      "bytes": 103590,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/winter-triptych.mp4",
+     "url": "assets/loops/winter-triptych.mp4",
+     "width": 360,
+     "height": 640,
+     "bytes": 382353,
+     "duration": 4.1,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/winter-triptych-lg.mp4",
+     "url": "assets/loops/winter-triptych-lg.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 1081772,
+     "duration": 4.1,
+     "format": "mp4"
+    }
+   },
+   "encode": "crf22",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/lifestyle-1.mp4",
+      "original_name": "лайфстайл.mp4",
+      "in": 0.0,
+      "out": 4.2,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/lifestyle-1.mp4",
+     "t": 2.0
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/lifestyle-1.mp4",
+      "original_name": "лайфстайл.mp4",
+      "in": 0.0,
+      "out": 4.2,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "journal",
+   "group": "brands",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Блокнот и подвески",
+    "en": "A journal and its charms"
+   },
+   "caption": {
+    "ru": "Кожаная обложка, подвески, страницы с рисунками и кошка, которая всё проверяет первой.",
+    "en": "A leather cover, charms, drawn pages, and a cat who checks everything first."
+   },
+   "alt": {
+    "ru": "Подвеска со звёздами на кожаном блокноте",
+    "en": "A star charm on a leather journal"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 14.6,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/journal.mp4",
+     "url": "assets/clips/journal.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 7516580,
+     "duration": 14.6,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/journal.jpg",
+      "url": "assets/posters/journal.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 180768,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/journal.webp",
+      "url": "assets/posters/journal.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 75196,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/journal-480.jpg",
+      "url": "assets/posters/journal-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 26625,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/journal-480.webp",
+      "url": "assets/posters/journal-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 16748,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/journal-960.jpg",
+      "url": "assets/posters/journal-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 74427,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/journal-960.webp",
+      "url": "assets/posters/journal-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 38570,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/journal.mp4",
+     "url": "assets/loops/journal.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 89599,
+     "duration": 4.47,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/journal-lg.mp4",
+     "url": "assets/loops/journal-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 317368,
+     "duration": 4.47,
+     "format": "mp4"
+    }
+   },
+   "encode": "crf22",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/product.mp4",
+      "original_name": "предметка.mp4",
+      "in": 0.0,
+      "out": 14.6,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/product.mp4",
+     "t": 10.9
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/product.mp4",
+      "original_name": "предметка.mp4",
+      "in": 6.75,
+      "out": 11.2,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "vch-books",
+   "group": "brands",
+   "orientation": "vertical",
+   "title": {
+    "ru": "Книги при свечах",
+    "en": "Books by candlelight"
+   },
+   "caption": {
+    "ru": "Предметная съёмка, которую я сделала для своего шоу «Ведьмин час».",
+    "en": "A product shoot I made for my own show, Witching Hour."
+   },
+   "alt": {
+    "ru": "Рука в кружевной манжете берёт книгу с полки при свечах",
+    "en": "A hand in a lace cuff takes a book from a candle-lit shelf"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 14.5,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/vch-books.mp4",
+     "url": "assets/clips/vch-books.mp4",
+     "width": 1080,
+     "height": 1920,
+     "bytes": 6908653,
+     "duration": 14.5,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/vch-books.jpg",
+      "url": "assets/posters/vch-books.jpg",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 248924,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/vch-books.webp",
+      "url": "assets/posters/vch-books.webp",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 129834,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/vch-books-480.jpg",
+      "url": "assets/posters/vch-books-480.jpg",
+      "width": 480,
+      "height": 854,
+      "bytes": 71538,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/vch-books-480.webp",
+      "url": "assets/posters/vch-books-480.webp",
+      "width": 480,
+      "height": 854,
+      "bytes": 44188,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/vch-books-960.jpg",
+      "url": "assets/posters/vch-books-960.jpg",
+      "width": 960,
+      "height": 1706,
+      "bytes": 220569,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/vch-books-960.webp",
+      "url": "assets/posters/vch-books-960.webp",
+      "width": 960,
+      "height": 1706,
+      "bytes": 117392,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/vch-books.mp4",
+     "url": "assets/loops/vch-books.mp4",
+     "width": 360,
+     "height": 640,
+     "bytes": 220848,
+     "duration": 4.6,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/vch-books-lg.mp4",
+     "url": "assets/loops/vch-books-lg.mp4",
+     "width": 540,
+     "height": 960,
+     "bytes": 649266,
+     "duration": 4.6,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/product-vch.mov",
+      "original_name": "_предметка, самое важное, для ВЧ.mov",
+      "in": 0.0,
+      "out": 4.98,
+      "crop": null
+     },
+     {
+      "file": "source/disk2/product-vch.mov",
+      "original_name": "_предметка, самое важное, для ВЧ.mov",
+      "in": 8.83,
+      "out": 13.55,
+      "crop": null
+     },
+     {
+      "file": "source/disk2/product-vch.mov",
+      "original_name": "_предметка, самое важное, для ВЧ.mov",
+      "in": 15.85,
+      "out": 20.6,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/product-vch.mov",
+     "t": 1.75
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/product-vch.mov",
+      "original_name": "_предметка, самое важное, для ВЧ.mov",
+      "in": 0.3,
+      "out": 4.9,
+      "crop": null
+     }
+    ]
+   },
+   "note": "Shows published book editions. The two shots where a cover title is the subject (4.98-8.83, 13.55-15.85) are cut; the poster is the hand at the shelf."
+  },
+  {
+   "id": "dog-details",
+   "group": "nature",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Собака крупным планом",
+    "en": "A dog, up close"
+   },
+   "caption": {
+    "ru": "Нос, глаз, лапа на досках, шерсть в траве.",
+    "en": "A nose, an eye, a paw on the boards, fur in the grass."
+   },
+   "alt": {
+    "ru": "Глаз светлой собаки крупным планом",
+    "en": "Close-up of a light-coated dog's eye"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 13.1,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/dog-details.mp4",
+     "url": "assets/clips/dog-details.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 6262898,
+     "duration": 13.1,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/dog-details.jpg",
+      "url": "assets/posters/dog-details.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 240731,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/dog-details.webp",
+      "url": "assets/posters/dog-details.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 116558,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/dog-details-480.jpg",
+      "url": "assets/posters/dog-details-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 27724,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/dog-details-480.webp",
+      "url": "assets/posters/dog-details-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 19844,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/dog-details-960.jpg",
+      "url": "assets/posters/dog-details-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 93048,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/dog-details-960.webp",
+      "url": "assets/posters/dog-details-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 58734,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/dog-details.mp4",
+     "url": "assets/loops/dog-details.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 107677,
+     "duration": 4.97,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/dog-details-lg.mp4",
+     "url": "assets/loops/dog-details-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 479556,
+     "duration": 4.97,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/animals-2.mp4",
+      "original_name": "животные2.mp4",
+      "in": 0.0,
+      "out": 13.1,
+      "crop": "crop=1904:1072"
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/animals-2.mp4",
+     "t": 5.65
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/animals-2.mp4",
+      "original_name": "животные2.mp4",
+      "in": 4.95,
+      "out": 9.9,
+      "crop": "crop=1904:1072"
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "cat-details",
+   "group": "nature",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Кошка в деталях",
+    "en": "A cat in detail"
+   },
+   "caption": {
+    "ru": "Усы, лапы и хвост: домашний портрет.",
+    "en": "Whiskers, paws and a tail: a portrait at home."
+   },
+   "alt": {
+    "ru": "Трёхцветная кошка крупным планом",
+    "en": "A calico cat in close-up"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 14.27,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/cat-details.mp4",
+     "url": "assets/clips/cat-details.mp4",
+     "width": 1920,
+     "height": 816,
+     "bytes": 5885892,
+     "duration": 14.27,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/cat-details.jpg",
+      "url": "assets/posters/cat-details.jpg",
+      "width": 1920,
+      "height": 816,
+      "bytes": 190365,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/cat-details.webp",
+      "url": "assets/posters/cat-details.webp",
+      "width": 1920,
+      "height": 816,
+      "bytes": 94440,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/cat-details-480.jpg",
+      "url": "assets/posters/cat-details-480.jpg",
+      "width": 480,
+      "height": 204,
+      "bytes": 19849,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/cat-details-480.webp",
+      "url": "assets/posters/cat-details-480.webp",
+      "width": 480,
+      "height": 204,
+      "bytes": 13466,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/cat-details-960.jpg",
+      "url": "assets/posters/cat-details-960.jpg",
+      "width": 960,
+      "height": 408,
+      "bytes": 70540,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/cat-details-960.webp",
+      "url": "assets/posters/cat-details-960.webp",
+      "width": 960,
+      "height": 408,
+      "bytes": 45606,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/cat-details.mp4",
+     "url": "assets/loops/cat-details.mp4",
+     "width": 360,
+     "height": 152,
+     "bytes": 65223,
+     "duration": 4.97,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/cat-details-lg.mp4",
+     "url": "assets/loops/cat-details-lg.mp4",
+     "width": 720,
+     "height": 306,
+     "bytes": 292049,
+     "duration": 4.97,
+     "format": "mp4"
+    }
+   },
+   "encode": "crf22",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/animals-1.mp4",
+      "original_name": "животные.mp4",
+      "in": 0.0,
+      "out": 14.25,
+      "crop": "crop=1920:816:0:0"
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/animals-1.mp4",
+     "t": 2.5
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/animals-1.mp4",
+      "original_name": "животные.mp4",
+      "in": 1.55,
+      "out": 6.5,
+      "crop": "crop=1920:816:0:0"
+     }
+    ]
+   },
+   "note": "Cropped to 2.35:1 (top of frame) to remove the burned-in caption «a million little details to love»."
+  },
+  {
+   "id": "cat-in-grass",
+   "group": "nature",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Кошка в траве",
+    "en": "A cat in the grass"
+   },
+   "caption": {
+    "ru": "Прогулка на шлейке: высокая трава и мягкий приглушённый свет.",
+    "en": "A walk on a harness: tall grass and soft, muted light."
+   },
+   "alt": {
+    "ru": "Пушистая трёхцветная кошка лежит в траве",
+    "en": "A fluffy calico cat lying in the grass"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 9.33,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/cat-in-grass.mp4",
+     "url": "assets/clips/cat-in-grass.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 4619166,
+     "duration": 9.33,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/cat-in-grass.jpg",
+      "url": "assets/posters/cat-in-grass.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 203111,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/cat-in-grass.webp",
+      "url": "assets/posters/cat-in-grass.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 88534,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/cat-in-grass-480.jpg",
+      "url": "assets/posters/cat-in-grass-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 26321,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/cat-in-grass-480.webp",
+      "url": "assets/posters/cat-in-grass-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 16346,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/cat-in-grass-960.jpg",
+      "url": "assets/posters/cat-in-grass-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 78950,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/cat-in-grass-960.webp",
+      "url": "assets/posters/cat-in-grass-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 43338,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/cat-in-grass.mp4",
+     "url": "assets/loops/cat-in-grass.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 161264,
+     "duration": 5.07,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/cat-in-grass-lg.mp4",
+     "url": "assets/loops/cat-in-grass-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 651394,
+     "duration": 5.07,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/lifestyle-5.mp4",
+      "original_name": "лайфстайл5.mp4",
+      "in": 1.55,
+      "out": 4.5,
+      "crop": "crop=1908:1074"
+     },
+     {
+      "file": "source/disk2/lifestyle-5.mp4",
+      "original_name": "лайфстайл5.mp4",
+      "in": 6.55,
+      "out": 12.9,
+      "crop": "crop=1908:1074"
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/lifestyle-5.mp4",
+     "t": 11.25
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/lifestyle-5.mp4",
+      "original_name": "лайфстайл5.mp4",
+      "in": 7.8,
+      "out": 12.85,
+      "crop": "crop=1908:1074"
+     }
+    ]
+   },
+   "note": null
+  },
+  {
+   "id": "taiga-river",
+   "group": "nature",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "Река в тайге",
+    "en": "A river in the taiga"
+   },
+   "caption": {
+    "ru": "Сосны, дымка над водой и собака, которая идёт первой.",
+    "en": "Pines, haze over the water and a dog leading the way."
+   },
+   "alt": {
+    "ru": "Светлая собака на скале над широкой рекой",
+    "en": "A light-coated dog on a rock above a wide river"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 9.6,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/taiga-river.mp4",
+     "url": "assets/clips/taiga-river.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 4570437,
+     "duration": 9.6,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/taiga-river.jpg",
+      "url": "assets/posters/taiga-river.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 523590,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/taiga-river.webp",
+      "url": "assets/posters/taiga-river.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 398402,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/taiga-river-480.jpg",
+      "url": "assets/posters/taiga-river-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 46327,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/taiga-river-480.webp",
+      "url": "assets/posters/taiga-river-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 40836,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/taiga-river-960.jpg",
+      "url": "assets/posters/taiga-river-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 175685,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/taiga-river-960.webp",
+      "url": "assets/posters/taiga-river-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 150684,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/taiga-river.mp4",
+     "url": "assets/loops/taiga-river.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 166303,
+     "duration": 4.8,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/taiga-river-lg.mp4",
+     "url": "assets/loops/taiga-river-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 1048803,
+     "duration": 4.8,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/travel-2.mp4",
+      "original_name": "тревел2.mp4",
+      "in": 0.05,
+      "out": 2.45,
+      "crop": "crop=2160:1216:0:32"
+     },
+     {
+      "file": "source/disk2/travel-2.mp4",
+      "original_name": "тревел2.mp4",
+      "in": 0.05,
+      "out": 2.45,
+      "crop": "crop=2160:1216:0:2592"
+     },
+     {
+      "file": "source/disk2/travel-2.mp4",
+      "original_name": "тревел2.mp4",
+      "in": 7.55,
+      "out": 9.95,
+      "crop": "crop=2160:1216:0:2592"
+     },
+     {
+      "file": "source/disk2/travel-2.mp4",
+      "original_name": "тревел2.mp4",
+      "in": 12.55,
+      "out": 14.95,
+      "crop": "crop=2160:1216:0:1312"
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/travel-2.mp4",
+     "t": 8.55
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/travel-2.mp4",
+      "original_name": "тревел2.mp4",
+      "in": 0.05,
+      "out": 2.45,
+      "crop": "crop=2160:1216:0:2592"
+     },
+     {
+      "file": "source/disk2/travel-2.mp4",
+      "original_name": "тревел2.mp4",
+      "in": 7.55,
+      "out": 9.95,
+      "crop": "crop=2160:1216:0:2592"
+     }
+    ]
+   },
+   "note": "Re-cut from her 3-band stacked edit (travel-2): single bands, 16:9, no faces, no app watermark."
+  },
+  {
+   "id": "birdhouse-story",
+   "group": "nature",
+   "orientation": "horizontal",
+   "title": {
+    "ru": "История одной кормушки",
+    "en": "The story of a bird feeder"
+   },
+   "caption": {
+    "ru": "Расписная кормушка в берёзовой роще, семечки и белка.",
+    "en": "A painted bird feeder in a birch grove, seeds and a squirrel."
+   },
+   "alt": {
+    "ru": "Расписная кормушка-домик на берёзе",
+    "en": "A painted house-shaped bird feeder on a birch tree"
+   },
+   "muted": true,
+   "muted_reason": "All source clips carry a music track (beat-timed cuts; Instagram/CapCut library music audible in the spectrum). No licence, so every web file has no audio track at all.",
+   "duration": 10.27,
+   "files": {
+    "clip": {
+     "path": "docs/video/assets/clips/birdhouse-story.mp4",
+     "url": "assets/clips/birdhouse-story.mp4",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 4994510,
+     "duration": 10.27,
+     "format": "mp4"
+    },
+    "poster": {
+     "jpg": {
+      "path": "docs/video/assets/posters/birdhouse-story.jpg",
+      "url": "assets/posters/birdhouse-story.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 362419,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/birdhouse-story.webp",
+      "url": "assets/posters/birdhouse-story.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 212228,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_480": {
+     "jpg": {
+      "path": "docs/video/assets/posters/birdhouse-story-480.jpg",
+      "url": "assets/posters/birdhouse-story-480.jpg",
+      "width": 480,
+      "height": 270,
+      "bytes": 44303,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/birdhouse-story-480.webp",
+      "url": "assets/posters/birdhouse-story-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 37036,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "poster_960": {
+     "jpg": {
+      "path": "docs/video/assets/posters/birdhouse-story-960.jpg",
+      "url": "assets/posters/birdhouse-story-960.jpg",
+      "width": 960,
+      "height": 540,
+      "bytes": 140666,
+      "duration": null,
+      "format": "jpg"
+     },
+     "webp": {
+      "path": "docs/video/assets/posters/birdhouse-story-960.webp",
+      "url": "assets/posters/birdhouse-story-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 105318,
+      "duration": null,
+      "format": "webp"
+     }
+    },
+    "loop": {
+     "path": "docs/video/assets/loops/birdhouse-story.mp4",
+     "url": "assets/loops/birdhouse-story.mp4",
+     "width": 360,
+     "height": 202,
+     "bytes": 249837,
+     "duration": 4.87,
+     "format": "mp4"
+    },
+    "loop_lg": {
+     "path": "docs/video/assets/loops/birdhouse-story-lg.mp4",
+     "url": "assets/loops/birdhouse-story-lg.mp4",
+     "width": 720,
+     "height": 404,
+     "bytes": 1005908,
+     "duration": 4.87,
+     "format": "mp4"
+    }
+   },
+   "encode": "vbr3873k",
+   "source": {
+    "segments": [
+     {
+      "file": "source/disk2/story.mp4",
+      "original_name": "история.mp4",
+      "in": 31.05,
+      "out": 41.3,
+      "crop": null
+     }
+    ],
+    "poster_frame": {
+     "file": "source/disk2/story.mp4",
+     "t": 31.85
+    },
+    "loop_segments": [
+     {
+      "file": "source/disk2/story.mp4",
+      "original_name": "история.mp4",
+      "in": 32.45,
+      "out": 37.3,
+      "crop": null
+     }
+    ]
+   },
+   "note": null
+  }
+ ],
+ "stills": [
+  {
+   "id": "lake-from-above",
+   "alt": {
+    "ru": "Бирюзовое горное озеро среди елового леса, вид сверху",
+    "en": "A turquoise mountain lake in a spruce forest, seen from above"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/lake-from-above.jpg",
+     "url": "assets/stills/lake-from-above.jpg",
+     "width": 1600,
+     "height": 894,
+     "bytes": 341195,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/lake-from-above.webp",
+     "url": "assets/stills/lake-from-above.webp",
+     "width": 1920,
+     "height": 1072,
+     "bytes": 310914,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/travel-1.mp4",
+    "original_name": "тревел.mp4",
+    "t": 34.3,
+    "crop": null,
+    "source_size": [
+     1920,
+     1072
+    ]
+   }
+  },
+  {
+   "id": "valley",
+   "alt": {
+    "ru": "Зелёная долина с рекой и снежные вершины",
+    "en": "A green valley with a river and snowy peaks"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/valley.jpg",
+     "url": "assets/stills/valley.jpg",
+     "width": 1280,
+     "height": 720,
+     "bytes": 337950,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/valley.webp",
+     "url": "assets/stills/valley.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 315472,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/lifestyle-4.mp4",
+    "original_name": "лайфстайл4.mp4",
+    "t": 10.65,
+    "crop": null,
+    "source_size": [
+     2688,
+     1512
+    ]
+   }
+  },
+  {
+   "id": "mallow",
+   "alt": {
+    "ru": "Розовые мальвы на фоне гор",
+    "en": "Pink mallows against the mountains"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/mallow.jpg",
+     "url": "assets/stills/mallow.jpg",
+     "width": 2688,
+     "height": 1512,
+     "bytes": 301917,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/mallow.webp",
+     "url": "assets/stills/mallow.webp",
+     "width": 2688,
+     "height": 1512,
+     "bytes": 96986,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/lifestyle-4.mp4",
+    "original_name": "лайфстайл4.mp4",
+    "t": 12.85,
+    "crop": null,
+    "source_size": [
+     2688,
+     1512
+    ]
+   }
+  },
+  {
+   "id": "city-peaks",
+   "alt": {
+    "ru": "Заснеженные вершины над парком",
+    "en": "Snowy peaks above a park"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/city-peaks.jpg",
+     "url": "assets/stills/city-peaks.jpg",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 288440,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/city-peaks.webp",
+     "url": "assets/stills/city-peaks.webp",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 148060,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/lifestyle-3.mp4",
+    "original_name": "лайфстайл3.mp4",
+    "t": 22.1,
+    "crop": null,
+    "source_size": [
+     1920,
+     1080
+    ]
+   }
+  },
+  {
+   "id": "rock-sky",
+   "alt": {
+    "ru": "Красная скала каньона на фоне неба",
+    "en": "A red canyon rock against the sky"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/rock-sky.jpg",
+     "url": "assets/stills/rock-sky.jpg",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 345027,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/rock-sky.webp",
+     "url": "assets/stills/rock-sky.webp",
+     "width": 1920,
+     "height": 1080,
+     "bytes": 219680,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/travel-3.mp4",
+    "original_name": "тревел3.mp4",
+    "t": 8.7,
+    "crop": null,
+    "source_size": [
+     1920,
+     1080
+    ]
+   }
+  },
+  {
+   "id": "lupines",
+   "alt": {
+    "ru": "Синие полевые цветы над горным озером",
+    "en": "Blue wildflowers above a mountain lake"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/lupines.jpg",
+     "url": "assets/stills/lupines.jpg",
+     "width": 1904,
+     "height": 1072,
+     "bytes": 327464,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/lupines.webp",
+     "url": "assets/stills/lupines.webp",
+     "width": 1904,
+     "height": 1072,
+     "bytes": 175400,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/travel-1.mp4",
+    "original_name": "тревел.mp4",
+    "t": 3.85,
+    "crop": "crop=1904:1072",
+    "source_size": [
+     1904,
+     1072
+    ]
+   }
+  },
+  {
+   "id": "river-path",
+   "alt": {
+    "ru": "Тропа между соснами спускается к реке",
+    "en": "A path between pines leads down to the river"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/river-path.jpg",
+     "url": "assets/stills/river-path.jpg",
+     "width": 1024,
+     "height": 1280,
+     "bytes": 348332,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/river-path.webp",
+     "url": "assets/stills/river-path.webp",
+     "width": 1024,
+     "height": 1280,
+     "bytes": 253372,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/travel-2.mp4",
+    "original_name": "тревел2.mp4",
+    "t": 1.4,
+    "crop": "crop=1024:1280:568:2560",
+    "source_size": [
+     1024,
+     1280
+    ]
+   }
+  },
+  {
+   "id": "wreath",
+   "alt": {
+    "ru": "Венок плывёт у золотой травы",
+    "en": "A wreath floating by golden grass"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/wreath.jpg",
+     "url": "assets/stills/wreath.jpg",
+     "width": 864,
+     "height": 1080,
+     "bytes": 152998,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/wreath.webp",
+     "url": "assets/stills/wreath.webp",
+     "width": 864,
+     "height": 1080,
+     "bytes": 77928,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/festival.mp4",
+    "original_name": "фестиваль.mp4",
+    "t": 28.2,
+    "crop": "crop=864:1080:432:0",
+    "source_size": [
+     864,
+     1080
+    ]
+   }
+  },
+  {
+   "id": "dog-portrait",
+   "alt": {
+    "ru": "Светлая собака лежит в траве",
+    "en": "A light-coated dog lying in the grass"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/dog-portrait.jpg",
+     "url": "assets/stills/dog-portrait.jpg",
+     "width": 858,
+     "height": 1072,
+     "bytes": 102334,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/dog-portrait.webp",
+     "url": "assets/stills/dog-portrait.webp",
+     "width": 858,
+     "height": 1072,
+     "bytes": 45328,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/animals-2.mp4",
+    "original_name": "животные2.mp4",
+    "t": 16.05,
+    "crop": "crop=858:1072:953:0",
+    "source_size": [
+     858,
+     1072
+    ]
+   }
+  },
+  {
+   "id": "lake-steps",
+   "alt": {
+    "ru": "Деревянные ступени над горным озером",
+    "en": "Wooden steps above a mountain lake"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/lake-steps.jpg",
+     "url": "assets/stills/lake-steps.jpg",
+     "width": 858,
+     "height": 1072,
+     "bytes": 207639,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/lake-steps.webp",
+     "url": "assets/stills/lake-steps.webp",
+     "width": 858,
+     "height": 1072,
+     "bytes": 127698,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/travel-1.mp4",
+    "original_name": "тревел.mp4",
+    "t": 0.45,
+    "crop": "crop=858:1072:1011:0",
+    "source_size": [
+     858,
+     1072
+    ]
+   }
+  },
+  {
+   "id": "candle-hand",
+   "alt": {
+    "ru": "Рука в кружевной манжете у полки со свечами",
+    "en": "A hand in a lace cuff at a candle-lit shelf"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/candle-hand.jpg",
+     "url": "assets/stills/candle-hand.jpg",
+     "width": 1080,
+     "height": 1080,
+     "bytes": 228176,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/candle-hand.webp",
+     "url": "assets/stills/candle-hand.webp",
+     "width": 1080,
+     "height": 1080,
+     "bytes": 131262,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/product-vch.mov",
+    "original_name": "_предметка, самое важное, для ВЧ.mov",
+    "t": 1.7,
+    "crop": "crop=1080:1080:0:560",
+    "source_size": [
+     1080,
+     1080
+    ]
+   }
+  },
+  {
+   "id": "dome-view",
+   "alt": {
+    "ru": "Вид на горы из стеклянного купола",
+    "en": "The mountain view from a glass dome"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/dome-view.jpg",
+     "url": "assets/stills/dome-view.jpg",
+     "width": 720,
+     "height": 720,
+     "bytes": 131131,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/dome-view.webp",
+     "url": "assets/stills/dome-view.webp",
+     "width": 720,
+     "height": 720,
+     "bytes": 87856,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/travel-4.mp4",
+    "original_name": "тревел4.mp4",
+    "t": 12.95,
+    "crop": "crop=720:720:0:330",
+    "source_size": [
+     720,
+     720
+    ]
+   }
+  },
+  {
+   "id": "camper-bunting",
+   "alt": {
+    "ru": "Льняные флажки и гамак между берёзами",
+    "en": "Linen bunting and a hammock between birches"
+   },
+   "files": {
+    "jpg": {
+     "path": "docs/video/assets/stills/camper-bunting.jpg",
+     "url": "assets/stills/camper-bunting.jpg",
+     "width": 720,
+     "height": 900,
+     "bytes": 180032,
+     "duration": null,
+     "format": "jpg"
+    },
+    "webp": {
+     "path": "docs/video/assets/stills/camper-bunting.webp",
+     "url": "assets/stills/camper-bunting.webp",
+     "width": 720,
+     "height": 900,
+     "bytes": 131042,
+     "duration": null,
+     "format": "webp"
+    }
+   },
+   "source": {
+    "file": "source/disk2/cabin-1.mp4",
+    "original_name": "домик для отдыха.mp4",
+    "t": 2.45,
+    "crop": "crop=720:900:0:120",
+    "source_size": [
+     720,
+     900
+    ]
+   }
+  }
+ ],
+ "excluded": [
+  {
+   "source": "cabin-2.mp4",
+   "reason": "Burned-in English caption over the whole clip; friends' faces in close-up; 0.4 s cuts."
+  },
+  {
+   "source": "lifestyle-2.mp4",
+   "reason": "3.6 s of 0.2 s flash cuts: too fast for the calm tone of the site."
+  },
+  {
+   "source": "location-1.mp4 (almaty-dacha)",
+   "reason": "Her caption «Алматинские дачи крадут сердца ♡» is burned into every frame (it sits mid-frame, so no crop removes it); the cut also ends on a car dashboard. Withdrawn until she sends a clean export."
+  },
+  {
+   "source": "travel-2.mp4 (as published)",
+   "reason": "Her 3-band stacked edit has two selfies of private people and an app watermark in some bands; re-cut as taiga-river from clean bands instead."
+  }
+ ],
+ "site1_videography": {
+  "root": "docs",
+  "url_note": "urls relative to docs/ (site 1 RU page); for docs/en/ prefix \"../\".",
+  "purpose": "Short silent vertical loops (360x640) with posters for the «Личная съёмка» block of site 1, replacing the low-res Instagram tiles. Add them to videography.clips in content/copy.json using copy_json_entry.",
+  "items": [
+   {
+    "id": "lavender",
+    "title": {
+     "ru": "Лаванда",
+     "en": "Lavender"
+    },
+    "muted": true,
+    "files": {
+     "loop": {
+      "path": "docs/assets/videography/clip-lavender.mp4",
+      "url": "assets/videography/clip-lavender.mp4",
+      "width": 360,
+      "height": 640,
+      "bytes": 420465,
+      "duration": 4.0,
+      "format": "mp4"
+     },
+     "poster": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-lavender.jpg",
+       "url": "assets/videography/clip-lavender.jpg",
+       "width": 540,
+       "height": 960,
+       "bytes": 113925,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-lavender.webp",
+       "url": "assets/videography/clip-lavender.webp",
+       "width": 540,
+       "height": 960,
+       "bytes": 75460,
+       "duration": null,
+       "format": "webp"
+      }
+     },
+     "poster_360": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-lavender-360.jpg",
+       "url": "assets/videography/clip-lavender-360.jpg",
+       "width": 360,
+       "height": 640,
+       "bytes": 58072,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-lavender-360.webp",
+       "url": "assets/videography/clip-lavender-360.webp",
+       "width": 360,
+       "height": 640,
+       "bytes": 43318,
+       "duration": null,
+       "format": "webp"
+      }
+     }
+    },
+    "copy_json_entry": {
+     "file": "assets/videography/clip-lavender.mp4",
+     "poster": "assets/videography/clip-lavender.jpg",
+     "title": {
+      "ru": "Лаванда",
+      "en": "Lavender"
+     }
+    },
+    "source": {
+     "file": "source/disk2/lifestyle-4.mp4",
+     "original_name": "лайфстайл4.mp4",
+     "segments": [
+      {
+       "src": "lifestyle-4.mp4",
+       "in": 14.3,
+       "out": 18.3,
+       "crop": "crop=850:1512:918:0"
+      }
+     ]
+    }
+   },
+   {
+    "id": "willow-light",
+    "title": {
+     "ru": "Свет сквозь иву",
+     "en": "Light through the willow"
+    },
+    "muted": true,
+    "files": {
+     "loop": {
+      "path": "docs/assets/videography/clip-willow-light.mp4",
+      "url": "assets/videography/clip-willow-light.mp4",
+      "width": 360,
+      "height": 640,
+      "bytes": 416015,
+      "duration": 5.0,
+      "format": "mp4"
+     },
+     "poster": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-willow-light.jpg",
+       "url": "assets/videography/clip-willow-light.jpg",
+       "width": 540,
+       "height": 960,
+       "bytes": 67805,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-willow-light.webp",
+       "url": "assets/videography/clip-willow-light.webp",
+       "width": 540,
+       "height": 960,
+       "bytes": 33772,
+       "duration": null,
+       "format": "webp"
+      }
+     },
+     "poster_360": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-willow-light-360.jpg",
+       "url": "assets/videography/clip-willow-light-360.jpg",
+       "width": 360,
+       "height": 640,
+       "bytes": 35424,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-willow-light-360.webp",
+       "url": "assets/videography/clip-willow-light-360.webp",
+       "width": 360,
+       "height": 640,
+       "bytes": 20100,
+       "duration": null,
+       "format": "webp"
+      }
+     }
+    },
+    "copy_json_entry": {
+     "file": "assets/videography/clip-willow-light.mp4",
+     "poster": "assets/videography/clip-willow-light.jpg",
+     "title": {
+      "ru": "Свет сквозь иву",
+      "en": "Light through the willow"
+     }
+    },
+    "source": {
+     "file": "source/disk2/festival.mp4",
+     "original_name": "фестиваль.mp4",
+     "segments": [
+      {
+       "src": "festival.mp4",
+       "in": 16.0,
+       "out": 21.0,
+       "crop": "crop=608:1080:886:0"
+      }
+     ]
+    }
+   },
+   {
+    "id": "lake-above",
+    "title": {
+     "ru": "Горное озеро",
+     "en": "Mountain lake"
+    },
+    "muted": true,
+    "files": {
+     "loop": {
+      "path": "docs/assets/videography/clip-lake-above.mp4",
+      "url": "assets/videography/clip-lake-above.mp4",
+      "width": 360,
+      "height": 640,
+      "bytes": 264348,
+      "duration": 5.07,
+      "format": "mp4"
+     },
+     "poster": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-lake-above.jpg",
+       "url": "assets/videography/clip-lake-above.jpg",
+       "width": 540,
+       "height": 960,
+       "bytes": 86877,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-lake-above.webp",
+       "url": "assets/videography/clip-lake-above.webp",
+       "width": 540,
+       "height": 960,
+       "bytes": 58646,
+       "duration": null,
+       "format": "webp"
+      }
+     },
+     "poster_360": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-lake-above-360.jpg",
+       "url": "assets/videography/clip-lake-above-360.jpg",
+       "width": 360,
+       "height": 640,
+       "bytes": 41577,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-lake-above-360.webp",
+       "url": "assets/videography/clip-lake-above-360.webp",
+       "width": 360,
+       "height": 640,
+       "bytes": 29258,
+       "duration": null,
+       "format": "webp"
+      }
+     }
+    },
+    "copy_json_entry": {
+     "file": "assets/videography/clip-lake-above.mp4",
+     "poster": "assets/videography/clip-lake-above.jpg",
+     "title": {
+      "ru": "Горное озеро",
+      "en": "Mountain lake"
+     }
+    },
+    "source": {
+     "file": "source/disk2/travel-1.mp4",
+     "original_name": "тревел.mp4",
+     "segments": [
+      {
+       "src": "travel-1.mp4",
+       "in": 33.0,
+       "out": 36.0,
+       "crop": "crop=604:1072:562:0"
+      },
+      {
+       "src": "travel-1.mp4",
+       "in": 8.55,
+       "out": 10.6,
+       "crop": "crop=604:1072:658:0"
+      }
+     ]
+    }
+   },
+   {
+    "id": "flowers-water",
+    "title": {
+     "ru": "Цветы на воде",
+     "en": "Flowers on the water"
+    },
+    "muted": true,
+    "files": {
+     "loop": {
+      "path": "docs/assets/videography/clip-flowers-water.mp4",
+      "url": "assets/videography/clip-flowers-water.mp4",
+      "width": 360,
+      "height": 640,
+      "bytes": 417749,
+      "duration": 5.0,
+      "format": "mp4"
+     },
+     "poster": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-flowers-water.jpg",
+       "url": "assets/videography/clip-flowers-water.jpg",
+       "width": 540,
+       "height": 960,
+       "bytes": 64035,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-flowers-water.webp",
+       "url": "assets/videography/clip-flowers-water.webp",
+       "width": 540,
+       "height": 960,
+       "bytes": 31932,
+       "duration": null,
+       "format": "webp"
+      }
+     },
+     "poster_360": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-flowers-water-360.jpg",
+       "url": "assets/videography/clip-flowers-water-360.jpg",
+       "width": 360,
+       "height": 640,
+       "bytes": 34035,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-flowers-water-360.webp",
+       "url": "assets/videography/clip-flowers-water-360.webp",
+       "width": 360,
+       "height": 640,
+       "bytes": 19598,
+       "duration": null,
+       "format": "webp"
+      }
+     }
+    },
+    "copy_json_entry": {
+     "file": "assets/videography/clip-flowers-water.mp4",
+     "poster": "assets/videography/clip-flowers-water.jpg",
+     "title": {
+      "ru": "Цветы на воде",
+      "en": "Flowers on the water"
+     }
+    },
+    "source": {
+     "file": "source/disk2/festival.mp4",
+     "original_name": "фестиваль.mp4",
+     "segments": [
+      {
+       "src": "festival.mp4",
+       "in": 31.0,
+       "out": 36.0,
+       "crop": "crop=608:1080:656:0"
+      }
+     ]
+    }
+   },
+   {
+    "id": "books-candles",
+    "title": {
+     "ru": "Книги при свечах",
+     "en": "Books by candlelight"
+    },
+    "muted": true,
+    "files": {
+     "loop": {
+      "path": "docs/assets/videography/clip-books-candles.mp4",
+      "url": "assets/videography/clip-books-candles.mp4",
+      "width": 360,
+      "height": 640,
+      "bytes": 258510,
+      "duration": 4.7,
+      "format": "mp4"
+     },
+     "poster": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-books-candles.jpg",
+       "url": "assets/videography/clip-books-candles.jpg",
+       "width": 540,
+       "height": 960,
+       "bytes": 88070,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-books-candles.webp",
+       "url": "assets/videography/clip-books-candles.webp",
+       "width": 540,
+       "height": 960,
+       "bytes": 51820,
+       "duration": null,
+       "format": "webp"
+      }
+     },
+     "poster_360": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-books-candles-360.jpg",
+       "url": "assets/videography/clip-books-candles-360.jpg",
+       "width": 360,
+       "height": 640,
+       "bytes": 42703,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-books-candles-360.webp",
+       "url": "assets/videography/clip-books-candles-360.webp",
+       "width": 360,
+       "height": 640,
+       "bytes": 26854,
+       "duration": null,
+       "format": "webp"
+      }
+     }
+    },
+    "copy_json_entry": {
+     "file": "assets/videography/clip-books-candles.mp4",
+     "poster": "assets/videography/clip-books-candles.jpg",
+     "title": {
+      "ru": "Книги при свечах",
+      "en": "Books by candlelight"
+     }
+    },
+    "source": {
+     "file": "source/disk2/product-vch.mov",
+     "original_name": "_предметка, самое важное, для ВЧ.mov",
+     "segments": [
+      {
+       "src": "product-vch.mov",
+       "in": 0.3,
+       "out": 5.0,
+       "crop": null
+      }
+     ]
+    }
+   },
+   {
+    "id": "dog-eye",
+    "title": {
+     "ru": "Собака крупно",
+     "en": "A dog, up close"
+    },
+    "muted": true,
+    "files": {
+     "loop": {
+      "path": "docs/assets/videography/clip-dog-eye.mp4",
+      "url": "assets/videography/clip-dog-eye.mp4",
+      "width": 360,
+      "height": 640,
+      "bytes": 365021,
+      "duration": 4.53,
+      "format": "mp4"
+     },
+     "poster": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-dog-eye.jpg",
+       "url": "assets/videography/clip-dog-eye.jpg",
+       "width": 540,
+       "height": 960,
+       "bytes": 93833,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-dog-eye.webp",
+       "url": "assets/videography/clip-dog-eye.webp",
+       "width": 540,
+       "height": 960,
+       "bytes": 54662,
+       "duration": null,
+       "format": "webp"
+      }
+     },
+     "poster_360": {
+      "jpg": {
+       "path": "docs/assets/videography/clip-dog-eye-360.jpg",
+       "url": "assets/videography/clip-dog-eye-360.jpg",
+       "width": 360,
+       "height": 640,
+       "bytes": 49031,
+       "duration": null,
+       "format": "jpg"
+      },
+      "webp": {
+       "path": "docs/assets/videography/clip-dog-eye-360.webp",
+       "url": "assets/videography/clip-dog-eye-360.webp",
+       "width": 360,
+       "height": 640,
+       "bytes": 33562,
+       "duration": null,
+       "format": "webp"
+      }
+     }
+    },
+    "copy_json_entry": {
+     "file": "assets/videography/clip-dog-eye.mp4",
+     "poster": "assets/videography/clip-dog-eye.jpg",
+     "title": {
+      "ru": "Собака крупно",
+      "en": "A dog, up close"
+     }
+    },
+    "source": {
+     "file": "source/disk2/animals-2.mp4",
+     "original_name": "животные2.mp4",
+     "segments": [
+      {
+       "src": "animals-2.mp4",
+       "in": 4.97,
+       "out": 7.2,
+       "crop": "crop=604:1072:734:0"
+      },
+      {
+       "src": "animals-2.mp4",
+       "in": 14.75,
+       "out": 17.0,
+       "crop": "crop=604:1072:888:0"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -163,10 +163,7 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
       <p class="sechead__text rv">{{t:videography.text}}</p>
     </header>
     {{part:vgClips}}
-    <figure class="strip rv">
-      <ul class="strip__grid">{{part:videography}}</ul>
-      <figcaption class="src">{{t:videography.strip_note}}{{part:vgProfile}}</figcaption>
-    </figure>
+    {{part:vgLinks}}
     <div class="vg__cols">
       <div class="rv">
         <h3 class="label">{{t:videography.deliverables_label}}</h3>
@@ -247,6 +244,7 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
   <div class="wrap foot__in">
     <span>{{t:meta.footer}}</span>
     <span class="foot__data">{{t:meta.data_line}}</span>
+    {{part:footVideo}}
     <a href="#top">{{t:cta.back_to_top}} <span aria-hidden="true">↑</span></a>
   </div>
 </footer>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="{{v:lang}}" class="no-js">
+<head>
+{{v:head}}
+<link rel="stylesheet" href="{{v:P}}css/video.css">
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
+<script src="{{v:P}}js/main.js" defer></script>
+</head>
+<body class="{{v:hasPhoto}}">
+<a class="skip" href="#main">{{t:meta.skip}}</a>
+
+<header class="bar" id="top">
+  <a class="bar__name" href="#top">{{t:hero.name}}</a>
+  <nav class="bar__nav" aria-label="{{t:meta.menu}}">{{part:nav}}</nav>
+  <div class="bar__tools">
+    <a class="bar__lang" href="{{v:altHref}}" hreflang="{{v:altLang}}" lang="{{v:altLang}}" data-setlang="{{v:altLang}}" aria-label="{{t:meta.lang_label}}">{{v:altLangLabel}}</a>
+    <a class="btn btn--line btn--sm bar__cv" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
+    <a class="btn btn--rose btn--sm bar__tg" href="{{v:tg}}" target="_blank" rel="noopener">{{t:cta.telegram_short}}</a>
+    <details class="menu">
+      <summary aria-label="{{t:meta.menu}}"><span class="menu__icon" aria-hidden="true"></span></summary>
+      <nav class="menu__panel" aria-label="{{t:meta.menu}}">{{part:nav}}<a class="menu__cv" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}</a></nav>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- =========================== HERO: the loop is the page =========================== -->
+<section class="hero" aria-labelledby="hero-name" data-hero>
+  <div class="hero__media" aria-hidden="true">{{part:heroMedia}}</div>
+  <div class="hero__grade" aria-hidden="true"></div>
+  <div class="hero__copy wrap">
+    <p class="hero__role">{{t:hero.role}}</p>
+    <h1 id="hero-name" class="hero__name">{{part:heroName}}</h1>
+    <p class="hero__tagline">{{t:hero.tagline}}</p>
+    <p class="hero__lede">{{t:hero.positioning}}</p>
+    <div class="hero__cta">
+      <a class="btn btn--rose" {{part:reelAttrs}}><span class="btn__play" aria-hidden="true">{{part:iconPlay}}</span>{{t:cta.showreel}}</a>
+      <a class="btn btn--line" href="{{v:tg}}" target="_blank" rel="noopener"><span class="hero__tg-long">{{t:cta.telegram}}</span><span class="hero__tg-short">{{t:cta.telegram_short}}</span></a>
+    </div>
+  </div>
+  <div class="hero__foot wrap">
+    <p class="hero__loc"><span class="hero__dot" aria-hidden="true"></span>{{t:hero.location}}</p>
+    <button class="hero__toggle" type="button" data-hero-toggle data-play-label="{{t:ui.play_bg}}" data-pause-label="{{t:ui.pause_bg}}" aria-label="{{t:ui.play_bg}}">
+      <span class="hero__i hero__i--play">{{part:iconPlay}}</span><span class="hero__i hero__i--pause">{{part:iconPause}}</span>
+    </button>
+  </div>
+</section>
+
+<!-- =========================== SHOWREEL: on the page, not only behind a button =========================== -->
+<section class="reel" id="showreel" aria-labelledby="reel-title">
+  <div class="wrap reel__grid">
+    <header class="reel__head">
+      <p class="secnum rv">{{t:showreel.eyebrow}}</p>
+      <h2 id="reel-title" class="sechead__title rv">{{t:showreel.title}}</h2>
+      <p class="reel__text rv">{{t:showreel.text}}</p>
+    </header>
+    {{part:reelFrame}}
+  </div>
+</section>
+
+<!-- =========================== WORK: three directions + nature =========================== -->
+<section class="work" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="secnum rv">{{t:directions.eyebrow}}</p>
+      <h2 id="work-title" class="sechead__title rv">{{t:directions.title}}</h2>
+      <p class="sechead__text rv">{{t:directions.intro}}</p>
+    </header>
+{{part:chapters}}
+  </div>
+</section>
+
+<!-- =========================== APPROACH =========================== -->
+<section class="ap" id="approach" aria-labelledby="ap-title">
+  <div class="wrap ap__grid">
+    <div class="ap__side">
+      <p class="secnum rv">{{t:approach.eyebrow}}</p>
+      <h2 id="ap-title" class="sechead__title rv">{{t:approach.title}}</h2>
+      {{part:approachStill}}
+    </div>
+    <ul class="ap__list">{{part:approach}}</ul>
+  </div>
+</section>
+
+<!-- =========================== STILLS =========================== -->
+<section class="gal" id="stills" aria-labelledby="gal-title">
+  <div class="wrap">
+    <header class="sechead sechead--row">
+      <p class="secnum rv">{{t:stills.eyebrow}}</p>
+      <h2 id="gal-title" class="sechead__title rv">{{t:stills.title}}</h2>
+      <p class="sechead__text rv">{{t:stills.text}}</p>
+    </header>
+    <div class="gal__rows">{{part:stills}}</div>
+  </div>
+</section>
+
+<!-- =========================== WHAT YOU GET + HOW IT WORKS (one chapter) =========================== -->
+<section class="offer" id="formats" aria-labelledby="fm-title">
+  <div class="wrap">
+    <div class="offer__grid">
+      <header class="offer__head">
+        <p class="secnum rv">{{t:formats.eyebrow}}</p>
+        <h2 id="fm-title" class="sechead__title rv">{{t:formats.title}}</h2>
+      </header>
+      <ul class="fms">{{part:formats}}</ul>
+    </div>
+    <div class="offer__steps" id="process">
+      <p class="secnum rv">{{t:process.eyebrow}}</p>
+      <h3 class="offer__sub rv">{{t:process.title}}</h3>
+      <ol class="sts">{{part:steps}}</ol>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== ABOUT =========================== -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="wrap about__grid">
+    <header class="about__head">
+      <p class="secnum rv">{{t:about.eyebrow}}</p>
+      <h2 id="about-title" class="sechead__title rv">{{t:about.title}}</h2>
+      {{part:aboutPhoto}}
+      <p class="about__link rv"><a href="{{v:site1}}">{{t:about.producer_link}}&nbsp;<span aria-hidden="true">→</span></a></p>
+    </header>
+    <div class="about__body">
+      <p class="about__bio rv">{{t:about.bio}}</p>
+      <dl class="about__facts rv">
+        <div><dt>{{t:about.open_to_label}}</dt><dd>{{t:about.open_to}}</dd></div>
+        <div><dt>{{t:about.tools_label}}</dt><dd>{{t:about.tools}}</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== INSTAGRAM: one line and a few frames that are not on this page =========================== -->
+<section class="ig" aria-labelledby="ig-title">
+  <div class="wrap ig__row">
+    <div class="ig__text">
+      <p class="secnum rv">{{t:instagram.eyebrow}}</p>
+      <h2 class="ig__title rv" id="ig-title">{{t:instagram.title}}</h2>
+      <p class="ig__p rv">{{t:instagram.text}}</p>
+      <p class="rv"><a class="ig__handle" href="{{v:ig}}" target="_blank" rel="noopener">{{t:instagram.handle}}&nbsp;<span aria-hidden="true">↗</span></a></p>
+    </div>
+    <a class="ig__strip rv" href="{{v:ig}}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{{part:instaStrip}}</a>
+  </div>
+</section>
+
+<!-- =========================== CONTACT =========================== -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <p class="secnum rv">{{t:contact.eyebrow}}</p>
+    <div class="contact__top">
+      <h2 id="contact-title" class="contact__title rv">{{t:contact.title}}</h2>
+      <div class="contact__aside rv">
+        <p class="contact__lede">{{t:contact.lede}}</p>
+        <div class="contact__actions">
+          <a class="btn btn--rose btn--lg" href="{{v:tg}}" target="_blank" rel="noopener">{{t:cta.telegram}}</a>
+          <a class="btn btn--line btn--lg" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
+        </div>
+      </div>
+    </div>
+    <ul class="contact__list">{{part:contactList}}</ul>
+    <p class="contact__loc rv"><span>{{t:contact.location_label}}</span>{{t:contact.location}}</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__lang" aria-label="{{t:meta.lang_label}}"><a href="{{v:ruHref}}" hreflang="ru" lang="ru" data-setlang="ru"{{v:ruCurrent}}>RU</a><a href="{{v:enHref}}" hreflang="en" lang="en" data-setlang="en"{{v:enCurrent}}>EN</a></p>
+    <p class="foot__note">{{t:footer.shot_by}}</p>
+    <a class="foot__x" href="{{v:site1}}">{{t:footer.cross_link}}&nbsp;<span aria-hidden="true">→</span></a>
+    <span class="foot__c">{{t:footer.copyright}}</span>
+  </div>
+</footer>
+
+<!-- video player: the <video> element exists only while the dialog is open -->
+<dialog class="player" id="player" aria-labelledby="player-title">
+  <button class="dlg__close" type="button" data-close aria-label="{{t:cta.close}}"><span aria-hidden="true">×</span></button>
+  <div class="player__box">
+    <div class="player__screen" data-screen></div>
+    <div class="player__cap">
+      <div class="player__text">
+        <p class="player__kicker" data-kicker></p>
+        <p class="player__title" id="player-title" data-title></p>
+        <p class="player__caption" data-caption></p>
+      </div>
+      <div class="player__nav" data-nav>
+        <button class="dlg__arrow" type="button" data-prev aria-label="{{t:cta.prev}}"><span aria-hidden="true">←</span></button>
+        <span class="player__count" data-count></span>
+        <button class="dlg__arrow" type="button" data-next aria-label="{{t:cta.next}}"><span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- stills lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="{{t:ui.image_dialog}}">
+  <button class="dlg__close" type="button" data-close aria-label="{{t:cta.close}}"><span aria-hidden="true">×</span></button>
+  <figure class="lightbox__fig">
+    <div class="lightbox__img" data-lb-img></div>
+    <figcaption><span data-lb-cap></span> <span class="lightbox__count" data-lb-count></span></figcaption>
+  </figure>
+  <button class="dlg__arrow lightbox__nav lightbox__nav--prev" type="button" data-prev aria-label="{{t:ui.prev_image}}"><span aria-hidden="true">←</span></button>
+  <button class="dlg__arrow lightbox__nav lightbox__nav--next" type="button" data-next aria-label="{{t:ui.next_image}}"><span aria-hidden="true">→</span></button>
+</dialog>
+</body>
+</html>

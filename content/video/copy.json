@@ -1,0 +1,471 @@
+{
+  "_conventions": {
+    "ru": "Тексты второго сайта (видеограф). Каждая текстовая строка — пара {ru, en}. Поля id, url, url_en, href, handle, file, phone, email, telegram, show, n не переводятся и хранятся как есть. Названия и подписи роликов — в content/video/media.json. Все факты сверены с content/video/FACTS.md; данные на 21 ноября 2026 года.",
+    "en": "Copy for site 2 (videographer). Every text leaf is a {ru, en} pair. Fields named id, url, url_en, href, handle, file, phone, email, telegram, show and n are language-neutral and stored as plain values. Clip titles and captions live in content/video/media.json. Every fact is traced in content/video/FACTS.md; data as of 21 November 2026."
+  },
+
+  "meta": {
+    "lang_switch": { "ru": "EN", "en": "RU" },
+    "lang_label": { "ru": "English version", "en": "Русская версия" },
+    "title": { "ru": "Алиса Макаренко — видеограф, Алматы", "en": "Alisa Makarenko — Videographer, Almaty" },
+    "description": {
+      "ru": "Портфолио и CV видеографа Алисы Макаренко из Алматы: спокойная атмосферная съёмка мест, лайфстайла, природы и предметов. Открыта к съёмкам для отелей, глэмпингов, кафе и небольших брендов.",
+      "en": "Portfolio and CV of Alisa Makarenko, a videographer based in Almaty: calm, atmospheric footage of places, lifestyle, nature and objects. Open to shoots for hotels, glamping sites, cafés and small brands."
+    },
+    "og_title": { "ru": "Алиса Макаренко — видеограф, Алматы", "en": "Alisa Makarenko — Videographer, Almaty" },
+    "og_description": {
+      "ru": "Замечаю то, мимо чего обычно проходят, и снимаю так, чтобы вы почувствовали себя внутри момента.",
+      "en": "I notice what most people walk past and film it so you feel you are there, in the moment."
+    },
+    "og_image_alt": { "ru": "Бирюзовое горное озеро сверху и имя: Алиса Макаренко, видеограф, Алматы", "en": "A turquoise mountain lake from above with the name: Alisa Makarenko, videographer, Almaty" },
+    "skip": { "ru": "Перейти к содержанию", "en": "Skip to content" },
+    "menu": { "ru": "Меню", "en": "Menu" }
+  },
+
+  "nav": {
+    "showreel": { "ru": "Шоурил", "en": "Showreel" },
+    "work": { "ru": "Съёмка", "en": "Work" },
+    "cv_pdf": { "ru": "CV (PDF)", "en": "CV (PDF)" },
+    "approach": { "ru": "Как я снимаю", "en": "Approach" },
+    "directions": { "ru": "Направления", "en": "What I shoot" },
+    "stills": { "ru": "Кадры", "en": "Stills" },
+    "formats": { "ru": "Что вы получаете", "en": "What you get" },
+    "process": { "ru": "Как проходит работа", "en": "How it works" },
+    "about": { "ru": "Обо мне", "en": "About" },
+    "contact": { "ru": "Контакты", "en": "Contact" },
+    "cv": { "ru": "CV", "en": "CV" }
+  },
+
+  "cta": {
+    "showreel": { "ru": "Смотреть шоурил", "en": "Watch the showreel" },
+    "work": { "ru": "Смотреть съёмку", "en": "See the work" },
+    "telegram": { "ru": "Написать в Telegram", "en": "Message on Telegram" },
+    "telegram_short": { "ru": "Telegram", "en": "Telegram" },
+    "email": { "ru": "Написать на почту", "en": "Send an email" },
+    "call": { "ru": "Позвонить", "en": "Call" },
+    "instagram": { "ru": "Открыть Instagram", "en": "Open Instagram" },
+    "download_cv": { "ru": "Скачать CV (PDF)", "en": "Download CV (PDF)" },
+    "producer_portfolio": { "ru": "Портфолио продюсера", "en": "Producer portfolio" },
+    "play": { "ru": "Включить", "en": "Play" },
+    "pause": { "ru": "Пауза", "en": "Pause" },
+    "sound_on": { "ru": "Со звуком", "en": "Sound on" },
+    "sound_off": { "ru": "Без звука", "en": "Sound off" },
+    "open_full": { "ru": "Смотреть целиком", "en": "Watch in full" },
+    "close": { "ru": "Закрыть", "en": "Close" },
+    "prev": { "ru": "Предыдущий ролик", "en": "Previous clip" },
+    "next": { "ru": "Следующий ролик", "en": "Next clip" },
+    "back_to_top": { "ru": "Наверх", "en": "Back to top" },
+    "print_cv": { "ru": "Распечатать", "en": "Print" },
+    "back_to_site": { "ru": "На сайт", "en": "Back to site" },
+    "save_pdf": { "ru": "Сохранить PDF", "en": "Save PDF" },
+    "cv_short": { "ru": "CV", "en": "CV" }
+  },
+
+  "ui": {
+    "video_dialog": { "ru": "Просмотр видео", "en": "Video player" },
+    "loading": { "ru": "Загружаем видео…", "en": "Loading the video…" },
+    "vertical": { "ru": "Вертикальное", "en": "Vertical" },
+    "horizontal": { "ru": "Горизонтальное", "en": "Horizontal" },
+    "sec": { "ru": "с", "en": "s" },
+    "has_sound": { "ru": "Со звуком", "en": "With sound" },
+    "muted_note": { "ru": "Ролики в сетке играют без звука", "en": "Clips in the grid play muted" },
+    "silent": { "ru": "без звука", "en": "silent" },
+    "watch": { "ru": "Смотреть", "en": "Watch" },
+    "image_dialog": { "ru": "Просмотр кадра", "en": "Image viewer" },
+    "prev_image": { "ru": "Предыдущий кадр", "en": "Previous frame" },
+    "next_image": { "ru": "Следующий кадр", "en": "Next frame" },
+    "play_bg": { "ru": "Включить видео на фоне", "en": "Play the background video" },
+    "pause_bg": { "ru": "Остановить видео на фоне", "en": "Pause the background video" },
+    "showreel_title": { "ru": "Шоурил", "en": "Showreel" },
+    "showreel_note": { "ru": "Подборка из моей съёмки · черновой монтаж", "en": "A selection from my footage · draft cut" },
+    "play_reel": { "ru": "Смотреть шоурил", "en": "Watch the showreel" }
+  },
+
+  "hero": {
+    "name": { "ru": "Алиса Макаренко", "en": "Alisa Makarenko" },
+    "role": { "ru": "Видеограф · Алматы", "en": "Videographer · Visual Content Creator" },
+    "location": { "ru": "Алматы, Казахстан", "en": "Almaty, Kazakhstan" },
+    "tagline": { "ru": "Визуальные истории для брендов и пространств", "en": "Creating visual stories for brands & spaces" },
+    "positioning": {
+      "ru": "Замечаю то, мимо чего обычно проходят, и снимаю так, чтобы вы почувствовали себя внутри момента. Для меня атмосфера важнее сложного монтажа.",
+      "en": "I notice what most people walk past and film it so you feel you are there, in the moment. Atmosphere matters more to me than complicated editing."
+    }
+  },
+
+  "showreel": {
+    "eyebrow": { "ru": "Шоурил", "en": "Showreel" },
+    "title": { "ru": "Коротко о том, как я вижу", "en": "How I see, in brief" },
+    "text": {
+      "ru": "Места для отдыха, предметы, природа и свет — в одном коротком ролике. Черновой монтаж из моей съёмки.",
+      "en": "Places to stay, objects, nature and light in one short film. A draft cut from my footage."
+    },
+    "pending": {
+      "ru": "Шоурил сейчас в монтаже. Пока можно посмотреть отдельные ролики ниже.",
+      "en": "The showreel is being edited. In the meantime, the clips below show my work."
+    }
+  },
+
+  "gallery": {
+    "eyebrow": { "ru": "Съёмка", "en": "Work" },
+    "title": { "ru": "Избранные ролики", "en": "Selected footage" },
+    "personal_note": {
+      "ru": "Всё на этой странице — моя личная съёмка, а не заказные работы. По ней видно, как я снимаю места, людей и вещи.",
+      "en": "Everything on this page is my personal work, not commissioned. It shows how I film places, people and things."
+    },
+    "filters_label": { "ru": "Показать", "en": "Show" },
+    "filters": {
+      "all": { "ru": "Всё", "en": "All" },
+      "hospitality": { "ru": "Отдых и путешествия", "en": "Hospitality & Tourism" },
+      "lifestyle": { "ru": "Лайфстайл и места", "en": "Lifestyle & Places" },
+      "brands": { "ru": "Бренды и предметы", "en": "Brands & Products" },
+      "nature": { "ru": "Природа и животные", "en": "Nature & animals" }
+    },
+    "empty": { "ru": "В этой категории пока нет роликов.", "en": "No clips in this category yet." }
+  },
+
+  "stills": {
+    "eyebrow": { "ru": "Из моих роликов", "en": "From my clips" },
+    "title": { "ru": "Кадры", "en": "Stills" },
+    "text": {
+      "ru": "Отдельные кадры из моих роликов, в моём цвете. Нажмите на кадр, чтобы открыть его крупно.",
+      "en": "Single frames from my clips, in my own grade. Select a frame to view it full size."
+    }
+  },
+
+  "approach": {
+    "eyebrow": { "ru": "Подход", "en": "Approach" },
+    "title": { "ru": "Как я снимаю", "en": "How I shoot" },
+    "items": [
+      {
+        "title": { "ru": "Замечаю то, мимо чего проходят", "en": "Noticing what others pass by" },
+        "text": {
+          "ru": "Как падает свет, на чём задерживается взгляд, что происходит между главными событиями. Мне важно поймать то, что другие могли бы просто не снять.",
+          "en": "How the light falls, where the eye lingers, what happens between the main moments. I want to catch the things other people might simply not film."
+        }
+      },
+      {
+        "title": { "ru": "Детали крупно", "en": "Details, up close" },
+        "text": {
+          "ru": "Хвоя под снегом, кошачья шерсть на солнце, ткань, страницы книги. Мелочи, которые другие не стали бы снимать, лучше всего передают ощущение места.",
+          "en": "Pine needles under snow, a cat's fur in the sun, fabric, the pages of a book. The small things others would not film are what carry the feeling of a place."
+        }
+      },
+      {
+        "title": { "ru": "Свет, который уже есть", "en": "The light that is already there" },
+        "text": {
+          "ru": "Работаю с тем светом, что есть: дневным, пасмурным, вечерним, со свечами. Монтаж простой, чтобы главным оставался кадр.",
+          "en": "I work with the light I find: daylight, overcast, evening, candlelight. The edit stays simple, so the frame does the work."
+        }
+      },
+      {
+        "title": { "ru": "От съёмки до цвета — сама", "en": "Shot, edited and graded by me" },
+        "text": {
+          "ru": "Снимаю на iPhone, монтирую в DaVinci Resolve и CapCut и сама делаю цветокоррекцию.",
+          "en": "I shoot on iPhone, edit in DaVinci Resolve and CapCut, and do the colour myself."
+        }
+      }
+    ]
+  },
+
+  "directions": {
+    "eyebrow": { "ru": "Направления", "en": "What I shoot" },
+    "title": { "ru": "Что и для кого я снимаю", "en": "What I shoot, and for whom" },
+    "intro": {
+      "ru": "Три направления, для которых я снимаю. Примеры — из моей личной съёмки: я ищу первые съёмки для мест и брендов.",
+      "en": "Three areas I film for. The examples come from my personal footage: I'm looking for my first shoots for places and brands."
+    },
+    "for_label": { "ru": "Для кого", "en": "For" },
+    "deliver_label": { "ru": "Что предлагаю", "en": "What I offer" },
+    "shown_label": { "ru": "В примерах", "en": "In the examples" },
+    "items": [
+      {
+        "id": "hospitality",
+        "title": { "ru": "Hospitality & Tourism", "en": "Hospitality & Tourism" },
+        "subtitle": { "ru": "Отдых и путешествия", "en": "Places to stay and visit" },
+        "for": {
+          "ru": "Глэмпинги, A-frame-домики, отели, загородные комплексы, базы отдыха и туристические места.",
+          "en": "Glamping sites, A-frame cabins, hotels, country resorts, holiday lodges and places to visit."
+        },
+        "shown": {
+          "ru": "Стеклянный купол в горах, кемпер в берёзовой роще, дом в дождь, горное озеро и каньон.",
+          "en": "A glass dome in the mountains, a camper in a birch grove, a house in the rain, a mountain lake and a canyon."
+        },
+        "deliver": [
+          { "ru": "Атмосферные видео домиков, интерьеров и вида вокруг", "en": "Atmospheric footage of the cabins, the interiors and the view" },
+          { "ru": "Утро, вечер, погода и детали, ради которых едут за город", "en": "Mornings, evenings, weather and the details people leave the city for" },
+          { "ru": "Вертикальные ролики о месте для Reels и сторис", "en": "Vertical clips about the place for Reels and Stories" }
+        ]
+      },
+      {
+        "id": "lifestyle",
+        "title": { "ru": "Lifestyle & Places", "en": "Lifestyle & Places" },
+        "subtitle": { "ru": "Лайфстайл и места", "en": "Lifestyle and places" },
+        "for": {
+          "ru": "Кафе, рестораны, кофейни, SPA, студии и другие красивые пространства.",
+          "en": "Cafés, restaurants, coffee shops, spas, studios and other beautiful spaces."
+        },
+        "shown": {
+          "ru": "Пока не кафе и не интерьеры, а то, что я принесу и туда: свет, фактуры, неспешный ритм. Книга у озера, лаванда, праздник у воды, зимний лес.",
+          "en": "Not cafés or interiors yet, but what I would bring to them: light, texture and an unhurried pace. A book by the lake, lavender, a summer festival, a winter forest."
+        },
+        "deliver": [
+          { "ru": "Интерьер и свет пространства", "en": "The interior and the way light moves through it" },
+          { "ru": "Процесс и детали: посуда, руки, фактуры", "en": "Process and details: tableware, hands, textures" },
+          { "ru": "Короткие ролики о месте для соцсетей", "en": "Short clips about the place for social media" }
+        ]
+      },
+      {
+        "id": "brands",
+        "title": { "ru": "Brands & Products", "en": "Brands & Products" },
+        "subtitle": { "ru": "Бренды и предметы", "en": "Small brands and their products" },
+        "for": {
+          "ru": "Небольшие бренды, магазины, производители косметики, предметов интерьера и других товаров.",
+          "en": "Small brands, shops, and makers of cosmetics, homeware and other products."
+        },
+        "shown": {
+          "ru": "Предметная съёмка, которую я сделала для себя и для шоу «Ведьмин\u00a0час»: кожаный блокнот с подвесками и книги при свечах.",
+          "en": "Product footage I shot for myself and for my show Witching\u00a0Hour: a leather journal with charms and books by candlelight."
+        },
+        "deliver": [
+          { "ru": "Крупные планы товара, фактуры, упаковка", "en": "Product close-ups, textures, packaging" },
+          { "ru": "Товар в живой обстановке: дома, на природе, в руках", "en": "The product in real settings: at home, outdoors, in someone's hands" },
+          { "ru": "Ролики в стиле UGC для соцсетей", "en": "UGC-style clips for social media" }
+        ]
+      }
+    ],
+    "personal": {
+      "id": "nature",
+      "title": { "ru": "Природа и животные", "en": "Nature & Animals" },
+      "text": {
+        "ru": "Горы, вода, снег, кошки и собаки — то, что я люблю снимать.",
+        "en": "Mountains, water, snow, cats and dogs: what I love to film."
+      }
+    }
+  },
+
+  "formats": {
+    "eyebrow": { "ru": "Форматы", "en": "Formats" },
+    "title": { "ru": "Что вы получаете", "en": "What you get" },
+    "items": [
+      {
+        "title": { "ru": "Вертикальные ролики", "en": "Vertical clips" },
+        "text": { "ru": "Готовые ролики 9:16 для Reels, Shorts и TikTok.", "en": "Finished 9:16 clips for Reels, Shorts and TikTok." }
+      },
+      {
+        "title": { "ru": "Атмосферная съёмка места", "en": "Atmospheric footage of a place" },
+        "text": { "ru": "Набор планов: общие виды, интерьер, детали и свет.", "en": "A set of shots: wide views, interiors, details and light." }
+      },
+      {
+        "title": { "ru": "Предметная съёмка", "en": "Product and detail shots" },
+        "text": { "ru": "Крупные планы товара и фактур — отдельно или в обстановке.", "en": "Close-ups of the product and its textures, on their own or in a setting." }
+      },
+      {
+        "title": { "ru": "Готовый материал под ваши задачи", "en": "Footage ready to use" },
+        "text": { "ru": "Сняла, обработала и передала — дальше вы используете материал так, как вам нужно.", "en": "Shot, graded and handed over. You use it however you like." }
+      },
+      {
+        "title": { "ru": "UGC-ролики", "en": "UGC-style clips" },
+        "text": { "ru": "Ролики от первого лица, как будто их снял гость или покупатель.", "en": "First-person clips that feel as if a guest or customer filmed them." }
+      }
+    ]
+  },
+
+  "process": {
+    "eyebrow": { "ru": "Процесс", "en": "Process" },
+    "title": { "ru": "Как проходит работа", "en": "How it works" },
+    "steps": [
+      {
+        "n": "01",
+        "title": { "ru": "Бриф", "en": "Brief" },
+        "text": { "ru": "Обсуждаем место или продукт, задачу, настроение и где будут публиковать видео.", "en": "We talk through the place or product, the goal, the mood and where the video will be posted." }
+      },
+      {
+        "n": "02",
+        "title": { "ru": "Съёмка", "en": "Shoot" },
+        "text": { "ru": "Снимаю на месте. Время выбираем под свет и под ритм места.", "en": "I film on location, at a time chosen for the light and the rhythm of the place." }
+      },
+      {
+        "n": "03",
+        "title": { "ru": "Монтаж и цвет", "en": "Edit and grade" },
+        "text": { "ru": "Отбираю лучшие кадры, монтирую и делаю цветокоррекцию под стиль места или бренда.", "en": "I select the best shots, edit them and grade the colour to the look of your place or brand." }
+      },
+      {
+        "n": "04",
+        "title": { "ru": "Передача", "en": "Delivery" },
+        "text": { "ru": "Передаю готовые ролики и, если нужно, исходники в форматах под ваши площадки.", "en": "I hand over the finished clips and, if you need them, the raw files, in formats for your platforms." }
+      }
+    ]
+  },
+
+  "about": {
+    "eyebrow": { "ru": "Обо мне", "en": "About" },
+    "title": { "ru": "Алиса, Алматы", "en": "Alisa, Almaty" },
+    "bio": {
+      "ru": "Я живу и снимаю в Алматы. Больше всего люблю спокойные кадры: горы, воду, животных, предметы и тихие дни, в которых будто ничего не происходит. С декабря 2023 года я продюсер, сценарист и соведущая YouTube-шоу и подкаста «Ведьмин\u00a0час» — у него 4,9 млн просмотров на YouTube с учётом Shorts. Там я делаю превью и Shorts, поэтому привыкла думать о том, как ролик смотрится в ленте.",
+      "en": "I live and shoot in Almaty. What I love filming most is the quiet stuff: mountains, water, animals, objects, and calm days where nothing much seems to happen. Since December 2023 I have been the producer, scriptwriter and co-host of Witching\u00a0Hour, a YouTube show and podcast with 4.9M YouTube views including Shorts. I make its thumbnails and Shorts, so I'm used to thinking about how a clip plays in the feed."
+    },
+    "producer_link": { "ru": "Портфолио продюсера: «Ведьмин\u00a0час»", "en": "Producer portfolio: Witching\u00a0Hour" },
+    "producer_url": "https://boozybatsmain.github.io/alisa-makarenko/",
+    "producer_url_en": "https://boozybatsmain.github.io/alisa-makarenko/en/",
+    "open_to_label": { "ru": "Открыта к", "en": "Open to" },
+    "open_to": {
+      "ru": "Коммерческим съёмкам для брендов и пространств, UGC и контенту для SMM. Работаю в Алматы и рядом.",
+      "en": "Commercial shoots for brands and spaces, UGC and social media content. Based in Almaty, working in and around the city."
+    },
+    "tools_label": { "ru": "Чем снимаю и монтирую", "en": "Kit and software" },
+    "tools": {
+      "ru": "iPhone · DaVinci Resolve · CapCut · Lightroom",
+      "en": "iPhone · DaVinci Resolve · CapCut · Lightroom"
+    }
+  },
+
+  "instagram": {
+    "eyebrow": { "ru": "Instagram", "en": "Instagram" },
+    "title": { "ru": "Больше съёмки — в Instagram", "en": "More of my footage on Instagram" },
+    "text": {
+      "ru": "Там повседневное: короткие ролики, фото и детали, которые не вошли сюда.",
+      "en": "The everyday side: short clips, photos and details that did not make it here."
+    },
+    "handle": "@alissayeya",
+    "href": "https://www.instagram.com/alissayeya",
+    "_stats_note": "From her profile screenshot (source/disk2/insta-profile.jpg), Nov 21, 2026. Hidden by default (show: false): small numbers should not lead.",
+    "stats": {
+      "show": false,
+      "posts": { "ru": "2 201 публикация", "en": "2,201 posts" },
+      "followers": { "ru": "1 387 подписчиков", "en": "1,387 followers" },
+      "as_of": { "ru": "на ноябрь 2026", "en": "as of Nov 2026" }
+    }
+  },
+
+  "contact": {
+    "eyebrow": { "ru": "Контакты", "en": "Contact" },
+    "title": { "ru": "Расскажите о вашем месте или продукте", "en": "Tell me about your place or product" },
+    "lede": {
+      "ru": "Быстрее всего отвечаю в Telegram. Можно сразу прислать ссылку на место или бренд.",
+      "en": "Telegram is the fastest way to reach me. Feel free to send a link to your place or brand straight away."
+    },
+    "phone_label": { "ru": "Телефон", "en": "Phone" },
+    "telegram_label": { "ru": "Telegram", "en": "Telegram" },
+    "email_label": { "ru": "Почта", "en": "Email" },
+    "instagram_label": { "ru": "Instagram", "en": "Instagram" },
+    "location_label": { "ru": "Город", "en": "Based in" },
+    "location": { "ru": "Алматы, Казахстан", "en": "Almaty, Kazakhstan" },
+    "phone": "+7 706 643 29 43",
+    "phone_href": "tel:+77066432943",
+    "telegram": "@alissayeya",
+    "telegram_href": "https://t.me/alissayeya",
+    "email": "alice.yeya@icloud.com",
+    "email_href": "mailto:alice.yeya@icloud.com",
+    "instagram": "@alissayeya",
+    "instagram_href": "https://www.instagram.com/alissayeya"
+  },
+
+  "footer": {
+    "copyright": { "ru": "© 2026 Алиса Макаренко · Алматы", "en": "© 2026 Alisa Makarenko · Almaty" },
+    "cross_link": { "ru": "Портфолио продюсера: «Ведьмин\u00a0час»", "en": "Producer portfolio: Witching\u00a0Hour" },
+    "cross_link_url": "https://boozybatsmain.github.io/alisa-makarenko/",
+    "cross_link_url_en": "https://boozybatsmain.github.io/alisa-makarenko/en/",
+    "shot_by": { "ru": "Вся съёмка и монтаж на сайте — Алиса Макаренко", "en": "All footage shot and edited by Alisa Makarenko" }
+  },
+
+  "cv": {
+    "doc_title": { "ru": "Алиса Макаренко — CV видеографа", "en": "Alisa Makarenko — Videographer CV" },
+    "name": { "ru": "Алиса Макаренко", "en": "Alisa Makarenko" },
+    "headline": { "ru": "Видеограф · Visual Content Creator", "en": "Videographer · Visual Content Creator" },
+    "location": { "ru": "Алматы, Казахстан", "en": "Almaty, Kazakhstan" },
+    "summary": {
+      "ru": "Снимаю спокойное атмосферное видео: места, лайфстайл, природу и предметы. Работаю на iPhone, монтирую и делаю цветокоррекцию сама. С 2023 года продюсирую и веду YouTube-шоу «Ведьмин\u00a0час». Открыта к коммерческим съёмкам для брендов и пространств, UGC и SMM-контенту.",
+      "en": "I film calm, atmospheric video: places, lifestyle, nature and objects. I work on iPhone and do the editing and colour myself. Since 2023 I have produced and co-hosted the YouTube show Witching\u00a0Hour. Open to commercial shoots for brands and spaces, UGC and social media content."
+    },
+    "labels": {
+      "summary": { "ru": "О себе", "en": "Profile" },
+      "directions": { "ru": "Что снимаю", "en": "What I shoot" },
+      "experience": { "ru": "Опыт", "en": "Experience" },
+      "skills": { "ru": "Навыки", "en": "Skills" },
+      "tools": { "ru": "Техника и программы", "en": "Kit and software" },
+      "contacts": { "ru": "Контакты", "en": "Contact" },
+      "links": { "ru": "Ссылки", "en": "Links" },
+      "portfolio": { "ru": "Портфолио", "en": "Portfolio" },
+      "stills": { "ru": "Кадры из моей съёмки", "en": "Frames from my footage" }
+    },
+    "foot_note": { "ru": "Кадры сверху — из моих роликов; портфолио — личная съёмка.", "en": "The frames above are from my clips; the portfolio is personal work." },
+    "directions": [
+      {
+        "title": { "ru": "Hospitality & Tourism", "en": "Hospitality & Tourism" },
+        "text": { "ru": "глэмпинги, A-frame-домики, отели, базы отдыха", "en": "glamping sites, A-frame cabins, hotels, country lodges" }
+      },
+      {
+        "title": { "ru": "Lifestyle & Places", "en": "Lifestyle & Places" },
+        "text": { "ru": "кафе, рестораны, кофейни, SPA, студии", "en": "cafés, restaurants, coffee shops, spas, studios" }
+      },
+      {
+        "title": { "ru": "Brands & Products", "en": "Brands & Products" },
+        "text": { "ru": "небольшие бренды, косметика, предметы интерьера", "en": "small brands, cosmetics, homeware" }
+      }
+    ],
+    "experience": [
+      {
+        "project": { "ru": "Личная съёмка, Алматы", "en": "Personal footage, Almaty" },
+        "role": { "ru": "Видеограф и visual content creator", "en": "Videographer and visual content creator" },
+        "period": { "ru": "Личное портфолио", "en": "Personal portfolio" },
+        "bullets": [
+          {
+            "ru": "Снимаю природу, пространства, лайфстайл, животных и предметы; выкладываю короткие ролики в Instagram (@alissayeya).",
+            "en": "Film nature, spaces, lifestyle, animals and objects; post short clips on Instagram (@alissayeya)."
+          },
+          {
+            "ru": "Весь цикл сама: съёмка на iPhone, монтаж в DaVinci Resolve и CapCut, цветокоррекция.",
+            "en": "Handle the whole cycle myself: shooting on iPhone, editing in DaVinci Resolve and CapCut, colour grading."
+          },
+          {
+            "ru": "Сняла предметный ролик для шоу «Ведьмин\u00a0час».",
+            "en": "Shot product footage for the Witching\u00a0Hour show."
+          }
+        ]
+      },
+      {
+        "project": { "ru": "«Ведьмин\u00a0час» — YouTube-шоу и подкаст", "en": "Witching\u00a0Hour (Ведьмин час), YouTube show and podcast" },
+        "role": { "ru": "Продюсер, сценарист и соведущая", "en": "Producer, scriptwriter and co-host" },
+        "period": { "ru": "Декабрь 2023 — сейчас", "en": "Dec 2023 – present" },
+        "bullets": [
+          {
+            "ru": "Делаю превью и обложки выпусков в едином визуальном стиле.",
+            "en": "Design episode thumbnails and cover art in one consistent visual style."
+          },
+          {
+            "ru": "Делаю Shorts: 13 роликов канала набрали 4,55 млн просмотров — около 92 % всех просмотров на YouTube.",
+            "en": "Make the show's Shorts: the channel's 13 Shorts total 4.55M views, about 92% of all its YouTube views."
+          },
+          {
+            "ru": "Организую запись — свет, звук, камеру; видео монтируем вместе с соведущей.",
+            "en": "Run recording sessions (light, sound, camera); edit the video jointly with my co-host."
+          }
+        ]
+      }
+    ],
+    "skills": [
+      { "ru": "Съёмка на iPhone", "en": "iPhone videography" },
+      { "ru": "Композиция и кадр", "en": "Composition and framing" },
+      { "ru": "Естественный свет", "en": "Working with natural light" },
+      { "ru": "Монтаж", "en": "Video editing" },
+      { "ru": "Цветокоррекция", "en": "Colour grading" },
+      { "ru": "Reels, Shorts, TikTok", "en": "Reels, Shorts, TikTok" },
+      { "ru": "Предметная съёмка", "en": "Product footage" }
+    ],
+    "tools": {
+      "ru": "iPhone, DaVinci Resolve, CapCut, Lightroom, Photoshop",
+      "en": "iPhone, DaVinci Resolve, CapCut, Lightroom, Photoshop"
+    },
+    "contacts": {
+      "location": { "ru": "Алматы, Казахстан", "en": "Almaty, Kazakhstan" },
+      "phone": "+7 706 643 29 43",
+      "telegram": "@alissayeya",
+      "telegram_url": "https://t.me/alissayeya",
+      "email": "alice.yeya@icloud.com"
+    },
+    "links": [
+      { "label": { "ru": "Портфолио видеографа", "en": "Videographer portfolio" }, "url": "https://boozybatsmain.github.io/alisa-makarenko/video/", "url_en": "https://boozybatsmain.github.io/alisa-makarenko/video/en/", "display": "boozybatsmain.github.io/alisa-makarenko/video" },
+      { "label": { "ru": "Портфолио продюсера", "en": "Producer portfolio" }, "url": "https://boozybatsmain.github.io/alisa-makarenko/", "url_en": "https://boozybatsmain.github.io/alisa-makarenko/en/", "display": "boozybatsmain.github.io/alisa-makarenko" }
+    ]
+  }
+}

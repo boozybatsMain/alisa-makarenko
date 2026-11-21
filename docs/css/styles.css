@@ -995,3 +995,25 @@ html[lang="en"] .val{gap:.05em}
 }
 .ep__meta{flex-wrap:wrap;gap:2px 12px}
 .ep__meta > span{white-space:nowrap}
+
+/* ===== videography: her real pieces at honest size, links to the videographer portfolio ===== */
+.vg__clips{grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.4vw,20px);margin-bottom:0}
+.vgc{margin:0}
+.vgc__frame{position:relative;display:block;width:100%;aspect-ratio:9/16;padding:0;border:0;border-radius:4px;overflow:hidden;background:#000;cursor:pointer;box-shadow:0 0 0 1px var(--line),0 18px 40px -18px rgba(0,0,0,.7)}
+.vgc__frame img,.vgc__frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vgc__frame img{filter:saturate(.92) brightness(.94);transition:filter .8s var(--ease)}
+.vgc__frame video{z-index:1;opacity:0;transition:opacity .6s var(--ease)}
+.vgc.is-looping video{opacity:1}
+.vgc__frame:hover img,.vgc__frame:focus-visible img{filter:none}
+.vgc__play{position:absolute;z-index:2;right:10px;bottom:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(243,233,220,.6);background:rgba(17,12,10,.4);color:var(--ink);display:grid;place-items:center;transition:opacity .4s,background .3s}
+.vgc__play svg{width:14px;height:14px;margin-left:1px}
+.vgc.is-looping .vgc__play{opacity:0}
+.vgc figcaption{margin-top:10px;font-size:13.5px;line-height:1.4;color:var(--ink-2)}
+.vg__links{display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:clamp(20px,2.4vw,28px)}
+.vg__links a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;color:var(--ink-2);border-bottom:1px solid transparent;transition:color .3s}
+.vg__links a:hover{color:var(--rose)}
+.vg__links .vg__more{color:var(--ink);font-family:var(--display);font-weight:500;font-size:clamp(21px,1.8vw,25px)}
+.vg__links .vg__more span{color:var(--rose);transition:transform .4s var(--ease)}
+.vg__links .vg__more:hover span{transform:translateX(4px)}
+@media (max-width:1100px){ .vg__clips{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:700px){ .vg__clips{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px} .vg__links{flex-direction:column;gap:0} }
