@@ -251,6 +251,21 @@
     const links = [...document.querySelectorAll('.moment')];
     const tEl = document.querySelector('[data-moment-title]'), fEl = document.querySelector('[data-moment-from]');
     const big = document.querySelector('[data-moment-play]');
+    // start buffering before the click: the first clip when the block comes near the screen, the others on hover / touch
+    const lean = !!(navigator.connection && navigator.connection.saveData);
+    if (!lean && 'IntersectionObserver' in window) {
+      const pio = new IntersectionObserver((es) => es.forEach((e) => {
+        if (!e.isIntersecting) return;
+        pio.disconnect();
+        if (mv.paused && mv.currentTime === 0) { mv.preload = 'auto'; mv.load(); }
+      }), { rootMargin: '900px 0px' });
+      pio.observe(mv);
+      links.forEach((a) => {
+        const warm = () => { if (a._w || a.dataset.src === mv.currentSrc) return; a._w = document.createElement('video'); a._w.muted = true; a._w.preload = 'auto'; a._w.src = a.dataset.src; };
+        a.addEventListener('pointerenter', warm, { passive: true });
+        a.addEventListener('touchstart', warm, { passive: true });
+      });
+    }
     // native controls appear only once playback starts; before that the poster carries one calm play button
     if (big) {
       mv.controls = false;

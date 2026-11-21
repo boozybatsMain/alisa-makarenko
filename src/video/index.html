@@ -175,11 +175,15 @@
   </div>
 </footer>
 
-<!-- video player: the <video> element exists only while the dialog is open -->
+<!-- video player: clips are warmed up before the click; the bar under the frame shows how much has loaded -->
 <dialog class="player" id="player" aria-labelledby="player-title">
   <button class="dlg__close" type="button" data-close aria-label="{{t:cta.close}}"><span aria-hidden="true">×</span></button>
   <div class="player__box">
-    <div class="player__screen" data-screen></div>
+    <div class="player__screen">
+      <div class="player__video" data-screen></div>
+      <p class="player__load" data-load data-text="{{t:ui.loading}}" role="status" hidden><span class="player__spin" aria-hidden="true"></span><span data-load-text></span></p>
+    </div>
+    <div class="player__buf" aria-hidden="true"><i data-buf></i><i data-pos></i></div>
     <div class="player__cap">
       <div class="player__text">
         <p class="player__kicker" data-kicker></p>

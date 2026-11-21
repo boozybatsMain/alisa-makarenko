@@ -22,6 +22,8 @@ export function buildVideo({ ROOT, DOCS, BASE, esc, typo, plain, finish, isPair,
   const copy = JSON.parse(rd('content/video/copy.json'));
   const media = JSON.parse(rd('content/video/media.json'));
   const exists = (rel) => fs.existsSync(path.join(VROOT, rel));
+  // light "-sd" copy of a clip (scripts/video-sd.mjs); the player starts with it on slow connections and small screens
+  const sdAttr = (url, attr, P) => { const sd = url.replace(/\.mp4$/, '-sd.mp4'); return exists(sd) ? ` ${attr}="${P}${sd}"` : ''; };
   const L = (o, lang) => (isPair(o) ? typo(o[lang] ?? o.ru ?? '', lang) : (o ?? ''));
   const get = (obj, p) => p.split('.').reduce((o, k) => (o == null ? o : o[k]), obj);
   const NB = ' ';
@@ -128,8 +130,9 @@ export function buildVideo({ ROOT, DOCS, BASE, esc, typo, plain, finish, isPair,
       const dur = tc(p.duration || f.clip.duration);
       const label = `${L(copy.ui.watch, lang)}: ${plain(title)} (${dur}, ${L(copy.ui.silent, lang)})`;
       const lg = f.loop_lg ? ` data-loop-lg="${P}${f.loop_lg.url}"` : '';
+      const sd = sdAttr(f.clip.url, 'data-src-sd', P);
       return `<li class="pc pc--${v ? 'v' : 'h'}${p.stacked ? ' pc--stacked' : ''}${isScope(p) ? ' pc--scope' : ''} ${g} sm-${smc} rv">
-        <a class="piece" href="${P}${f.clip.url}" data-piece data-group="${esc(p.group)}" data-src="${P}${f.clip.url}" data-loop="${P}${f.loop.url}"${lg} data-poster="${P}${(f.poster_960 || f.poster).webp.url}" data-w="${f.clip.width}" data-h="${f.clip.height}" data-title="${esc(plain(title))}" data-caption="${esc(plain(cap))}" data-dur="${dur}" aria-label="${esc(label)}">
+        <a class="piece" href="${P}${f.clip.url}" data-piece data-group="${esc(p.group)}" data-src="${P}${f.clip.url}"${sd} data-loop="${P}${f.loop.url}"${lg} data-poster="${P}${(f.poster_960 || f.poster).webp.url}" data-w="${f.clip.width}" data-h="${f.clip.height}" data-title="${esc(plain(title))}" data-caption="${esc(plain(cap))}" data-dur="${dur}" aria-label="${esc(label)}">
           <span class="piece__frame" style="aspect-ratio:${ar}">${posterPicture(p, lang, P, sizesFor(span, smc))}<span class="piece__play" aria-hidden="true">${icon.play}</span><span class="piece__tc" aria-hidden="true">${dur}</span></span>
           <span class="piece__meta"><span class="piece__t">${esc(title)}</span><span class="piece__c">${esc(cap)}</span></span>
         </a>
@@ -169,7 +172,7 @@ export function buildVideo({ ROOT, DOCS, BASE, esc, typo, plain, finish, isPair,
       },
       reelAttrs: () => {
         const w = reelW, v = reelV;
-        return `href="${P}${w.files.video.url}" data-reel data-src="${P}${w.files.video.url}" data-src-tall="${P}${v.files.video.url}" data-poster="${P}${w.files.poster_small.webp.url}" data-poster-tall="${P}${v.files.poster_small.webp.url}" data-w="${w.files.video.width}" data-h="${w.files.video.height}" data-w-tall="${v.files.video.width}" data-h-tall="${v.files.video.height}" data-title="${t(copy.ui.showreel_title)}" data-caption="${t(copy.ui.showreel_note)}" data-dur="${tc(w.files.video.duration)}" data-dur-tall="${tc(v.files.video.duration)}"`;
+        return `href="${P}${w.files.video.url}" data-reel data-src="${P}${w.files.video.url}" data-src-tall="${P}${v.files.video.url}"${sdAttr(w.files.video.url, 'data-src-sd', P)}${sdAttr(v.files.video.url, 'data-src-tall-sd', P)} data-poster="${P}${w.files.poster_small.webp.url}" data-poster-tall="${P}${v.files.poster_small.webp.url}" data-w="${w.files.video.width}" data-h="${w.files.video.height}" data-w-tall="${v.files.video.width}" data-h-tall="${v.files.video.height}" data-title="${t(copy.ui.showreel_title)}" data-caption="${t(copy.ui.showreel_note)}" data-dur="${tc(w.files.video.duration)}" data-dur-tall="${tc(v.files.video.duration)}"`;
       },
       reelFrame: () => {
         const w = reelW, v = reelV;
