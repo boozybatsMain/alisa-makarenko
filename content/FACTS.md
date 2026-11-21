@@ -22,7 +22,6 @@ Public counts come from `source/youtube/videos.json`, `source/youtube/podcast.js
 | "Second most-viewed video over last 28 days" (Marauders) | 1 381 views, row 2 | 28 days | yt-stats-1.png |
 | Episode views 8 259 / 16 426 / 13 196 / 11 249 / 11 058 / 10 891 / 4 512 / 6 482 / 6 373 / 6 121 | public counts | as of 21 Nov 2026 | videos.json |
 | Episode durations and dates | `duration_sec`, `upload_date` | — | videos.json |
-| Seven-month break | last long video 31 Mar 2026, last Short 17 Apr 2026, comeback 5 Nov 2026; episode description «Спустя 7 месяцев…» | — | videos.json (X8abHp0ekss description) |
 | 8,2 тыс. / 8.2K views in first 14 days; ranked 1 of 10 | «Просмотры 8,2 тыс.» (first 14 days); «Место в рейтинге по числу просмотров 1 из 10» | 14 d 17 h after release | yt-stats-3.png, yt-stats-6.png |
 | 8,3 тыс. (caption) | «8,3 тыс.» | 14 d 17 h after release | yt-stats-6.png |
 | +65 % views / +53 % watch time / +45 % new subscribers | +65,1 % (24 294 views), +52,9 % (4 265,7 h), +44,8 % (+84 subs) vs previous 28 days | 23 Oct – 19 Nov 2026 vs prior 28 days | yt-draft-5.jpg; totals also on yt-stats-1.png |
@@ -83,7 +82,7 @@ Public counts come from `source/youtube/videos.json`, `source/youtube/podcast.js
 
 ## Audience quotes
 
-Six comments under X8abHp0ekss (Nov 2026), from feedback-1…6.jpg and yt-draft-4.jpg (full text of the "островок уюта" comment). Like counts: 25, 6, 4, 3, 2, 13. Names, handles and avatars are not published; emoji removed; omissions marked "…".
+Ten real YouTube comments (copy.json `voices.items`, each with its `comment_id`), fetched on 22 Nov 2026 with yt-dlp 2026.10.26 (`--write-comments --skip-download`, top sort, up to 300 per video) for all 58 long videos: 2 109 comments in all. Picked for what the podcast means to people (anxiety, depression, pregnancy, loneliness, sleep). Sources: uKxovctmQHI ×3 (Сёстры Блэк), ykX4DsuCKJ4 (Сладость или гадость), Ii-L_4PK3D8 (День рождения канала, PS part only), -HqRKq9p73Q (Страшные существа), Kc8jJC2onB4 (Патронусы), X8abHp0ekss (Вампиры против оборотней), vwBj35X9dUY (Рон Уизли), LToqv7d5pwg (Любовь). Names, handles, avatars and like counts are not published; emoji removed; only obvious typos and punctuation fixed ("утишают" → "утешают", "во время" → "вовремя"); cuts marked "…". Comments that name the co-host were skipped.
 
 ## Deliberately not used
 
@@ -94,10 +93,40 @@ Six comments under X8abHp0ekss (Nov 2026), from feedback-1…6.jpg and yt-draft-
 - The "93 % of 2025 listeners were new" interpretation (copy states the two raw numbers instead).
 - Approximate (≈) readings from chart bars.
 
+## Hero text (22 Nov 2026, Alisa's own wording)
+
+| Number in copy | Exact value | Source |
+|---|---|---|
+| 30,6 тыс. / 30.6K listeners in 2025 | 30 581. Alisa wrote «30,5 тыс.»; rounded correctly it is 30,6 | yandex-2025-6.jpg |
+| «более 7,4 млн минут» / "more than 7.4M minutes" | 7 460 814 | yandex-2025-6.jpg |
+| 18,4 тыс. / 18.4K plays of the top episode in 2025 | 18 407 (Святочный бал) | yandex-2025-2.jpg |
+| «Три года» | first episode 4 Dec 2023, page dated Nov 2026 (just under three years; Alisa's wording kept) | podcast.json |
+
+## Production facts stated by Alisa (22 Nov 2026, edits.pdf)
+
+- Every stage except video editing is hers; video is edited together with the co-host.
+- Gear: Focusrite Scarlett Solo audio interface, a Fifine microphone, softboxes.
+- She makes thumbnails, cover art, descriptions and links; answers subscribers; negotiates ads through the project's PR inbox; handles barter partners.
+- YouTube monetisation: ads (AdSense) approved, setup in progress as of 22 Nov 2026 («ADS нам одобрили уже, мы в процессе»). Site wording: «Монетизация YouTube одобрена, подключение в процессе».
+
+## Clips (moments)
+
+All 1280×720 H.264 CRF 26, 25 fps, AAC 96 kbit/s 48 kHz, loudnorm −16 LUFS; cut points from the ru auto-captions, snapped to the quietest 25 ms near the word boundary. Transcripts in media.json.
+
+| Clip | Video | In → out | Alisa asked |
+|---|---|---|---|
+| godric-hollow | JdAoMKIe3vQ | 9:11.92 → 9:43.46 | «с 9:13» (link &t=754s) |
+| showrunner | WkVu5eFFYxM | 14:45.66 → 15:23.11 | «с 14:45» (link &t=2775s) |
+| patronus | Kc8jJC2onB4 | 3:29.92 → 4:08.12 | «с 3:31» (link &t=1051s) |
+| halloween-topic | X8abHp0ekss | 0:48.62 → 1:20.88 | keep the werewolves clip; re-cut to start after the two sentences about the months away |
+
+The three new sections were downloaded with yt-dlp 2026.10.26 (`--download-sections`, ≤720p) into the scratch directory, not kept in source/.
+
 ## Framing notes (Nov 2026 revision)
 
-- Comeback episode: 8,2 тыс. = first 14 days (yt-stats-6); 8,3 тыс. / 8 259 = public count on 21 Nov 2026, always labelled «на 21 ноября».
-- +65 / +53 / +45 % compare the whole channel's last 28 days (23 Oct – 19 Nov 2026, which include the 5 Nov release) with the previous 28 days; +45 % = +84 subscribers net.
+- Never mentioned on the site (Alisa, 22 Nov 2026): the co-host's name, the months-long YouTube pause, the word «шоу» for the project. Boosty appears only in the statistics and in her own project description.
+- Halloween episode: 8,2 тыс. = first 14 days (yt-stats-6); 8,3 тыс. / 8 259 = public count on 21 Nov 2026, always labelled «на 21 ноября».
+- +65 / +53 / +45 % (statistics block «28 дней вокруг хэллоуинского выпуска») compare the whole channel's last 28 days (23 Oct – 19 Nov 2026, which include the 5 Nov release) with the previous 28 days; +45 % = +84 subscribers net.
 - Apple +77 % (S3E15): 200 listeners at ~day 15 vs the show's median episode at the same day (apple-2 chart), not vs the 60-day median.
 - The seven-month pause was on YouTube only: S3E14 «Травология» came out in the podcast feed on 1 Aug 2026.
 - 55 = releases in the podcast feed (includes the intro episode and the 0:59 HBO trailer note).

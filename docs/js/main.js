@@ -213,13 +213,14 @@
     });
   }
 
-  /* ---------- lightbox for behind-the-scenes screenshots ---------- */
+  /* ---------- lightbox for screenshots; prev / next stay inside one set (data-lb="group") ---------- */
   const lb = document.getElementById('lightbox');
-  const shots = [...document.querySelectorAll('[data-lb]')];
-  if (lb && shots.length && typeof lb.showModal === 'function') {
+  const allShots = [...document.querySelectorAll('[data-lb]')];
+  if (lb && allShots.length && typeof lb.showModal === 'function') {
     const box = lb.querySelector('[data-lb-img]');
     const tEl = lb.querySelector('[data-lb-title]'), cEl = lb.querySelector('[data-lb-cap]'), nEl = lb.querySelector('[data-lb-count]');
-    let i = 0;
+    const prevB = lb.querySelector('[data-prev]'), nextB = lb.querySelector('[data-next]');
+    let shots = [], i = 0;
     const show = (k) => {
       i = (k + shots.length) % shots.length;
       const a = shots[i];
@@ -231,18 +232,29 @@
       box.replaceChildren(pic);
       tEl.textContent = a.dataset.title || '';
       cEl.textContent = a.dataset.caption || '';
-      nEl.textContent = `${i + 1} / ${shots.length}`;
+      nEl.textContent = shots.length > 1 ? `${i + 1} / ${shots.length}` : '';
     };
-    const key = (e) => { if (e.key === 'ArrowRight') { e.preventDefault(); show(i + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); show(i - 1); } };
-    lb.querySelector('[data-prev]').addEventListener('click', () => show(i - 1));
-    lb.querySelector('[data-next]').addEventListener('click', () => show(i + 1));
-    shots.forEach((a, k) => a.addEventListener('click', (e) => {
+    const key = (e) => { if (shots.length < 2) return; if (e.key === 'ArrowRight') { e.preventDefault(); show(i + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); show(i - 1); } };
+    prevB.addEventListener('click', () => show(i - 1));
+    nextB.addEventListener('click', () => show(i + 1));
+    allShots.forEach((a) => a.addEventListener('click', (e) => {
       if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       e.preventDefault();
-      show(k);
+      shots = allShots.filter((x) => x.dataset.lb === a.dataset.lb);
+      prevB.hidden = nextB.hidden = shots.length < 2;
+      show(shots.indexOf(a));
       lb.addEventListener('keydown', key);
       openDialog(lb, () => { lb.removeEventListener('keydown', key); box.replaceChildren(); });
     }));
+  }
+
+  /* ---------- statistics: closed by default, opens from the menu link or a #stats address ---------- */
+  const statsFold = document.getElementById('stats-fold');
+  if (statsFold) {
+    const openStats = () => { statsFold.open = true; };
+    if (location.hash === '#stats') openStats();
+    window.addEventListener('hashchange', () => { if (location.hash === '#stats') openStats(); });
+    document.querySelectorAll('[data-open-stats]').forEach((a) => a.addEventListener('click', openStats));
   }
 
   /* ---------- best moments player ---------- */
@@ -290,45 +302,4 @@
     }));
   }
 
-  /* ---------- her own clips: poster first; a muted loop on hover (desktop), while in view (touch) or on press ---------- */
-  const vgcs = [...document.querySelectorAll('.vgc[data-loop]')];
-  const saveData = !!(navigator.connection && navigator.connection.saveData);
-  if (vgcs.length) {
-    const playing = [];
-    const start = (f) => {
-      const btn = f.querySelector('.vgc__frame');
-      if (!f._v) {
-        const v = document.createElement('video');
-        v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'auto';
-        v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
-        v.src = f.dataset.loop;
-        btn.appendChild(v);
-        f._v = v;
-      }
-      const p = f._v.play();
-      if (p && p.then) p.then(() => { f.classList.add('is-looping'); btn.setAttribute('aria-pressed', 'true'); }).catch(() => {});
-      const k = playing.indexOf(f); if (k > -1) playing.splice(k, 1);
-      playing.push(f);
-      while (playing.length > 2) stop(playing.shift());
-    };
-    const stop = (f) => {
-      f.classList.remove('is-looping');
-      f.querySelector('.vgc__frame').setAttribute('aria-pressed', 'false');
-      if (f._v) f._v.pause();
-      const k = playing.indexOf(f); if (k > -1) playing.splice(k, 1);
-    };
-    vgcs.forEach((f) => {
-      const btn = f.querySelector('.vgc__frame');
-      btn.addEventListener('click', () => (f.classList.contains('is-looping') ? stop(f) : start(f)));
-      if (canHover && !reduce && !saveData) {
-        let timer = 0;
-        f.addEventListener('mouseenter', () => { clearTimeout(timer); timer = setTimeout(() => start(f), 120); });
-        f.addEventListener('mouseleave', () => { clearTimeout(timer); stop(f); });
-      }
-    });
-    if (!canHover && !reduce && !saveData && 'IntersectionObserver' in window) {
-      const io3 = new IntersectionObserver((es) => es.forEach((e) => (e.intersectionRatio >= 0.6 ? start(e.target) : stop(e.target))), { threshold: [0, 0.6] });
-      vgcs.forEach((f) => io3.observe(f));
-    }
-  }
 })();

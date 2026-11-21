@@ -1919,7 +1919,7 @@
       ],
       "alt": {
         "ru": "Экран викторины «Своя игра» и веб-камеры участников",
-        "en": "The quiz-show board and the players’ webcams"
+        "en": "The quiz board and the players’ webcams"
       },
       "source": {
         "file": "source/youtube/long/2mLq8gz0ig8.mp4",
@@ -1934,27 +1934,27 @@
       }
     },
     {
-      "id": "moment-halloween-comeback",
+      "id": "moment-halloween-topic",
       "group": "best-moments",
       "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
       "variants": [
         {
-          "path": "docs/assets/moments/halloween-comeback.mp4",
-          "url": "assets/moments/halloween-comeback.mp4",
-          "bytes": 4163481,
+          "path": "docs/assets/moments/halloween-topic.mp4",
+          "url": "assets/moments/halloween-topic.mp4",
+          "bytes": 3165735,
           "format": "mp4",
           "type": "video",
           "width": 1280,
           "height": 720,
-          "duration": 40.8,
+          "duration": 32.28,
           "video_codec": "h264",
           "fps": "25/1",
           "audio": "aac"
         },
         {
-          "path": "docs/assets/moments/halloween-comeback-poster.webp",
-          "url": "assets/moments/halloween-comeback-poster.webp",
-          "bytes": 60954,
+          "path": "docs/assets/moments/halloween-topic-poster.webp",
+          "url": "assets/moments/halloween-topic-poster.webp",
+          "bytes": 67174,
           "format": "webp",
           "type": "image",
           "width": 1280,
@@ -1962,9 +1962,9 @@
           "duration": null
         },
         {
-          "path": "docs/assets/moments/halloween-comeback-poster.jpg",
-          "url": "assets/moments/halloween-comeback-poster.jpg",
-          "bytes": 107697,
+          "path": "docs/assets/moments/halloween-topic-poster.jpg",
+          "url": "assets/moments/halloween-topic-poster.jpg",
+          "bytes": 108301,
           "format": "jpg",
           "type": "image",
           "width": 1280,
@@ -1985,40 +1985,38 @@
         "view_count": 8259,
         "url": "https://www.youtube.com/watch?v=X8abHp0ekss"
       },
-      "in_tc": "00:00:40.09",
-      "out_tc": "00:01:20.89",
-      "in_sec": 40.09,
-      "out_sec": 80.89,
-      "transcript_ru": "Мы всё думали, как бы нам ворваться в YouTube спустя полгода отсутствия. То есть нас не было семь месяцев на Ютубе. Чего бы такого интересного, осеннего, такого хэллоуинского вам принести? И думали, пока не поняли, что самое осеннее, что есть, — это противостояние вампиров и оборотней, где бы оно ни было. Потому что я сейчас пересматривала «Дневники вампира». В кино сейчас показывают «Сумерки». То есть сейчас вот эта тема, вампиры и оборотни, она такая ежегодно актуальная. Поэтому даже в Гарри Поттере не объединить их было бы преступлением против осени.",
-      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added. Proof-listen before publishing a quote.",
-      "why": "The editorial logic of the comeback episode in the hosts’ own words: why return after 7 months with this topic, tied to the season and to what audiences are watching right now. Warm, confident, complete sentences; ends on a clean punchline (“преступлением против осени”). This is the episode that became №1 on the channel (8.2K+ views in 14 days).",
-      "speaker_note": "The speaker mentions rewatching The Vampire Diaries; a public viewer comment on this episode addresses Alisa about exactly that, so this voice is most likely Alisa — confirm with her.",
-      "poster_timecode_in_clip": 18,
-      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
-      "duration_sec": 40.8
+      "in_tc": "00:00:48.62",
+      "out_tc": "00:01:20.88",
+      "in_sec": 48.62,
+      "out_sec": 80.88,
+      "transcript_ru": "Чего бы такого интересного, осеннего, такого хэллоуинского вам принести? И думали, пока не поняли, что самое осеннее, что есть, — это противостояние вампиров и оборотней, где бы оно ни было. Потому что я сейчас пересматривала «Дневники вампира». В кино сейчас показывают «Сумерки». То есть сейчас вот эта тема, вампиры и оборотни, она такая ежегодно актуальная. Поэтому даже в Гарри Поттере не объединить их было бы преступлением против осени.",
+      "transcript_note": "Built from YouTube auto-captions (ru), names and punctuation corrected. Proof-listen before quoting.",
+      "note": "Re-cut of the former halloween-comeback clip (40.09–80.89): it now starts at «Чего бы такого…», after the two sentences about the months away from YouTube, which the site must not mention (Alisa, 22 Nov 2026).",
+      "processing": "720p h264 CRF26 25 fps + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out, cut points snapped to the quietest 25 ms window near the caption word boundary (Nov 22, 2026).",
+      "duration_sec": 32.28
     },
     {
-      "id": "moment-werewolf-vampire-myths",
+      "id": "moment-godric-hollow",
       "group": "best-moments",
       "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
       "variants": [
         {
-          "path": "docs/assets/moments/werewolf-vampire-myths.mp4",
-          "url": "assets/moments/werewolf-vampire-myths.mp4",
-          "bytes": 3305999,
+          "path": "docs/assets/moments/godric-hollow.mp4",
+          "url": "assets/moments/godric-hollow.mp4",
+          "bytes": 4626272,
           "format": "mp4",
           "type": "video",
           "width": 1280,
           "height": 720,
-          "duration": 37.2,
+          "duration": 31.56,
           "video_codec": "h264",
           "fps": "25/1",
           "audio": "aac"
         },
         {
-          "path": "docs/assets/moments/werewolf-vampire-myths-poster.webp",
-          "url": "assets/moments/werewolf-vampire-myths-poster.webp",
-          "bytes": 66806,
+          "path": "docs/assets/moments/godric-hollow-poster.webp",
+          "url": "assets/moments/godric-hollow-poster.webp",
+          "bytes": 92966,
           "format": "webp",
           "type": "image",
           "width": 1280,
@@ -2026,9 +2024,9 @@
           "duration": null
         },
         {
-          "path": "docs/assets/moments/werewolf-vampire-myths-poster.jpg",
-          "url": "assets/moments/werewolf-vampire-myths-poster.jpg",
-          "bytes": 114390,
+          "path": "docs/assets/moments/godric-hollow-poster.jpg",
+          "url": "assets/moments/godric-hollow-poster.jpg",
+          "bytes": 139643,
           "format": "jpg",
           "type": "image",
           "width": 1280,
@@ -2037,29 +2035,151 @@
         }
       ],
       "alt": {
-        "ru": "Фрагмент выпуска «ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск» со звуком",
-        "en": "Excerpt with sound from the episode “ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск”"
+        "ru": "Фрагмент выпуска «ГОДРИКОВА ВПАДИНА. История и жители заснеженной деревушки» со звуком",
+        "en": "Excerpt with sound from the episode “ГОДРИКОВА ВПАДИНА. История и жители заснеженной деревушки”"
       },
       "source": {
-        "file": "source/youtube/long/X8abHp0ekss.mp4",
-        "youtube_id": "X8abHp0ekss",
-        "title": "ВАМПИРЫ ПРОТИВ ОБОРОТНЕЙ. Хэллоуинский выпуск",
+        "file": "YouTube section 8:55–10:35 downloaded with yt-dlp 2026.10.26 (not kept in source/)",
+        "youtube_id": "JdAoMKIe3vQ",
+        "title": "ГОДРИКОВА ВПАДИНА. История и жители заснеженной деревушки",
         "kind": "video",
-        "upload_date": "2026-11-05",
-        "view_count": 8259,
-        "url": "https://www.youtube.com/watch?v=X8abHp0ekss"
+        "upload_date": "2026-01-10",
+        "view_count": 5339,
+        "url": "https://www.youtube.com/watch?v=JdAoMKIe3vQ"
       },
-      "in_tc": "00:04:04.71",
-      "out_tc": "00:04:41.90",
-      "in_sec": 244.71,
-      "out_sec": 281.9,
-      "transcript_ru": "В мифах Древней Греции встречаются истории о людях, превращённых в волков. Например, в «Метаморфозах» римского поэта Овидия рассказывается о царе Ликаоне, которого Зевс превратил в волка в наказание за жестокость. А в фольклоре Восточной Европы на протяжении столетий существовали поверья о мертвецах, которые возвращаются из могил, чтобы мучить живых и пить их кровь. Именно в славянских преданиях постепенно складывался образ вампира, который и позднее завоевал европейскую литературу и стал одним из самых узнаваемых монстров в массовой культуре.",
-      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: captions read «превращённых во волков» — normalised to «в волков». Proof-listen before publishing a quote.",
-      "why": "Shows research and scriptwriting: a compact, well-sourced cultural-history beat (Ovid’s Lycaon → Slavic folklore → the modern vampire) delivered fluently in one take. No in-jokes; makes sense to a viewer who is not a Potter fan.",
-      "speaker_note": null,
-      "poster_timecode_in_clip": 0.5,
-      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
-      "duration_sec": 37.19
+      "in_tc": "00:09:11.92",
+      "out_tc": "00:09:43.46",
+      "in_sec": 551.92,
+      "out_sec": 583.46,
+      "transcript_ru": "Кстати, как заметил Гарри, любопытно, что эпитафии на могилах Поттеров и Дамблдоров в Годриковой Впадине взяты из Библии. И это как бы такая связь смешанных деревень с обычными магловскими традициями. Они же всё-таки на территории церкви. И вот смешанные деревни, вроде Годриковой Впадины, они живут на стыке, да, двух реальностей. Волшебники и маглы делят одно пространство, одну церковь, одно кладбище и какие-то одни традиции.",
+      "transcript_note": "Built from YouTube auto-captions (ru), names and punctuation corrected. Proof-listen before quoting.",
+      "note": "Alisa asked for this video «с 9:13» (her link carried &t=754s); the cut starts at 9:11.9, at the start of the sentence that runs through 9:13.",
+      "processing": "720p h264 CRF26 25 fps + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out, cut points snapped to the quietest 25 ms window near the caption word boundary (Nov 22, 2026).",
+      "duration_sec": 31.56
+    },
+    {
+      "id": "moment-showrunner",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/showrunner.mp4",
+          "url": "assets/moments/showrunner.mp4",
+          "bytes": 2124855,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 37.45,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/showrunner-poster.webp",
+          "url": "assets/moments/showrunner-poster.webp",
+          "bytes": 53288,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/showrunner-poster.jpg",
+          "url": "assets/moments/showrunner-poster.jpg",
+          "bytes": 94871,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «СЕРИАЛ HBO о Гарри Поттере. Ч1. Известные шоураннеры, съемочная команда и подробности продакшена» со звуком",
+        "en": "Excerpt with sound from the episode “СЕРИАЛ HBO о Гарри Поттере. Ч1. Известные шоураннеры, съемочная команда и подробности продакшена”"
+      },
+      "source": {
+        "file": "YouTube section 14:27–16:07 downloaded with yt-dlp 2026.10.26 (not kept in source/)",
+        "youtube_id": "WkVu5eFFYxM",
+        "title": "СЕРИАЛ HBO о Гарри Поттере. Ч1. Известные шоураннеры, съемочная команда и подробности продакшена",
+        "kind": "video",
+        "upload_date": "2025-12-04",
+        "view_count": 6121,
+        "url": "https://www.youtube.com/watch?v=WkVu5eFFYxM"
+      },
+      "in_tc": "00:14:45.66",
+      "out_tc": "00:15:23.11",
+      "in_sec": 885.66,
+      "out_sec": 923.11,
+      "transcript_ru": "Она утверждена на пост шоураннера после многоэтапного отбора и лично встречалась с Джоан Роулинг, а Роулинг высоко оценила её пилотный сценарий и творческое видение и лично Франческу одобрила. Она также будет исполнительным продюсером проекта. И кто такой шоураннер вообще? Шоураннер — это главный руководитель сериала, который совмещает роли сценариста и продюсера. Именно шоураннер определяет общее творческое направление, управляет сценарной группой и следит за тем, чтобы все элементы продакшена соответствовали единому видению проекта. И именно шоураннер отвечает за целостность и качество сериала.",
+      "transcript_note": "Built from YouTube auto-captions (ru), names and punctuation corrected. Proof-listen before quoting.",
+      "note": "Alisa asked for this video «с 14:45» (her link carried &t=2775s); the cut starts at 14:45.7, the first full sentence.",
+      "processing": "720p h264 CRF26 25 fps + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out, cut points snapped to the quietest 25 ms window near the caption word boundary (Nov 22, 2026).",
+      "duration_sec": 37.45
+    },
+    {
+      "id": "moment-patronus",
+      "group": "best-moments",
+      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
+      "variants": [
+        {
+          "path": "docs/assets/moments/patronus.mp4",
+          "url": "assets/moments/patronus.mp4",
+          "bytes": 5350684,
+          "format": "mp4",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": 38.2,
+          "video_codec": "h264",
+          "fps": "25/1",
+          "audio": "aac"
+        },
+        {
+          "path": "docs/assets/moments/patronus-poster.webp",
+          "url": "assets/moments/patronus-poster.webp",
+          "bytes": 48026,
+          "format": "webp",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/moments/patronus-poster.jpg",
+          "url": "assets/moments/patronus-poster.jpg",
+          "bytes": 78835,
+          "format": "jpg",
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Фрагмент выпуска «ПАТРОНУСЫ. Внутренние защитники, телесная магия и сила счастливых воспоминаний» со звуком",
+        "en": "Excerpt with sound from the episode “ПАТРОНУСЫ. Внутренние защитники, телесная магия и сила счастливых воспоминаний”"
+      },
+      "source": {
+        "file": "YouTube section 3:13–4:53 downloaded with yt-dlp 2026.10.26 (not kept in source/)",
+        "youtube_id": "Kc8jJC2onB4",
+        "title": "ПАТРОНУСЫ. Внутренние защитники, телесная магия и сила счастливых воспоминаний",
+        "kind": "video",
+        "upload_date": "2026-02-21",
+        "view_count": 6373,
+        "url": "https://www.youtube.com/watch?v=Kc8jJC2onB4"
+      },
+      "in_tc": "00:03:29.92",
+      "out_tc": "00:04:08.12",
+      "in_sec": 209.92,
+      "out_sec": 248.12,
+      "transcript_ru": "А вот телесный патронус, он уже такой в форме животного. И мы в анимагах обсуждали, что, вероятно, они как-то связаны. Это как бы такой сгусток позитивной энергии. Вот прям чистое счастье такое, да. И поэтому это очень мощное заклинание против дементоров. Чтобы сотворить такую мощную магию, а это мощная магия, волшебник должен сосредоточиться на одном из своих самых счастливых воспоминаний, потому что без этой светлой эмоциональной энергии патронус может попросту не появиться.",
+      "transcript_note": "Built from YouTube auto-captions (ru), names and punctuation corrected. Proof-listen before quoting.",
+      "note": "Alisa asked for this video «с 3:31» (her link carried &t=1051s); the cut starts at 3:29.9, the start of the sentence around 3:31.",
+      "processing": "720p h264 CRF26 25 fps + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out, cut points snapped to the quietest 25 ms window near the caption word boundary (Nov 22, 2026).",
+      "duration_sec": 38.2
     },
     {
       "id": "moment-eleven-schools",
@@ -2124,134 +2244,6 @@
       "poster_timecode_in_clip": 12,
       "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
       "duration_sec": 27.6
-    },
-    {
-      "id": "moment-house-system",
-      "group": "best-moments",
-      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
-      "variants": [
-        {
-          "path": "docs/assets/moments/house-system.mp4",
-          "url": "assets/moments/house-system.mp4",
-          "bytes": 2821150,
-          "format": "mp4",
-          "type": "video",
-          "width": 1280,
-          "height": 720,
-          "duration": 30.13,
-          "video_codec": "h264",
-          "fps": "25/1",
-          "audio": "aac"
-        },
-        {
-          "path": "docs/assets/moments/house-system-poster.webp",
-          "url": "assets/moments/house-system-poster.webp",
-          "bytes": 48430,
-          "format": "webp",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/moments/house-system-poster.jpg",
-          "url": "assets/moments/house-system-poster.jpg",
-          "bytes": 94504,
-          "format": "jpg",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент выпуска «СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных» со звуком",
-        "en": "Excerpt with sound from the episode “СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных”"
-      },
-      "source": {
-        "file": "source/youtube/long/mgyuUI8Z_4k.mp4",
-        "youtube_id": "mgyuUI8Z_4k",
-        "title": "СЛИЗЕРИН. Таинственный факультет для амбициозных, хитроумных и решительных",
-        "kind": "video",
-        "upload_date": "2024-06-15",
-        "view_count": 11058,
-        "url": "https://www.youtube.com/watch?v=mgyuUI8Z_4k"
-      },
-      "in_tc": "00:02:35.71",
-      "out_tc": "00:03:05.84",
-      "in_sec": 155.71,
-      "out_sec": 185.84,
-      "transcript_ru": "Я хотела для начала сказать, почему это дом, а не факультет. В общем, в Британии в университетах есть House System — это создание для школьников настоящего дома, то есть место, куда хочется возвращаться, а с кем можно разделить горести, там, завести друзей, радость разделить с другими жителями. Это не только школа, это не университет, это не деканы, это не факультет — это именно дом. Такова британская система houses в университетах Британии, то есть так даже Роулинг училась.",
-      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: auto-captions: «Хаос» → houses. Proof-listen before publishing a quote.",
-      "why": "An original angle rather than a retelling: why the Russian translation “факультет” loses the British idea of a “house”. Shows cultural/translation literacy and a personal point of view; complete thought from first to last sentence.",
-      "speaker_note": "Just before this clip the co-host jokes that “Alisa already started saying дом”, so the speaker here is most likely Alisa — confirm.",
-      "poster_timecode_in_clip": 10,
-      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
-      "duration_sec": 30.13
-    },
-    {
-      "id": "moment-marauders",
-      "group": "best-moments",
-      "purpose": "Excerpt with sound for the “best moments” block (controls, preload=none, poster).",
-      "variants": [
-        {
-          "path": "docs/assets/moments/marauders.mp4",
-          "url": "assets/moments/marauders.mp4",
-          "bytes": 3482596,
-          "format": "mp4",
-          "type": "video",
-          "width": 1280,
-          "height": 720,
-          "duration": 38.17,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": "aac"
-        },
-        {
-          "path": "docs/assets/moments/marauders-poster.webp",
-          "url": "assets/moments/marauders-poster.webp",
-          "bytes": 48966,
-          "format": "webp",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/moments/marauders-poster.jpg",
-          "url": "assets/moments/marauders-poster.jpg",
-          "bytes": 95940,
-          "format": "jpg",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент выпуска «ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости» со звуком",
-        "en": "Excerpt with sound from the episode “ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости”"
-      },
-      "source": {
-        "file": "source/youtube/long/FuSKSb_aRnQ.mp4",
-        "youtube_id": "FuSKSb_aRnQ",
-        "title": "ИСТОРИЯ ЮНЫХ МАРОДЕРОВ. Любимчики преподавателей и их опасные шалости",
-        "kind": "video",
-        "upload_date": "2024-04-27",
-        "view_count": 20081,
-        "url": "https://www.youtube.com/watch?v=FuSKSb_aRnQ"
-      },
-      "in_tc": "00:01:43.14",
-      "out_tc": "00:02:21.29",
-      "in_sec": 103.14,
-      "out_sec": 141.29,
-      "transcript_ru": "Ну, мы все знаем, что мародёрами себя называла вот эта четвёрка из Гриффиндора. Они стали легендарными, были легендарными, такими же, наверное, как Золотое трио или близнецы Уизли, их постоянно вспоминали даже через много лет. Мародёрами были Джеймс Поттер — это отец Гарри Поттера, удивительно; Сириус Блэк — крёстный отец Гарри Поттера, ну и отцовская фигура, потому что Гарри с ним общался и взаимодействовал уже в сознательном возрасте; Римус Люпин — учитель Гарри, тоже в каком-то смысле отцовская фигура; и Питер Петтигрю — это их приятель из детства, тоже человек, который… ну, из-за которого вся история вообще по сути началась.",
-      "transcript_note": "Built from YouTube auto-captions (ru) with punctuation added; corrections: auto-captions: «отец ри Поттера» → отец Гарри Поттера, «Сириус бл» → Сириус Блэк, «Пети Грю» → Петтигрю, «из детство» → из детства. Proof-listen before publishing a quote.",
-      "why": "From the channel’s most-viewed long episode (20K+ views). A tidy character set-up that a newcomer can follow, with a light dry joke (“отец Гарри Поттера, удивительно”) and a strong closing hook about Peter.",
-      "speaker_note": null,
-      "poster_timecode_in_clip": 19,
-      "processing": "720p h264 CRF26 + AAC 96k 48 kHz, loudnorm −16 LUFS, 0.12 s fade-in / 0.18 s fade-out on audio, cut points snapped to the quietest 25 ms window near the caption word boundary. Verified: frames at 0/25/50/75/100 % show both hosts on camera (split-screen); subtitle lines re-read for sentence completeness.",
-      "duration_sec": 38.15
     },
     {
       "id": "moment-snape-prophecy",
@@ -2862,8 +2854,8 @@
         }
       ],
       "alt": {
-        "ru": "Apple Podcasts: четыре последних выпуска выше медианы шоу на 63–85 %",
-        "en": "Apple Podcasts: the four latest episodes beat the show median by 63–85%"
+        "ru": "Apple Podcasts: четыре последних выпуска выше медианы подкаста на 63–85 %",
+        "en": "Apple Podcasts: the four latest episodes beat the podcast's median by 63–85%"
       },
       "source": {
         "file": "source/disk-ascii/apple-2.png",
@@ -2911,8 +2903,8 @@
         }
       ],
       "alt": {
-        "ru": "Рабочее пространство шоу в Notion: сценарии, Shorts, статьи, архив выпусков, «Своя игра», шаблоны, PR",
-        "en": "The show’s Notion workspace: scripts, Shorts, articles, episode archive, quiz, templates, PR"
+        "ru": "Рабочее пространство проекта в Notion: сценарии, Shorts, статьи, архив выпусков, «Своя игра», шаблоны, PR",
+        "en": "The project's Notion workspace: scripts, Shorts, articles, episode archive, quiz, templates, PR"
       },
       "source": {
         "file": "source/disk-ascii/notion-workspace.png",
@@ -2925,6 +2917,41 @@
       },
       "privacy": "The «ПАРОЛИ И ССЫЛКИ» row (100,622,230,30 in the original) is blurred; rebuilt by scripts/redact.mjs.",
       "redactions": []
+    },
+    {
+      "id": "evidence-notion-script-dreams",
+      "group": "evidence",
+      "purpose": "Evidence screenshot (lightbox / proof strip).",
+      "variants": [
+        {
+          "path": "docs/assets/evidence/notion-script-dreams.webp",
+          "url": "assets/evidence/notion-script-dreams.webp",
+          "bytes": 40390,
+          "format": "webp",
+          "type": "image",
+          "width": 830,
+          "height": 819,
+          "duration": null
+        },
+        {
+          "path": "docs/assets/evidence/notion-script-dreams.jpg",
+          "url": "assets/evidence/notion-script-dreams.jpg",
+          "bytes": 87264,
+          "format": "jpg",
+          "type": "image",
+          "width": 830,
+          "height": 819,
+          "duration": null
+        }
+      ],
+      "alt": {
+        "ru": "Сценарий выпуска «Сновидения» в Notion: заголовок, заметки к началу и список блоков от приветствия до прощания",
+        "en": "The Dreams episode script in Notion: title, notes for the opening and the list of segments from greeting to sign-off"
+      },
+      "source": {
+        "file": "source/disk-ascii/notion-scripts-1.png",
+        "note": "redacted by scripts/redact.mjs: one row cut out, one private note painted over"
+      }
     },
     {
       "id": "evidence-notion-script-forest",
@@ -3051,420 +3078,6 @@
       },
       "privacy": "Channel header with avatar and owner-only buttons cropped out.",
       "redactions": []
-    },
-    {
-      "id": "videography-valley",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/valley.webp",
-          "url": "assets/videography/valley.webp",
-          "bytes": 11596,
-          "format": "webp",
-          "type": "image",
-          "width": 297,
-          "height": 434,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/valley.jpg",
-          "url": "assets/videography/valley.jpg",
-          "bytes": 20622,
-          "format": "jpg",
-          "type": "image",
-          "width": 297,
-          "height": 434,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Туманная горная долина с елями",
-        "en": "A misty mountain valley with fir trees"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-1.jpg",
-        "crop": [
-          398,
-          3,
-          297,
-          434
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-waterfall",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/waterfall.webp",
-          "url": "assets/videography/waterfall.webp",
-          "bytes": 35802,
-          "format": "webp",
-          "type": "image",
-          "width": 304,
-          "height": 439,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/waterfall.jpg",
-          "url": "assets/videography/waterfall.jpg",
-          "bytes": 43276,
-          "format": "jpg",
-          "type": "image",
-          "width": 304,
-          "height": 439,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Горный водопад и перила смотровой площадки",
-        "en": "A mountain waterfall and a viewing-deck railing"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-1.jpg",
-        "crop": [
-          3,
-          523,
-          304,
-          439
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-koi",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/koi.webp",
-          "url": "assets/videography/koi.webp",
-          "bytes": 15148,
-          "format": "webp",
-          "type": "image",
-          "width": 304,
-          "height": 440,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/koi.jpg",
-          "url": "assets/videography/koi.jpg",
-          "bytes": 25439,
-          "format": "jpg",
-          "type": "image",
-          "width": 304,
-          "height": 440,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Карпы кои в тёмной воде, надпись «the art of bōtto suru»",
-        "en": "Koi in dark water with the caption “the art of bōtto suru”"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-1.jpg",
-        "crop": [
-          3,
-          1047,
-          304,
-          440
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina.",
-      "show": false,
-      "show_note": "Hidden: the frame carries a baked-in Instagram caption."
-    },
-    {
-      "id": "videography-cat-meadow",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/cat-meadow.webp",
-          "url": "assets/videography/cat-meadow.webp",
-          "bytes": 15860,
-          "format": "webp",
-          "type": "image",
-          "width": 305,
-          "height": 440,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/cat-meadow.jpg",
-          "url": "assets/videography/cat-meadow.jpg",
-          "bytes": 24913,
-          "format": "jpg",
-          "type": "image",
-          "width": 305,
-          "height": 440,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Трёхцветная кошка в траве",
-        "en": "A calico cat in tall grass"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-1.jpg",
-        "crop": [
-          792,
-          1047,
-          305,
-          440
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-quiet-days",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/quiet-days.webp",
-          "url": "assets/videography/quiet-days.webp",
-          "bytes": 14784,
-          "format": "webp",
-          "type": "image",
-          "width": 304,
-          "height": 441,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/quiet-days.jpg",
-          "url": "assets/videography/quiet-days.jpg",
-          "bytes": 24558,
-          "format": "jpg",
-          "type": "image",
-          "width": 304,
-          "height": 441,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Яблоко в руке у горного ручья, надпись «the art of quiet days»",
-        "en": "An apple held by a mountain stream, caption “the art of quiet days”"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-1.jpg",
-        "crop": [
-          398,
-          1571,
-          304,
-          441
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina.",
-      "show": false,
-      "show_note": "Hidden: the frame carries a baked-in Instagram caption."
-    },
-    {
-      "id": "videography-mountain-lake",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/mountain-lake.webp",
-          "url": "assets/videography/mountain-lake.webp",
-          "bytes": 17040,
-          "format": "webp",
-          "type": "image",
-          "width": 302,
-          "height": 441,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/mountain-lake.jpg",
-          "url": "assets/videography/mountain-lake.jpg",
-          "bytes": 26217,
-          "format": "jpg",
-          "type": "image",
-          "width": 302,
-          "height": 441,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Горное озеро, люпины и деревянная ограда",
-        "en": "A mountain lake, lupines and a wooden fence"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-1.jpg",
-        "crop": [
-          792,
-          1571,
-          302,
-          441
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-squirrel",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/squirrel.webp",
-          "url": "assets/videography/squirrel.webp",
-          "bytes": 28126,
-          "format": "webp",
-          "type": "image",
-          "width": 305,
-          "height": 435,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/squirrel.jpg",
-          "url": "assets/videography/squirrel.jpg",
-          "bytes": 36393,
-          "format": "jpg",
-          "type": "image",
-          "width": 305,
-          "height": 435,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Белка берёт орех с ладони",
-        "en": "A squirrel taking a nut from a hand"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-2.jpg",
-        "crop": [
-          3,
-          3,
-          305,
-          435
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-braid",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/braid.webp",
-          "url": "assets/videography/braid.webp",
-          "bytes": 28060,
-          "format": "webp",
-          "type": "image",
-          "width": 305,
-          "height": 438,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/braid.jpg",
-          "url": "assets/videography/braid.jpg",
-          "bytes": 37443,
-          "format": "jpg",
-          "type": "image",
-          "width": 305,
-          "height": 438,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Коса с венком из ромашек",
-        "en": "A braid with a daisy crown"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-2.jpg",
-        "crop": [
-          3,
-          527,
-          305,
-          438
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-sunset",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/sunset.webp",
-          "url": "assets/videography/sunset.webp",
-          "bytes": 5914,
-          "format": "webp",
-          "type": "image",
-          "width": 305,
-          "height": 436,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/sunset.jpg",
-          "url": "assets/videography/sunset.jpg",
-          "bytes": 14916,
-          "format": "jpg",
-          "type": "image",
-          "width": 305,
-          "height": 436,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Розово-лиловые закатные облака",
-        "en": "Pink and violet sunset clouds"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-2.jpg",
-        "crop": [
-          3,
-          1051,
-          305,
-          436
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
-    },
-    {
-      "id": "videography-book-by-lake",
-      "group": "videography",
-      "purpose": "Personal videography mood tile (calm nature / still life). Native resolution from a phone screenshot of her Instagram grid.",
-      "variants": [
-        {
-          "path": "docs/assets/videography/book-by-lake.webp",
-          "url": "assets/videography/book-by-lake.webp",
-          "bytes": 9018,
-          "format": "webp",
-          "type": "image",
-          "width": 308,
-          "height": 436,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/videography/book-by-lake.jpg",
-          "url": "assets/videography/book-by-lake.jpg",
-          "bytes": 18318,
-          "format": "jpg",
-          "type": "image",
-          "width": 308,
-          "height": 436,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Открытая книга и термос у озера",
-        "en": "An open book and a thermos by a lake"
-      },
-      "source": {
-        "file": "source/disk-ascii/insta-2.jpg",
-        "crop": [
-          396,
-          1051,
-          308,
-          436
-        ]
-      },
-      "note": "Low-res placeholder (~300x440, cut from a grid screenshot; view-count and Reel icons cropped out, not upscaled). Real exports/stills from Alisa are needed for anything larger than ~300 px wide or for retina."
     },
     {
       "id": "favicon",

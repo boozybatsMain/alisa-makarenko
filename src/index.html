@@ -30,110 +30,42 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
 
 <!-- =========================== HERO =========================== -->
 <section class="hero" aria-labelledby="hero-name">
-  <div class="hero__frame">
-    <div class="hero__img" aria-hidden="true">{{part:heroImage}}</div>
-    <div class="hero__grade" aria-hidden="true"></div>
-    <div class="hero__copy wrap">
-      <p class="hero__role">{{part:heroRole}}</p>
+  <div class="hero__img" aria-hidden="true">{{part:heroImage}}</div>
+  <div class="hero__grade" aria-hidden="true"></div>
+  {{part:heroPhoto}}
+  <div class="hero__in wrap">
+    <div class="hero__copy">
+      <ul class="hero__roles">{{part:heroRoles}}</ul>
       <h1 id="hero-name" class="hero__name">{{part:heroName}}</h1>
-      <p class="hero__lede">{{t:hero.positioning}}</p>
+      <p class="hero__lede"><b>{{t:hero.tagline}}</b> {{t:hero.positioning}}</p>
+      <p class="hero__results">{{t:hero.results}}</p>
+      <p class="hero__open"><span class="hero__open-l">{{t:ui.open_to_label}}:</span> {{t:hero.open_to}}</p>
       <div class="hero__cta">
-        <a class="btn btn--rose" href="#case">{{t:cta.view_case}}<span aria-hidden="true" class="btn__arr">↓</span></a>
+        <a class="btn btn--rose" href="#process">{{t:cta.how_i_work}}<span aria-hidden="true" class="btn__arr">↓</span></a>
         <a class="btn btn--line" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
       </div>
     </div>
-  </div>
-  <div class="hero__matte">
-    <div class="wrap">
-      <p class="hero__caption">{{t:hero.numbers_caption}}</p>
-      <dl class="hnums">{{part:heroNumbers}}</dl>
-    </div>
+    <dl class="hnums">{{part:heroNumbers}}</dl>
   </div>
 </section>
 
-<!-- =========================== CASE =========================== -->
-<section class="case" id="case" aria-labelledby="case-title">
+<!-- =========================== SKILLS =========================== -->
+<section class="skills band band--brown" id="skills" aria-labelledby="skills-title">
   <div class="wrap">
-    <header class="titlecard">
-      <p class="secnum rv"><span>01</span>{{t:nav.case}}</p>
-      <h2 id="case-title" class="titlecard__title rv">{{t:case.title}}</h2>
-      <p class="titlecard__sub rv">{{t:case.subtitle}}</p>
-    </header>
-
-    <div class="case__intro">
-      <div class="case__main">
-        <p class="lead rv">{{t:case.intro}}</p>
-        <div class="crew rv">
-          <h3 class="crew__title">{{t:case.credits.title}}</h3>
-          <dl class="crew__list">{{part:credits}}</dl>
-        </div>
-      </div>
-      <dl class="facts rv">{{part:metaTable}}</dl>
-    </div>
-
-    <h3 class="subhead rv" id="stories">{{t:case.stories_title}}</h3>
-    <div class="stories">
-{{part:stories}}
-    </div>
-  </div>
-
-  <!-- moments -->
-  <section class="screening" aria-labelledby="moments-title">
-    <div class="wrap">
-      <header class="blockhead">
-        <h3 id="moments-title" class="blockhead__title rv">{{t:moments.title}}</h3>
-        <p class="blockhead__text rv">{{t:moments.intro}}</p>
-      </header>
-      {{part:moments}}
-    </div>
-  </section>
-
-  <div class="wrap">
-    <section class="episodes" aria-labelledby="eps-title">
-      <header class="blockhead">
-        <h3 id="eps-title" class="blockhead__title rv">{{t:case.episodes.title}}</h3>
-        <p class="blockhead__text rv">{{t:case.episodes.note}}</p>
-      </header>
-      {{part:episodes}}
-    </section>
-
-    <section class="numbers" aria-labelledby="nums-title">
-      <header class="blockhead">
-        <h3 id="nums-title" class="blockhead__title rv">{{t:case.numbers_title}}</h3>
-        <p class="blockhead__text rv">{{t:case.numbers_note}}</p>
-      </header>
-      {{part:keyNumbers}}
-      <details class="more more--ledger">
-        <summary>{{t:ui.all_numbers}}</summary>
-        <div class="ledgers">{{part:platforms}}</div>
-      </details>
-    </section>
-
-    <section class="aud" aria-labelledby="aud-title">
-      <h3 id="aud-title" class="blockhead__title aud__title rv">{{t:case.audience.title}}</h3>
-      {{part:audience}}
-    </section>
-
-    <section class="voices" aria-labelledby="voices-title">
-      <header class="blockhead">
-        <h3 id="voices-title" class="blockhead__title rv">{{t:voices.title}}</h3>
-        <p class="blockhead__text rv">{{t:voices.source}}</p>
-      </header>
-      <div class="voices__grid">{{part:voices}}</div>
-    </section>
+    <h2 id="skills-title" class="sectitle rv">{{t:skills.title}}</h2>
+    <div class="sks">{{part:skills}}</div>
+    <dl class="kit rv">{{part:kit}}</dl>
   </div>
 </section>
 
 <!-- =========================== PROCESS =========================== -->
-<section class="process" id="process" aria-labelledby="process-title">
+<section class="process band" id="process" aria-labelledby="process-title">
   <div class="wrap">
     <header class="sechead">
-      <p class="secnum rv"><span>02</span>{{t:nav.process}}</p>
-      <h2 id="process-title" class="sechead__title rv">{{t:process.title}}</h2>
+      <h2 id="process-title" class="sectitle rv">{{t:process.title}}</h2>
       <p class="sechead__text rv">{{t:process.intro}}</p>
     </header>
     <div class="tl" data-tl data-p="end" aria-hidden="true">
-      <div class="tl__ruler"></div>
       <ol class="tl__clips">{{part:processSteps}}</ol>
       <div class="tl__head"><span class="tl__tc">{{part:stageCount}}</span></div>
     </div>
@@ -141,85 +73,93 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
   </div>
 </section>
 
-<!-- =========================== BEHIND THE SCENES =========================== -->
-<section class="behind" id="behind" aria-labelledby="behind-title">
+<!-- =========================== CASE =========================== -->
+<section class="case band band--cream" id="case" aria-labelledby="case-title">
   <div class="wrap">
-    <header class="sechead">
-      <p class="secnum rv"><span>03</span>{{t:nav.behind}}</p>
-      <h2 id="behind-title" class="sechead__title rv">{{t:behind.title}}</h2>
-      <p class="sechead__text rv">{{t:behind.intro}}</p>
+    <header class="case__head">
+      <h2 id="case-title" class="sectitle rv">{{t:case.title}}</h2>
+      <p class="case__intro rv">{{t:case.intro}}</p>
     </header>
-    <ul class="bts">{{part:behind}}</ul>
-    {{part:behindMore}}
+    {{part:shortsProof}}
+    <div class="proofs">{{part:filmProofs}}</div>
   </div>
 </section>
 
-<!-- =========================== VIDEOGRAPHY =========================== -->
-<section class="vg" id="videography" aria-labelledby="vg-title">
+<!-- =========================== CLIPS =========================== -->
+<section class="screening band band--rose" id="moments" aria-labelledby="moments-title">
   <div class="wrap">
-    <header class="sechead vg__head">
-      <p class="secnum rv"><span>04</span>{{t:nav.videography}}</p>
-      <h2 id="vg-title" class="sechead__title vg__title rv">{{t:videography.title}}</h2>
-      <p class="sechead__text rv">{{t:videography.text}}</p>
+    <header class="blockhead">
+      <h2 id="moments-title" class="sectitle rv">{{t:moments.title}}</h2>
+      <p class="blockhead__text rv">{{t:moments.intro}}</p>
     </header>
-    {{part:vgClips}}
-    {{part:vgLinks}}
-    <div class="vg__cols">
-      <div class="rv">
-        <h3 class="label">{{t:videography.deliverables_label}}</h3>
-        <ul class="vg__list">{{part:deliverables}}</ul>
-      </div>
-      <div class="rv">
-        <h3 class="label">{{t:process.tools_label}}</h3>
-        <p class="vg__tools">{{t:videography.tools}}</p>
-      </div>
-    </div>
+    {{part:moments}}
   </div>
 </section>
 
-<!-- =========================== SKILLS =========================== -->
-<section class="skills" id="skills" aria-labelledby="skills-title">
+<!-- =========================== STATISTICS (collapsed) =========================== -->
+<section class="stats band band--brown" id="stats" aria-labelledby="stats-title">
   <div class="wrap">
-    <header class="sechead skills__head">
-      <p class="secnum rv"><span>05</span>{{t:nav.skills}}</p>
-      <h2 id="skills-title" class="sechead__title rv">{{t:skills.title}}</h2>
-    </header>
-    <dl class="roll">{{part:skills}}</dl>
-    <div class="kit">
-      <div class="kit__col rv">
-        <h3 class="label">{{t:skills.tools.title}}</h3>
-        <dl class="kit__dl">{{part:software}}</dl>
+    <details class="fold" id="stats-fold">
+      <summary class="fold__sum"><span class="fold__t" id="stats-title">{{t:stats.title}}</span><span class="fold__note">{{t:stats.summary_note}}</span><span class="fold__icon" aria-hidden="true"></span></summary>
+      <div class="fold__body">
+        <section class="numbers" aria-labelledby="nums-title">
+          <header class="blockhead">
+            <h3 id="nums-title" class="blockhead__title">{{t:stats.numbers_title}}</h3>
+            <p class="blockhead__text">{{t:stats.numbers_note}}</p>
+          </header>
+          {{part:keyNumbers}}
+          <details class="more more--ledger">
+            <summary>{{t:ui.all_numbers}}</summary>
+            <div class="ledgers">{{part:platforms}}</div>
+          </details>
+        </section>
+        <section class="growth" aria-labelledby="growth-title">
+          <h3 id="growth-title" class="blockhead__title">{{t:stats.growth.title}}</h3>
+          {{part:growth}}
+        </section>
+        <section class="aud" aria-labelledby="aud-title">
+          <h3 id="aud-title" class="blockhead__title aud__title">{{t:stats.audience.title}}</h3>
+          {{part:audience}}
+        </section>
+        <section class="comm" aria-labelledby="comm-title">
+          <h3 id="comm-title" class="blockhead__title">{{t:stats.community.title}}</h3>
+          {{part:community}}
+        </section>
+        <section class="files" aria-labelledby="files-title">
+          <header class="blockhead">
+            <h3 id="files-title" class="blockhead__title">{{t:stats.files.title}}</h3>
+            <p class="blockhead__text">{{t:stats.files.intro}}</p>
+          </header>
+          {{part:files}}
+        </section>
+        <section class="episodes" aria-labelledby="eps-title">
+          <header class="blockhead">
+            <h3 id="eps-title" class="blockhead__title">{{t:case.episodes.title}}</h3>
+            <p class="blockhead__text">{{t:case.episodes.note}} <a class="link" href="https://www.youtube.com/@witchinghourcast" target="_blank" rel="noopener">{{t:case.episodes.channel_label}} ↗</a></p>
+          </header>
+          {{part:episodesList}}
+        </section>
       </div>
-      <div class="kit__col rv">
-        <h3 class="label">{{t:skills.ai.title}}</h3>
-        <dl class="kit__dl">{{part:ai}}</dl>
-        <p class="kit__note">{{t:skills.ai.note}}</p>
-        <h3 class="label label--gap">{{t:skills.gear.title}}</h3>
-        <ul class="kit__ul">{{part:gear}}</ul>
-      </div>
-    </div>
+    </details>
   </div>
 </section>
 
-<!-- =========================== ABOUT =========================== -->
-<section class="about" id="about" aria-labelledby="about-title">
-  <div class="wrap about__grid">
-    <header class="about__head">
-      <p class="secnum rv"><span>06</span>{{t:nav.about}}</p>
-      <h2 id="about-title" class="sechead__title rv">{{t:about.title}}</h2>
-      {{part:aboutPhoto}}
-      <p class="about__open rv"><span class="label">{{t:about.open_to_label}}</span><span>{{t:about.open_to}}</span></p>
-    </header>
-    <div class="about__body">
-      <p class="about__bio rv">{{t:about.bio}}</p>
-    </div>
+<!-- =========================== VIEWER COMMENTS (collapsed) =========================== -->
+<section class="voices band" id="voices" aria-labelledby="voices-title">
+  <div class="wrap">
+    <details class="fold">
+      <summary class="fold__sum"><span class="fold__t" id="voices-title">{{t:voices.title}}</span><span class="fold__note">{{t:voices.summary_note}}</span><span class="fold__icon" aria-hidden="true"></span></summary>
+      <div class="fold__body">
+        <p class="voices__src">{{t:voices.source}}</p>
+        <div class="voices__grid">{{part:voices}}</div>
+      </div>
+    </details>
   </div>
 </section>
 
 <!-- =========================== CONTACT =========================== -->
 <section class="contact" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
-    <p class="secnum rv"><span>07</span>{{t:nav.contact}}</p>
     <div class="contact__top">
       <h2 id="contact-title" class="contact__title rv">{{t:contact.title}}</h2>
       <div class="contact__aside rv">
@@ -244,7 +184,6 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
   <div class="wrap foot__in">
     <span>{{t:meta.footer}}</span>
     <span class="foot__data">{{t:meta.data_line}}</span>
-    {{part:footVideo}}
     <a href="#top">{{t:cta.back_to_top}} <span aria-hidden="true">↑</span></a>
   </div>
 </footer>

@@ -224,10 +224,8 @@ function makeParts(lang, V) {
     </a>`;
   };
 
-  const figures = (s) => {
-    if (!s.figures || !s.figures.length) return '';
-    return `<div class="figs-wrap"><ul class="figs figs--${s.figures.length}">${s.figures.map((f) => `<li class="rv">${valueHTML(L(f.value, lang), 'figs__v')}<span class="figs__l">${t(f.label)}</span></li>`).join('')}</ul>${s.figures_note ? `<p class="figs__note">${t(s.figures_note)}</p>` : ''}</div>`;
-  };
+  const src = (s) => (s ? `<p class="src"><span>${t(copy.ui.source)}:</span> ${t(s)}</p>` : '');
+  const figList = (list, cls = '') => `<ul class="figs${cls ? ` ${cls}` : ''}">${list.map((f) => `<li class="rv">${valueHTML(L(f.value, lang), 'figs__v')}<span class="figs__l">${t(f.label)}</span></li>`).join('')}</ul>`;
 
   const shortsRail = () => {
     const viewsWord = L(copy.case.episodes.views_label, lang);
@@ -240,29 +238,35 @@ function makeParts(lang, V) {
       const alt = (meta || {}).alt;
       const title = plain(L(s.title, lang));
       const pic = vars.length
-        ? pictureFromVariants(vars, alt ? L(alt, lang) : title, P, { sizes: '(max-width: 640px) 46vw, 16vw' })
+        ? pictureFromVariants(vars, alt ? L(alt, lang) : title, P, { sizes: '(max-width: 640px) 46vw, 15vw' })
         : `<img src="https://i.ytimg.com/vi/${s.id}/oar2.jpg" width="405" height="720" alt="${esc(title)}" loading="lazy">`;
       const loop = assetExists(`assets/loops/short-${s.id}.mp4`) ? ` data-loop="${P}assets/loops/short-${s.id}.mp4"` : '';
       return `<li class="rv"><a class="short" href="https://www.youtube.com/shorts/${s.id}" target="_blank" rel="noopener" data-yt="${s.id}" data-vertical data-title="${esc(title)}"${loop} aria-label="${esc(L(copy.cta.watch_short, lang))}: ${esc(title)} (${esc(L(s.views_label, lang))} ${esc(viewsWord)})">
         <span class="short__frame">${pic}<span class="short__views"><b>${esc(L(s.views_label, lang))}</b><small>${esc(viewsWord)}</small></span></span>
-        <span class="short__title">${t(s.title)}</span><span class="short__dur">${esc(s.duration)}</span>
+        <span class="short__title">${t(s.title)}</span>
       </a></li>`;
-    }).join('')}</ul><p class="src src--rail">${t(copy.case.shorts.note)}</p>`;
+    }).join('')}</ul>`;
   };
 
-  const lbLink = (b, cls) => {
+  /* one evidence screenshot as a lightbox link; `group` keeps prev/next inside one set (scripts, dashboards…) */
+  const lbLink = (key, cls, group) => {
+    const b = copy.evidence[key];
+    if (!b) { warnings.push(`Unknown evidence key: ${key}`); return null; }
     const info = evidenceInfo(b.asset);
-    if (!info) return '';
+    if (!info) return null;
     const alt = info.alt ? L(info.alt, lang) : L(b.title, lang);
     const base = `assets/${b.asset}`;
-    return `<a class="${cls}" href="${P}${base}.jpg" data-lb data-w="${info.w}" data-h="${info.h}" data-webp="${assetExists(base + '.webp') ? P + base + '.webp' : ''}" data-alt="${esc(plain(alt))}" data-title="${t(b.title)}" data-caption="${t(b.caption)}">`;
+    return { b, info, alt, base, open: `<a class="${cls}" href="${P}${base}.jpg" data-lb="${group}" data-w="${info.w}" data-h="${info.h}" data-webp="${assetExists(base + '.webp') ? P + base + '.webp' : ''}" data-alt="${esc(plain(alt))}" data-title="${t(b.title)}" data-caption="${t(b.caption)}">` };
+  };
+  const shotCard = (key, group, cls = 'shot') => {
+    const x = lbLink(key, `${cls}__link`, group);
+    if (!x) return '';
+    return `<li class="${cls}">${x.open}<span class="${cls}__frame">${simplePicture(x.base, plain(x.alt), P, x.info.w, x.info.h)}</span><span class="${cls}__title">${t(x.b.title)}</span><span class="${cls}__cap">${t(x.b.caption)}</span></a></li>`;
   };
 
   const parts = {
-    nav: () => {
-      const items = [['case', 'case'], ['process', 'process'], ['behind', 'behind'], ['videography', 'videography'], ['skills', 'skills'], ['about', 'about'], ['contact', 'contact']];
-      return items.map(([id, k]) => `<a href="#${id}">${t(copy.nav[k])}</a>`).join('');
-    },
+    nav: () => ['skills', 'process', 'case', 'moments', 'stats', 'contact']
+      .map((id) => `<a href="#${id}"${id === 'stats' ? ' data-open-stats' : ''}>${t(copy.nav[id])}</a>`).join(''),
     heroImage: () => {
       const d = variantsOf('hero'), m = variantsOf('hero-mobile');
       const srcset = (list, f) => list.filter((v) => v.format === f).map((v) => `${P}${v.url}`).join(', ');
@@ -276,47 +280,70 @@ function makeParts(lang, V) {
         <img src="${P}${jpg.url}" width="${jpg.width}" height="${jpg.height}" alt="" fetchpriority="high" decoding="async">
       </picture>`;
     },
+    /* the portrait: one replaceable file, docs/assets/portrait.jpg; CSS feathers its edges into the dark hero */
+    heroPhoto: () => (V.portrait
+      ? `<figure class="hero__photo"><img src="${P}assets/portrait.jpg" width="${V.portrait.w}" height="${V.portrait.h}" alt="${t(copy.hero.photo_alt)}" decoding="async" fetchpriority="high"></figure>`
+      : ''),
     heroName: () => {
-      const n = L(copy.hero.name, lang).split(/[ \u00a0]/);
+      const n = L(copy.hero.name, lang).split(/[  ]/);
       return `<span class="line"><span>${esc(n[0])}</span></span> <span class="line"><span>${esc(n.slice(1).join(' '))}</span></span>`;
     },
+    /* RU: the English title above the Russian one; EN: the English title only */
+    heroRoles: () => copy.hero.roles.map((r) => (lang === 'ru'
+      ? `<li><span class="role__en" lang="en">${esc(r.en)}</span><span class="role__ru">${t(r)}</span></li>`
+      : `<li><span class="role__ru">${t(r)}</span></li>`)).join(''),
     heroNumbers: () => copy.hero.numbers.map((n) => `<div class="hnum rv">
         <dt class="hnum__l">${t(n.label)}</dt>
         <dd class="hnum__v">${valueHTML(L(n.value, lang))}</dd>
         <dd class="hnum__q">${t(n.qualifier)}</dd>
       </div>`).join(''),
-    metaTable: () => copy.case.meta_table.map((r) => `<div><dt>${t(r.label)}</dt><dd>${t(r.value)}</dd></div>`).join(''),
-    credits: () => copy.case.credits.items.map((c) => `<div><dt>${t(c.role)}</dt><dd>${t(c.who)}</dd></div>`).join(''),
-    stories: () => copy.case.stories.map((s) => {
-      const hasMedia = s.media && epById.has(s.media);
-      const kind = s.id === 'shorts' ? 'shorts' : hasMedia ? 'film' : 'text';
-      const flip = kind === 'film' && copy.case.stories.filter((x) => x.media).indexOf(s) % 2 === 1;
-      const e = hasMedia ? epById.get(s.media) : null;
-      const figsBelow = kind === 'film' && s.figures && s.figures.length > 1;
-      const text = `<div class="story__text">
+
+    /* ---------- skills ---------- */
+    skills: () => copy.skills.groups.map((g) => `<div class="sk rv"><h3 class="sk__t">${t(g.title)}</h3><ul class="sk__list">${g.items.map((i) => `<li>${t(i)}</li>`).join('')}</ul></div>`).join(''),
+    kit: () => copy.skills.kit.map((k) => `<div class="kit__row"><dt>${t(k.title)}</dt><dd>${esc(L(k.items, lang))}${k.note ? ` <small>· ${t(k.note)}</small>` : ''}</dd></div>`).join(''),
+
+    /* ---------- process: a track of clips with a playhead, readable cards underneath ---------- */
+    processSteps: () => copy.process.steps.map((s) => `<li class="clip"><span class="clip__n">${esc(s.n)}</span><span class="clip__t">${t(s.title)}</span></li>`).join(''),
+    processCards: () => copy.process.steps.map((s) => {
+      const proof = s.proof ? `<details class="proof"><summary>${t(s.proof.label)}${s.proof.items.length > 1 ? ` <span class="proof__n">${s.proof.items.length}</span>` : ''}</summary><ul class="proof__list">${s.proof.items.map((k) => shotCard(k, `stage-${s.n}`, 'pf')).join('')}</ul></details>` : '';
+      return `<li class="stage rv">
+        <span class="stage__n">${esc(s.n)}</span>
+        <h3 class="stage__t">${t(s.title)}</h3>
+        ${s.text ? `<p class="stage__p">${t(s.text)}</p>` : ''}
+        ${s.bullets ? `<ul class="stage__ul">${s.bullets.map((b) => `<li>${t(b)}</li>`).join('')}</ul>` : ''}
+        <p class="stage__tools"><span class="sr">${t(copy.process.tools_label)}: </span>${L(s.tools, lang).split(/,\s*/).map((x) => `<span>${esc(x)}</span>`).join('')}</p>
+        ${proof}
+      </li>`;
+    }).join(''),
+    stageCount: () => { const n = copy.process.steps.length; return `${String(n).padStart(2, '0')} / ${String(n).padStart(2, '0')}`; },
+
+    /* ---------- case: three proofs ---------- */
+    shortsProof: () => {
+      const s = copy.case.shorts_proof;
+      return `<article class="proofcard proofcard--shorts" id="story-shorts">
+        <div class="proofcard__text">
           <p class="kicker rv">${t(s.kicker)}</p>
-          <h3 class="story__title rv">${t(s.title)}</h3>
-          <p class="story__body rv">${t(s.body)}</p>
-          ${figsBelow ? '' : figures(s)}
-          ${s.result ? `<p class="story__result rv">${t(s.result)}</p>` : ''}
-          ${s.caveat && !figsBelow ? `<p class="caveat rv"><b>${t(copy.ui.caveat)}.</b> ${t(s.caveat)}</p>` : ''}
-          ${figsBelow ? '' : `<p class="src rv"><span>${t(copy.ui.source)}:</span> ${t(s.source)}</p>`}
-        </div>`;
-      if (kind === 'film') {
-        const ttl = epName(e);
-        const hosts = s.id === 'comeback' ? L(copy.ui.hosts_caption, lang) : '';
-        const below = figsBelow ? `<div class="story__below">${figures(s)}${s.caveat ? `<p class="caveat rv"><b>${t(copy.ui.caveat)}.</b> ${t(s.caveat)}</p>` : ''}<p class="src rv"><span>${t(copy.ui.source)}:</span> ${t(s.source)}</p></div>` : '';
-        return `<article class="story story--film${flip ? ' story--flip' : ''}" id="story-${s.id}">
-          ${text}
-          <figure class="story__media rv">${film(s.media, { big: true })}
-            <figcaption><span class="story__name">${esc(ttl.main)}</span>${ttl.sub ? ` <span class="story__sub">${esc(ttl.sub)}</span>` : ''}<span class="story__meta">${esc(L(e.date_label, lang))} · ${esc(durationLabel(e.duration))} · ${esc(L(e.views_label, lang))} ${esc(L(copy.case.episodes.views_label, lang))} ${t(copy.ui.views_as_of)}</span>${hosts ? `<span class="story__hosts">${esc(hosts)}</span>` : ''}</figcaption>
-          </figure>
-          ${below}
-        </article>`;
-      }
-      if (kind === 'shorts') return `<article class="story story--shorts" id="story-${s.id}">${text}${shortsRail()}</article>`;
-      return `<article class="story story--text" id="story-${s.id}">${text}</article>`;
-    }).join('\n'),
+          <p class="proofcard__fig rv">${valueHTML(L(s.value, lang))}<span class="proofcard__lbl">${t(s.label)}</span></p>
+          <p class="proofcard__p rv">${t(s.text)}</p>
+          ${src(s.source)}
+        </div>
+        ${shortsRail()}
+      </article>`;
+    },
+    filmProofs: () => copy.case.film_proofs.map((s) => {
+      const e = epById.get(s.media);
+      const ttl = epName(e);
+      return `<article class="proofcard proofcard--film" id="story-${s.id}">
+        <figure class="proofcard__media rv">${film(s.media)}
+          <figcaption><span class="proofcard__name">${esc(ttl.main)}</span><span class="proofcard__meta">${esc(L(e.date_label, lang))} · ${esc(durationLabel(e.duration))} · ${esc(L(e.views_label, lang))} ${esc(L(copy.case.episodes.views_label, lang))} ${t(copy.ui.views_as_of)}</span></figcaption>
+        </figure>
+        <p class="kicker rv">${t(s.kicker)}</p>
+        <h3 class="proofcard__t rv">${t(s.title)}</h3>
+        <p class="proofcard__p rv">${t(s.text)}</p>
+        ${src(s.source)}
+      </article>`;
+    }).join(''),
+
     moments: () => {
       const items = copy.moments.items.filter((m) => mediaById.has(`moment-${m.id}`));
       if (!items.length) return '';
@@ -350,123 +377,55 @@ function makeParts(lang, V) {
           </a></li>`).join('')}</ol>
       </div>`;
     },
-    episodes: () => {
-      const featured = new Set(copy.case.stories.map((s) => s.media).filter(Boolean));
-      const list = episodes.filter((e) => !featured.has(e.id) && e.show !== false);
-      return `<ul class="eps">${list.map((e) => {
-        const ttl = epName(e);
-        return `<li class="ep rv">${film(e.id)}
-          <div class="ep__body">
-            <p class="ep__meta"><span>${esc(L(e.date_label, lang))} · ${esc(durationLabel(e.duration))}</span><span class="ep__views"><b>${esc(L(e.views_label, lang))}</b> ${t(copy.case.episodes.views_label)}</span></p>
-            <h3 class="ep__title"><span class="ep__name">${esc(ttl.main)}</span>${ttl.sub ? `<span class="ep__sub">${esc(ttl.sub)}</span>` : ''}</h3>
-            <p class="ep__note">${t(e.note)}</p>
-          </div>
-        </li>`;
-      }).join('')}</ul>`;
-    },
-    /* key figures as a sourced table; the complete ledger sits behind a disclosure */
+
+    /* ---------- statistics (inside one closed <details>) ---------- */
     keyNumbers: () => {
       const rows = [];
-      copy.case.platforms.forEach((g) => g.stats.filter((s) => s.key).forEach((s) => rows.push({ g, s })));
+      copy.stats.platforms.forEach((g) => g.stats.filter((s) => s.key).forEach((s) => rows.push({ g, s })));
       return `<table class="keys">
         <thead><tr><th scope="col">${t(copy.ui.col_value)}</th><th scope="col">${t(copy.ui.col_what)}</th><th scope="col">${t(copy.ui.col_source)}</th></tr></thead>
-        <tbody>${rows.map(({ g, s }) => `<tr class="rv"><td class="keys__v">${valueHTML(L(s.value, lang))}</td><td class="keys__w"><span class="keys__p">${t(g.name)}</span>${t(s.label)}</td><td class="keys__s">${t(s.source || g.source)}</td></tr>`).join('')}</tbody>
+        <tbody>${rows.map(({ g, s }) => `<tr><td class="keys__v">${valueHTML(L(s.value, lang))}</td><td class="keys__w"><span class="keys__p">${t(g.name)}</span>${t(s.label)}</td><td class="keys__s">${t(s.source || g.source)}</td></tr>`).join('')}</tbody>
       </table>`;
     },
-    platforms: () => copy.case.platforms.map((g) => `<section class="ledger" aria-labelledby="pl-${g.id}">
+    platforms: () => copy.stats.platforms.map((g) => `<section class="ledger" aria-labelledby="pl-${g.id}">
         <header class="ledger__head"><h4 id="pl-${g.id}">${t(g.name)}</h4><p class="ledger__src">${t(g.source)}</p></header>
         <dl class="ledger__rows">${g.stats.map((s) => `<div class="ledger__row"><dt>${t(s.label)}</dt><dd>${valueHTML(L(s.value, lang))}</dd></div>`).join('')}</dl>
       </section>`).join(''),
+    growth: () => {
+      const g = copy.stats.growth;
+      return `${figList(g.figures, 'figs--3')}<p class="figs__note">${t(g.note)}</p><p class="caveat"><b>${t(copy.ui.caveat)}.</b> ${t(g.caveat)}</p>${src(g.source)}`;
+    },
     audience: () => {
-      const a = copy.case.audience;
-      const pts = (list) => list.map((p) => `<div class="rv"><dt>${valueHTML(L(p.value, lang))}</dt><dd>${t(p.label)}</dd></div>`).join('');
+      const a = copy.stats.audience;
+      const pts = (list) => list.map((p) => `<div><dt>${valueHTML(L(p.value, lang))}</dt><dd>${t(p.label)}</dd></div>`).join('');
       return `<div class="aud__core">
-          <p class="aud__big rv">${t(a.core.value)}</p>
-          <p class="aud__lbl rv">${t(a.core.label)}</p>
-          ${a.demo && a.demo.length ? `<dl class="aud__pts aud__pts--demo">${pts(a.demo)}</dl>` : ''}
-          ${a.demo_source ? `<p class="src rv"><span>${t(copy.ui.source)}:</span> ${t(a.demo_source)}</p>` : ''}
+          <p class="aud__big">${t(a.core.value)}</p>
+          <p class="aud__lbl">${t(a.core.label)}</p>
+          <dl class="aud__pts aud__pts--demo">${pts(a.demo)}</dl>
+          ${src(a.demo_source)}
         </div>
         <div class="aud__side">
           <dl class="aud__pts">${pts(a.points)}</dl>
-          <p class="src rv"><span>${t(copy.ui.source)}:</span> ${t(a.source)}</p>
+          ${src(a.source)}
         </div>`;
     },
+    community: () => {
+      const c = copy.stats.community;
+      return `<div class="comm__text"><p>${t(c.text)}</p>${src(c.source)}</div>${figList(c.figures, 'figs--2')}`;
+    },
+    files: () => `<ul class="shots">${copy.stats.files.items.map((k) => shotCard(k, 'stats')).join('')}</ul>`,
+    episodesList: () => `<ol class="eplist">${episodes.map((e) => {
+      const ttl = epName(e);
+      return `<li><a href="${ytWatch(e.id)}" target="_blank" rel="noopener" data-yt="${e.id}" data-title="${esc(plain(L(e.title, lang)))}">
+          <span class="eplist__name">${esc(ttl.main)}</span>
+          <span class="eplist__meta">${esc(L(e.date_label, lang))} · ${esc(durationLabel(e.duration))} · <b>${esc(L(e.views_label, lang))}</b> ${t(copy.case.episodes.views_label)}</span>
+          <span class="eplist__note">${t(e.note)}</span>
+        </a></li>`;
+    }).join('')}</ol>`,
+
     voices: () => {
       const v = copy.voices;
-      return v.items.map((x) => `<figure class="voice rv"><blockquote lang="${lang}"><p>${esc(typo(x[lang], lang))}</p></blockquote><figcaption>${t(v.attribution)}</figcaption></figure>`).join('');
-    },
-    /* the track: one clip per stage, width by weight */
-    processSteps: () => copy.process.steps.map((s) => {
-      const w = Math.max(9, Math.min(16, Math.round((L(s.text, 'ru').length + L(s.tools, 'ru').length) / 11)));
-      return `<li class="clip" style="--w:${w}"><span class="clip__n">${esc(s.n)}</span><span class="clip__t">${t(s.title)}</span></li>`;
-    }).join(''),
-    /* the stages as readable cards under the track (and the whole list on small screens) */
-    processCards: () => copy.process.steps.map((s) => `<li class="stage rv">
-        <span class="stage__n">${esc(s.n)}</span>
-        <h3 class="stage__t">${t(s.title)}</h3>
-        <p class="stage__p">${t(s.text)}</p>
-        <p class="stage__tools"><span class="sr">${t(copy.process.tools_label)}: </span>${L(s.tools, lang).split(/,\s*/).map((x) => `<span>${esc(x)}</span>`).join('')}</p>
-      </li>`).join(''),
-    ruler: () => '',
-    stageCount: () => { const n = copy.process.steps.length; return `${String(n).padStart(2, '0')} / ${String(n).padStart(2, '0')}`; },
-    behind: () => copy.behind.items.filter((b) => b.asset && b.featured).map((b) => {
-      const info = evidenceInfo(b.asset);
-      if (!info) return '';
-      const alt = info.alt ? L(info.alt, lang) : L(b.title, lang);
-      return `<li class="bts__item rv">${lbLink(b, 'bts__link')}
-          <span class="bts__frame">${simplePicture(`assets/${b.asset}`, plain(alt), P, info.w, info.h)}</span>
-          <span class="bts__title">${t(b.title)}</span>
-          <span class="bts__cap">${t(b.caption)}</span>
-        </a></li>`;
-    }).join(''),
-    behindMore: () => {
-      const rest = copy.behind.items.filter((b) => b.asset && !b.featured && evidenceInfo(b.asset));
-      if (!rest.length) return '';
-      return `<details class="more rv"><summary>${t(copy.ui.all_files)} <span class="more__n">${rest.length}</span></summary>
-        <ul class="more__list">${rest.map((b) => `<li>${lbLink(b, 'more__link')}<span class="more__t">${t(b.title)}</span><span class="more__c">${t(b.caption)}</span></a></li>`).join('')}</ul>
-      </details>`;
-    },
-    videography: () => media.assets.filter((a) => a.group === 'videography' && a.show !== false)
-      .map((a) => `<li>${pictureFromVariants(a.variants, L(a.alt, lang), P, {})}</li>`).join(''),
-    /* her own clips (content/copy.json videography.clips): posters at their real size; a muted loop plays on hover
-       (desktop), while in view (touch) or on press; the video file is only requested then */
-    vgClips: () => {
-      const clips = (copy.videography.clips || []).filter((c) => c.file && assetExists(c.file));
-      (copy.videography.clips || []).filter((c) => c.file && !assetExists(c.file)).forEach((c) => warnings.push(`Videography clip not found: docs/${c.file}`));
-      if (!clips.length) return '';
-      return `<ul class="vg__clips">${clips.map((c) => {
-        const b = (c.poster || '').replace(/\.jpg$/, '');
-        const small = assetExists(`${b}-360.jpg`);
-        const webp = assetExists(`${b}.webp`) ? `<source type="image/webp" srcset="${small ? `${P}${b}-360.webp 360w, ` : ''}${P}${b}.webp 540w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 30vw, 200px">` : '';
-        const title = L(c.title, lang);
-        return `<li class="rv"><figure class="vgc" data-loop="${P}${c.file}">
-          <button type="button" class="vgc__frame" aria-pressed="false" aria-label="${t(copy.cta.play)}: ${esc(title)}"><picture>${webp}<img src="${P}${small ? `${b}-360.jpg` : c.poster}"${small ? ` srcset="${P}${b}-360.jpg 360w, ${P}${c.poster} 540w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 30vw, 200px"` : ''} width="540" height="960" alt="" loading="lazy" decoding="async"></picture><span class="vgc__play" aria-hidden="true">${icon.play}</span></button>
-          ${title ? `<figcaption>${esc(title)}</figcaption>` : ''}
-        </figure></li>`;
-      }).join('')}</ul>`;
-    },
-    vgLinks: () => {
-      const pr = copy.videography.profile, more = copy.videography.more;
-      const a = [];
-      if (more && more.label) a.push(`<a class="vg__more" href="${V.videoHref}">${t(more.label)} <span aria-hidden="true">→</span></a>`);
-      if (pr && pr.url) a.push(`<a href="${esc(pr.url)}" target="_blank" rel="noopener">${t(pr.label)} <span aria-hidden="true">↗</span></a>`);
-      return a.length ? `<p class="vg__links rv">${a.join('')}</p>` : '';
-    },
-    vgProfile: () => {
-      const pr = copy.videography.profile;
-      if (!pr || !pr.url) return '';
-      return ` · <a href="${esc(pr.url)}" target="_blank" rel="noopener">${t(pr.label)} <span aria-hidden="true">↗</span></a>`;
-    },
-    footVideo: () => (copy.videography.more && copy.videography.more.label ? `<a href="${V.videoHref}">${t(copy.videography.more.label)} <span aria-hidden="true">→</span></a>` : ''),
-    heroRole: () => L(copy.hero.role, lang).split(' · ').map((x) => `<span class="nw">${esc(x)}</span>`).join(' · '),
-    deliverables: () => copy.videography.deliverables.map((d) => `<li>${t(d)}</li>`).join(''),
-    skills: () => copy.skills.groups.map((g) => `<div class="roll__row rv"><dt>${t(g.title)}</dt><dd><ul class="chips">${g.items.map((i) => `<li>${t(i)}</li>`).join('')}</ul></dd></div>`).join(''),
-    software: () => copy.skills.tools.items.map((x) => `<div><dt>${esc(x.name)}</dt><dd>${t(x.use)}</dd></div>`).join(''),
-    gear: () => copy.skills.gear.items.map((x) => `<li>${t(x)}</li>`).join(''),
-    ai: () => copy.skills.ai.items.map((x) => `<div><dt>${esc(x.name)}</dt><dd>${t(x.use)}</dd></div>`).join(''),
-    aboutPhoto: () => {
-      if (!V.photo) return '';
-      return `<figure class="about__photo rv"><img src="${P}assets/photo.jpg" width="${V.photo.w}" height="${V.photo.h}" alt="${t(copy.hero.name)}" loading="lazy" decoding="async"></figure>`;
+      return v.items.map((x) => `<figure class="voice"><blockquote lang="${lang}"><p>${esc(typo(x[lang], lang))}</p></blockquote><figcaption>${t(v.attribution[x.who] || v.attribution.n)} · ${q(L(x.episode_title, lang))}</figcaption></figure>`).join('');
     },
     contactList: () => {
       const c = copy.contact;
@@ -478,7 +437,6 @@ function makeParts(lang, V) {
     projectLinks: () => copy.contact.project_links.map((l) => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${t(l.label)}${icon.ext}</a></li>`).join(''),
     iconDown: () => icon.down,
     iconPlay: () => icon.play,
-
     /* ---------- CV ---------- */
     cvBullets: () => copy.cv.experience[0].bullets.map((b) => `<li>${t(b)}</li>`).join(''),
     // number and label in one line of text, so PDF text extraction keeps them together
@@ -579,8 +537,12 @@ if (!fs.existsSync(path.join(DOCS, 'assets/thumbs')) || !fs.existsSync(path.join
   console.error('docs/assets is missing or incomplete. It holds the source images and videos of the site and must not be deleted: restore it (e.g. from git) and run the build again.');
   process.exit(1);
 }
+// photo.jpg: the optional CV / videographer-site portrait (unchanged behaviour).
+// portrait.jpg: the producer home page hero portrait, one replaceable file (see README).
 const photoFile = path.join(DOCS, 'assets/photo.jpg');
 const photo = fs.existsSync(photoFile) ? jpegSize(photoFile) : null;
+const portraitFile = path.join(DOCS, 'assets/portrait.jpg');
+const portrait = fs.existsSync(portraitFile) ? jpegSize(portraitFile) : null;
 
 const tplHome = rd('src/index.html');
 const tplCv = rd('src/cv.html');
@@ -590,16 +552,15 @@ for (const lang of ['ru', 'en']) {
   // ---- home
   const P = lang === 'ru' ? '' : '../';
   const V = {
-    lang, P, photo,
+    lang, P, photo, portrait,
     selfHref: './',
     altHref: lang === 'ru' ? 'en/' : '../',
     altLang: lang === 'ru' ? 'en' : 'ru',
     altLangLabel: lang === 'ru' ? 'EN' : 'RU',
     cvPdf: `${P}cv/${PDF[lang]}`,
     cvPage: lang === 'ru' ? 'cv/' : 'cv/',
-    hasPhoto: photo ? 'has-photo' : 'no-photo',
+    hasPhoto: portrait ? 'has-photo' : 'no-photo',
     year: '2026',
-    videoHref: lang === 'ru' ? 'video/' : '../video/en/',
   };
   const parts = makeParts(lang, V);
   V.head = head(lang, V, { title: L(copy.meta.title, lang), description: L(copy.meta.description, lang) });
@@ -634,7 +595,7 @@ for (const p of Object.values(PDF)) {
   if (!fs.existsSync(path.join(DOCS, 'cv', p))) warnings.push(`docs/cv/${p} is missing: run "npm run pdf" (node scripts/pdf.mjs) to create it.`);
 }
 if (!BASE) warnings.push('content/site.json base_url is EMPTY: the CV has no portfolio link, and og:image / hreflang / canonical stay relative (link previews show no image). Fill it in once the site address is known, then run node build.mjs && node scripts/pdf.mjs.');
-console.log(`Built docs/index.html, docs/en/index.html, docs/cv/index.html, docs/en/cv/index.html${photo ? ' (with portrait)' : ''}`);
+console.log(`Built docs/index.html, docs/en/index.html, docs/cv/index.html, docs/en/cv/index.html${portrait ? ' (with hero portrait)' : ''}`);
 // ---- site 2: videographer portfolio (docs/video/)
 const videoPages = buildVideo({ ROOT, DOCS, BASE, esc, typo, plain, finish, isPair, warnings });
 console.log(`Built ${videoPages.join(', ')}`);

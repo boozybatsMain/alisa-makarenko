@@ -1,187 +1,1169 @@
 {
   "_conventions": {
-    "ru": "Каждая текстовая строка — пара {ru, en}. Поля id, url, href, image, file, duration, date, views, value_raw не переводятся и хранятся как есть. Все цифры сверены с content/FACTS.md; данные на 19–21 ноября 2026 года.",
-    "en": "Every text leaf is a {ru, en} pair. Fields named id, url, href, image, file, duration, date, views and value_raw are language-neutral and stored as plain values. Every number is traced in content/FACTS.md; data as of 19–21 November 2026."
+    "ru": "Каждая текстовая строка — пара {ru, en}. Поля id, url, href, asset, file, duration, date, views не переводятся и хранятся как есть. Все цифры сверены с content/FACTS.md; данные на 19–21 ноября 2026 года. Блок cv относится к старому CV и пока не меняется.",
+    "en": "Every text leaf is a {ru, en} pair. Fields named id, url, href, asset, file, duration, date and views are language-neutral and stored as plain values. Every number is traced in content/FACTS.md; data as of 19–21 November 2026. The cv block belongs to the previous CV and is frozen for now."
   },
-
   "meta": {
-    "lang_switch": { "ru": "EN", "en": "RU" },
-    "title": { "ru": "Алиса Макаренко — креативный продюсер", "en": "Alisa Makarenko — Creative Producer" },
+    "title": {
+      "ru": "Алиса Макаренко — креативный продюсер",
+      "en": "Alisa Makarenko — Creative Producer"
+    },
     "description": {
-      "ru": "Портфолио и CV Алисы Макаренко: креативный и контент-продюсер. Главный кейс — шоу и подкаст «Ведьмин час»: 4,9 млн просмотров на YouTube с учётом Shorts, 74,7 тыс. слушателей на Яндекс Музыке.",
-      "en": "Portfolio and CV of Alisa Makarenko, creative and content producer. Main case: the Witching Hour show and podcast, with 4.9M YouTube views incl. Shorts and 74.7K listeners on Yandex Music."
+      "ru": "Алиса Макаренко — креативный продюсер, контент-продюсер, ассистент продюсера. Три года веду полный цикл производства YouTube-канала и подкаста «Ведьмин час»: 4,9 млн просмотров на YouTube, 74,7 тыс. слушателей на Яндекс Музыке.",
+      "en": "Alisa Makarenko: creative producer, content producer, assistant producer. For three years I have run the full production cycle of Witching Hour, a YouTube channel and podcast: 4.9M YouTube views, 74.7K listeners on Yandex Music."
     },
-    "og_title": { "ru": "Алиса Макаренко — креативный продюсер", "en": "Alisa Makarenko — Creative Producer" },
+    "og_title": {
+      "ru": "Алиса Макаренко — креативный продюсер",
+      "en": "Alisa Makarenko — Creative Producer"
+    },
     "og_description": {
-      "ru": "Почти три года продюсирую YouTube-шоу и подкаст «Ведьмин час»: от сценария до сообщества на Boosty.",
-      "en": "For almost three years I've been producing Witching Hour, a YouTube show and podcast, from script to a paying community on Boosty."
+      "ru": "Три года продюсирую YouTube-канал и подкаст «Ведьмин час»: полный цикл от концепции и сценария до публикации, продвижения и аналитики.",
+      "en": "For three years I've produced Witching Hour, a YouTube channel and podcast: the full cycle from concept and script to release, promotion and analytics."
     },
-    "og_image_alt": { "ru": "Алиса Макаренко, креативный продюсер", "en": "Alisa Makarenko, creative producer" },
-    "data_note": {
-      "ru": "Данные на 21 ноября 2026 года: YouTube Studio, аналитика Яндекс Музыки, Apple Podcasts Connect, Mave, Boosty и публичные страницы проекта.",
-      "en": "Data as of November 21, 2026, from YouTube Studio, Yandex Music analytics, Apple Podcasts Connect, Mave, Boosty and the project's public pages."
+    "og_image_alt": {
+      "ru": "Алиса Макаренко, креативный продюсер",
+      "en": "Alisa Makarenko, creative producer"
     },
-    "footer": { "ru": "© 2026 Алиса Макаренко", "en": "© 2026 Alisa Makarenko" },
+    "footer": {
+      "ru": "© 2026 Алиса Макаренко",
+      "en": "© 2026 Alisa Makarenko"
+    },
     "data_line": {
-      "ru": "Данные: YouTube Studio, Яндекс Музыка, Apple Podcasts, Mave, Boosty — ноябрь 2026",
-      "en": "Data: YouTube Studio, Yandex Music, Apple Podcasts, Mave, Boosty — November 2026"
+      "ru": "Данные платформ на ноябрь 2026 года",
+      "en": "Platform data as of November 2026"
     },
-    "skip": { "ru": "Перейти к содержанию", "en": "Skip to content" },
-    "menu": { "ru": "Меню", "en": "Menu" },
-    "lang_label": { "ru": "English version", "en": "Русская версия" }
+    "skip": {
+      "ru": "Перейти к содержанию",
+      "en": "Skip to content"
+    },
+    "menu": {
+      "ru": "Меню",
+      "en": "Menu"
+    },
+    "lang_label": {
+      "ru": "English version",
+      "en": "Русская версия"
+    }
   },
-
   "ui": {
-    "source": { "ru": "Источник", "en": "Source" },
-    "caveat": { "ru": "Важно", "en": "Note" },
-    "col_value": { "ru": "Цифра", "en": "Figure" },
-    "col_what": { "ru": "Что это", "en": "What it is" },
-    "col_source": { "ru": "Период и источник", "en": "Period and source" },
-    "from_episode": { "ru": "Из выпуска", "en": "From the episode" },
-    "video_dialog": { "ru": "Просмотр видео", "en": "Video player" },
-    "image_dialog": { "ru": "Просмотр изображения", "en": "Image viewer" },
-    "prev": { "ru": "Предыдущее", "en": "Previous" },
-    "next": { "ru": "Следующее", "en": "Next" },
-    "now_playing": { "ru": "Сейчас", "en": "Now playing" },
-    "sec": { "ru": "с", "en": "s" },
-    "open_youtube": { "ru": "Открыть на YouTube", "en": "Open on YouTube" },
-    "loading": { "ru": "Загружаем видео…", "en": "Loading the video…" },
-    "all_numbers": { "ru": "Все цифры по платформам", "en": "All platform figures" },
-    "all_files": { "ru": "Ещё материалы", "en": "More files" },
-    "views_as_of": { "ru": "на 21 ноября 2026", "en": "as of Nov 21, 2026" },
-    "hosts_caption": { "ru": "", "en": "" }
-  },
-
-  "nav": {
-    "case": { "ru": "Кейс", "en": "Case" },
-    "process": { "ru": "Процесс", "en": "Process" },
-    "behind": { "ru": "Материалы", "en": "Working files" },
-    "videography": { "ru": "Личная съёмка", "en": "Videography" },
-    "skills": { "ru": "Навыки", "en": "Skills" },
-    "about": { "ru": "Обо мне", "en": "About" },
-    "contact": { "ru": "Контакты", "en": "Contact" },
-    "cv": { "ru": "CV", "en": "CV" }
-  },
-
-  "cta": {
-    "telegram": { "ru": "Написать в Telegram", "en": "Message on Telegram" },
-    "email": { "ru": "Написать на почту", "en": "Send an email" },
-    "call": { "ru": "Позвонить", "en": "Call" },
-    "download_cv": { "ru": "Скачать CV (PDF)", "en": "Download CV (PDF)" },
-    "view_case": { "ru": "Смотреть кейс", "en": "See the case" },
-    "watch_youtube": { "ru": "Смотреть на YouTube", "en": "Watch on YouTube" },
-    "listen_podcast": { "ru": "Слушать подкаст", "en": "Listen to the podcast" },
-    "watch_episode": { "ru": "Смотреть выпуск", "en": "Watch episode" },
-    "watch_short": { "ru": "Смотреть Short", "en": "Watch the Short" },
-    "play": { "ru": "Включить", "en": "Play" },
-    "pause": { "ru": "Пауза", "en": "Pause" },
-    "sound_on": { "ru": "Со звуком", "en": "Sound on" },
-    "sound_off": { "ru": "Без звука", "en": "Sound off" },
-    "open_full": { "ru": "Открыть целиком", "en": "View full size" },
-    "close": { "ru": "Закрыть", "en": "Close" },
-    "back_to_top": { "ru": "Наверх", "en": "Back to top" },
-    "print_cv": { "ru": "Распечатать", "en": "Print" },
-    "back_to_site": { "ru": "На сайт", "en": "Back to site" },
-    "save_pdf": { "ru": "Сохранить PDF", "en": "Save PDF" },
-    "cv_short": { "ru": "CV", "en": "CV" }
-  },
-
-  "hero": {
-    "name": { "ru": "Алиса Макаренко", "en": "Alisa Makarenko" },
-    "role": { "ru": "Креативный продюсер · YouTube и подкасты", "en": "Creative Producer · YouTube & Podcasts" },
-    "positioning": {
-      "ru": "Почти три года продюсирую YouTube-шоу и подкаст «Ведьмин час»: придумываю темы, пишу сценарии, веду запись и звук, публикую и продвигаю выпуски, развиваю сообщество на Boosty.",
-      "en": "For almost three years I've been producing Witching Hour, a YouTube show and podcast: I pick the topics, write the scripts, run recording and sound, release and promote the episodes, and grow a paying community on Boosty."
+    "source": {
+      "ru": "Источник",
+      "en": "Source"
     },
-    "numbers_caption": {
-      "ru": "Шоу и подкаст «Ведьмин час», декабрь 2023 — ноябрь 2026",
-      "en": "Witching Hour show and podcast, Dec 2023 – Nov 2026"
+    "caveat": {
+      "ru": "Важно",
+      "en": "Note"
+    },
+    "col_value": {
+      "ru": "Цифра",
+      "en": "Figure"
+    },
+    "col_what": {
+      "ru": "Что это",
+      "en": "What it is"
+    },
+    "col_source": {
+      "ru": "Период и источник",
+      "en": "Period and source"
+    },
+    "from_episode": {
+      "ru": "Из выпуска",
+      "en": "From the episode"
+    },
+    "video_dialog": {
+      "ru": "Просмотр видео",
+      "en": "Video player"
+    },
+    "image_dialog": {
+      "ru": "Просмотр изображения",
+      "en": "Image viewer"
+    },
+    "prev": {
+      "ru": "Предыдущее",
+      "en": "Previous"
+    },
+    "next": {
+      "ru": "Следующее",
+      "en": "Next"
+    },
+    "open_youtube": {
+      "ru": "Открыть на YouTube",
+      "en": "Open on YouTube"
+    },
+    "loading": {
+      "ru": "Загружаем видео…",
+      "en": "Loading the video…"
+    },
+    "all_numbers": {
+      "ru": "Все цифры по платформам",
+      "en": "All platform figures"
+    },
+    "views_as_of": {
+      "ru": "на 21 ноября 2026",
+      "en": "as of Nov 21, 2026"
+    },
+    "open_to_label": {
+      "ru": "Открыта к ролям",
+      "en": "Open to"
+    }
+  },
+  "nav": {
+    "skills": {
+      "ru": "Навыки",
+      "en": "Skills"
+    },
+    "process": {
+      "ru": "Процесс",
+      "en": "Process"
+    },
+    "case": {
+      "ru": "Кейс",
+      "en": "Case"
+    },
+    "moments": {
+      "ru": "Фрагменты",
+      "en": "Clips"
+    },
+    "stats": {
+      "ru": "Статистика",
+      "en": "Statistics"
+    },
+    "contact": {
+      "ru": "Контакты",
+      "en": "Contact"
+    }
+  },
+  "cta": {
+    "telegram": {
+      "ru": "Написать в Telegram",
+      "en": "Message on Telegram"
+    },
+    "download_cv": {
+      "ru": "Скачать CV (PDF)",
+      "en": "Download CV (PDF)"
+    },
+    "how_i_work": {
+      "ru": "Как я работаю",
+      "en": "How I work"
+    },
+    "watch_episode": {
+      "ru": "Смотреть выпуск",
+      "en": "Watch episode"
+    },
+    "watch_short": {
+      "ru": "Смотреть Short",
+      "en": "Watch the Short"
+    },
+    "play": {
+      "ru": "Включить",
+      "en": "Play"
+    },
+    "close": {
+      "ru": "Закрыть",
+      "en": "Close"
+    },
+    "back_to_top": {
+      "ru": "Наверх",
+      "en": "Back to top"
+    },
+    "back_to_site": {
+      "ru": "На сайт",
+      "en": "Back to site"
+    },
+    "save_pdf": {
+      "ru": "Сохранить PDF",
+      "en": "Save PDF"
+    },
+    "cv_short": {
+      "ru": "CV",
+      "en": "CV"
+    }
+  },
+  "hero": {
+    "name": {
+      "ru": "Алиса Макаренко",
+      "en": "Alisa Makarenko"
+    },
+    "_roles_note": "Each role is shown as written. On the Russian page the English title is set above the Russian one; the English page shows only the English title.",
+    "roles": [
+      {
+        "ru": "Креативный продюсер",
+        "en": "Creative Producer"
+      },
+      {
+        "ru": "Ассистент продюсера",
+        "en": "Assistant Producer"
+      },
+      {
+        "ru": "Контент-продюсер",
+        "en": "Content Producer"
+      }
+    ],
+    "tagline": {
+      "ru": "Боевая творческая единица.",
+      "en": "A one-woman production unit."
+    },
+    "positioning": {
+      "ru": "Три года продюсирую YouTube-канал и подкаст «Ведьмин час», ведя полный цикл производства контента: от разработки концепции, контентной стратегии и написания сценариев до организации производства, постпродакшена, публикации, продвижения, аналитики и развития сообщества.",
+      "en": "For three years I've been producing Witching Hour, a YouTube channel and podcast, and running its full content production cycle: from concept, content strategy and scriptwriting to production management, post-production, release, promotion, analytics and community building."
+    },
+    "results": {
+      "ru": "В 2025 году проект привлёк 30,6 тыс. слушателей на Яндекс Музыке и набрал более 7,4 млн минут прослушивания. Самый популярный выпуск получил 18,4 тыс. прослушиваний за год.",
+      "en": "In 2025 the project reached 30.6K listeners on Yandex Music and more than 7.4M minutes of listening. Its most popular episode was played 18.4K times that year."
+    },
+    "open_to": {
+      "ru": "YouTube-продюсер, креативный продюсер, контент-продюсер",
+      "en": "YouTube Producer, Creative Producer, Content Producer"
+    },
+    "photo_alt": {
+      "ru": "Алиса Макаренко",
+      "en": "Alisa Makarenko"
     },
     "numbers": [
       {
-        "value": { "ru": "4,9 млн", "en": "4.9M" },
-        "label": { "ru": "просмотров на YouTube", "en": "YouTube views" },
-        "qualifier": { "ru": "за всё время, около 92 % из них — Shorts 2024 года", "en": "all time; about 92% of them from 2024 Shorts" }
+        "value": {
+          "ru": "4,9 млн",
+          "en": "4.9M"
+        },
+        "label": {
+          "ru": "просмотров на YouTube",
+          "en": "YouTube views"
+        },
+        "qualifier": {
+          "ru": "за всё время, около 92 % из них — Shorts 2024 года",
+          "en": "all time; about 92% of them from 2024 Shorts"
+        }
       },
       {
-        "value": { "ru": "141,4 тыс.", "en": "141.4K" },
-        "label": { "ru": "часов просмотра на YouTube", "en": "hours of YouTube watch time" },
-        "qualifier": { "ru": "за всё время, YouTube Studio", "en": "all time, YouTube Studio" }
+        "value": {
+          "ru": "141,4 тыс.",
+          "en": "141.4K"
+        },
+        "label": {
+          "ru": "часов просмотра на YouTube",
+          "en": "hours of YouTube watch time"
+        },
+        "qualifier": {
+          "ru": "за всё время, YouTube Studio",
+          "en": "all time, YouTube Studio"
+        }
       },
       {
-        "value": { "ru": "74,7 тыс.", "en": "74.7K" },
-        "label": { "ru": "уникальных слушателей на Яндекс Музыке", "en": "unique listeners on Yandex Music" },
-        "qualifier": { "ru": "с запуска подкаста", "en": "since launch" }
+        "value": {
+          "ru": "74,7 тыс.",
+          "en": "74.7K"
+        },
+        "label": {
+          "ru": "уникальных слушателей на Яндекс Музыке",
+          "en": "unique listeners on Yandex Music"
+        },
+        "qualifier": {
+          "ru": "с запуска подкаста",
+          "en": "since launch"
+        }
       },
       {
-        "value": { "ru": "55", "en": "55" },
-        "label": { "ru": "выпусков в ленте подкаста", "en": "releases in the podcast feed" },
-        "qualifier": { "ru": "3 сезона, с декабря 2023 года", "en": "3 seasons, since December 2023" }
+        "value": {
+          "ru": "55",
+          "en": "55"
+        },
+        "label": {
+          "ru": "выпусков в ленте подкаста",
+          "en": "releases in the podcast feed"
+        },
+        "qualifier": {
+          "ru": "3 сезона, с декабря 2023 года",
+          "en": "3 seasons, since December 2023"
+        }
       }
     ]
   },
-
-  "case": {
-    "eyebrow": { "ru": "Главный кейс", "en": "Main case" },
-    "title": { "ru": "«Ведьмин час»", "en": "Witching Hour (Ведьмин час)" },
-    "subtitle": {
-      "ru": "Независимое YouTube-шоу и подкаст о мире Гарри Поттера",
-      "en": "An independent YouTube show and podcast about the Harry Potter universe"
+  "skills": {
+    "title": {
+      "ru": "Что я умею",
+      "en": "What I can do"
+    },
+    "groups": [
+      {
+        "title": {
+          "ru": "Продюсирование",
+          "en": "Producing"
+        },
+        "items": [
+          {
+            "ru": "Концепции и форматы",
+            "en": "Concepts and formats"
+          },
+          {
+            "ru": "Контентная стратегия и контент-план",
+            "en": "Content strategy and planning"
+          },
+          {
+            "ru": "Организация производства",
+            "en": "Production management"
+          },
+          {
+            "ru": "Координация записи и гостей",
+            "en": "Coordinating shoots and guests"
+          },
+          {
+            "ru": "Сроки и задачи",
+            "en": "Scheduling and task tracking"
+          },
+          {
+            "ru": "Анализ статистики",
+            "en": "Performance analysis"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Сценарии и редактура",
+          "en": "Writing and editorial"
+        },
+        "items": [
+          {
+            "ru": "Исследование и фактчекинг",
+            "en": "Research and fact-checking"
+          },
+          {
+            "ru": "Сценарии длинных выпусков",
+            "en": "Long-form scripts"
+          },
+          {
+            "ru": "Структура и драматургия",
+            "en": "Structure and story arc"
+          },
+          {
+            "ru": "Идеи и тексты для Shorts",
+            "en": "Short-form ideas and copy"
+          },
+          {
+            "ru": "Заголовки и описания",
+            "en": "Titles and descriptions"
+          },
+          {
+            "ru": "Посты для Telegram",
+            "en": "Telegram posts"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Запись и звук",
+          "en": "Recording and audio"
+        },
+        "items": [
+          {
+            "ru": "Запись видеоподкаста",
+            "en": "Video podcast recording"
+          },
+          {
+            "ru": "Свет и звук на площадке",
+            "en": "Lighting and sound on set"
+          },
+          {
+            "ru": "Запись и обработка звука",
+            "en": "Audio recording and processing"
+          },
+          {
+            "ru": "Аудиомонтаж подкастов",
+            "en": "Podcast audio editing"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "YouTube и подкасты",
+          "en": "YouTube and podcasts"
+        },
+        "items": [
+          {
+            "ru": "Ведение YouTube-канала",
+            "en": "YouTube channel management"
+          },
+          {
+            "ru": "Дистрибуция подкаста",
+            "en": "Podcast distribution"
+          },
+          {
+            "ru": "Превью и обложки",
+            "en": "Thumbnails and cover art"
+          },
+          {
+            "ru": "Аналитика YouTube, Яндекс Музыки и Apple Podcasts",
+            "en": "YouTube, Yandex Music and Apple Podcasts analytics"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Сообщество и партнёры",
+          "en": "Community and partners"
+        },
+        "items": [
+          {
+            "ru": "Ведение Telegram-канала",
+            "en": "Running a Telegram channel"
+          },
+          {
+            "ru": "Общение с аудиторией",
+            "en": "Audience engagement"
+          },
+          {
+            "ru": "Переговоры с рекламодателями",
+            "en": "Advertiser negotiations"
+          },
+          {
+            "ru": "Бартерные партнёрства",
+            "en": "Barter partnerships"
+          }
+        ]
+      }
+    ],
+    "kit": [
+      {
+        "title": {
+          "ru": "Программы",
+          "en": "Software"
+        },
+        "items": "Notion, REAPER, Studio One, OBS Studio, Adobe Photoshop, CapCut, YouTube Studio, Mave"
+      },
+      {
+        "title": {
+          "ru": "AI-инструменты",
+          "en": "AI tools"
+        },
+        "items": "ChatGPT, Claude, Perplexity",
+        "note": {
+          "ru": "для исследования, идей и черновиков; итоговый текст и решения — мои",
+          "en": "for research, ideas and drafts; the final text and decisions are mine"
+        }
+      },
+      {
+        "title": {
+          "ru": "Оборудование",
+          "en": "Gear"
+        },
+        "items": {
+          "ru": "Focusrite Scarlett Solo, микрофон Fifine, софтбоксы",
+          "en": "Focusrite Scarlett Solo, Fifine microphone, softboxes"
+        }
+      }
+    ]
+  },
+  "process": {
+    "title": {
+      "ru": "Полный цикл: от идеи до публикации",
+      "en": "The full cycle, from idea to release"
     },
     "intro": {
-      "ru": "«Ведьмин час» — независимое русскоязычное шоу, которое мы с соведущей Катей делаем с декабря 2023 года. Каждый выпуск — часовой разговор о героях, местах и явлениях волшебного мира, подготовленный по сценарию. Шоу выходит на YouTube, Яндекс Музыке, Apple Podcasts и других платформах через Mave, а вокруг него собралось сообщество в Telegram и на Boosty.",
-      "en": "Witching Hour is an independent Russian-language show I have been making with my co-host Katya since December 2023. Each episode is an hour-long, scripted conversation about a character, place or idea from the wizarding world. It goes out on YouTube, Yandex Music, Apple Podcasts and other platforms via Mave, with a community around it on Telegram and Boosty."
+      "ru": "Я организую производство от начала до конца. Все этапы, кроме монтажа видео, веду сама.",
+      "en": "I run production from start to finish. I handle every stage myself except video editing."
     },
-    "meta_table": [
+    "tools_label": {
+      "ru": "Инструменты",
+      "en": "Tools"
+    },
+    "steps": [
       {
-        "label": { "ru": "Роль", "en": "Role" },
-        "value": { "ru": "Продюсер, сценарист и соведущая", "en": "Producer, scriptwriter and co-host" }
+        "n": "01",
+        "title": {
+          "ru": "Создание",
+          "en": "Creation"
+        },
+        "text": {
+          "ru": "Креативное продюсирование и управление проектом.",
+          "en": "Creative producing and project management."
+        },
+        "bullets": [
+          {
+            "ru": "Полное продюсирование подкаст-проекта",
+            "en": "End-to-end producing of the podcast project"
+          },
+          {
+            "ru": "Разработка общей концепции проекта",
+            "en": "Developing the overall concept"
+          },
+          {
+            "ru": "Формирование творческого направления и позиционирования",
+            "en": "Setting the creative direction and positioning"
+          }
+        ],
+        "tools": "Notion, ChatGPT, Claude"
       },
       {
-        "label": { "ru": "Формат", "en": "Format" },
-        "value": {
-          "ru": "Видеоподкаст с выпусками около часа, Shorts, квизы с гостями, стримы",
-          "en": "Video podcast with roughly hour-long episodes; Shorts, quiz specials with guests, live streams"
+        "n": "02",
+        "title": {
+          "ru": "Планирование",
+          "en": "Planning"
+        },
+        "bullets": [
+          {
+            "ru": "Планирование контентной стратегии",
+            "en": "Content strategy"
+          },
+          {
+            "ru": "Планирование выпусков и производственного календаря",
+            "en": "Episode planning and the production calendar"
+          },
+          {
+            "ru": "Организация полного производственного цикла",
+            "en": "Organising the full production cycle"
+          },
+          {
+            "ru": "Координация творческого процесса",
+            "en": "Coordinating the creative process"
+          }
+        ],
+        "tools": "Notion, ChatGPT, Claude, YouTube",
+        "proof": {
+          "label": {
+            "ru": "Рабочее пространство",
+            "en": "Workspace"
+          },
+          "items": [
+            "notion-workspace"
+          ]
         }
       },
       {
-        "label": { "ru": "Платформы", "en": "Platforms" },
-        "value": {
-          "ru": "YouTube, Яндекс Музыка, Apple Podcasts, Mave, Telegram, Boosty",
-          "en": "YouTube, Yandex Music, Apple Podcasts, Mave, Telegram, Boosty"
+        "n": "03",
+        "title": {
+          "ru": "Идея",
+          "en": "Idea"
+        },
+        "text": {
+          "ru": "Выбираю тему, формат и подачу: героя, место или новость, которых хватит на час живого разговора.",
+          "en": "I choose the topic, format and approach: a character, place or piece of news that can carry an hour of conversation."
+        },
+        "bullets": [
+          {
+            "ru": "Генерация идей для новых выпусков",
+            "en": "Generating ideas for new episodes"
+          },
+          {
+            "ru": "Разработка тематических направлений и рубрик",
+            "en": "Developing themes and recurring segments"
+          },
+          {
+            "ru": "Поиск актуальных и интересных тем",
+            "en": "Finding timely, engaging topics"
+          }
+        ],
+        "tools": "Notion, ChatGPT, Claude"
+      },
+      {
+        "n": "04",
+        "title": {
+          "ru": "Исследование",
+          "en": "Research"
+        },
+        "text": {
+          "ru": "Собираю материал по книгам, фильмам и дополнительным источникам и проверяю факты.",
+          "en": "I gather material from the books, films and other sources and check the facts."
+        },
+        "tools": "Perplexity, ChatGPT, Notion"
+      },
+      {
+        "n": "05",
+        "title": {
+          "ru": "Концепция и сценарий",
+          "en": "Concept and script"
+        },
+        "text": {
+          "ru": "Пишу сценарий по постоянной структуре: приветствие, вступление, анонс наших каналов, 4–6 тематических блоков, прощание.",
+          "en": "I write the script to a fixed structure: greeting, intro, a plug for our channels, four to six themed segments, sign-off."
+        },
+        "tools": "Notion",
+        "proof": {
+          "label": {
+            "ru": "Примеры сценариев",
+            "en": "Script examples"
+          },
+          "items": [
+            "script-dreams",
+            "script-forest",
+            "script-snape"
+          ]
         }
       },
       {
-        "label": { "ru": "Период", "en": "Period" },
-        "value": { "ru": "Декабрь 2023 — сейчас", "en": "December 2023 – present" }
-      },
-      {
-        "label": { "ru": "Команда", "en": "Team" },
-        "value": {
-          "ru": "Два человека: я и соведущая Катя. Видео монтируем вместе",
-          "en": "Two people: me and my co-host Katya. We edit the video together"
+        "n": "06",
+        "title": {
+          "ru": "Подготовка производства",
+          "en": "Pre-production"
+        },
+        "text": {
+          "ru": "Планирую запись, готовлю свет, микрофоны и звуковую карту.",
+          "en": "I plan the session and set up lights, microphones and the audio interface."
+        },
+        "tools": {
+          "ru": "Focusrite Scarlett Solo, микрофон Fifine, софтбоксы",
+          "en": "Focusrite Scarlett Solo, Fifine microphone, softboxes"
         }
       },
       {
-        "label": { "ru": "Объём", "en": "Output" },
-        "value": {
-          "ru": "55 выпусков в ленте подкаста; на YouTube — 58 длинных видео, 13 Shorts и 12 стримов",
-          "en": "55 releases in the podcast feed; on YouTube, 58 long-form videos, 13 Shorts and 12 live streams"
+        "n": "07",
+        "title": {
+          "ru": "Люди и процессы",
+          "en": "People and workflow"
+        },
+        "text": {
+          "ru": "Согласую график с соведущей и гостями, держу задачи, шаблоны и архив выпусков в одном рабочем пространстве.",
+          "en": "I align schedules with my co-host and guests and keep tasks, templates and the episode archive in one workspace."
+        },
+        "tools": "Notion, Telegram"
+      },
+      {
+        "n": "08",
+        "title": {
+          "ru": "Запись",
+          "en": "Recording"
+        },
+        "text": {
+          "ru": "Записываю выпуск в кадре как соведущая и одновременно слежу за картинкой и звуком.",
+          "en": "I record the episode on camera as co-host while keeping an eye on picture and sound."
+        },
+        "tools": "iPhone, OBS Studio"
+      },
+      {
+        "n": "09",
+        "title": {
+          "ru": "Звук и Shorts",
+          "en": "Audio and Shorts"
+        },
+        "text": {
+          "ru": "Чищу и свожу звук, собираю Shorts.",
+          "en": "I clean up and mix the audio and cut the Shorts."
+        },
+        "tools": "REAPER, Studio One, CapCut"
+      },
+      {
+        "n": "10",
+        "title": {
+          "ru": "Публикация и продвижение",
+          "en": "Release and promotion"
+        },
+        "text": {
+          "ru": "Выкладываю выпуски на YouTube и подкаст-платформы, анонсирую в Telegram и смотрю аналитику.",
+          "en": "I publish to YouTube and podcast platforms, announce on Telegram and review the analytics."
+        },
+        "bullets": [
+          {
+            "ru": "Превью, обложки, описания, таймкоды и ссылки",
+            "en": "Thumbnails, cover art, descriptions, chapters and links"
+          },
+          {
+            "ru": "Общение с подписчиками",
+            "en": "Talking with subscribers"
+          },
+          {
+            "ru": "Переговоры о рекламе через PR-почту и бартер с партнёрами",
+            "en": "Ad negotiations via our PR inbox and barter deals with partners"
+          },
+          {
+            "ru": "Монетизация YouTube одобрена, подключение в процессе",
+            "en": "YouTube monetisation approved, setup in progress"
+          }
+        ],
+        "tools": "Photoshop, YouTube Studio, Mave, Telegram",
+        "proof": {
+          "label": {
+            "ru": "Превью выпусков",
+            "en": "Thumbnails"
+          },
+          "items": [
+            "yt-channel-thumbs"
+          ]
+        }
+      }
+    ]
+  },
+  "case": {
+    "title": {
+      "ru": "«Ведьмин час»",
+      "en": "Witching Hour (Ведьмин час)"
+    },
+    "intro": {
+      "ru": "«Ведьмин час» — независимый авторский медиапроект, созданный в декабре 2023 года. Вместе с соведущей мы развиваем его как многоплатформенный контентный продукт: разрабатываем темы и сценарии, производим разговорные выпуски, развиваем YouTube-канал, подкаст-дистрибуцию и собственное сообщество на платформах Telegram и Boosty.",
+      "en": "Witching Hour is an independent media project launched in December 2023. Together with my co-host I'm growing it as a multi-platform content product: we develop topics and scripts, produce conversational episodes, and grow the YouTube channel, podcast distribution and our own community on Telegram and Boosty."
+    },
+    "proofs_title": {
+      "ru": "Что из этого вышло",
+      "en": "What came of it"
+    },
+    "shorts_proof": {
+      "kicker": {
+        "ru": "Shorts",
+        "en": "Shorts"
+      },
+      "value": {
+        "ru": "3,3 млн",
+        "en": "3.3M"
+      },
+      "label": {
+        "ru": "просмотров у двух роликов по 30 и 19 секунд",
+        "en": "views on two clips of 30 and 19 seconds"
+      },
+      "text": {
+        "ru": "В июне–июле 2024 года мы с соведущей выпустили 11 Shorts — ролики-вопросы о героях и мире книг.",
+        "en": "In June and July 2024 my co-host and I released 11 Shorts, each built around one quick question about the books."
+      },
+      "source": {
+        "ru": "Публичные счётчики YouTube, 21 ноября 2026",
+        "en": "Public YouTube counts, Nov 21, 2026"
+      }
+    },
+    "film_proofs": [
+      {
+        "id": "halloween",
+        "media": "X8abHp0ekss",
+        "kicker": {
+          "ru": "YouTube",
+          "en": "YouTube"
+        },
+        "title": {
+          "ru": "Лучший старт среди последних 10 видео",
+          "en": "The best start of the last 10 videos"
+        },
+        "text": {
+          "ru": "Хэллоуинский выпуск «Вампиры против оборотней» вышел 5 ноября 2026 года и за первые 14 дней набрал 8,2 тыс. просмотров — лучший результат среди последних 10 видео канала за тот же срок.",
+          "en": "Our Halloween episode, Vampires vs Werewolves, came out on Nov 5, 2026 and reached 8.2K views in its first 14 days, the best result of the channel's last 10 videos over the same period."
+        },
+        "source": {
+          "ru": "YouTube Studio, 19 ноября 2026",
+          "en": "YouTube Studio, Nov 19, 2026"
+        }
+      },
+      {
+        "id": "yule_ball",
+        "media": "cLOwip8PLOg",
+        "kicker": {
+          "ru": "Аудио",
+          "en": "Audio"
+        },
+        "title": {
+          "ru": "Главный выпуск 2025 года в Яндекс Музыке",
+          "en": "Our top episode of 2025 on Yandex Music"
+        },
+        "text": {
+          "ru": "Рождественский выпуск «Святочный бал» стал самым прослушиваемым выпуском подкаста за 2025 год. В «Распаковке» Яндекс Музыки он отмечен как выпуск, который слушали и пересылали друзьям.",
+          "en": "Our Christmas episode, The Yule Ball, was the podcast's most-played episode of 2025. Yandex Music's 2025 Wrapped featured it as the episode listeners played and shared with friends."
+        },
+        "source": {
+          "ru": "Яндекс Музыка, «Распаковка 2025»",
+          "en": "Yandex Music 2025 Wrapped"
         }
       }
     ],
-    "credits": {
-      "title": { "ru": "Кто что делает", "en": "Who does what" },
+    "episodes": {
+      "title": {
+        "ru": "Избранные выпуски",
+        "en": "Selected episodes"
+      },
+      "note": {
+        "ru": "Просмотры на YouTube на 21 ноября 2026 года.",
+        "en": "YouTube views as of Nov 21, 2026."
+      },
+      "views_label": {
+        "ru": "просмотров",
+        "en": "views"
+      },
+      "channel_label": {
+        "ru": "Все выпуски на YouTube",
+        "en": "All episodes on YouTube"
+      },
       "items": [
-        { "role": { "ru": "Продюсирование, сценарии, исследование", "en": "Producing, scripts, research" }, "who": { "ru": "Алиса", "en": "Alisa" } },
-        { "role": { "ru": "Ведущие", "en": "Hosts" }, "who": { "ru": "Алиса и Катя", "en": "Alisa and Katya" } },
-        { "role": { "ru": "Звук и аудиомонтаж", "en": "Sound and audio editing" }, "who": { "ru": "Алиса", "en": "Alisa" } },
-        { "role": { "ru": "Видеомонтаж", "en": "Video editing" }, "who": { "ru": "Алиса и Катя, вместе", "en": "Alisa and Katya, jointly" } },
-        { "role": { "ru": "Публикация, сообщество, Boosty", "en": "Publishing, community, Boosty" }, "who": { "ru": "Алиса", "en": "Alisa" } }
+        {
+          "id": "X8abHp0ekss",
+          "title": {
+            "ru": "Вампиры против оборотней. Хэллоуинский выпуск",
+            "en": "Vampires vs Werewolves: Halloween special"
+          },
+          "duration": "1:03:44",
+          "views": 8259,
+          "views_label": {
+            "ru": "8,3 тыс.",
+            "en": "8.3K"
+          },
+          "date": "2026-11-05",
+          "date_label": {
+            "ru": "5 ноября 2026",
+            "en": "Nov 5, 2026"
+          },
+          "note": {
+            "ru": "Лучший старт среди последних 10 видео канала: 8,2 тыс. просмотров за первые 14 дней.",
+            "en": "The best start of the channel's last 10 videos: 8.2K views in its first 14 days."
+          }
+        },
+        {
+          "id": "FuSKSb_aRnQ",
+          "title": {
+            "ru": "История юных Мародёров. Любимчики преподавателей и их опасные шалости",
+            "en": "The Young Marauders: Teachers' favorites and their risky pranks"
+          },
+          "duration": "1:08:46",
+          "views": 20081,
+          "views_label": {
+            "ru": "20 тыс.",
+            "en": "20K"
+          },
+          "date": "2024-04-27",
+          "date_label": {
+            "ru": "27 апреля 2024",
+            "en": "Apr 27, 2024"
+          },
+          "note": {
+            "ru": "Самый просматриваемый длинный выпуск. Спустя два с половиной года — второй по просмотрам на канале за последние 28 дней.",
+            "en": "The most-watched long episode. Two and a half years on, still the channel's second most-viewed video over the last 28 days."
+          }
+        },
+        {
+          "id": "HLP-JC3EkW4",
+          "title": {
+            "ru": "Своя игра по Гарри Поттеру. Турнир четырёх волшебниц",
+            "en": "Harry Potter quiz: The Tournament of Four Witches"
+          },
+          "duration": "1:09:19",
+          "views": 16426,
+          "views_label": {
+            "ru": "16,4 тыс.",
+            "en": "16.4K"
+          },
+          "date": "2024-06-02",
+          "date_label": {
+            "ru": "2 июня 2024",
+            "en": "Jun 2, 2024"
+          },
+          "note": {
+            "ru": "Игровой формат с гостьями: четыре участницы играют за четыре факультета. Второй по просмотрам длинный выпуск.",
+            "en": "A quiz format with guests: four players, one for each Hogwarts house. The second most-watched long episode."
+          }
+        },
+        {
+          "id": "UOoRy3X91Ys",
+          "title": {
+            "ru": "Школы магии. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец",
+            "en": "Schools of Magic: Hogwarts, Durmstrang, Beauxbatons and Koldovstoretz"
+          },
+          "duration": "1:01:17",
+          "views": 13196,
+          "views_label": {
+            "ru": "13,2 тыс.",
+            "en": "13.2K"
+          },
+          "date": "2024-07-09",
+          "date_label": {
+            "ru": "9 июля 2024",
+            "en": "Jul 9, 2024"
+          },
+          "note": {
+            "ru": "Выпуск-путеводитель по школам магии. Третий по просмотрам длинный выпуск канала.",
+            "en": "A guide to the wizarding schools. The channel's third most-watched long episode."
+          }
+        },
+        {
+          "id": "yedhFA9C0Vo",
+          "title": {
+            "ru": "Северус Снейп. Храбрость, скверный характер и мотивы хороших дел",
+            "en": "Severus Snape: Courage, a bad temper and the motives behind good deeds"
+          },
+          "duration": "1:20:03",
+          "views": 11249,
+          "views_label": {
+            "ru": "11,2 тыс.",
+            "en": "11.2K"
+          },
+          "date": "2024-05-19",
+          "date_label": {
+            "ru": "19 мая 2024",
+            "en": "May 19, 2024"
+          },
+          "note": {
+            "ru": "Вторая часть разбора персонажа после выпуска о его детстве.",
+            "en": "The second half of a two-part character study, after an episode on his childhood."
+          }
+        },
+        {
+          "id": "mgyuUI8Z_4k",
+          "title": {
+            "ru": "Слизерин. Таинственный факультет для амбициозных, хитроумных и решительных",
+            "en": "Slytherin: The mysterious house of the ambitious, cunning and determined"
+          },
+          "duration": "0:54:43",
+          "views": 11058,
+          "views_label": {
+            "ru": "11,1 тыс.",
+            "en": "11.1K"
+          },
+          "date": "2024-06-15",
+          "date_label": {
+            "ru": "15 июня 2024",
+            "en": "Jun 15, 2024"
+          },
+          "note": {
+            "ru": "Открыл серию из четырёх выпусков о факультетах.",
+            "en": "Opened a four-part series on the Hogwarts houses."
+          }
+        },
+        {
+          "id": "JdAoMKIe3vQ",
+          "title": {
+            "ru": "Годрикова Впадина. История и жители заснеженной деревушки",
+            "en": "Godric's Hollow: The history and residents of a snowy village"
+          },
+          "duration": "47:11",
+          "views": 5339,
+          "views_label": {
+            "ru": "5,3 тыс.",
+            "en": "5.3K"
+          },
+          "date": "2026-01-10",
+          "date_label": {
+            "ru": "10 января 2026",
+            "en": "Jan 10, 2026"
+          },
+          "note": {
+            "ru": "Выпуск о месте, а не о герое: история деревни и людей, которые в ней жили.",
+            "en": "An episode about a place rather than a character: the village and the people who lived there."
+          }
+        },
+        {
+          "id": "cLOwip8PLOg",
+          "title": {
+            "ru": "Святочный бал. Рождественский выпуск о традиции Турнира Трёх Волшебников",
+            "en": "The Yule Ball: A Christmas episode on the Triwizard Tournament tradition"
+          },
+          "duration": "0:47:32",
+          "views": 4512,
+          "views_label": {
+            "ru": "4,5 тыс.",
+            "en": "4.5K"
+          },
+          "date": "2024-12-31",
+          "date_label": {
+            "ru": "31 декабря 2024",
+            "en": "Dec 31, 2024"
+          },
+          "note": {
+            "ru": "Главный выпуск 2025 года в «Распаковке» Яндекс Музыки.",
+            "en": "Our most-played episode of 2025 (Yandex Music Wrapped)."
+          }
+        },
+        {
+          "id": "uKxovctmQHI",
+          "title": {
+            "ru": "Сёстры Блэк. Жизнь Нарциссы, Андромеды и Беллатрисы",
+            "en": "The Black Sisters: The lives of Narcissa, Andromeda and Bellatrix"
+          },
+          "duration": "0:56:10",
+          "views": 6482,
+          "views_label": {
+            "ru": "6,5 тыс.",
+            "en": "6.5K"
+          },
+          "date": "2026-03-31",
+          "date_label": {
+            "ru": "31 марта 2026",
+            "en": "Mar 31, 2026"
+          },
+          "note": {
+            "ru": "В Apple Podcasts — 292 слушателя за первые 60 дней, на 85 % выше медианы подкаста.",
+            "en": "On Apple Podcasts, 292 listeners in the first 60 days, 85% above the podcast's median."
+          }
+        },
+        {
+          "id": "Kc8jJC2onB4",
+          "title": {
+            "ru": "Патронусы. Внутренние защитники, телесная магия и сила счастливых воспоминаний",
+            "en": "Patronuses: Inner protectors, corporeal magic and the power of happy memories"
+          },
+          "duration": "0:44:29",
+          "views": 6373,
+          "views_label": {
+            "ru": "6,4 тыс.",
+            "en": "6.4K"
+          },
+          "date": "2026-02-21",
+          "date_label": {
+            "ru": "21 февраля 2026",
+            "en": "Feb 21, 2026"
+          },
+          "note": {
+            "ru": "В Apple Podcasts — 257 слушателей за первые 60 дней, на 63 % выше медианы подкаста.",
+            "en": "On Apple Podcasts, 257 listeners in the first 60 days, 63% above the podcast's median."
+          }
+        },
+        {
+          "id": "WkVu5eFFYxM",
+          "title": {
+            "ru": "Сериал HBO о Гарри Поттере, часть 1. Шоураннеры, съёмочная команда и подробности производства",
+            "en": "The HBO Harry Potter series, part 1: Showrunners, crew and production details"
+          },
+          "duration": "1:01:37",
+          "views": 6121,
+          "views_label": {
+            "ru": "6,1 тыс.",
+            "en": "6.1K"
+          },
+          "date": "2025-12-04",
+          "date_label": {
+            "ru": "4 декабря 2025",
+            "en": "Dec 4, 2025"
+          },
+          "note": {
+            "ru": "Новостной выпуск с гостьей — автором тематического Telegram-канала.",
+            "en": "A news episode with a guest who runs a Harry Potter Telegram channel."
+          }
+        }
       ]
     },
-
-    "numbers_title": { "ru": "Цифры по платформам", "en": "Numbers by platform" },
+    "shorts": {
+      "title": {
+        "ru": "Избранные Shorts",
+        "en": "Selected Shorts"
+      },
+      "items": [
+        {
+          "id": "o4-YEJW9ar8",
+          "title": {
+            "ru": "Почему Римус Люпин ехал на поезде в Хогвартс?",
+            "en": "Why did Remus Lupin take the train to Hogwarts?"
+          },
+          "duration": "0:30",
+          "views": 1755182,
+          "views_label": {
+            "ru": "1,76 млн",
+            "en": "1.76M"
+          }
+        },
+        {
+          "id": "g6jqNWzJrNw",
+          "title": {
+            "ru": "Фильмы испортили Рона Уизли?",
+            "en": "Did the films ruin Ron Weasley?"
+          },
+          "duration": "0:19",
+          "views": 1571888,
+          "views_label": {
+            "ru": "1,57 млн",
+            "en": "1.57M"
+          }
+        },
+        {
+          "id": "r2u0yEV-QU8",
+          "use_poster": true,
+          "title": {
+            "ru": "Министр магии плохо делает свою работу?",
+            "en": "Is the Minister for Magic bad at his job?"
+          },
+          "duration": "0:48",
+          "views": 415055,
+          "views_label": {
+            "ru": "415 тыс.",
+            "en": "415K"
+          }
+        },
+        {
+          "id": "C7uxzve2wv8",
+          "title": {
+            "ru": "Гермиона была права",
+            "en": "Hermione was right"
+          },
+          "duration": "0:35",
+          "views": 342846,
+          "views_label": {
+            "ru": "343 тыс.",
+            "en": "343K"
+          }
+        },
+        {
+          "id": "SENI8JOCuc0",
+          "title": {
+            "ru": "Римус ЛЮпин или ЛюпИн?",
+            "en": "How do you pronounce Lupin?"
+          },
+          "duration": "0:34",
+          "views": 160193,
+          "views_label": {
+            "ru": "160 тыс.",
+            "en": "160K"
+          }
+        },
+        {
+          "id": "ZMJpa_P8vKQ",
+          "title": {
+            "ru": "Кто из них был гениальным зельеваром?",
+            "en": "Which of them was the brilliant potion-maker?"
+          },
+          "duration": "0:38",
+          "views": 137853,
+          "views_label": {
+            "ru": "138 тыс.",
+            "en": "138K"
+          }
+        }
+      ]
+    }
+  },
+  "moments": {
+    "title": {
+      "ru": "Вырезки из видео",
+      "en": "Clips from the episodes"
+    },
+    "intro": {
+      "ru": "Несколько фрагментов выпусков со звуком.",
+      "en": "A few excerpts from the episodes, with sound. In Russian."
+    },
+    "items": [
+      {
+        "id": "godric-hollow",
+        "episode": "JdAoMKIe3vQ",
+        "title": {
+          "ru": "Годрикова Впадина: деревня на стыке двух миров",
+          "en": "Godric's Hollow, a village between two worlds"
+        }
+      },
+      {
+        "id": "showrunner",
+        "episode": "WkVu5eFFYxM",
+        "title": {
+          "ru": "Кто такой шоураннер",
+          "en": "What a showrunner does"
+        }
+      },
+      {
+        "id": "patronus",
+        "episode": "Kc8jJC2onB4",
+        "title": {
+          "ru": "Откуда у патронуса сила",
+          "en": "Where a Patronus gets its power"
+        }
+      },
+      {
+        "id": "halloween-topic",
+        "episode": "X8abHp0ekss",
+        "title": {
+          "ru": "Почему именно эта тема",
+          "en": "Why this topic"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "title": {
+      "ru": "Статистика",
+      "en": "Statistics"
+    },
+    "summary_note": {
+      "ru": "Цифры из кабинетов платформ, аудитория, сообщество и скриншоты — для тех, кто хочет изучить подробно.",
+      "en": "Platform figures, audience, community and dashboard screenshots, for anyone who wants the detail."
+    },
+    "numbers_title": {
+      "ru": "Цифры по платформам",
+      "en": "Numbers by platform"
+    },
     "numbers_note": {
       "ru": "Цифры взяты из кабинетов платформ и не суммируются: у каждой своя методика подсчёта.",
       "en": "Figures come from each platform's own dashboard and are not added up: every platform counts differently."
@@ -189,626 +1171,771 @@
     "platforms": [
       {
         "id": "youtube",
-        "name": { "ru": "YouTube", "en": "YouTube" },
+        "name": {
+          "ru": "YouTube",
+          "en": "YouTube"
+        },
         "_source_note": "source: shown in the full list for the whole group; a stat's own source (if set) is shown in the main table instead.",
         "source": {
           "ru": "YouTube Studio и страница канала, на 19–21 ноября 2026",
           "en": "YouTube Studio and the channel page, as of Nov 19–21, 2026"
         },
         "stats": [
-          { "key": true, "value": { "ru": "4,9 млн", "en": "4.9M" }, "label": { "ru": "просмотров за всё время, около 92 % — Shorts", "en": "views all time, about 92% from Shorts" }, "source": { "ru": "YouTube Studio, 1 декабря 2023 — 19 ноября 2026", "en": "YouTube Studio, Dec 1, 2023 – Nov 19, 2026" } },
-          { "key": true, "value": { "ru": "141,4 тыс.", "en": "141.4K" }, "label": { "ru": "часов просмотра за всё время", "en": "hours watched all time" }, "source": { "ru": "YouTube Studio, 1 декабря 2023 — 19 ноября 2026", "en": "YouTube Studio, Dec 1, 2023 – Nov 19, 2026" } },
-          { "key": true, "value": { "ru": "7 768", "en": "7,768" }, "label": { "ru": "подписчиков канала", "en": "channel subscribers" }, "source": { "ru": "YouTube Studio, на 19 ноября 2026", "en": "YouTube Studio, as of Nov 19, 2026" } },
-          { "value": { "ru": "20 тыс.", "en": "20K" }, "label": { "ru": "просмотров у самого популярного длинного выпуска", "en": "views on the most-watched long episode" } }
+          {
+            "key": true,
+            "value": {
+              "ru": "4,9 млн",
+              "en": "4.9M"
+            },
+            "label": {
+              "ru": "просмотров за всё время, около 92 % — Shorts",
+              "en": "views all time, about 92% from Shorts"
+            },
+            "source": {
+              "ru": "YouTube Studio, 1 декабря 2023 — 19 ноября 2026",
+              "en": "YouTube Studio, Dec 1, 2023 – Nov 19, 2026"
+            }
+          },
+          {
+            "key": true,
+            "value": {
+              "ru": "141,4 тыс.",
+              "en": "141.4K"
+            },
+            "label": {
+              "ru": "часов просмотра за всё время",
+              "en": "hours watched all time"
+            },
+            "source": {
+              "ru": "YouTube Studio, 1 декабря 2023 — 19 ноября 2026",
+              "en": "YouTube Studio, Dec 1, 2023 – Nov 19, 2026"
+            }
+          },
+          {
+            "key": true,
+            "value": {
+              "ru": "7 768",
+              "en": "7,768"
+            },
+            "label": {
+              "ru": "подписчиков канала",
+              "en": "channel subscribers"
+            },
+            "source": {
+              "ru": "YouTube Studio, на 19 ноября 2026",
+              "en": "YouTube Studio, as of Nov 19, 2026"
+            }
+          },
+          {
+            "value": {
+              "ru": "4,55 млн",
+              "en": "4.55M"
+            },
+            "label": {
+              "ru": "просмотров у всех 13 Shorts канала",
+              "en": "views across the channel's 13 Shorts"
+            }
+          },
+          {
+            "value": {
+              "ru": "1,76 млн",
+              "en": "1.76M"
+            },
+            "label": {
+              "ru": "у самого популярного Short: «Почему Римус Люпин ехал на поезде в Хогвартс?»",
+              "en": "on the top Short: Why did Remus Lupin take the train to Hogwarts?"
+            }
+          },
+          {
+            "value": {
+              "ru": "20 тыс.",
+              "en": "20K"
+            },
+            "label": {
+              "ru": "просмотров у самого популярного длинного выпуска",
+              "en": "views on the most-watched long episode"
+            }
+          },
+          {
+            "value": {
+              "ru": "58 / 13 / 12",
+              "en": "58 / 13 / 12"
+            },
+            "label": {
+              "ru": "длинных видео, Shorts и стримов на канале",
+              "en": "long videos, Shorts and live streams on the channel"
+            }
+          }
         ]
       },
       {
         "id": "yandex",
-        "name": { "ru": "Яндекс Музыка", "en": "Yandex Music" },
+        "name": {
+          "ru": "Яндекс Музыка",
+          "en": "Yandex Music"
+        },
         "source": {
           "ru": "Аналитика подкастов Яндекс Музыки, с запуска; «Распаковка 2025» — за 2025 год",
           "en": "Yandex Music podcast analytics, since launch; Yandex Music 2025 Wrapped for 2025"
         },
         "stats": [
-          { "value": { "ru": "1,2 млн", "en": "1.2M" }, "label": { "ru": "стартов с запуска (любое включение выпуска)", "en": "starts since launch (any playback)" } },
-          { "value": { "ru": "723,9 тыс.", "en": "723.9K" }, "label": { "ru": "прослушиваний дольше 2 минут с запуска", "en": "streams over 2 minutes since launch" } },
-          { "key": true, "value": { "ru": "74,7 тыс.", "en": "74.7K" }, "label": { "ru": "уникальных слушателей с запуска", "en": "unique listeners since launch" }, "source": { "ru": "Аналитика Яндекс Музыки, с запуска по ноябрь 2026", "en": "Yandex Music analytics, launch to Nov 2026" } },
-          { "key": true, "value": { "ru": "338 тыс.", "en": "338K" }, "label": { "ru": "часов прослушивания с запуска", "en": "hours listened since launch" }, "source": { "ru": "Аналитика Яндекс Музыки, с запуска по ноябрь 2026", "en": "Yandex Music analytics, launch to Nov 2026" } },
-          { "value": { "ru": "48,5 %", "en": "48.5%" }, "label": { "ru": "выпуска слушают в среднем", "en": "of an episode is heard on average" } },
-          { "value": { "ru": "30 581", "en": "30,581" }, "label": { "ru": "слушатель в 2025 году, из них 28 484 — новые", "en": "listeners in 2025, 28,484 of them new" } },
-          { "value": { "ru": "7,46 млн", "en": "7.46M" }, "label": { "ru": "минут прослушивания в 2025 году", "en": "minutes listened in 2025" } }
+          {
+            "value": {
+              "ru": "1,2 млн",
+              "en": "1.2M"
+            },
+            "label": {
+              "ru": "стартов с запуска (любое включение выпуска)",
+              "en": "starts since launch (any playback)"
+            }
+          },
+          {
+            "value": {
+              "ru": "723,9 тыс.",
+              "en": "723.9K"
+            },
+            "label": {
+              "ru": "прослушиваний дольше 2 минут с запуска",
+              "en": "streams over 2 minutes since launch"
+            }
+          },
+          {
+            "key": true,
+            "value": {
+              "ru": "74,7 тыс.",
+              "en": "74.7K"
+            },
+            "label": {
+              "ru": "уникальных слушателей с запуска",
+              "en": "unique listeners since launch"
+            },
+            "source": {
+              "ru": "Аналитика Яндекс Музыки, с запуска по ноябрь 2026",
+              "en": "Yandex Music analytics, launch to Nov 2026"
+            }
+          },
+          {
+            "key": true,
+            "value": {
+              "ru": "338 тыс.",
+              "en": "338K"
+            },
+            "label": {
+              "ru": "часов прослушивания с запуска",
+              "en": "hours listened since launch"
+            },
+            "source": {
+              "ru": "Аналитика Яндекс Музыки, с запуска по ноябрь 2026",
+              "en": "Yandex Music analytics, launch to Nov 2026"
+            }
+          },
+          {
+            "value": {
+              "ru": "48,5 %",
+              "en": "48.5%"
+            },
+            "label": {
+              "ru": "выпуска слушают в среднем",
+              "en": "of an episode is heard on average"
+            }
+          },
+          {
+            "value": {
+              "ru": "30 581",
+              "en": "30,581"
+            },
+            "label": {
+              "ru": "слушатель в 2025 году, из них 28 484 — новые",
+              "en": "listeners in 2025, 28,484 of them new"
+            }
+          },
+          {
+            "value": {
+              "ru": "7,46 млн",
+              "en": "7.46M"
+            },
+            "label": {
+              "ru": "минут прослушивания в 2025 году",
+              "en": "minutes listened in 2025"
+            }
+          },
+          {
+            "value": {
+              "ru": "18 407",
+              "en": "18,407"
+            },
+            "label": {
+              "ru": "прослушиваний «Святочного бала» за 2025 год — главный выпуск года",
+              "en": "plays of The Yule Ball in 2025, our top episode of the year"
+            }
+          },
+          {
+            "value": {
+              "ru": "5 523",
+              "en": "5,523"
+            },
+            "label": {
+              "ru": "лайка у подкаста",
+              "en": "likes on the podcast's page"
+            }
+          }
         ]
       },
       {
         "id": "mave",
-        "name": { "ru": "Mave", "en": "Mave" },
+        "name": {
+          "ru": "Mave",
+          "en": "Mave"
+        },
         "source": {
           "ru": "Mave, всё время, декабрь 2023 — ноябрь 2026. Mave — RSS-хостинг подкаста (Apple Podcasts и другие приложения); Яндекс Музыка считает своих слушателей отдельно",
           "en": "Mave, all time, Dec 2023 – Nov 2026. Mave hosts the podcast's RSS feed (Apple Podcasts and other apps); Yandex Music counts its listeners separately"
         },
         "stats": [
-          { "value": { "ru": "79 937", "en": "79,937" }, "label": { "ru": "прослушиваний RSS-ленты за всё время", "en": "RSS feed plays, all time" } },
-          { "key": true, "value": { "ru": "36 884", "en": "36,884" }, "label": { "ru": "уникальных слушателя RSS-ленты подкаста: Apple Podcasts и другие приложения (Яндекс Музыка считает отдельно)", "en": "unique listeners of the podcast's RSS feed: Apple Podcasts and other apps (Yandex Music counts separately)" }, "source": { "ru": "Mave, всё время, декабрь 2023 — ноябрь 2026", "en": "Mave, all time, Dec 2023 – Nov 2026" } }
+          {
+            "value": {
+              "ru": "79 937",
+              "en": "79,937"
+            },
+            "label": {
+              "ru": "прослушиваний RSS-ленты за всё время",
+              "en": "RSS feed plays, all time"
+            }
+          },
+          {
+            "key": true,
+            "value": {
+              "ru": "36 884",
+              "en": "36,884"
+            },
+            "label": {
+              "ru": "уникальных слушателя RSS-ленты подкаста: Apple Podcasts и другие приложения (Яндекс Музыка считает отдельно)",
+              "en": "unique listeners of the podcast's RSS feed: Apple Podcasts and other apps (Yandex Music counts separately)"
+            },
+            "source": {
+              "ru": "Mave, всё время, декабрь 2023 — ноябрь 2026",
+              "en": "Mave, all time, Dec 2023 – Nov 2026"
+            }
+          }
         ]
       },
       {
         "id": "apple",
-        "name": { "ru": "Apple Podcasts", "en": "Apple Podcasts" },
+        "name": {
+          "ru": "Apple Podcasts",
+          "en": "Apple Podcasts"
+        },
         "source": {
           "ru": "Apple Podcasts Connect, последние 60 дней, ноябрь 2026",
           "en": "Apple Podcasts Connect, last 60 days, Nov 2026"
         },
         "stats": [
-          { "value": { "ru": "1,1 тыс.", "en": "1.1K" }, "label": { "ru": "подписчиков в Apple Podcasts", "en": "followers on Apple Podcasts" } },
-          { "value": { "ru": "9 тыс.", "en": "9K" }, "label": { "ru": "воспроизведений за последние 60 дней", "en": "plays in the last 60 days" } },
-          { "value": { "ru": "+63–85 %", "en": "+63–85%" }, "label": { "ru": "больше слушателей, чем у медианного выпуска шоу к тому же дню после выхода, — у четырёх последних выпусков", "en": "more listeners than the show's median episode by the same day after release, for the four latest episodes" } }
-        ]
-      },
-      {
-"id": "community",
-        "name": { "ru": "Boosty и Telegram", "en": "Boosty & Telegram" },
-        "source": {
-          "ru": "Кабинет Boosty и публичная страница Telegram · ноябрь 2026",
-          "en": "Boosty dashboard and public Telegram page · November 2026"
-        },
-        "stats": [
-          { "value": { "ru": "58", "en": "58" }, "label": { "ru": "платных подписчиков на Boosty", "en": "paying members on Boosty" } },
-          { "value": { "ru": "178", "en": "178" }, "label": { "ru": "бесплатных подписчиков на Boosty", "en": "free followers on Boosty" } },
-          { "value": { "ru": "3,09 тыс.", "en": "3.09K" }, "label": { "ru": "подписчиков в Telegram-канале", "en": "Telegram channel subscribers" } },
-          { "value": { "ru": "5 523", "en": "5,523" }, "label": { "ru": "лайка у подкаста на Яндекс Музыке", "en": "likes on the podcast's Yandex Music page" } }
+          {
+            "value": {
+              "ru": "1,1 тыс.",
+              "en": "1.1K"
+            },
+            "label": {
+              "ru": "подписчиков в Apple Podcasts",
+              "en": "followers on Apple Podcasts"
+            }
+          },
+          {
+            "value": {
+              "ru": "9 тыс.",
+              "en": "9K"
+            },
+            "label": {
+              "ru": "воспроизведений за последние 60 дней",
+              "en": "plays in the last 60 days"
+            }
+          },
+          {
+            "value": {
+              "ru": "+63–85 %",
+              "en": "+63–85%"
+            },
+            "label": {
+              "ru": "больше слушателей, чем у медианного выпуска подкаста к тому же дню после выхода, — у четырёх последних выпусков",
+              "en": "more listeners than the podcast's median episode by the same day after release, for the four latest episodes"
+            }
+          }
         ]
       }
     ],
-
-    "stories_title": { "ru": "Что я сделала и что из этого вышло", "en": "What I did and what came of it" },
-    "stories": [
-      {
-        "id": "shorts",
-        "figures": [
-          { "value": { "ru": "3,3 млн", "en": "3.3M" }, "label": { "ru": "просмотров у двух роликов по 30 и 19 секунд", "en": "views on two clips of 30 and 19 seconds" } }
-        ],
-        "kicker": { "ru": "Shorts", "en": "Shorts" },
-        "title": { "ru": "Два коротких вопроса — больше двух третей всех просмотров канала", "en": "Two quick questions: more than two thirds of all channel views" },
-        "body": {
-          "ru": "В июне–июле 2024 года мы с соведущей выпустили 11 Shorts — в основном ролики-вопросы о героях и мире книг. Ролик о том, почему Люпин ехал в Хогвартс на поезде (30 секунд), набрал 1,76 млн просмотров, ролик о Роне Уизли в фильмах (19 секунд) — 1,57 млн.",
-          "en": "In June and July 2024 my co-host and I released 11 Shorts, most of them built around one quick question about the books. The one on why Lupin took the train to Hogwarts (30 seconds) reached 1.76M views; the one on how the films treated Ron Weasley (19 seconds) reached 1.57M."
-        },
-        "result": {
-          "ru": "Все 13 Shorts канала — 4,55 млн просмотров, около 92 % всех просмотров на YouTube.",
-          "en": "The channel's 13 Shorts total 4.55M views, about 92% of all its YouTube views."
-        },
-        "source": { "ru": "Публичные счётчики YouTube, 21 ноября 2026", "en": "Public YouTube counts, Nov 21, 2026" }
+    "growth": {
+      "title": {
+        "ru": "28 дней вокруг хэллоуинского выпуска",
+        "en": "The 28 days around the Halloween episode"
       },
-      {
-        "id": "comeback",
-        "media": "X8abHp0ekss",
-        "figures": [
-          { "value": { "ru": "+53 %", "en": "+53%" }, "label": { "ru": "времени просмотра — выше обычного для канала диапазона", "en": "watch time, above the channel's usual range" } },
-          { "value": { "ru": "+45 %", "en": "+45%" }, "label": { "ru": "прироста подписчиков (84 новых) — тоже выше обычного", "en": "subscriber growth (84 net new), also above the usual range" } }
-        ],
-        "figures_note": { "ru": "Канал целиком: последние 28 дней (23 октября — 19 ноября 2026, выпуск вышел 5 ноября) к предыдущим 28 дням", "en": "Whole channel: last 28 days (Oct 23 – Nov 19, 2026, incl. the Nov 5 release) vs the previous 28 days" },
-        "kicker": { "ru": "Возвращение", "en": "Comeback" },
-        "title": { "ru": "Возвращение на YouTube после семи месяцев", "en": "Back on YouTube after seven months" },
-        "body": {
-          "ru": "После паузы в длинных выпусках на YouTube с апреля 2026 года мы вернулись 5 ноября часовым хэллоуинским выпуском «Вампиры против оборотней». За первые 14 дней он набрал 8,2 тыс. просмотров: лучший результат среди последних 10 видео канала за тот же срок. В Apple Podcasts за первые 15 дней его послушали 200 человек — на 77 % больше, чем медианный выпуск шоу к тому же дню после выхода.",
-          "en": "After a break from long-form YouTube episodes since April 2026, we came back on Nov 5 with an hour-long Halloween episode, Vampires vs Werewolves. In its first 14 days it reached 8.2K views, ranking first of the channel's last 10 videos over the same period. On Apple Podcasts, 200 people listened in the first 15 days, 77% more than the show's median episode by the same day after release."
+      "figures": [
+        {
+          "value": {
+            "ru": "+53 %",
+            "en": "+53%"
+          },
+          "label": {
+            "ru": "времени просмотра — выше обычного для канала диапазона",
+            "en": "watch time, above the channel's usual range"
+          }
         },
-        "caveat": {
-          "ru": "В предыдущие 28 дней новых видео не было. Просмотры канала выросли на 65 %, но остались в обычном для него диапазоне (13,8–30,5 тыс. за 28 дней); выше этого диапазона оказались только время просмотра и прирост подписчиков.",
-          "en": "No new videos came out in the previous 28 days. Channel views rose 65% but stayed within the channel's usual range (13.8K–30.5K per 28 days); only watch time and subscriber growth went above it."
+        {
+          "value": {
+            "ru": "+45 %",
+            "en": "+45%"
+          },
+          "label": {
+            "ru": "прироста подписчиков (84 новых) — тоже выше обычного",
+            "en": "subscriber growth (84 net new), also above the usual range"
+          }
         },
-        "source": { "ru": "YouTube Studio, 23 октября — 19 ноября 2026; Apple Podcasts Connect", "en": "YouTube Studio, Oct 23 – Nov 19, 2026; Apple Podcasts Connect" }
+        {
+          "value": {
+            "ru": "+77 %",
+            "en": "+77%"
+          },
+          "label": {
+            "ru": "слушателей в Apple Podcasts к медианному выпуску: 200 человек за первые 15 дней",
+            "en": "Apple Podcasts listeners vs the median episode: 200 people in the first 15 days"
+          }
+        }
+      ],
+      "note": {
+        "ru": "Канал целиком: 23 октября — 19 ноября 2026 (выпуск вышел 5 ноября) к предыдущим 28 дням. Пик — 2 318 просмотров 6 ноября, на следующий день после выхода.",
+        "en": "Whole channel: Oct 23 – Nov 19, 2026 (the episode came out on Nov 5) vs the previous 28 days. Peak: 2,318 views on Nov 6, the day after release."
       },
-      {
-        "id": "yule_ball",
-        "media": "cLOwip8PLOg",
-        "figures": [
-          { "value": { "ru": "18 407", "en": "18,407" }, "label": { "ru": "прослушиваний выпуска на Яндекс Музыке за 2025 год", "en": "plays of the episode on Yandex Music in 2025" } }
-        ],
-        "kicker": { "ru": "Аудио", "en": "Audio" },
-        "title": { "ru": "Главный выпуск 2025 года в Яндекс Музыке", "en": "Our most-played episode of 2025 on Yandex Music" },
-        "body": {
-          "ru": "Рождественский выпуск «Святочный бал» вышел 31 декабря 2024 года и за 2025 год собрал 18 407 прослушиваний на Яндекс Музыке. Всего в 2025 году подкаст на Яндекс Музыке послушали 30 581 человек, 28 484 из них — впервые.",
-          "en": "Our Christmas episode, The Yule Ball, came out on Dec 31, 2024 and was played 18,407 times on Yandex Music during 2025. Across 2025 the podcast reached 30,581 listeners on Yandex Music, 28,484 of them new."
-        },
-        "result": {
-          "ru": "В «Распаковке» Яндекс Музыки за 2025 год он отмечен как выпуск, который слушали и пересылали друзьям.",
-          "en": "Featured in Yandex Music's 2025 Wrapped as the episode listeners played and shared with friends."
-        },
-        "source": { "ru": "Яндекс Музыка, «Распаковка 2025»", "en": "Yandex Music 2025 Wrapped" }
+      "caveat": {
+        "ru": "В предыдущие 28 дней новых видео не было. Просмотры канала выросли на 65 %, но остались в обычном для него диапазоне (13,8–30,5 тыс. за 28 дней); выше этого диапазона оказались только время просмотра и прирост подписчиков.",
+        "en": "No new videos came out in the previous 28 days. Channel views rose 65% but stayed within the channel's usual range (13.8K–30.5K per 28 days); only watch time and subscriber growth went above it."
       },
-      {
-        "id": "community",
-        "figures": [
-          { "value": { "ru": "58", "en": "58" }, "label": { "ru": "платных подписчиков на Boosty", "en": "paying members on Boosty" } },
-          { "value": { "ru": "3,09 тыс.", "en": "3.09K" }, "label": { "ru": "подписчиков в Telegram-канале", "en": "Telegram channel subscribers" } }
-        ],
-        "kicker": { "ru": "Сообщество", "en": "Community" },
-        "title": { "ru": "Платная подписка вокруг бесплатного шоу", "en": "A paid membership around a free show" },
-        "body": {
-          "ru": "С весны 2024 года веду Boosty: ранний доступ к выпускам, расширенные версии, эксклюзивные аудиовыпуски и закрытый чат. Анонсы и обсуждения идут в Telegram-канале.",
-          "en": "Since spring 2024 I have run the show's Boosty: early access, extended cuts, exclusive audio episodes and a members' chat. Announcements and discussion happen on the Telegram channel."
-        },
-        "source": { "ru": "Кабинет Boosty и страница Telegram, ноябрь 2026", "en": "Boosty dashboard and Telegram page, Nov 2026" }
+      "source": {
+        "ru": "YouTube Studio, 23 октября — 19 ноября 2026; Apple Podcasts Connect",
+        "en": "YouTube Studio, Oct 23 – Nov 19, 2026; Apple Podcasts Connect"
       }
-    ],
-
+    },
     "audience": {
-      "title": { "ru": "Аудитория", "en": "Audience" },
-      "source": { "ru": "YouTube Studio, последние 28 дней (23 октября — 19 ноября 2026)", "en": "YouTube Studio, last 28 days (Oct 23 – Nov 19, 2026)" },
-      "demo_source": { "ru": "YouTube Studio, раздел «Аудитория», ноябрь 2026", "en": "YouTube Studio, Audience tab, November 2026" },
+      "title": {
+        "ru": "Аудитория",
+        "en": "Audience"
+      },
+      "source": {
+        "ru": "YouTube Studio, последние 28 дней (23 октября — 19 ноября 2026)",
+        "en": "YouTube Studio, last 28 days (Oct 23 – Nov 19, 2026)"
+      },
+      "demo_source": {
+        "ru": "YouTube Studio, раздел «Аудитория», ноябрь 2026",
+        "en": "YouTube Studio, Audience tab, November 2026"
+      },
       "core": {
-        "value": { "ru": "Ядро аудитории — женщины 25–34 лет", "en": "The core audience is women aged 25–34" },
-        "label": { "ru": "42 % всего времени просмотра на YouTube", "en": "42% of all YouTube watch time" }
+        "value": {
+          "ru": "Ядро аудитории — женщины 25–34 лет",
+          "en": "The core audience is women aged 25–34"
+        },
+        "label": {
+          "ru": "42 % всего времени просмотра на YouTube",
+          "en": "42% of all YouTube watch time"
+        }
       },
       "demo": [
-        { "value": { "ru": "76 %", "en": "76%" }, "label": { "ru": "времени просмотра — женщины (53 % просмотров)", "en": "of watch time comes from women (53% of views)" } }
+        {
+          "value": {
+            "ru": "76 %",
+            "en": "76%"
+          },
+          "label": {
+            "ru": "времени просмотра — женщины (53 % просмотров)",
+            "en": "of watch time comes from women (53% of views)"
+          }
+        }
       ],
       "points": [
-        { "value": { "ru": "48 %", "en": "48%" }, "label": { "ru": "месячной аудитории — новые зрители, 17 % — постоянные", "en": "of the monthly audience are new viewers, 17% are regulars" } },
-        { "value": { "ru": "57 %", "en": "57%" }, "label": { "ru": "просмотров — из функций выбора контента YouTube (главная страница, подписки)", "en": "of views come from YouTube's browse features, such as the home feed" } }
-      ]
-    },
-
-
-    "episodes": {
-      "title": { "ru": "Избранные выпуски", "en": "Selected episodes" },
-      "note": { "ru": "Просмотры на YouTube на 21 ноября 2026 года.", "en": "YouTube views as of Nov 21, 2026." },
-      "views_label": { "ru": "просмотров", "en": "views" },
-      "items": [
         {
-          "id": "X8abHp0ekss",
-          "title": { "ru": "Вампиры против оборотней. Хэллоуинский выпуск", "en": "Vampires vs Werewolves: Halloween special" },
-          "duration": "1:03:44",
-          "views": 8259,
-          "views_label": { "ru": "8,3 тыс.", "en": "8.3K" },
-          "date": "2026-11-05",
-          "date_label": { "ru": "5 ноября 2026", "en": "Nov 5, 2026" },
-          "note": { "ru": "Первый длинный выпуск на YouTube после семи месяцев: лучший старт среди последних 10 видео канала.", "en": "The first long-form YouTube episode in seven months; the best start of the channel's last 10 videos." }
+          "value": {
+            "ru": "48 %",
+            "en": "48%"
+          },
+          "label": {
+            "ru": "месячной аудитории — новые зрители, 17 % — постоянные",
+            "en": "of the monthly audience are new viewers, 17% are regulars"
+          }
         },
         {
-          "id": "FuSKSb_aRnQ",
-          "title": { "ru": "История юных Мародёров. Любимчики преподавателей и их опасные шалости", "en": "The Young Marauders: Teachers' favorites and their risky pranks" },
-          "duration": "1:08:46",
-          "views": 20081,
-          "views_label": { "ru": "20 тыс.", "en": "20K" },
-          "date": "2024-04-27",
-          "date_label": { "ru": "27 апреля 2024", "en": "Apr 27, 2024" },
-          "note": { "ru": "Самый просматриваемый длинный выпуск. Спустя два с половиной года — второй по просмотрам на канале за последние 28 дней.", "en": "The most-watched long episode. Two and a half years on, still the channel's second most-viewed video over the last 28 days." }
-        },
-        {
-          "id": "HLP-JC3EkW4",
-          "title": { "ru": "Своя игра по Гарри Поттеру. Турнир четырёх волшебниц", "en": "Harry Potter quiz show: The Tournament of Four Witches" },
-          "duration": "1:09:19",
-          "views": 16426,
-          "views_label": { "ru": "16,4 тыс.", "en": "16.4K" },
-          "date": "2024-06-02",
-          "date_label": { "ru": "2 июня 2024", "en": "Jun 2, 2024" },
-          "note": { "ru": "Игровой формат с гостьями: четыре участницы играют за четыре факультета. Второй по просмотрам длинный выпуск.", "en": "A game-show format with guests: four players, one for each Hogwarts house. The second most-watched long episode." }
-        },
-        {
-          "id": "UOoRy3X91Ys",
-          "title": { "ru": "Школы магии. Хогвартс, Дурмстранг, Шармбатон и Колдовстворец", "en": "Schools of Magic: Hogwarts, Durmstrang, Beauxbatons and Koldovstoretz" },
-          "duration": "1:01:17",
-          "views": 13196,
-          "views_label": { "ru": "13,2 тыс.", "en": "13.2K" },
-          "date": "2024-07-09",
-          "date_label": { "ru": "9 июля 2024", "en": "Jul 9, 2024" },
-          "note": { "ru": "Выпуск-путеводитель по школам магии. Третий по просмотрам длинный выпуск канала.", "en": "A guide to the wizarding schools. The channel's third most-watched long episode." }
-        },
-        {
-          "id": "yedhFA9C0Vo",
-          "show": false,
-          "title": { "ru": "Северус Снейп. Храбрость, скверный характер и мотивы хороших дел", "en": "Severus Snape: Courage, a bad temper and the motives behind good deeds" },
-          "duration": "1:20:03",
-          "views": 11249,
-          "views_label": { "ru": "11,2 тыс.", "en": "11.2K" },
-          "date": "2024-05-19",
-          "date_label": { "ru": "19 мая 2024", "en": "May 19, 2024" },
-          "note": { "ru": "Вторая часть разбора персонажа после выпуска о его детстве.", "en": "The second half of a two-part character study, after an episode on his childhood." }
-        },
-        {
-          "id": "mgyuUI8Z_4k",
-          "title": { "ru": "Слизерин. Таинственный факультет для амбициозных, хитроумных и решительных", "en": "Slytherin: The mysterious house of the ambitious, cunning and determined" },
-          "duration": "0:54:43",
-          "views": 11058,
-          "views_label": { "ru": "11,1 тыс.", "en": "11.1K" },
-          "date": "2024-06-15",
-          "date_label": { "ru": "15 июня 2024", "en": "Jun 15, 2024" },
-          "note": { "ru": "Открыл серию из четырёх выпусков о факультетах.", "en": "Opened a four-part series on the Hogwarts houses." }
-        },
-        {
-          "id": "JdAoMKIe3vQ",
-          "show": false,
-          "title": { "ru": "Годрикова Впадина. История и жители заснеженной деревушки", "en": "Godric's Hollow: The history and residents of a snowy village" },
-          "duration": "47:11",
-          "views": 5339,
-          "views_label": { "ru": "5,3 тыс.", "en": "5.3K" },
-          "date": "2026-01-10",
-          "date_label": { "ru": "10 января 2026", "en": "Jan 10, 2026" },
-          "note": { "ru": "Выпуск о месте, а не о герое: история деревни и людей, которые в ней жили.", "en": "An episode about a place rather than a character: the village and the people who lived there." }
-        },
-        {
-          "id": "cLOwip8PLOg",
-          "title": { "ru": "Святочный бал. Рождественский выпуск о традиции Турнира Трёх Волшебников", "en": "The Yule Ball: A Christmas episode on the Triwizard Tournament tradition" },
-          "duration": "0:47:32",
-          "views": 4512,
-          "views_label": { "ru": "4,5 тыс.", "en": "4.5K" },
-          "date": "2024-12-31",
-          "date_label": { "ru": "31 декабря 2024", "en": "Dec 31, 2024" },
-          "note": { "ru": "Главный выпуск 2025 года в «Распаковке» Яндекс Музыки.", "en": "Our most-played episode of 2025 (Yandex Music Wrapped)." }
-        },
-        {
-          "id": "uKxovctmQHI",
-          "title": { "ru": "Сёстры Блэк. Жизнь Нарциссы, Андромеды и Беллатрисы", "en": "The Black Sisters: The lives of Narcissa, Andromeda and Bellatrix" },
-          "duration": "0:56:10",
-          "views": 6482,
-          "views_label": { "ru": "6,5 тыс.", "en": "6.5K" },
-          "date": "2026-03-31",
-          "date_label": { "ru": "31 марта 2026", "en": "Mar 31, 2026" },
-          "note": { "ru": "В Apple Podcasts — 292 слушателя за первые 60 дней, на 85 % выше медианы шоу.", "en": "On Apple Podcasts, 292 listeners in the first 60 days, 85% above the show's median." }
-        },
-        {
-          "id": "Kc8jJC2onB4",
-          "show": false,
-          "title": { "ru": "Патронусы. Внутренние защитники, телесная магия и сила счастливых воспоминаний", "en": "Patronuses: Inner protectors, corporeal magic and the power of happy memories" },
-          "duration": "0:44:29",
-          "views": 6373,
-          "views_label": { "ru": "6,4 тыс.", "en": "6.4K" },
-          "date": "2026-02-21",
-          "date_label": { "ru": "21 февраля 2026", "en": "Feb 21, 2026" },
-          "note": { "ru": "В Apple Podcasts — 257 слушателей за первые 60 дней, на 63 % выше медианы шоу.", "en": "On Apple Podcasts, 257 listeners in the first 60 days, 63% above the show's median." }
-        },
-        {
-          "id": "WkVu5eFFYxM",
-          "title": { "ru": "Сериал HBO о Гарри Поттере, часть 1. Шоураннеры, съёмочная команда и подробности производства", "en": "The HBO Harry Potter series, part 1: Showrunners, crew and production details" },
-          "duration": "1:01:37",
-          "views": 6121,
-          "views_label": { "ru": "6,1 тыс.", "en": "6.1K" },
-          "date": "2025-12-04",
-          "date_label": { "ru": "4 декабря 2025", "en": "Dec 4, 2025" },
-          "note": { "ru": "Новостной выпуск с гостьей — автором тематического Telegram-канала.", "en": "A news episode with a guest who runs a Harry Potter Telegram channel." }
+          "value": {
+            "ru": "57 %",
+            "en": "57%"
+          },
+          "label": {
+            "ru": "просмотров — из функций выбора контента YouTube (главная страница, подписки)",
+            "en": "of views come from YouTube's browse features, such as the home feed"
+          }
         }
       ]
     },
-
-    "shorts": {
-      "title": { "ru": "Избранные Shorts", "en": "Selected Shorts" },
-      "note": { "ru": "Просмотры на 21 ноября 2026 года.", "en": "Views as of Nov 21, 2026." },
-      "items": [
-        { "id": "o4-YEJW9ar8", "title": { "ru": "Почему Римус Люпин ехал на поезде в Хогвартс?", "en": "Why did Remus Lupin take the train to Hogwarts?" }, "duration": "0:30", "views": 1755182, "views_label": { "ru": "1,76 млн", "en": "1.76M" } },
-        { "id": "g6jqNWzJrNw", "title": { "ru": "Фильмы испортили Рона Уизли?", "en": "Did the films ruin Ron Weasley?" }, "duration": "0:19", "views": 1571888, "views_label": { "ru": "1,57 млн", "en": "1.57M" } },
-        { "id": "r2u0yEV-QU8", "use_poster": true, "title": { "ru": "Министр магии плохо делает свою работу?", "en": "Is the Minister for Magic bad at his job?" }, "duration": "0:48", "views": 415055, "views_label": { "ru": "415 тыс.", "en": "415K" } },
-        { "id": "C7uxzve2wv8", "title": { "ru": "Гермиона была права", "en": "Hermione was right" }, "duration": "0:35", "views": 342846, "views_label": { "ru": "343 тыс.", "en": "343K" } },
-        { "id": "SENI8JOCuc0", "title": { "ru": "Римус ЛЮпин или ЛюпИн?", "en": "How do you pronounce Lupin?" }, "duration": "0:34", "views": 160193, "views_label": { "ru": "160 тыс.", "en": "160K" } },
-        { "id": "ZMJpa_P8vKQ", "title": { "ru": "Кто из них был гениальным зельеваром?", "en": "Which of them was the brilliant potion-maker?" }, "duration": "0:38", "views": 137853, "views_label": { "ru": "138 тыс.", "en": "138K" } }
-      ]
-    }
-  },
-
-  "moments": {
-    "title": { "ru": "Как звучит шоу", "en": "How the show sounds" },
-    "intro": {
-      "ru": "Четыре фрагмента со звуком: как мы выбираем тему, работаем с источниками и находим свой угол в знакомой истории.",
-      "en": "Four excerpts with sound: how we pick a topic, work with sources and find our own angle on a familiar story. In Russian."
-    },
-    "items": [
-      { "id": "halloween-comeback", "episode": "X8abHp0ekss", "title": { "ru": "Почему мы вернулись именно с этой темой", "en": "Why we came back with this topic" } },
-      { "id": "werewolf-vampire-myths", "episode": "X8abHp0ekss", "title": { "ru": "От Ликаона у Овидия до современного вампира", "en": "From Ovid's Lycaon to the modern vampire" } },
-      { "id": "house-system", "episode": "mgyuUI8Z_4k", "title": { "ru": "Почему в Хогвартсе дома, а не факультеты", "en": "Why Hogwarts has houses, not faculties" } },
-      { "id": "marauders", "episode": "FuSKSb_aRnQ", "title": { "ru": "Кто такие Мародёры", "en": "Who the Marauders were" } }
-    ]
-  },
-
-  "process": {
-    "title": { "ru": "Полный цикл: от идеи до публикации", "en": "The full cycle, from idea to release" },
-    "intro": {
-      "ru": "Так устроен каждый выпуск шоу. Большую часть этапов я веду сама.",
-      "en": "This is how every Witching Hour episode gets made. I run most of the stages myself."
-    },
-    "tools_label": { "ru": "Инструменты", "en": "Tools" },
-    "steps": [
-      {
-        "n": "01",
-        "title": { "ru": "Идея", "en": "Idea" },
-        "text": { "ru": "Выбираю тему и угол: героя, место или новость, которых хватит на час живого разговора.", "en": "I pick a topic and an angle: a character, place or piece of news that can carry an hour of conversation." },
-        "tools": { "ru": "Notion, ChatGPT, Claude", "en": "Notion, ChatGPT, Claude" }
+    "community": {
+      "title": {
+        "ru": "Сообщество",
+        "en": "Community"
       },
-      {
-        "n": "02",
-        "title": { "ru": "Исследование", "en": "Research" },
-        "text": { "ru": "Собираю материал по книгам, фильмам и дополнительным источникам и проверяю факты.", "en": "I gather material from the books, films and other sources and check the facts." },
-        "tools": { "ru": "Perplexity, ChatGPT, Notion", "en": "Perplexity, ChatGPT, Notion" }
+      "text": {
+        "ru": "С весны 2024 года веду Boosty: ранний доступ к выпускам, расширенные версии, эксклюзивные аудиовыпуски и закрытый чат. Анонсы и обсуждения идут в Telegram-канале.",
+        "en": "Since spring 2024 I have run the project's Boosty: early access, extended cuts, exclusive audio episodes and a members' chat. Announcements and discussion happen on the Telegram channel."
       },
-      {
-        "n": "03",
-        "title": { "ru": "Концепция и сценарий", "en": "Concept and script" },
-        "text": { "ru": "Пишу сценарий по постоянной структуре: приветствие, вступление, анонс Boosty и Telegram, 4–6 тематических блоков, прощание.", "en": "I write the script to a fixed structure: greeting, intro, a Boosty and Telegram plug, four to six themed segments, sign-off." },
-        "tools": { "ru": "Notion", "en": "Notion" }
-      },
-      {
-        "n": "04",
-        "title": { "ru": "Подготовка производства", "en": "Pre-production" },
-        "text": { "ru": "Планирую запись, готовлю свет, микрофоны и звуковую карту.", "en": "I plan the session and prepare lights, microphones and the audio interface." },
-        "tools": { "ru": "Focusrite Scarlett Solo", "en": "Focusrite Scarlett Solo" }
-      },
-      {
-        "n": "05",
-        "title": { "ru": "Люди и процессы", "en": "People and workflow" },
-        "text": { "ru": "Согласую график с соведущей и гостями, держу задачи, шаблоны и архив выпусков в одном рабочем пространстве.", "en": "I align schedules with my co-host and guests and keep tasks, templates and the episode archive in one workspace." },
-        "tools": { "ru": "Notion, Telegram", "en": "Notion, Telegram" }
-      },
-      {
-        "n": "06",
-        "title": { "ru": "Запись", "en": "Recording" },
-        "text": { "ru": "Записываю выпуск в кадре как соведущая и одновременно слежу за картинкой и звуком.", "en": "I record the episode on camera as co-host while keeping an eye on picture and sound." },
-        "tools": { "ru": "iPhone, OBS Studio", "en": "iPhone, OBS Studio" }
-      },
-      {
-        "n": "07",
-        "title": { "ru": "Монтаж и звук", "en": "Editing and sound" },
-        "text": { "ru": "Чищу и свожу звук; видео монтируем вместе с соведущей; Shorts делаю я.", "en": "I clean up and mix the audio, edit the video together with my co-host, and make the Shorts." },
-        "tools": { "ru": "REAPER, Studio One, DaVinci Resolve, CapCut", "en": "REAPER, Studio One, DaVinci Resolve, CapCut" }
-      },
-      {
-        "n": "08",
-        "title": { "ru": "Публикация и продвижение", "en": "Release and promotion" },
-        "text": { "ru": "Делаю превью, заголовок, описание и таймкоды, выкладываю на YouTube и подкаст-платформы, анонсирую в Telegram и смотрю аналитику.", "en": "I make the thumbnail, title, description and chapters, publish to YouTube and podcast platforms, announce on Telegram and review the analytics." },
-        "tools": { "ru": "Photoshop, YouTube Studio, Mave, Telegram, Boosty", "en": "Photoshop, YouTube Studio, Mave, Telegram, Boosty" }
-      }
-    ]
-  },
-
-  "behind": {
-    "title": { "ru": "Как это устроено", "en": "Behind the scenes" },
-    "intro": {
-      "ru": "Рабочие файлы и аналитика как есть. Личные данные и доходы скрыты. Нажмите на снимок, чтобы открыть его целиком.",
-      "en": "Working files and analytics, as they are. Personal details and earnings are hidden. Click a screenshot to open it full size."
-    },
-    "items": [
-      {
-        "image": "notion-workspace.png",
-        "asset": "evidence/notion-workspace", "featured": true,
-        "title": { "ru": "Производственная система в Notion", "en": "Production system in Notion" },
-        "caption": { "ru": "Рабочее пространство шоу: сценарии, Shorts, статьи для Telegram, архив выпусков, игровые выпуски, шаблоны и PR.", "en": "The show's workspace: scripts, Shorts, Telegram posts, episode archive, quiz specials, templates and PR." }
-      },
-      {
-        "image": "notion-scripts-3.png",
-        "asset": "evidence/notion-script-forest", "featured": true,
-        "title": { "ru": "Сценарий выпуска", "en": "An episode script" },
-        "caption": { "ru": "Сценарий «Запретного леса»: каждый блок выпуска — отдельный раскрывающийся раздел.", "en": "The script for the Forbidden Forest episode: each segment is its own collapsible section." }
-      },
-      {
-        "image": "notion-scripts-2.png",
-        "asset": "evidence/notion-script-snape",
-        "title": { "ru": "Работа с источниками", "en": "Working from sources" },
-        "caption": { "ru": "Вступление к выпуску о Северусе Снейпе: ссылки на главы книг и рамка, в которой мы говорим о герое.", "en": "The intro to the Severus Snape episode: references to specific chapters and the frame for discussing the character." }
-      },
-      {
-        "image": "channel.png",
-        "asset": "evidence/yt-channel-thumbs",
-        "title": { "ru": "Единый визуальный стиль", "en": "A consistent visual style" },
-        "caption": { "ru": "Превью выпусков в одной серии: тёмный фон, ведущие в кадре, крупный заголовок.", "en": "Episode thumbnails as one series: dark backdrop, both hosts in frame, a bold title." }
-      },
-      {
-        "image": "yt-stats-6.png",
-        "asset": "evidence/yt-dashboard-halloween", "featured": true,
-        "title": { "ru": "YouTube Studio: выпуск-возвращение", "en": "YouTube Studio: the comeback episode" },
-        "caption": { "ru": "Хэллоуинский выпуск через 14 дней после выхода: первое место среди последних 10 видео канала за тот же срок.", "en": "The Halloween episode 14 days after release: first of the channel's last 10 videos over the same period." }
-      },
-      {
-        "image": "yt-stats-2.png",
-        "asset": "evidence/yt-halloween-daily", "featured": true,
-        "title": { "ru": "Всплеск после выхода", "en": "The spike after release" },
-        "caption": { "ru": "Просмотры по дням: пик — 2 318 просмотров 6 ноября, на следующий день после выхода.", "en": "Daily views: a peak of 2,318 on Nov 6, the day after release." }
-      },
-      {
-        "image": "yt-stats-3.png",
-        "asset": "evidence/yt-audience-cards",
-        "title": { "ru": "Кто смотрит", "en": "Who is watching" },
-        "caption": { "ru": "Откуда приходят зрители, доля новых и постоянных и основная аудитория — женщины 25–34 лет. Последние 28 дней.", "en": "Traffic sources, new vs returning viewers, and the core audience of women aged 25–34. Last 28 days." }
-      },
-      {
-        "image": "yandex-stats-2.png",
-        "asset": "evidence/yandex-lifetime", "featured": true,
-        "title": { "ru": "Яндекс Музыка с запуска", "en": "Yandex Music since launch" },
-        "caption": { "ru": "Сводка аналитики подкаста с запуска: старты, слушатели и часы прослушивания.", "en": "The podcast's analytics summary since launch: plays, listeners and hours listened." }
-      },
-      {
-        "image": "yandex-stats-1.png",
-        "asset": "evidence/yandex-growth",
-        "title": { "ru": "Рост прослушиваний", "en": "Listening growth" },
-        "caption": { "ru": "Ежедневные старты и прослушивания с января 2024 по октябрь 2026 года.", "en": "Daily plays and streams, January 2024 to October 2026." }
-      },
-      {
-        "image": "yandex-2025-6.jpg",
-        "asset": "evidence/yandex-2025-summary",
-        "title": { "ru": "Итоги 2025 года", "en": "2025 in review" },
-        "caption": { "ru": "Карточка «Распаковки» Яндекс Музыки за 2025 год: слушатели, минуты и новые слушатели.", "en": "The Yandex Music 2025 Wrapped card: listeners, minutes and new listeners." }
-      },
-      {
-        "image": "apple-2.png",
-        "asset": "evidence/apple-episodes", "featured": true,
-        "title": { "ru": "Apple Podcasts: выпуски к медиане", "en": "Apple Podcasts: episodes vs median" },
-        "caption": { "ru": "Слушатели каждого выпуска за первые 60 дней в сравнении с медианным выпуском шоу.", "en": "Listeners per episode over the first 60 days, compared with the show's median episode." }
-      },
-      {
-        "image": "mave.png",
-        "asset": "evidence/mave-plays",
-        "title": { "ru": "Mave: прослушивания по месяцам", "en": "Mave: monthly plays" },
-        "caption": { "ru": "Прослушивания RSS-ленты подкаста по месяцам с декабря 2023 года (без Яндекс Музыки, у неё своя статистика).", "en": "Monthly plays of the podcast's RSS feed since December 2023 (Yandex Music keeps its own stats)." }
-      }
-    ]
-  },
-
-  "voices": {
-    "title": { "ru": "Что пишут зрители", "en": "What viewers say" },
-    "source": {
-      "ru": "Комментарии на YouTube под выпуском «Вампиры против оборотней», ноябрь 2026. Имена скрыты, эмодзи убраны, пунктуация поправлена, сокращения отмечены «…».",
-      "en": "YouTube comments under the Vampires vs Werewolves episode, November 2026. Names withheld, emoji removed, punctuation lightly edited, cuts marked “…”; translated from Russian."
-    },
-    "attribution": { "ru": "зритель на YouTube", "en": "viewer on YouTube" },
-    "likes_label": { "ru": "отметка «нравится»|отметки «нравится»|отметок «нравится»", "en": "like|likes" },
-    "items": [
-      {
-        "ru": "…Вы не знаете, но вы составляете мне компанию, когда я прибираюсь, готовлю, работаю, гуляю, принимаю ванну…",
-        "en": "…You don't know it, but you keep me company when I'm tidying up, cooking, working, out for a walk, in the bath…",
-        "likes": 4
-      },
-      {
-        "ru": "…Я нашла вас довольно поздно. Но переслушала все выпуски и подписалась на всех доступных платформах…",
-        "en": "…I found you pretty late. But I've listened to every episode and followed you on every platform there is…",
-        "likes": 3
-      },
-      {
-        "ru": "Я бы с удовольствием смотрел видео и о других вселенных, очень интересно вас слушать… не обязательно оставаться в рамках вселенной ГП…",
-        "en": "I'd happily watch videos about other universes too, you're really interesting to listen to… you don't have to stick to the Harry Potter universe…",
-        "likes": 13
-      }
-    ]
-  },
-
-  "videography": {
-    "eyebrow": { "ru": "Личная съёмка", "en": "Videography" },
-    "title": { "ru": "Спокойная съёмка: природа и предметы", "en": "Quiet footage: nature and still life" },
-    "text": {
-      "ru": "Помимо шоу я снимаю короткие спокойные видео: горы, вода, животные, предметы и детали повседневной жизни. Снимаю, монтирую и цвет делаю сама — и отдаю готовый материал, который гостевой дом, отель или небольшой бизнес использует как ему нужно.",
-      "en": "Outside the show I shoot short, quiet videos: mountains, water, animals, objects and small everyday details. I shoot, edit and color-grade them myself, and hand over finished footage that a guest house, hotel or small business can use however it needs."
-    },
-    "deliverables_label": { "ru": "Что могу сделать", "en": "What I can deliver" },
-    "deliverables": [
-      { "ru": "Вертикальные ролики для Reels и Shorts", "en": "Vertical clips for Reels and Shorts" },
-      { "ru": "Атмосферная съёмка места и деталей", "en": "Atmospheric footage of a place and its details" },
-      { "ru": "Предметная видеосъёмка", "en": "Product and still-life video" },
-      { "ru": "Монтаж и цветокоррекция под стиль бренда", "en": "Editing and color grading to a brand's look" },
-      { "ru": "UGC-ролики", "en": "UGC videos" }
-    ],
-    "tools": { "ru": "iPhone, DaVinci Resolve, CapCut, Lightroom", "en": "iPhone, DaVinci Resolve, CapCut, Lightroom" },
-    "strip_note": { "ru": "Кадры из личных видео", "en": "Frames from my personal videos" },
-    "_clips_note": "clips: optional muted loops of her own footage. Add {\"file\": \"assets/videography/clip-name.mp4\", \"poster\": \"assets/videography/clip-name.jpg\", \"title\": {\"ru\": \"…\", \"en\": \"…\"}}. profile: optional link, e.g. {\"label\": {\"ru\": \"Instagram\", \"en\": \"Instagram\"}, \"url\": \"https://instagram.com/…\"}; leave null to show no link.",
-    "clips": [
-      { "file": "assets/videography/clip-lake-above.mp4", "poster": "assets/videography/clip-lake-above.jpg", "title": { "ru": "Горное озеро", "en": "Mountain lake" } },
-      { "file": "assets/videography/clip-lavender.mp4", "poster": "assets/videography/clip-lavender.jpg", "title": { "ru": "Лаванда", "en": "Lavender" } },
-      { "file": "assets/videography/clip-willow-light.mp4", "poster": "assets/videography/clip-willow-light.jpg", "title": { "ru": "Свет сквозь иву", "en": "Light through the willow" } },
-      { "file": "assets/videography/clip-flowers-water.mp4", "poster": "assets/videography/clip-flowers-water.jpg", "title": { "ru": "Цветы на воде", "en": "Flowers on the water" } },
-      { "file": "assets/videography/clip-dog-eye.mp4", "poster": "assets/videography/clip-dog-eye.jpg", "title": { "ru": "Собака крупным планом", "en": "A dog, up close" } },
-      { "file": "assets/videography/clip-books-candles.mp4", "poster": "assets/videography/clip-books-candles.jpg", "title": { "ru": "Книги при свечах", "en": "Books by candlelight" } }
-    ],
-    "profile": { "label": { "ru": "Instagram @alissayeya", "en": "Instagram @alissayeya" }, "url": "https://www.instagram.com/alissayeya" },
-    "more": { "label": { "ru": "Портфолио видеографа", "en": "Videographer portfolio" } }
-  },
-
-  "skills": {
-    "title": { "ru": "Что я умею", "en": "What I can do" },
-    "groups": [
-      {
-        "title": { "ru": "Продюсирование", "en": "Producing" },
-        "items": [
-          { "ru": "Концепции и форматы", "en": "Concepts and formats" },
-          { "ru": "Контент-план", "en": "Content planning" },
-          { "ru": "Организация производства", "en": "Production management" },
-          { "ru": "Координация записи и гостей", "en": "Coordinating shoots and guests" },
-          { "ru": "Сроки и задачи", "en": "Scheduling and task tracking" },
-          { "ru": "Анализ статистики", "en": "Performance analysis" }
-        ]
-      },
-      {
-        "title": { "ru": "Сценарии и редактура", "en": "Writing and editorial" },
-        "items": [
-          { "ru": "Исследование и фактчекинг", "en": "Research and fact-checking" },
-          { "ru": "Сценарии длинных выпусков", "en": "Long-form scripts" },
-          { "ru": "Структура и драматургия", "en": "Structure and story arc" },
-          { "ru": "Идеи и тексты для Shorts", "en": "Short-form ideas and copy" },
-          { "ru": "Заголовки и описания", "en": "Titles and descriptions" },
-          { "ru": "Посты для Telegram", "en": "Telegram posts" }
-        ]
-      },
-      {
-        "title": { "ru": "Видео и звук", "en": "Video and audio" },
-        "items": [
-          { "ru": "Запись видеоподкаста", "en": "Video podcast recording" },
-          { "ru": "Запись и обработка звука", "en": "Audio recording and processing" },
-          { "ru": "Аудиомонтаж подкастов", "en": "Podcast audio editing" },
-          { "ru": "Видеомонтаж", "en": "Video editing" },
-          { "ru": "Shorts и Reels", "en": "Shorts and Reels" },
-          { "ru": "Съёмка на iPhone", "en": "iPhone videography" },
-          { "ru": "Базовая постановка света", "en": "Basic lighting" },
-          { "ru": "Цветокоррекция", "en": "Color grading" }
-        ]
-      },
-      {
-        "title": { "ru": "YouTube и подкасты", "en": "YouTube and podcasts" },
-        "items": [
-          { "ru": "Ведение YouTube-канала", "en": "YouTube channel management" },
-          { "ru": "Дистрибуция подкаста", "en": "Podcast distribution" },
-          { "ru": "Превью и обложки", "en": "Thumbnails and cover art" },
-          { "ru": "Аналитика YouTube Studio", "en": "YouTube Studio analytics" },
-          { "ru": "Аналитика Яндекс Музыки и Apple Podcasts", "en": "Yandex Music and Apple Podcasts analytics" }
-        ]
-      },
-      {
-        "title": { "ru": "Сообщество и монетизация", "en": "Community and monetization" },
-        "items": [
-          { "ru": "Ведение Telegram-канала", "en": "Running a Telegram channel" },
-          { "ru": "Платная подписка на Boosty", "en": "Paid membership on Boosty" },
-          { "ru": "Закрытый чат для подписчиков", "en": "Members-only chat" },
-          { "ru": "Общение с аудиторией", "en": "Audience engagement" },
-          { "ru": "Общение с рекламодателями", "en": "Advertiser communication" }
-        ]
-      }
-    ],
-    "tools": {
-      "title": { "ru": "Программы", "en": "Software" },
-      "items": [
-        { "name": "DaVinci Resolve", "use": { "ru": "монтаж и цветокоррекция", "en": "editing and color grading" } },
-        { "name": "CapCut", "use": { "ru": "короткие видео", "en": "short-form video" } },
-        { "name": "OBS Studio", "use": { "ru": "запись и стримы", "en": "recording and streaming" } },
-        { "name": "REAPER", "use": { "ru": "запись, монтаж и сведение звука", "en": "audio recording, editing and mixing" } },
-        { "name": "Studio One", "use": { "ru": "запись звука", "en": "audio recording" } },
-        { "name": "Adobe Photoshop", "use": { "ru": "превью и графика", "en": "thumbnails and graphics" } },
-        { "name": "Adobe Lightroom", "use": { "ru": "обработка фото", "en": "photo editing" } },
-        { "name": "Notion", "use": { "ru": "сценарии и производство", "en": "scripts and production" } }
-      ]
-    },
-    "gear": {
-      "title": { "ru": "Оборудование", "en": "Gear" },
-      "items": [
-        { "ru": "Звуковая карта Focusrite Scarlett Solo", "en": "Focusrite Scarlett Solo audio interface" },
-        { "ru": "Микрофоны и запись звука", "en": "Microphone setup and recording" },
-        { "ru": "iPhone для съёмки", "en": "iPhone for filming" }
-      ]
-    },
-    "ai": {
-      "title": { "ru": "AI-инструменты", "en": "AI tools" },
-      "items": [
-        { "name": "ChatGPT", "use": { "ru": "исследование, идеи, черновики текстов", "en": "research, ideation, draft copy" } },
-        { "name": "Claude", "use": { "ru": "структура и редактура текстов", "en": "structuring and editing text" } },
-        { "name": "Perplexity", "use": { "ru": "поиск источников и фактчекинг", "en": "source search and fact-checking" } }
+      "figures": [
+        {
+          "value": {
+            "ru": "58",
+            "en": "58"
+          },
+          "label": {
+            "ru": "платных подписчиков на Boosty (и 178 бесплатных)",
+            "en": "paying members on Boosty (plus 178 free followers)"
+          }
+        },
+        {
+          "value": {
+            "ru": "3,09 тыс.",
+            "en": "3.09K"
+          },
+          "label": {
+            "ru": "подписчиков в Telegram-канале",
+            "en": "Telegram channel subscribers"
+          }
+        }
       ],
-      "note": { "ru": "Использую AI для исследования, идей и черновых визуалов; итоговый текст и решения — мои.", "en": "I use AI for research, ideation and draft visuals; the final text and decisions are mine." }
-    }
-  },
-
-  "about": {
-    "title": { "ru": "Кто я и что ищу", "en": "Who I am and what I'm looking for" },
-    "bio": {
-      "ru": "Я креативный продюсер. С декабря 2023 года вместе с соведущей Катей делаю «Ведьмин час» — независимое шоу о мире Гарри Поттера на YouTube и в подкаст-сервисах. Отвечаю за идеи, сценарии, запись и звук, публикацию и сообщество, а видео мы монтируем вдвоём. Теперь хочу делать такую же работу в команде: на YouTube-канале, в подкасте или в контент-студии.",
-      "en": "I'm a creative producer. Since December 2023 my co-host Katya and I have made Witching Hour, an independent show about the Harry Potter universe on YouTube and podcast platforms. I handle ideas, scripts, recording and sound, publishing and community, and we edit the video together. Now I want to do the same work in a team: on a YouTube channel, a podcast or at a content studio."
+      "source": {
+        "ru": "Кабинет Boosty и страница Telegram, ноябрь 2026",
+        "en": "Boosty dashboard and Telegram page, Nov 2026"
+      }
     },
-    "open_to_label": { "ru": "Открыта к ролям", "en": "Open to" },
-    "open_to": {
-      "ru": "YouTube-продюсер, креативный продюсер, контент-продюсер. Также SMM, сценарная работа, видеосъёмка и UGC, аудиомонтаж подкастов.",
-      "en": "YouTube Producer, Creative Producer, Content Producer. Also SMM, scriptwriting, videography and UGC, podcast audio editing."
+    "files": {
+      "title": {
+        "ru": "Скриншоты кабинетов",
+        "en": "Dashboard screenshots"
+      },
+      "intro": {
+        "ru": "Как есть, личные данные и доходы скрыты. Нажмите, чтобы открыть целиком.",
+        "en": "As they are; personal details and earnings hidden. Click to open full size."
+      },
+      "items": [
+        "yt-dashboard-halloween",
+        "yt-halloween-daily",
+        "yt-audience-cards",
+        "yandex-lifetime",
+        "yandex-growth",
+        "yandex-2025-summary",
+        "apple-episodes",
+        "mave-plays"
+      ]
     }
   },
-
+  "evidence": {
+    "notion-workspace": {
+      "asset": "evidence/notion-workspace",
+      "title": {
+        "ru": "Производственная система в Notion",
+        "en": "Production system in Notion"
+      },
+      "caption": {
+        "ru": "Рабочее пространство проекта: сценарии, Shorts, статьи для Telegram, архив выпусков, игровые выпуски, шаблоны и PR.",
+        "en": "The project's workspace: scripts, Shorts, Telegram posts, episode archive, quiz specials, templates and PR."
+      }
+    },
+    "script-dreams": {
+      "asset": "evidence/notion-script-dreams",
+      "title": {
+        "ru": "Сценарий «Сновидения»",
+        "en": "The Dreams script"
+      },
+      "caption": {
+        "ru": "Структура выпуска: каждый блок — отдельный раскрывающийся раздел.",
+        "en": "The episode outline: every segment is its own collapsible section."
+      }
+    },
+    "script-forest": {
+      "asset": "evidence/notion-script-forest",
+      "title": {
+        "ru": "Сценарий «Запретный лес»",
+        "en": "The Forbidden Forest script"
+      },
+      "caption": {
+        "ru": "Раскрытое вступление: так выглядит текст внутри блока.",
+        "en": "The intro opened up: what the text inside a segment looks like."
+      }
+    },
+    "script-snape": {
+      "asset": "evidence/notion-script-snape",
+      "title": {
+        "ru": "Сценарий о детстве Северуса Снейпа",
+        "en": "The Severus Snape script"
+      },
+      "caption": {
+        "ru": "Вступление со ссылками на главы книг и рамкой, в которой мы говорим о герое.",
+        "en": "The intro, with references to specific chapters and the frame for discussing the character."
+      }
+    },
+    "yt-channel-thumbs": {
+      "asset": "evidence/yt-channel-thumbs",
+      "title": {
+        "ru": "Единый визуальный стиль",
+        "en": "A consistent visual style"
+      },
+      "caption": {
+        "ru": "Превью выпусков одной серией: тёмный фон, ведущие в кадре, крупный заголовок.",
+        "en": "Episode thumbnails as one series: dark backdrop, both hosts in frame, a bold title."
+      }
+    },
+    "yt-dashboard-halloween": {
+      "asset": "evidence/yt-dashboard-halloween",
+      "title": {
+        "ru": "YouTube Studio: хэллоуинский выпуск",
+        "en": "YouTube Studio: the Halloween episode"
+      },
+      "caption": {
+        "ru": "Через 14 дней после выхода: первое место среди последних 10 видео канала за тот же срок.",
+        "en": "14 days after release: first of the channel's last 10 videos over the same period."
+      }
+    },
+    "yt-halloween-daily": {
+      "asset": "evidence/yt-halloween-daily",
+      "title": {
+        "ru": "Просмотры по дням",
+        "en": "Daily views"
+      },
+      "caption": {
+        "ru": "Пик — 2 318 просмотров 6 ноября, на следующий день после выхода.",
+        "en": "A peak of 2,318 views on Nov 6, the day after release."
+      }
+    },
+    "yt-audience-cards": {
+      "asset": "evidence/yt-audience-cards",
+      "title": {
+        "ru": "Кто смотрит",
+        "en": "Who is watching"
+      },
+      "caption": {
+        "ru": "Источники трафика, доля новых и постоянных зрителей и основная аудитория. Последние 28 дней.",
+        "en": "Traffic sources, new vs returning viewers and the core audience. Last 28 days."
+      }
+    },
+    "yandex-lifetime": {
+      "asset": "evidence/yandex-lifetime",
+      "title": {
+        "ru": "Яндекс Музыка с запуска",
+        "en": "Yandex Music since launch"
+      },
+      "caption": {
+        "ru": "Сводка аналитики подкаста: старты, слушатели и часы прослушивания.",
+        "en": "The podcast's analytics summary: plays, listeners and hours listened."
+      }
+    },
+    "yandex-growth": {
+      "asset": "evidence/yandex-growth",
+      "title": {
+        "ru": "Рост прослушиваний",
+        "en": "Listening growth"
+      },
+      "caption": {
+        "ru": "Ежедневные старты и прослушивания с января 2024 по октябрь 2026 года.",
+        "en": "Daily plays and streams, January 2024 to October 2026."
+      }
+    },
+    "yandex-2025-summary": {
+      "asset": "evidence/yandex-2025-summary",
+      "title": {
+        "ru": "Итоги 2025 года",
+        "en": "2025 in review"
+      },
+      "caption": {
+        "ru": "Карточка «Распаковки» Яндекс Музыки: слушатели, минуты и новые слушатели.",
+        "en": "The Yandex Music 2025 Wrapped card: listeners, minutes and new listeners."
+      }
+    },
+    "apple-episodes": {
+      "asset": "evidence/apple-episodes",
+      "title": {
+        "ru": "Apple Podcasts: выпуски к медиане",
+        "en": "Apple Podcasts: episodes vs median"
+      },
+      "caption": {
+        "ru": "Слушатели каждого выпуска за первые 60 дней в сравнении с медианным выпуском подкаста.",
+        "en": "Listeners per episode over the first 60 days, compared with the podcast's median episode."
+      }
+    },
+    "mave-plays": {
+      "asset": "evidence/mave-plays",
+      "title": {
+        "ru": "Mave: прослушивания по месяцам",
+        "en": "Mave: monthly plays"
+      },
+      "caption": {
+        "ru": "Прослушивания RSS-ленты подкаста с декабря 2023 года (без Яндекс Музыки).",
+        "en": "Monthly plays of the podcast's RSS feed since December 2023 (without Yandex Music)."
+      }
+    }
+  },
+  "voices": {
+    "title": {
+      "ru": "Что пишут зрители",
+      "en": "What viewers write"
+    },
+    "summary_note": {
+      "ru": "Комментарии со всех выпусков",
+      "en": "Comments from across the episodes"
+    },
+    "source": {
+      "ru": "Комментарии на YouTube, собраны 22 ноября 2026 года. Имена скрыты, эмодзи убраны, сокращения отмечены «…».",
+      "en": "YouTube comments collected on Nov 22, 2026. Names withheld, emoji removed, cuts marked “…”; translated from Russian."
+    },
+    "attribution": {
+      "f": {
+        "ru": "зрительница на YouTube",
+        "en": "viewer on YouTube"
+      },
+      "m": {
+        "ru": "зритель на YouTube",
+        "en": "viewer on YouTube"
+      },
+      "n": {
+        "ru": "зритель на YouTube",
+        "en": "viewer on YouTube"
+      }
+    },
+    "items": [
+      {
+        "episode": "uKxovctmQHI",
+        "comment_id": "Ugza-9fS4xNm1GgJ7qJ4AaABAg",
+        "who": "f",
+        "episode_title": {
+          "ru": "Сёстры Блэк",
+          "en": "The Black Sisters"
+        },
+        "ru": "Прослушала все ваши подкасты по три раза — без преувеличения. Во все тревожные и сложные моменты в моих наушниках всегда вы. Даже сложный токсикоз, волнения перед родами и бессонные ночи с лялечкой тоже проходили с вами. Спасибо вам за вас.",
+        "en": "I've listened to all your podcasts three times, no exaggeration. Through every anxious and difficult moment, it's always you in my headphones. Even a rough pregnancy, the nerves before giving birth and sleepless nights with the baby, I got through them all with you. Thank you for being you."
+      },
+      {
+        "episode": "ykX4DsuCKJ4",
+        "comment_id": "UgzcwAfjsMYMh7GOJ9R4AaABAg",
+        "who": "n",
+        "episode_title": {
+          "ru": "Сладость или гадость",
+          "en": "Trick or Treat"
+        },
+        "ru": "У меня сейчас острая стадия тревожности, а ваши видео как таблетка от всего этого ужаса. Пожалуйста, оставайтесь такими же весёлыми, уютными и клёвыми! Люблю вас. И спасибо.",
+        "en": "My anxiety is really acute right now, and your videos are like a pill for all of this horror. Please stay just as fun, cosy and cool! Love you. And thank you."
+      },
+      {
+        "episode": "uKxovctmQHI",
+        "comment_id": "UgwrPyM-1kMQ3TFu-Zt4AaABAg",
+        "who": "n",
+        "episode_title": {
+          "ru": "Сёстры Блэк",
+          "en": "The Black Sisters"
+        },
+        "ru": "Терапия подъехала. Сейчас нахожусь в депрессивном эпизоде, и видео как раз вовремя.",
+        "en": "Therapy has arrived. I'm in a depressive episode right now, and this video came just in time."
+      },
+      {
+        "episode": "Ii-L_4PK3D8",
+        "comment_id": "UgybV6nVIYsG4KrLRch4AaABAg",
+        "who": "n",
+        "episode_title": {
+          "ru": "День рождения канала",
+          "en": "The channel's birthday"
+        },
+        "ru": "…ГП и ваш подкаст — маленький мир, в который я погружаюсь, чтобы отвлечься перед сном или когда собираюсь на работу. В общем, спасибо за успокоение моих нервов.",
+        "en": "…Harry Potter and your podcast are a little world I sink into to switch off before sleep or while getting ready for work. So, thank you for calming my nerves."
+      },
+      {
+        "episode": "uKxovctmQHI",
+        "comment_id": "Ugx53VLxPFRtT7dS_SB4AaABAg",
+        "who": "m",
+        "episode_title": {
+          "ru": "Сёстры Блэк",
+          "en": "The Black Sisters"
+        },
+        "ru": "Я к вам пришёл из Яндекс подкаста. Ночью прошлого года искал подкаст о Гарри Поттере и наткнулся на вас и с тех пор прослушал абсолютно все выпуски. Ваш голос утешает в трудные моменты жизни, продолжайте в том же духе!",
+        "en": "I found you through Yandex podcasts. One night last year I was looking for a Harry Potter podcast, came across you, and since then I've listened to every single episode. Your voice is a comfort in hard moments of life. Keep it up!"
+      },
+      {
+        "episode": "-HqRKq9p73Q",
+        "comment_id": "UgztErHtvXGtPJlgltt4AaABAg",
+        "who": "f",
+        "episode_title": {
+          "ru": "Страшные существа",
+          "en": "Scary Creatures"
+        },
+        "ru": "Пришла с работы, уставшая и злая, открыла ютуб, а здесь такая радость. Спасибо, девочки.",
+        "en": "I came home from work tired and cross, opened YouTube, and here was such a joy. Thank you, girls!"
+      },
+      {
+        "episode": "Kc8jJC2onB4",
+        "comment_id": "UgwuDrvb1__uHbPRDYB4AaABAg",
+        "who": "f",
+        "episode_title": {
+          "ru": "Патронусы",
+          "en": "Patronuses"
+        },
+        "ru": "Девочки, вы невероятные. Ваши голоса так успокаивают и расслабляют, спасибо вам за ваши видео… теперь по третьему кругу слушаю на фоне и даже все записи стримов посмотрела. Спасибо, что стараетесь на протяжении лет.",
+        "en": "Girls, you're incredible. Your voices are so calming and relaxing, thank you for your videos… I'm now on my third round of listening in the background and I've even watched every stream recording. Thank you for putting in the effort all these years."
+      },
+      {
+        "episode": "X8abHp0ekss",
+        "comment_id": "Ugy6micotJv0GF6Szz14AaABAg",
+        "who": "f",
+        "episode_title": {
+          "ru": "Вампиры против оборотней",
+          "en": "Vampires vs Werewolves"
+        },
+        "ru": "…Вы не знаете, но вы составляете мне компанию, когда я прибираюсь, готовлю, работаю, гуляю, принимаю ванну…",
+        "en": "…You don't know it, but you keep me company when I'm tidying up, cooking, working, out for a walk, in the bath…"
+      },
+      {
+        "episode": "vwBj35X9dUY",
+        "comment_id": "Ugzgq0f6c7w0HeXHpuN4AaABAg",
+        "who": "n",
+        "episode_title": {
+          "ru": "Рон Уизли",
+          "en": "Ron Weasley"
+        },
+        "ru": "Ваши голоса утешают и помогают спокойно засыпать. Прошу, продолжайте серию подкастов.",
+        "en": "Your voices are comforting and help me fall asleep peacefully. Please keep the podcast series going."
+      },
+      {
+        "episode": "LToqv7d5pwg",
+        "comment_id": "UgxwoTK40P0xFE9rWd94AaABAg",
+        "who": "n",
+        "episode_title": {
+          "ru": "Любовь",
+          "en": "Love"
+        },
+        "ru": "…Спасибо за выпуск, теперь в праздник не так одиноко.",
+        "en": "…Thank you for the episode, the holiday feels less lonely now."
+      }
+    ],
+    "_note": "Real YouTube comments fetched with yt-dlp on 22 Nov 2026 (top comments, up to 300 per long video, 58 videos). comment_id identifies the original; who: f = the comment uses feminine forms, m = masculine, n = not visible."
+  },
   "contact": {
-    "title": { "ru": "Открыта к новым проектам и ролям", "en": "Open to new roles and projects" },
-    "lede": { "ru": "Быстрее всего отвечаю в Telegram.", "en": "Telegram is the fastest way to reach me." },
-    "phone_label": { "ru": "Телефон", "en": "Phone" },
-    "telegram_label": { "ru": "Telegram", "en": "Telegram" },
-    "email_label": { "ru": "Почта", "en": "Email" },
-    "phone": "+7 706 643 29 43",
+    "title": {
+      "ru": "Открыта к новым проектам и ролям",
+      "en": "Open to new roles and projects"
+    },
+    "lede": {
+      "ru": "Быстрее всего отвечаю в Telegram.",
+      "en": "Telegram is the fastest way to reach me."
+    },
+    "phone_label": {
+      "ru": "Телефон",
+      "en": "Phone"
+    },
+    "telegram_label": {
+      "ru": "Telegram",
+      "en": "Telegram"
+    },
+    "email_label": {
+      "ru": "Почта",
+      "en": "Email"
+    },
+    "phone": "+7 706 643 29 43",
     "phone_href": "tel:+77066432943",
     "telegram": "@alissayeya",
     "telegram_href": "https://t.me/alissayeya",
@@ -816,46 +1943,144 @@
     "email_href": "mailto:alice.yeya@icloud.com",
     "instagram": "@alissayeya",
     "instagram_href": "https://www.instagram.com/alissayeya",
-    "instagram_label": { "ru": "Instagram", "en": "Instagram" },
-    "project_links_title": { "ru": "«Ведьмин час» на платформах", "en": "Witching Hour platforms" },
+    "instagram_label": {
+      "ru": "Instagram",
+      "en": "Instagram"
+    },
+    "project_links_title": {
+      "ru": "«Ведьмин час» на платформах",
+      "en": "Witching Hour platforms"
+    },
     "project_links": [
-      { "label": { "ru": "YouTube", "en": "YouTube" }, "url": "https://www.youtube.com/@witchinghourcast" },
-      { "label": { "ru": "Яндекс Музыка", "en": "Yandex Music" }, "url": "https://music.yandex.kz/album/28479268" },
-      { "label": { "ru": "Apple Podcasts", "en": "Apple Podcasts" }, "url": "https://podcasts.apple.com/ru/podcast/id1719694454" },
-      { "label": { "ru": "Mave", "en": "Mave" }, "url": "https://witchinghourcast.mave.digital/" },
-      { "label": { "ru": "Telegram", "en": "Telegram" }, "url": "https://t.me/witchinghourcast" },
-      { "label": { "ru": "Boosty", "en": "Boosty" }, "url": "https://boosty.to/witching_hour_cast" }
+      {
+        "label": {
+          "ru": "YouTube",
+          "en": "YouTube"
+        },
+        "url": "https://www.youtube.com/@witchinghourcast"
+      },
+      {
+        "label": {
+          "ru": "Яндекс Музыка",
+          "en": "Yandex Music"
+        },
+        "url": "https://music.yandex.kz/album/28479268"
+      },
+      {
+        "label": {
+          "ru": "Apple Podcasts",
+          "en": "Apple Podcasts"
+        },
+        "url": "https://podcasts.apple.com/ru/podcast/id1719694454"
+      },
+      {
+        "label": {
+          "ru": "Mave",
+          "en": "Mave"
+        },
+        "url": "https://witchinghourcast.mave.digital/"
+      },
+      {
+        "label": {
+          "ru": "Telegram",
+          "en": "Telegram"
+        },
+        "url": "https://t.me/witchinghourcast"
+      },
+      {
+        "label": {
+          "ru": "Boosty",
+          "en": "Boosty"
+        },
+        "url": "https://boosty.to/witching_hour_cast"
+      }
     ]
   },
-
   "cv": {
-    "doc_title": { "ru": "Алиса Макаренко — CV", "en": "Alisa Makarenko — CV" },
-    "name": { "ru": "Алиса Макаренко", "en": "Alisa Makarenko" },
-    "headline": { "ru": "Креативный продюсер · YouTube и подкасты", "en": "Creative Producer · YouTube & Podcasts" },
+    "doc_title": {
+      "ru": "Алиса Макаренко — CV",
+      "en": "Alisa Makarenko — CV"
+    },
+    "name": {
+      "ru": "Алиса Макаренко",
+      "en": "Alisa Makarenko"
+    },
+    "headline": {
+      "ru": "Креативный продюсер · YouTube и подкасты",
+      "en": "Creative Producer · YouTube & Podcasts"
+    },
     "summary": {
       "ru": "Почти три года продюсирую независимое YouTube-шоу и подкаст «Ведьмин час» — от идеи и сценария до записи, звука, публикации и платного сообщества на Boosty. Ищу роль YouTube-продюсера, креативного или контент-продюсера.",
       "en": "For almost three years I've been producing Witching Hour, an independent YouTube show and podcast, from idea and script to recording, sound, release and a paying community on Boosty. Looking for a YouTube producer, creative producer or content producer role."
     },
-    "also": { "ru": "Также открыта к SMM, сценарной работе, видеосъёмке и UGC, аудиомонтажу подкастов.", "en": "Also open to SMM, scriptwriting, videography and UGC, and podcast audio editing." },
+    "also": {
+      "ru": "Также открыта к SMM, сценарной работе, видеосъёмке и UGC, аудиомонтажу подкастов.",
+      "en": "Also open to SMM, scriptwriting, videography and UGC, and podcast audio editing."
+    },
     "labels": {
-      "summary": { "ru": "О себе", "en": "Profile" },
-      "experience": { "ru": "Опыт", "en": "Experience" },
-      "key_numbers": { "ru": "Ключевые цифры", "en": "Key numbers" },
-      "selected_work": { "ru": "Избранные работы", "en": "Selected work" },
-      "skills": { "ru": "Навыки", "en": "Skills" },
-      "tools": { "ru": "Инструменты", "en": "Tools" },
-      "contacts": { "ru": "Контакты", "en": "Contact" },
-      "links": { "ru": "Ссылки", "en": "Links" },
-      "portfolio": { "ru": "Портфолио", "en": "Portfolio" },
-      "views": { "ru": "Просмотры", "en": "Views" },
-      "selected_work_note": { "ru": "просмотры на YouTube на 21 ноября 2026", "en": "YouTube views as of Nov 21, 2026" },
-      "data_note": { "ru": "Данные платформ на ноябрь 2026 года.", "en": "Platform data as of November 2026." }
+      "summary": {
+        "ru": "О себе",
+        "en": "Profile"
+      },
+      "experience": {
+        "ru": "Опыт",
+        "en": "Experience"
+      },
+      "key_numbers": {
+        "ru": "Ключевые цифры",
+        "en": "Key numbers"
+      },
+      "selected_work": {
+        "ru": "Избранные работы",
+        "en": "Selected work"
+      },
+      "skills": {
+        "ru": "Навыки",
+        "en": "Skills"
+      },
+      "tools": {
+        "ru": "Инструменты",
+        "en": "Tools"
+      },
+      "contacts": {
+        "ru": "Контакты",
+        "en": "Contact"
+      },
+      "links": {
+        "ru": "Ссылки",
+        "en": "Links"
+      },
+      "portfolio": {
+        "ru": "Портфолио",
+        "en": "Portfolio"
+      },
+      "views": {
+        "ru": "Просмотры",
+        "en": "Views"
+      },
+      "selected_work_note": {
+        "ru": "просмотры на YouTube на 21 ноября 2026",
+        "en": "YouTube views as of Nov 21, 2026"
+      },
+      "data_note": {
+        "ru": "Данные платформ на ноябрь 2026 года.",
+        "en": "Platform data as of November 2026."
+      }
     },
     "experience": [
       {
-        "project": { "ru": "«Ведьмин час» — независимое YouTube-шоу и подкаст о мире Гарри Поттера", "en": "Witching Hour (Ведьмин час), an independent YouTube show and podcast about the Harry Potter universe" },
-        "role": { "ru": "Продюсер, сценарист и соведущая", "en": "Producer, scriptwriter and co-host" },
-        "period": { "ru": "Декабрь 2023 — сейчас", "en": "Dec 2023 – present" },
+        "project": {
+          "ru": "«Ведьмин час» — независимое YouTube-шоу и подкаст о мире Гарри Поттера",
+          "en": "Witching Hour (Ведьмин час), an independent YouTube show and podcast about the Harry Potter universe"
+        },
+        "role": {
+          "ru": "Продюсер, сценарист и соведущая",
+          "en": "Producer, scriptwriter and co-host"
+        },
+        "period": {
+          "ru": "Декабрь 2023 — сейчас",
+          "en": "Dec 2023 – present"
+        },
         "bullets": [
           {
             "ru": "Вместе с соведущей Катей запустила шоу: 55 выпусков в ленте подкаста за 3 сезона и 58 длинных видео на YouTube.",
@@ -889,26 +2114,132 @@
       }
     ],
     "key_numbers": [
-      { "value": { "ru": "7 768", "en": "7,768" }, "label": { "ru": "подписчиков YouTube-канала, ноябрь 2026", "en": "YouTube subscribers, Nov 2026" } },
-      { "value": { "ru": "141,4 тыс.", "en": "141.4K" }, "label": { "ru": "часов просмотра на YouTube, всё время", "en": "hours of YouTube watch time, all time" } },
-      { "value": { "ru": "18 407", "en": "18,407" }, "label": { "ru": "прослушиваний главного выпуска 2025 года на Яндекс Музыке", "en": "Yandex Music plays of our top episode of 2025" } }
+      {
+        "value": {
+          "ru": "7 768",
+          "en": "7,768"
+        },
+        "label": {
+          "ru": "подписчиков YouTube-канала, ноябрь 2026",
+          "en": "YouTube subscribers, Nov 2026"
+        }
+      },
+      {
+        "value": {
+          "ru": "141,4 тыс.",
+          "en": "141.4K"
+        },
+        "label": {
+          "ru": "часов просмотра на YouTube, всё время",
+          "en": "hours of YouTube watch time, all time"
+        }
+      },
+      {
+        "value": {
+          "ru": "18 407",
+          "en": "18,407"
+        },
+        "label": {
+          "ru": "прослушиваний главного выпуска 2025 года на Яндекс Музыке",
+          "en": "Yandex Music plays of our top episode of 2025"
+        }
+      }
     ],
     "selected_work": [
-      { "id": "o4-YEJW9ar8", "title": { "ru": "Short «Почему Римус Люпин ехал на поезде в Хогвартс?», 30 с", "en": "Short: Why did Remus Lupin take the train to Hogwarts? (30 s)" }, "views": 1755182, "views_label": { "ru": "1,76 млн", "en": "1.76M" } },
-      { "id": "g6jqNWzJrNw", "title": { "ru": "Short «Фильмы испортили Рона Уизли?», 19 с", "en": "Short: Did the films ruin Ron Weasley? (19 s)" }, "views": 1571888, "views_label": { "ru": "1,57 млн", "en": "1.57M" } },
-      { "id": "FuSKSb_aRnQ", "title": { "ru": "«История юных Мародёров», 1 ч 9 мин", "en": "The Young Marauders (1 h 9 min)" }, "views": 20081, "views_label": { "ru": "20 тыс.", "en": "20K" } },
-      { "id": "HLP-JC3EkW4", "title": { "ru": "«Своя игра по Гарри Поттеру» с гостьями, 1 ч 9 мин", "en": "Harry Potter quiz show with guests (1 h 9 min)" }, "views": 16426, "views_label": { "ru": "16,4 тыс.", "en": "16.4K" } },
-      { "id": "X8abHp0ekss", "title": { "ru": "«Вампиры против оборотней», выпуск-возвращение, 1 ч 4 мин", "en": "Vampires vs Werewolves, comeback episode (1 h 4 min)" }, "views": 8259, "views_label": { "ru": "8,3 тыс.", "en": "8.3K" } }
+      {
+        "id": "o4-YEJW9ar8",
+        "title": {
+          "ru": "Short «Почему Римус Люпин ехал на поезде в Хогвартс?», 30 с",
+          "en": "Short: Why did Remus Lupin take the train to Hogwarts? (30 s)"
+        },
+        "views": 1755182,
+        "views_label": {
+          "ru": "1,76 млн",
+          "en": "1.76M"
+        }
+      },
+      {
+        "id": "g6jqNWzJrNw",
+        "title": {
+          "ru": "Short «Фильмы испортили Рона Уизли?», 19 с",
+          "en": "Short: Did the films ruin Ron Weasley? (19 s)"
+        },
+        "views": 1571888,
+        "views_label": {
+          "ru": "1,57 млн",
+          "en": "1.57M"
+        }
+      },
+      {
+        "id": "FuSKSb_aRnQ",
+        "title": {
+          "ru": "«История юных Мародёров», 1 ч 9 мин",
+          "en": "The Young Marauders (1 h 9 min)"
+        },
+        "views": 20081,
+        "views_label": {
+          "ru": "20 тыс.",
+          "en": "20K"
+        }
+      },
+      {
+        "id": "HLP-JC3EkW4",
+        "title": {
+          "ru": "«Своя игра по Гарри Поттеру» с гостьями, 1 ч 9 мин",
+          "en": "Harry Potter quiz show with guests (1 h 9 min)"
+        },
+        "views": 16426,
+        "views_label": {
+          "ru": "16,4 тыс.",
+          "en": "16.4K"
+        }
+      },
+      {
+        "id": "X8abHp0ekss",
+        "title": {
+          "ru": "«Вампиры против оборотней», выпуск-возвращение, 1 ч 4 мин",
+          "en": "Vampires vs Werewolves, comeback episode (1 h 4 min)"
+        },
+        "views": 8259,
+        "views_label": {
+          "ru": "8,3 тыс.",
+          "en": "8.3K"
+        }
+      }
     ],
     "skills": [
-      { "ru": "Продюсирование и контент-план", "en": "Producing and content planning" },
-      { "ru": "Исследование и сценарии", "en": "Research and scriptwriting" },
-      { "ru": "Организация записи", "en": "Recording session coordination" },
-      { "ru": "Запись и монтаж звука", "en": "Audio recording and editing" },
-      { "ru": "Видеомонтаж, Shorts и Reels", "en": "Video editing, Shorts and Reels" },
-      { "ru": "Превью и обложки", "en": "Thumbnails and cover art" },
-      { "ru": "Аналитика YouTube и подкастов", "en": "YouTube and podcast analytics" },
-      { "ru": "Сообщество и платная подписка", "en": "Community and paid membership" }
+      {
+        "ru": "Продюсирование и контент-план",
+        "en": "Producing and content planning"
+      },
+      {
+        "ru": "Исследование и сценарии",
+        "en": "Research and scriptwriting"
+      },
+      {
+        "ru": "Организация записи",
+        "en": "Recording session coordination"
+      },
+      {
+        "ru": "Запись и монтаж звука",
+        "en": "Audio recording and editing"
+      },
+      {
+        "ru": "Видеомонтаж, Shorts и Reels",
+        "en": "Video editing, Shorts and Reels"
+      },
+      {
+        "ru": "Превью и обложки",
+        "en": "Thumbnails and cover art"
+      },
+      {
+        "ru": "Аналитика YouTube и подкастов",
+        "en": "YouTube and podcast analytics"
+      },
+      {
+        "ru": "Сообщество и платная подписка",
+        "en": "Community and paid membership"
+      }
     ],
     "tools": {
       "ru": "DaVinci Resolve, CapCut, OBS Studio, REAPER, Studio One, Photoshop, Lightroom, Notion, YouTube Studio, Mave; ChatGPT, Claude, Perplexity",
@@ -921,9 +2252,30 @@
       "email": "alice.yeya@icloud.com"
     },
     "links": [
-      { "label": { "ru": "YouTube", "en": "YouTube" }, "url": "https://www.youtube.com/@witchinghourcast", "display": "youtube.com/@witchinghourcast" },
-      { "label": { "ru": "Подкаст", "en": "Podcast" }, "url": "https://witchinghourcast.mave.digital/", "display": "witchinghourcast.mave.digital" },
-      { "label": { "ru": "Telegram-канал шоу", "en": "Show's Telegram" }, "url": "https://t.me/witchinghourcast", "display": "t.me/witchinghourcast" }
+      {
+        "label": {
+          "ru": "YouTube",
+          "en": "YouTube"
+        },
+        "url": "https://www.youtube.com/@witchinghourcast",
+        "display": "youtube.com/@witchinghourcast"
+      },
+      {
+        "label": {
+          "ru": "Подкаст",
+          "en": "Podcast"
+        },
+        "url": "https://witchinghourcast.mave.digital/",
+        "display": "witchinghourcast.mave.digital"
+      },
+      {
+        "label": {
+          "ru": "Telegram-канал шоу",
+          "en": "Show's Telegram"
+        },
+        "url": "https://t.me/witchinghourcast",
+        "display": "t.me/witchinghourcast"
+      }
     ]
   }
 }
