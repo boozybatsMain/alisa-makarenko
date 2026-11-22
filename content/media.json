@@ -1,8 +1,8 @@
 {
   "generated": "2026-11-21",
   "root": "docs/assets",
-  "total_bytes": 29076219,
-  "file_count": 173,
+  "total_bytes": 27385192,
+  "file_count": 117,
   "notes": [
     "All numbers in alt text are copied from the screenshots/videos.json; frame them as in the source (e.g. “incl. Shorts”, “since launch”, “last 60 days”).",
     "Excerpt transcripts come from YouTube auto-captions with light correction; proof-listen before quoting.",
@@ -14,36 +14,36 @@
     {
       "id": "hero",
       "group": "hero",
-      "purpose": "Hero background (desktop): library window with pink blossom from the channel banner.",
+      "purpose": "Hero background (desktop): the library window from the client's library image (source/edits2/img/p-022.png, origin unknown), slightly defocused.",
       "variants": [
         {
           "path": "docs/assets/hero/hero.avif",
           "url": "assets/hero/hero.avif",
-          "bytes": 13382,
+          "bytes": 28616,
           "format": "avif",
           "type": "image",
           "width": 1600,
-          "height": 1212,
+          "height": 900,
           "duration": null
         },
         {
           "path": "docs/assets/hero/hero.webp",
           "url": "assets/hero/hero.webp",
-          "bytes": 28046,
+          "bytes": 36756,
           "format": "webp",
           "type": "image",
           "width": 1600,
-          "height": 1212,
+          "height": 900,
           "duration": null
         },
         {
           "path": "docs/assets/hero/hero.jpg",
           "url": "assets/hero/hero.jpg",
-          "bytes": 69819,
+          "bytes": 160658,
           "format": "jpg",
           "type": "image",
           "width": 1600,
-          "height": 1212,
+          "height": 900,
           "duration": null
         }
       ],
@@ -67,36 +67,36 @@
     {
       "id": "hero-mobile",
       "group": "hero",
-      "purpose": "Hero background for portrait/mobile viewports.",
+      "purpose": "Hero background for portrait/mobile viewports: tall crop of the same library image around the window.",
       "variants": [
         {
           "path": "docs/assets/hero/hero-mobile.avif",
           "url": "assets/hero/hero-mobile.avif",
-          "bytes": 9765,
+          "bytes": 14194,
           "format": "avif",
           "type": "image",
-          "width": 900,
-          "height": 1266,
+          "width": 720,
+          "height": 1012,
           "duration": null
         },
         {
           "path": "docs/assets/hero/hero-mobile.webp",
           "url": "assets/hero/hero-mobile.webp",
-          "bytes": 23030,
+          "bytes": 19730,
           "format": "webp",
           "type": "image",
-          "width": 900,
-          "height": 1266,
+          "width": 720,
+          "height": 1012,
           "duration": null
         },
         {
           "path": "docs/assets/hero/hero-mobile.jpg",
           "url": "assets/hero/hero-mobile.jpg",
-          "bytes": 55913,
+          "bytes": 83737,
           "format": "jpg",
           "type": "image",
-          "width": 900,
-          "height": 1266,
+          "width": 720,
+          "height": 1012,
           "duration": null
         }
       ],
@@ -910,750 +910,6 @@
       "note": "Her own thumbnail design (host photos + series typography). Some include film/fan art inside the artwork."
     },
     {
-      "id": "short-poster-o4-YEJW9ar8",
-      "group": "shorts",
-      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/o4-YEJW9ar8-poster.webp",
-          "url": "assets/shorts/o4-YEJW9ar8-poster.webp",
-          "bytes": 9910,
-          "format": "webp",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/o4-YEJW9ar8-poster.jpg",
-          "url": "assets/shorts/o4-YEJW9ar8-poster.jpg",
-          "bytes": 24942,
-          "format": "jpg",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Кадр из Shorts «Почему Римус Люпин ехал на поезде в Хогвартс? 🤔»",
-        "en": "Frame from the Short “Почему Римус Люпин ехал на поезде в Хогвартс? 🤔” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/shorts/o4-YEJW9ar8.mp4",
-        "timecode": 27.5,
-        "youtube_id": "o4-YEJW9ar8",
-        "title": "Почему Римус Люпин ехал на поезде в Хогвартс? 🤔 #shorts #гаррипоттер #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-26",
-        "view_count": 1755182,
-        "url": "https://www.youtube.com/shorts/o4-YEJW9ar8"
-      },
-      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
-    },
-    {
-      "id": "short-cover-o4-YEJW9ar8",
-      "group": "shorts",
-      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/o4-YEJW9ar8-cover.webp",
-          "url": "assets/shorts/o4-YEJW9ar8-cover.webp",
-          "bytes": 71618,
-          "format": "webp",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/o4-YEJW9ar8-cover.jpg",
-          "url": "assets/shorts/o4-YEJW9ar8-cover.jpg",
-          "bytes": 73458,
-          "format": "jpg",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Обложка Shorts «Почему Римус Люпин ехал на поезде в Хогвартс? 🤔»",
-        "en": "Cover of the Short “Почему Римус Люпин ехал на поезде в Хогвартс? 🤔” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/thumbs/o4-YEJW9ar8.jpg",
-        "crop": [
-          437,
-          0,
-          405,
-          720
-        ],
-        "youtube_id": "o4-YEJW9ar8",
-        "title": "Почему Римус Люпин ехал на поезде в Хогвартс? 🤔 #shorts #гаррипоттер #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-26",
-        "view_count": 1755182,
-        "url": "https://www.youtube.com/shorts/o4-YEJW9ar8"
-      }
-    },
-    {
-      "id": "short-poster-g6jqNWzJrNw",
-      "group": "shorts",
-      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/g6jqNWzJrNw-poster.webp",
-          "url": "assets/shorts/g6jqNWzJrNw-poster.webp",
-          "bytes": 14246,
-          "format": "webp",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/g6jqNWzJrNw-poster.jpg",
-          "url": "assets/shorts/g6jqNWzJrNw-poster.jpg",
-          "bytes": 33449,
-          "format": "jpg",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Кадр из Shorts «Фильмы испортили Рона Уизли? 🤔🤔»",
-        "en": "Frame from the Short “Фильмы испортили Рона Уизли? 🤔🤔” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/shorts/g6jqNWzJrNw.mp4",
-        "timecode": 4,
-        "youtube_id": "g6jqNWzJrNw",
-        "title": "Фильмы испортили Рона Уизли? 🤔🤔 #shorts #гаррипоттер #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-25",
-        "view_count": 1571888,
-        "url": "https://www.youtube.com/shorts/g6jqNWzJrNw"
-      },
-      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
-    },
-    {
-      "id": "short-cover-g6jqNWzJrNw",
-      "group": "shorts",
-      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/g6jqNWzJrNw-cover.webp",
-          "url": "assets/shorts/g6jqNWzJrNw-cover.webp",
-          "bytes": 66280,
-          "format": "webp",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/g6jqNWzJrNw-cover.jpg",
-          "url": "assets/shorts/g6jqNWzJrNw-cover.jpg",
-          "bytes": 78553,
-          "format": "jpg",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Обложка Shorts «Фильмы испортили Рона Уизли? 🤔🤔»",
-        "en": "Cover of the Short “Фильмы испортили Рона Уизли? 🤔🤔” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/thumbs/g6jqNWzJrNw.jpg",
-        "crop": [
-          437,
-          0,
-          405,
-          720
-        ],
-        "youtube_id": "g6jqNWzJrNw",
-        "title": "Фильмы испортили Рона Уизли? 🤔🤔 #shorts #гаррипоттер #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-25",
-        "view_count": 1571888,
-        "url": "https://www.youtube.com/shorts/g6jqNWzJrNw"
-      }
-    },
-    {
-      "id": "short-poster-r2u0yEV-QU8",
-      "group": "shorts",
-      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/r2u0yEV-QU8-poster.webp",
-          "url": "assets/shorts/r2u0yEV-QU8-poster.webp",
-          "bytes": 17508,
-          "format": "webp",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/r2u0yEV-QU8-poster.jpg",
-          "url": "assets/shorts/r2u0yEV-QU8-poster.jpg",
-          "bytes": 44539,
-          "format": "jpg",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Кадр из Shorts «Министр магии плохо делает свою работу?»",
-        "en": "Frame from the Short “Министр магии плохо делает свою работу?” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/shorts/r2u0yEV-QU8.mp4",
-        "timecode": 35,
-        "youtube_id": "r2u0yEV-QU8",
-        "title": "Министр магии плохо делает свою работу? #гермиона #гаррипоттер #shorts #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-19",
-        "view_count": 415055,
-        "url": "https://www.youtube.com/shorts/r2u0yEV-QU8"
-      },
-      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
-    },
-    {
-      "id": "short-cover-r2u0yEV-QU8",
-      "group": "shorts",
-      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/r2u0yEV-QU8-cover.webp",
-          "url": "assets/shorts/r2u0yEV-QU8-cover.webp",
-          "bytes": 67276,
-          "format": "webp",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/r2u0yEV-QU8-cover.jpg",
-          "url": "assets/shorts/r2u0yEV-QU8-cover.jpg",
-          "bytes": 72250,
-          "format": "jpg",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Обложка Shorts «Министр магии плохо делает свою работу?»",
-        "en": "Cover of the Short “Министр магии плохо делает свою работу?” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/thumbs/r2u0yEV-QU8.jpg",
-        "crop": [
-          437,
-          0,
-          405,
-          720
-        ],
-        "youtube_id": "r2u0yEV-QU8",
-        "title": "Министр магии плохо делает свою работу? #гермиона #гаррипоттер #shorts #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-19",
-        "view_count": 415055,
-        "url": "https://www.youtube.com/shorts/r2u0yEV-QU8"
-      }
-    },
-    {
-      "id": "short-poster-C7uxzve2wv8",
-      "group": "shorts",
-      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/C7uxzve2wv8-poster.webp",
-          "url": "assets/shorts/C7uxzve2wv8-poster.webp",
-          "bytes": 34434,
-          "format": "webp",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/C7uxzve2wv8-poster.jpg",
-          "url": "assets/shorts/C7uxzve2wv8-poster.jpg",
-          "bytes": 64558,
-          "format": "jpg",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Кадр из Shorts «Гермиона была права 🧹🐕»",
-        "en": "Frame from the Short “Гермиона была права 🧹🐕” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/shorts/C7uxzve2wv8.mp4",
-        "timecode": 14.5,
-        "youtube_id": "C7uxzve2wv8",
-        "title": "Гермиона была права 🧹🐕 #гаррипоттер #ведьминчас #книги",
-        "kind": "short",
-        "upload_date": "2024-07-15",
-        "view_count": 342846,
-        "url": "https://www.youtube.com/shorts/C7uxzve2wv8"
-      },
-      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
-    },
-    {
-      "id": "short-cover-C7uxzve2wv8",
-      "group": "shorts",
-      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/C7uxzve2wv8-cover.webp",
-          "url": "assets/shorts/C7uxzve2wv8-cover.webp",
-          "bytes": 73502,
-          "format": "webp",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/C7uxzve2wv8-cover.jpg",
-          "url": "assets/shorts/C7uxzve2wv8-cover.jpg",
-          "bytes": 75233,
-          "format": "jpg",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Обложка Shorts «Гермиона была права 🧹🐕»",
-        "en": "Cover of the Short “Гермиона была права 🧹🐕” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/thumbs/C7uxzve2wv8.jpg",
-        "crop": [
-          437,
-          0,
-          405,
-          720
-        ],
-        "youtube_id": "C7uxzve2wv8",
-        "title": "Гермиона была права 🧹🐕 #гаррипоттер #ведьминчас #книги",
-        "kind": "short",
-        "upload_date": "2024-07-15",
-        "view_count": 342846,
-        "url": "https://www.youtube.com/shorts/C7uxzve2wv8"
-      }
-    },
-    {
-      "id": "short-poster-SENI8JOCuc0",
-      "group": "shorts",
-      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/SENI8JOCuc0-poster.webp",
-          "url": "assets/shorts/SENI8JOCuc0-poster.webp",
-          "bytes": 17358,
-          "format": "webp",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/SENI8JOCuc0-poster.jpg",
-          "url": "assets/shorts/SENI8JOCuc0-poster.jpg",
-          "bytes": 39809,
-          "format": "jpg",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Кадр из Shorts «Римус ЛЮпин или ЛюпИн? 🐺🌕»",
-        "en": "Frame from the Short “Римус ЛЮпин или ЛюпИн? 🐺🌕” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/shorts/SENI8JOCuc0.mp4",
-        "timecode": 0.5,
-        "youtube_id": "SENI8JOCuc0",
-        "title": "Римус ЛЮпин или ЛюпИн? 🐺🌕 #witchinghour #гаррипоттер #интересныефакты #книги",
-        "kind": "short",
-        "upload_date": "2024-06-30",
-        "view_count": 160193,
-        "url": "https://www.youtube.com/shorts/SENI8JOCuc0"
-      },
-      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
-    },
-    {
-      "id": "short-cover-SENI8JOCuc0",
-      "group": "shorts",
-      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/SENI8JOCuc0-cover.webp",
-          "url": "assets/shorts/SENI8JOCuc0-cover.webp",
-          "bytes": 76040,
-          "format": "webp",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/SENI8JOCuc0-cover.jpg",
-          "url": "assets/shorts/SENI8JOCuc0-cover.jpg",
-          "bytes": 76110,
-          "format": "jpg",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Обложка Shorts «Римус ЛЮпин или ЛюпИн? 🐺🌕»",
-        "en": "Cover of the Short “Римус ЛЮпин или ЛюпИн? 🐺🌕” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/thumbs/SENI8JOCuc0.jpg",
-        "crop": [
-          437,
-          0,
-          405,
-          720
-        ],
-        "youtube_id": "SENI8JOCuc0",
-        "title": "Римус ЛЮпин или ЛюпИн? 🐺🌕 #witchinghour #гаррипоттер #интересныефакты #книги",
-        "kind": "short",
-        "upload_date": "2024-06-30",
-        "view_count": 160193,
-        "url": "https://www.youtube.com/shorts/SENI8JOCuc0"
-      }
-    },
-    {
-      "id": "short-poster-ZMJpa_P8vKQ",
-      "group": "shorts",
-      "purpose": "True 9:16 frame from the Short (540x960) — poster for the hover loop / Shorts card.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/ZMJpa_P8vKQ-poster.webp",
-          "url": "assets/shorts/ZMJpa_P8vKQ-poster.webp",
-          "bytes": 53270,
-          "format": "webp",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/ZMJpa_P8vKQ-poster.jpg",
-          "url": "assets/shorts/ZMJpa_P8vKQ-poster.jpg",
-          "bytes": 81391,
-          "format": "jpg",
-          "type": "image",
-          "width": 540,
-          "height": 960,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Кадр из Shorts «Кто из них был гениальным зельеваром?»",
-        "en": "Frame from the Short “Кто из них был гениальным зельеваром?” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/shorts/ZMJpa_P8vKQ.mp4",
-        "timecode": 7.5,
-        "youtube_id": "ZMJpa_P8vKQ",
-        "title": "Кто из них был гениальным зельеваром? #гаррипоттер #witchinghour",
-        "kind": "short",
-        "upload_date": "2024-07-02",
-        "view_count": 137853,
-        "url": "https://www.youtube.com/shorts/ZMJpa_P8vKQ"
-      },
-      "note": "Shorts are montages of film footage / fan art with her voice-over and burned-in word captions; hosts are not on camera."
-    },
-    {
-      "id": "short-cover-ZMJpa_P8vKQ",
-      "group": "shorts",
-      "purpose": "Uploaded YouTube cover (centre 9:16 pillar of the 1280x720 thumbnail) at native 405x720 — alternative card image; do not display larger than ~405px wide.",
-      "variants": [
-        {
-          "path": "docs/assets/shorts/ZMJpa_P8vKQ-cover.webp",
-          "url": "assets/shorts/ZMJpa_P8vKQ-cover.webp",
-          "bytes": 62602,
-          "format": "webp",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/shorts/ZMJpa_P8vKQ-cover.jpg",
-          "url": "assets/shorts/ZMJpa_P8vKQ-cover.jpg",
-          "bytes": 79484,
-          "format": "jpg",
-          "type": "image",
-          "width": 405,
-          "height": 720,
-          "duration": null
-        }
-      ],
-      "alt": {
-        "ru": "Обложка Shorts «Кто из них был гениальным зельеваром?»",
-        "en": "Cover of the Short “Кто из них был гениальным зельеваром?” (Russian)"
-      },
-      "source": {
-        "file": "source/youtube/thumbs/ZMJpa_P8vKQ.jpg",
-        "crop": [
-          437,
-          0,
-          405,
-          720
-        ],
-        "youtube_id": "ZMJpa_P8vKQ",
-        "title": "Кто из них был гениальным зельеваром? #гаррипоттер #witchinghour",
-        "kind": "short",
-        "upload_date": "2024-07-02",
-        "view_count": 137853,
-        "url": "https://www.youtube.com/shorts/ZMJpa_P8vKQ"
-      }
-    },
-    {
-      "id": "loop-short-o4-YEJW9ar8",
-      "group": "hover-loops",
-      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
-      "variants": [
-        {
-          "path": "docs/assets/loops/short-o4-YEJW9ar8.mp4",
-          "url": "assets/loops/short-o4-YEJW9ar8.mp4",
-          "bytes": 102333,
-          "format": "mp4",
-          "type": "video",
-          "width": 360,
-          "height": 640,
-          "duration": 5,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент Shorts «Почему Римус Люпин ехал на поезде в Хогвартс? 🤔» без звука",
-        "en": "Muted excerpt of the Short “Почему Римус Люпин ехал на поезде в Хогвартс? 🤔”"
-      },
-      "source": {
-        "file": "source/youtube/shorts/o4-YEJW9ar8.mp4",
-        "in_sec": 23.95,
-        "out_sec": 28.95,
-        "youtube_id": "o4-YEJW9ar8",
-        "title": "Почему Римус Люпин ехал на поезде в Хогвартс? 🤔 #shorts #гаррипоттер #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-26",
-        "view_count": 1755182,
-        "url": "https://www.youtube.com/shorts/o4-YEJW9ar8"
-      },
-      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
-    },
-    {
-      "id": "loop-short-g6jqNWzJrNw",
-      "group": "hover-loops",
-      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
-      "variants": [
-        {
-          "path": "docs/assets/loops/short-g6jqNWzJrNw.mp4",
-          "url": "assets/loops/short-g6jqNWzJrNw.mp4",
-          "bytes": 119672,
-          "format": "mp4",
-          "type": "video",
-          "width": 360,
-          "height": 640,
-          "duration": 6,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент Shorts «Фильмы испортили Рона Уизли? 🤔🤔» без звука",
-        "en": "Muted excerpt of the Short “Фильмы испортили Рона Уизли? 🤔🤔”"
-      },
-      "source": {
-        "file": "source/youtube/shorts/g6jqNWzJrNw.mp4",
-        "in_sec": 4,
-        "out_sec": 10,
-        "youtube_id": "g6jqNWzJrNw",
-        "title": "Фильмы испортили Рона Уизли? 🤔🤔 #shorts #гаррипоттер #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-25",
-        "view_count": 1571888,
-        "url": "https://www.youtube.com/shorts/g6jqNWzJrNw"
-      },
-      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
-    },
-    {
-      "id": "loop-short-r2u0yEV-QU8",
-      "group": "hover-loops",
-      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
-      "variants": [
-        {
-          "path": "docs/assets/loops/short-r2u0yEV-QU8.mp4",
-          "url": "assets/loops/short-r2u0yEV-QU8.mp4",
-          "bytes": 134931,
-          "format": "mp4",
-          "type": "video",
-          "width": 360,
-          "height": 640,
-          "duration": 6,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент Shorts «Министр магии плохо делает свою работу?» без звука",
-        "en": "Muted excerpt of the Short “Министр магии плохо делает свою работу?”"
-      },
-      "source": {
-        "file": "source/youtube/shorts/r2u0yEV-QU8.mp4",
-        "in_sec": 33,
-        "out_sec": 39,
-        "youtube_id": "r2u0yEV-QU8",
-        "title": "Министр магии плохо делает свою работу? #гермиона #гаррипоттер #shorts #интересныефакты",
-        "kind": "short",
-        "upload_date": "2024-06-19",
-        "view_count": 415055,
-        "url": "https://www.youtube.com/shorts/r2u0yEV-QU8"
-      },
-      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
-    },
-    {
-      "id": "loop-short-C7uxzve2wv8",
-      "group": "hover-loops",
-      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
-      "variants": [
-        {
-          "path": "docs/assets/loops/short-C7uxzve2wv8.mp4",
-          "url": "assets/loops/short-C7uxzve2wv8.mp4",
-          "bytes": 142645,
-          "format": "mp4",
-          "type": "video",
-          "width": 360,
-          "height": 640,
-          "duration": 6,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент Shorts «Гермиона была права 🧹🐕» без звука",
-        "en": "Muted excerpt of the Short “Гермиона была права 🧹🐕”"
-      },
-      "source": {
-        "file": "source/youtube/shorts/C7uxzve2wv8.mp4",
-        "in_sec": 12,
-        "out_sec": 18,
-        "youtube_id": "C7uxzve2wv8",
-        "title": "Гермиона была права 🧹🐕 #гаррипоттер #ведьминчас #книги",
-        "kind": "short",
-        "upload_date": "2024-07-15",
-        "view_count": 342846,
-        "url": "https://www.youtube.com/shorts/C7uxzve2wv8"
-      },
-      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
-    },
-    {
-      "id": "loop-short-SENI8JOCuc0",
-      "group": "hover-loops",
-      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
-      "variants": [
-        {
-          "path": "docs/assets/loops/short-SENI8JOCuc0.mp4",
-          "url": "assets/loops/short-SENI8JOCuc0.mp4",
-          "bytes": 124555,
-          "format": "mp4",
-          "type": "video",
-          "width": 360,
-          "height": 640,
-          "duration": 6,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент Shorts «Римус ЛЮпин или ЛюпИн? 🐺🌕» без звука",
-        "en": "Muted excerpt of the Short “Римус ЛЮпин или ЛюпИн? 🐺🌕”"
-      },
-      "source": {
-        "file": "source/youtube/shorts/SENI8JOCuc0.mp4",
-        "in_sec": 0.5,
-        "out_sec": 6.5,
-        "youtube_id": "SENI8JOCuc0",
-        "title": "Римус ЛЮпин или ЛюпИн? 🐺🌕 #witchinghour #гаррипоттер #интересныефакты #книги",
-        "kind": "short",
-        "upload_date": "2024-06-30",
-        "view_count": 160193,
-        "url": "https://www.youtube.com/shorts/SENI8JOCuc0"
-      },
-      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
-    },
-    {
-      "id": "loop-short-ZMJpa_P8vKQ",
-      "group": "hover-loops",
-      "purpose": "Muted hover-preview loop for the Shorts card (autoplay muted loop playsinline; poster = short-poster).",
-      "variants": [
-        {
-          "path": "docs/assets/loops/short-ZMJpa_P8vKQ.mp4",
-          "url": "assets/loops/short-ZMJpa_P8vKQ.mp4",
-          "bytes": 215809,
-          "format": "mp4",
-          "type": "video",
-          "width": 360,
-          "height": 640,
-          "duration": 6,
-          "video_codec": "h264",
-          "fps": "30/1",
-          "audio": null
-        }
-      ],
-      "alt": {
-        "ru": "Фрагмент Shorts «Кто из них был гениальным зельеваром?» без звука",
-        "en": "Muted excerpt of the Short “Кто из них был гениальным зельеваром?”"
-      },
-      "source": {
-        "file": "source/youtube/shorts/ZMJpa_P8vKQ.mp4",
-        "in_sec": 6.05,
-        "out_sec": 12.05,
-        "youtube_id": "ZMJpa_P8vKQ",
-        "title": "Кто из них был гениальным зельеваром? #гаррипоттер #witchinghour",
-        "kind": "short",
-        "upload_date": "2024-07-02",
-        "view_count": 137853,
-        "url": "https://www.youtube.com/shorts/ZMJpa_P8vKQ"
-      },
-      "note": "Contains the Short’s burned-in single-word captions (whole words, none cut) and film/fan-art imagery."
-    },
-    {
       "id": "loop-ep-X8abHp0ekss",
       "group": "hover-loops",
       "purpose": "Muted 6 s hover-preview loop for the episode card (poster = thumbs/<id>-960).",
@@ -1950,26 +1206,6 @@
           "video_codec": "h264",
           "fps": "25/1",
           "audio": "aac"
-        },
-        {
-          "path": "docs/assets/moments/halloween-topic-poster.webp",
-          "url": "assets/moments/halloween-topic-poster.webp",
-          "bytes": 67174,
-          "format": "webp",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/moments/halloween-topic-poster.jpg",
-          "url": "assets/moments/halloween-topic-poster.jpg",
-          "bytes": 108301,
-          "format": "jpg",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
         }
       ],
       "alt": {
@@ -2012,26 +1248,6 @@
           "video_codec": "h264",
           "fps": "25/1",
           "audio": "aac"
-        },
-        {
-          "path": "docs/assets/moments/godric-hollow-poster.webp",
-          "url": "assets/moments/godric-hollow-poster.webp",
-          "bytes": 92966,
-          "format": "webp",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/moments/godric-hollow-poster.jpg",
-          "url": "assets/moments/godric-hollow-poster.jpg",
-          "bytes": 139643,
-          "format": "jpg",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
         }
       ],
       "alt": {
@@ -2074,26 +1290,6 @@
           "video_codec": "h264",
           "fps": "25/1",
           "audio": "aac"
-        },
-        {
-          "path": "docs/assets/moments/showrunner-poster.webp",
-          "url": "assets/moments/showrunner-poster.webp",
-          "bytes": 53288,
-          "format": "webp",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/moments/showrunner-poster.jpg",
-          "url": "assets/moments/showrunner-poster.jpg",
-          "bytes": 94871,
-          "format": "jpg",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
         }
       ],
       "alt": {
@@ -2136,26 +1332,6 @@
           "video_codec": "h264",
           "fps": "25/1",
           "audio": "aac"
-        },
-        {
-          "path": "docs/assets/moments/patronus-poster.webp",
-          "url": "assets/moments/patronus-poster.webp",
-          "bytes": 48026,
-          "format": "webp",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
-        },
-        {
-          "path": "docs/assets/moments/patronus-poster.jpg",
-          "url": "assets/moments/patronus-poster.jpg",
-          "bytes": 78835,
-          "format": "jpg",
-          "type": "image",
-          "width": 1280,
-          "height": 720,
-          "duration": null
         }
       ],
       "alt": {

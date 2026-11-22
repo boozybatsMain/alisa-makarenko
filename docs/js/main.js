@@ -120,7 +120,7 @@
   /* ---------- hover preview loops (desktop pointer only, created on demand) ---------- */
   if (canHover && !reduce) {
     document.querySelectorAll('[data-loop]').forEach((a) => {
-      const frame = a.querySelector('.film__frame, .short__frame');
+      const frame = a.querySelector('.film__frame');
       if (!frame) return;
       let v = null, timer = 0;
       const start = () => {
@@ -256,6 +256,16 @@
     window.addEventListener('hashchange', () => { if (location.hash === '#stats') openStats(); });
     document.querySelectorAll('[data-open-stats]').forEach((a) => a.addEventListener('click', openStats));
   }
+
+  /* ---------- skills: each group is a <details>; where the five stand in one row, they open and close together ---------- */
+  const groups = [...document.querySelectorAll('details.sk')];
+  const oneRow = window.matchMedia('(min-width: 1280px)');
+  groups.forEach((d) => d.querySelector('summary').addEventListener('click', (e) => {
+    if (!oneRow.matches) return; // narrower grids: each group opens on its own (native behaviour)
+    e.preventDefault();
+    const open = !d.open;
+    groups.forEach((o) => { o.open = open; });
+  }));
 
   /* ---------- best moments player ---------- */
   const mv = document.getElementById('moment-video');

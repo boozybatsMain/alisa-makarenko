@@ -117,7 +117,7 @@ if (want.has('timeline')) {
 }
 if (want.has('check')) {
   // video modal on small screens: the close button must stay on screen
-  for (const [w, h, sel] of [[390, 664, '.shorts [data-yt]'], [844, 390, '.eps [data-yt]']]) {
+  for (const [w, h, sel] of [[390, 664, '.proofs [data-yt]'], [844, 390, '.eps [data-yt]']]) {
     const { ctx, p } = await open(w, h, '');
     await p.locator(sel).first().scrollIntoViewIfNeeded();
     await p.locator(sel).first().click();

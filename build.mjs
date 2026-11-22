@@ -129,6 +129,19 @@ function jpegSize(file) {
   return { w: 800, h: 1000 };
 }
 
+/** Width/height of the hero portrait: WebP (VP8X / VP8L / VP8), PNG or JPEG. */
+function imageSize(file) {
+  const b = fs.readFileSync(file);
+  if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+    const kind = b.toString('ascii', 12, 16);
+    if (kind === 'VP8X') return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+    if (kind === 'VP8L') { const n = b.readUInt32LE(21); return { w: 1 + (n & 0x3fff), h: 1 + ((n >> 14) & 0x3fff) }; }
+    return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+  }
+  if (b.readUInt32BE(0) === 0x89504e47) return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+  return jpegSize(file);
+}
+
 /** Split "ГЛАВНОЕ. Подзаголовок" (RU) or "Main: subtitle" (EN) for display. */
 function splitTitle(t) {
   const m = t.match(/^(.+?)(?:\.\s+|:\s+)(.+)$/u);
@@ -144,6 +157,7 @@ const durationLabel = (d, lang) => {
 /* ---------------- episode / media lookups ---------------- */
 const episodes = copy.case.episodes.items;
 const epById = new Map(episodes.map((e) => [e.id, e]));
+// Shorts are no longer shown on the page; the list stays because the (frozen) CV links its Shorts by id.
 const shorts = copy.case.shorts.items;
 
 function thumbPicture(id, alt, P, sizes = '(max-width: 760px) 92vw, 33vw', eager = false) {
@@ -227,27 +241,6 @@ function makeParts(lang, V) {
   const src = (s) => (s ? `<p class="src"><span>${t(copy.ui.source)}:</span> ${t(s)}</p>` : '');
   const figList = (list, cls = '') => `<ul class="figs${cls ? ` ${cls}` : ''}">${list.map((f) => `<li class="rv">${valueHTML(L(f.value, lang), 'figs__v')}<span class="figs__l">${t(f.label)}</span></li>`).join('')}</ul>`;
 
-  const shortsRail = () => {
-    const viewsWord = L(copy.case.episodes.views_label, lang);
-    return `<ul class="shorts" aria-label="${t(copy.case.shorts.title)}">${shorts.map((s) => {
-      const cover = variantsOf(`short-cover-${s.id}`);
-      const poster = variantsOf(`short-poster-${s.id}`);
-      const usePoster = s.use_poster && poster.length;
-      const vars = usePoster ? poster : (cover.length ? cover : poster);
-      const meta = usePoster ? mediaById.get(`short-poster-${s.id}`) : (mediaById.get(`short-cover-${s.id}`) || mediaById.get(`short-poster-${s.id}`));
-      const alt = (meta || {}).alt;
-      const title = plain(L(s.title, lang));
-      const pic = vars.length
-        ? pictureFromVariants(vars, alt ? L(alt, lang) : title, P, { sizes: '(max-width: 640px) 46vw, 15vw' })
-        : `<img src="https://i.ytimg.com/vi/${s.id}/oar2.jpg" width="405" height="720" alt="${esc(title)}" loading="lazy">`;
-      const loop = assetExists(`assets/loops/short-${s.id}.mp4`) ? ` data-loop="${P}assets/loops/short-${s.id}.mp4"` : '';
-      return `<li class="rv"><a class="short" href="https://www.youtube.com/shorts/${s.id}" target="_blank" rel="noopener" data-yt="${s.id}" data-vertical data-title="${esc(title)}"${loop} aria-label="${esc(L(copy.cta.watch_short, lang))}: ${esc(title)} (${esc(L(s.views_label, lang))} ${esc(viewsWord)})">
-        <span class="short__frame">${pic}<span class="short__views"><b>${esc(L(s.views_label, lang))}</b><small>${esc(viewsWord)}</small></span></span>
-        <span class="short__title">${t(s.title)}</span>
-      </a></li>`;
-    }).join('')}</ul>`;
-  };
-
   /* one evidence screenshot as a lightbox link; `group` keeps prev/next inside one set (scripts, dashboards…) */
   const lbLink = (key, cls, group) => {
     const b = copy.evidence[key];
@@ -280,10 +273,21 @@ function makeParts(lang, V) {
         <img src="${P}${jpg.url}" width="${jpg.width}" height="${jpg.height}" alt="" fetchpriority="high" decoding="async">
       </picture>`;
     },
-    /* the portrait: one replaceable file, docs/assets/portrait.jpg; CSS feathers its edges into the dark hero */
+    /* the portrait: one replaceable file. portrait.webp / .png is a cut-out with transparency (see README);
+       a plain portrait.jpg still works and gets the old feathered-oval mask instead */
     heroPhoto: () => (V.portrait
-      ? `<figure class="hero__photo"><img src="${P}assets/portrait.jpg" width="${V.portrait.w}" height="${V.portrait.h}" alt="${t(copy.hero.photo_alt)}" decoding="async" fetchpriority="high"></figure>`
+      ? `<figure class="hero__photo${V.portrait.cutout ? '' : ' hero__photo--rect'}"><img src="${P}assets/${V.portrait.file}" width="${V.portrait.w}" height="${V.portrait.h}" alt="${t(copy.hero.photo_alt)}" decoding="async" fetchpriority="high"></figure>`
       : ''),
+    /* a compact pink plaque with the same contacts as the contact block */
+    heroContacts: () => {
+      const c = copy.contact;
+      return [
+        [c.telegram_href, L(c.telegram_label, lang), `Telegram ${c.telegram}`, true],
+        [c.instagram_href, L(c.instagram_label, lang), `Instagram ${c.instagram}`, true],
+        [c.email_href, c.email, null, false],
+        [c.phone_href, c.phone.replace(/ /g, NB), null, false],
+      ].map(([href, text, label, ext]) => `<li><a href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ''}${label ? ` aria-label="${esc(label)}"` : ''}>${esc(text)}</a></li>`).join('');
+    },
     heroName: () => {
       const n = L(copy.hero.name, lang).split(/[  ]/);
       return `<span class="line"><span>${esc(n[0])}</span></span> <span class="line"><span>${esc(n.slice(1).join(' '))}</span></span>`;
@@ -299,8 +303,9 @@ function makeParts(lang, V) {
       </div>`).join(''),
 
     /* ---------- skills ---------- */
-    skills: () => copy.skills.groups.map((g) => `<div class="sk rv"><h3 class="sk__t">${t(g.title)}</h3><ul class="sk__list">${g.items.map((i) => `<li>${t(i)}</li>`).join('')}</ul></div>`).join(''),
-    kit: () => copy.skills.kit.map((k) => `<div class="kit__row"><dt>${t(k.title)}</dt><dd>${esc(L(k.items, lang))}${k.note ? ` <small>· ${t(k.note)}</small>` : ''}</dd></div>`).join(''),
+    /* each group is a native disclosure: works without JS, keyboard-operable; main.js opens a desktop row together */
+    skills: () => copy.skills.groups.map((g) => `<details class="sk rv"><summary class="sk__sum"><h3 class="sk__t">${t(g.title)}</h3><span class="sk__n" aria-hidden="true">${g.items.length}</span><span class="sk__i" aria-hidden="true"></span></summary><ul class="sk__list">${g.items.map((i) => `<li>${t(i)}</li>`).join('')}</ul></details>`).join(''),
+    kit: () => copy.skills.kit.map((k) => `<div class="kit__row"><dt>${t(k.title)}</dt><dd>${t(k.items)}${k.note ? ` <small>· ${t(k.note)}</small>` : ''}</dd></div>`).join(''),
 
     /* ---------- process: a track of clips with a playhead, readable cards underneath ---------- */
     processSteps: () => copy.process.steps.map((s) => `<li class="clip"><span class="clip__n">${esc(s.n)}</span><span class="clip__t">${t(s.title)}</span></li>`).join(''),
@@ -318,18 +323,7 @@ function makeParts(lang, V) {
     stageCount: () => { const n = copy.process.steps.length; return `${String(n).padStart(2, '0')} / ${String(n).padStart(2, '0')}`; },
 
     /* ---------- case: three proofs ---------- */
-    shortsProof: () => {
-      const s = copy.case.shorts_proof;
-      return `<article class="proofcard proofcard--shorts" id="story-shorts">
-        <div class="proofcard__text">
-          <p class="kicker rv">${t(s.kicker)}</p>
-          <p class="proofcard__fig rv">${valueHTML(L(s.value, lang))}<span class="proofcard__lbl">${t(s.label)}</span></p>
-          <p class="proofcard__p rv">${t(s.text)}</p>
-          ${src(s.source)}
-        </div>
-        ${shortsRail()}
-      </article>`;
-    },
+    caseLogo: () => simplePicture('assets/brand/witching-hour', L(copy.case.logo_alt, lang), P, 320, 320, { cls: 'case__logo' }),
     filmProofs: () => copy.case.film_proofs.map((s) => {
       const e = epById.get(s.media);
       const ttl = epName(e);
@@ -355,7 +349,13 @@ function makeParts(lang, V) {
         const ep = epById.get(m.episode);
         const epTitle = ep ? epName(ep).main : (a.source && a.source.title) || '';
         const sec = Math.round(a.duration_sec || mp4.duration || 0);
-        return { m, a, mp4, poster: pw || pj, epTitle, sec };
+        // the poster is the cover of the episode the clip was cut from (YouTube thumbnail, stored in assets/thumbs/)
+        const cover = ['1280.webp', '960.webp', '960.jpg'].map((x) => `assets/thumbs/${m.episode}-${x}`).find(assetExists);
+        if (!cover) warnings.push(`No episode cover for clip ${m.id}: put assets/thumbs/${m.episode}-1280.webp in docs/.`);
+        const poster = cover ? { url: cover } : (pw || pj);
+        const thumbBase = `assets/thumbs/${m.episode}-480`;
+        const thumb = assetExists(`${thumbBase}.jpg`) ? simplePicture(thumbBase, '', P, 480, 270) : '';
+        return { m, a, mp4, poster, epTitle, sec, thumb };
       });
       const first = info[0];
       const from = (x) => `${L(copy.ui.from_episode, lang)} ${q(x.epTitle)}`;
@@ -371,7 +371,7 @@ function makeParts(lang, V) {
           <figcaption id="moment-cap"><span class="sr" data-moment-title>${t(first.m.title)}. </span><span class="moments__from" data-moment-from>${esc(from(first))} · ${dur(first.sec)}</span></figcaption>
         </figure>
         <ol class="moments__list">${info.map((x, i) => `<li><a class="moment${i === 0 ? ' is-active' : ''}" href="${P}${x.mp4.url}" data-src="${P}${x.mp4.url}" data-poster="${P}${x.poster.url}" data-title="${t(x.m.title)}" data-from="${esc(from(x))} · ${dur(x.sec)}"${i === 0 ? ' aria-current="true"' : ''}>
-            <span class="moment__play" aria-hidden="true">${icon.play}</span>
+            <span class="moment__thumb" aria-hidden="true">${x.thumb}<span class="moment__play">${icon.play}</span></span>
             <span class="moment__t"><span>${t(x.m.title)}</span><small>${esc(q(x.epTitle))}</small></span>
             <span class="moment__d">${dur(x.sec)}</span>
           </a></li>`).join('')}</ol>
@@ -538,11 +538,11 @@ if (!fs.existsSync(path.join(DOCS, 'assets/thumbs')) || !fs.existsSync(path.join
   process.exit(1);
 }
 // photo.jpg: the optional CV / videographer-site portrait (unchanged behaviour).
-// portrait.jpg: the producer home page hero portrait, one replaceable file (see README).
+// portrait.webp (cut-out with alpha; .png or a plain .jpg also work): the producer home page hero portrait (see README).
 const photoFile = path.join(DOCS, 'assets/photo.jpg');
 const photo = fs.existsSync(photoFile) ? jpegSize(photoFile) : null;
-const portraitFile = path.join(DOCS, 'assets/portrait.jpg');
-const portrait = fs.existsSync(portraitFile) ? jpegSize(portraitFile) : null;
+const portraitName = ['portrait.webp', 'portrait.png', 'portrait.jpg'].find((n) => fs.existsSync(path.join(DOCS, 'assets', n)));
+const portrait = portraitName ? { file: portraitName, cutout: !portraitName.endsWith('.jpg'), ...imageSize(path.join(DOCS, 'assets', portraitName)) } : null;
 
 const tplHome = rd('src/index.html');
 const tplCv = rd('src/cv.html');

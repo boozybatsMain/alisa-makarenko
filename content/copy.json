@@ -9,8 +9,8 @@
       "en": "Alisa Makarenko — Creative Producer"
     },
     "description": {
-      "ru": "Алиса Макаренко — креативный продюсер, контент-продюсер, ассистент продюсера. Три года веду полный цикл производства YouTube-канала и подкаста «Ведьмин час»: 4,9 млн просмотров на YouTube, 74,7 тыс. слушателей на Яндекс Музыке.",
-      "en": "Alisa Makarenko: creative producer, content producer, assistant producer. For three years I have run the full production cycle of Witching Hour, a YouTube channel and podcast: 4.9M YouTube views, 74.7K listeners on Yandex Music."
+      "ru": "Алиса Макаренко — YouTube-продюсер, креативный продюсер, контент-продюсер. Три года веду полный цикл производства YouTube-канала и подкаста «Ведьмин час»: 4,9 млн просмотров на YouTube, 74,7 тыс. слушателей на Яндекс Музыке.",
+      "en": "Alisa Makarenko: YouTube producer, creative producer, content producer. For three years I have run the full production cycle of Witching Hour, a YouTube channel and podcast: 4.9M YouTube views, 74.7K listeners on Yandex Music."
     },
     "og_title": {
       "ru": "Алиса Макаренко — креативный продюсер",
@@ -103,8 +103,8 @@
       "en": "as of Nov 21, 2026"
     },
     "open_to_label": {
-      "ru": "Открыта к ролям",
-      "en": "Open to"
+      "ru": "Роли",
+      "en": "Roles"
     }
   },
   "nav": {
@@ -177,6 +177,10 @@
     "cv_short": {
       "ru": "CV",
       "en": "CV"
+    },
+    "what_i_do": {
+      "ru": "Что я умею",
+      "en": "What I can do"
     }
   },
   "hero": {
@@ -187,12 +191,12 @@
     "_roles_note": "Each role is shown as written. On the Russian page the English title is set above the Russian one; the English page shows only the English title.",
     "roles": [
       {
-        "ru": "Креативный продюсер",
-        "en": "Creative Producer"
+        "ru": "YouTube-продюсер",
+        "en": "YouTube Producer"
       },
       {
-        "ru": "Ассистент продюсера",
-        "en": "Assistant Producer"
+        "ru": "Креативный продюсер",
+        "en": "Creative Producer"
       },
       {
         "ru": "Контент-продюсер",
@@ -200,8 +204,8 @@
       }
     ],
     "tagline": {
-      "ru": "Боевая творческая единица.",
-      "en": "A one-woman production unit."
+      "ru": "Боевая творческая единица",
+      "en": "A one-woman production unit"
     },
     "positioning": {
       "ru": "Три года продюсирую YouTube-канал и подкаст «Ведьмин час», ведя полный цикл производства контента: от разработки концепции, контентной стратегии и написания сценариев до организации производства, постпродакшена, публикации, продвижения, аналитики и развития сообщества.",
@@ -276,7 +280,15 @@
           "en": "3 seasons, since December 2023"
         }
       }
-    ]
+    ],
+    "open_title": {
+      "ru": "Открыта к новым проектам и ролям",
+      "en": "Open to new projects and roles"
+    },
+    "contacts_label": {
+      "ru": "Контакты",
+      "en": "Contacts"
+    }
   },
   "skills": {
     "title": {
@@ -291,28 +303,32 @@
         },
         "items": [
           {
-            "ru": "Концепции и форматы",
-            "en": "Concepts and formats"
+            "ru": "Разрабатывать концепции и форматы",
+            "en": "Develop concepts and formats"
           },
           {
-            "ru": "Контентная стратегия и контент-план",
-            "en": "Content strategy and planning"
+            "ru": "Создавать контентные стратегии",
+            "en": "Build content strategies"
           },
           {
-            "ru": "Организация производства",
-            "en": "Production management"
+            "ru": "Составлять контент-планы",
+            "en": "Draw up content plans"
           },
           {
-            "ru": "Координация записи и гостей",
-            "en": "Coordinating shoots and guests"
+            "ru": "Организовывать производство",
+            "en": "Organise production"
           },
           {
-            "ru": "Сроки и задачи",
-            "en": "Scheduling and task tracking"
+            "ru": "Координировать записи и гостей",
+            "en": "Coordinate recordings and guests"
           },
           {
-            "ru": "Анализ статистики",
-            "en": "Performance analysis"
+            "ru": "Контролировать сроки и задачи",
+            "en": "Keep deadlines and tasks on track"
+          },
+          {
+            "ru": "Анализировать результаты",
+            "en": "Analyse results"
           }
         ]
       },
@@ -323,28 +339,28 @@
         },
         "items": [
           {
-            "ru": "Исследование и фактчекинг",
-            "en": "Research and fact-checking"
+            "ru": "Исследовать темы и проверять факты",
+            "en": "Research topics and check facts"
           },
           {
-            "ru": "Сценарии длинных выпусков",
-            "en": "Long-form scripts"
+            "ru": "Разрабатывать структуру выпусков",
+            "en": "Design the structure of episodes"
           },
           {
-            "ru": "Структура и драматургия",
-            "en": "Structure and story arc"
+            "ru": "Писать сценарии и работать с драматургией",
+            "en": "Write scripts and shape the story arc"
           },
           {
-            "ru": "Идеи и тексты для Shorts",
-            "en": "Short-form ideas and copy"
+            "ru": "Придумывать идеи для Shorts",
+            "en": "Come up with ideas for Shorts"
           },
           {
-            "ru": "Заголовки и описания",
-            "en": "Titles and descriptions"
+            "ru": "Писать заголовки и описания",
+            "en": "Write titles and descriptions"
           },
           {
-            "ru": "Посты для Telegram",
-            "en": "Telegram posts"
+            "ru": "Готовить публикации",
+            "en": "Prepare posts for publishing"
           }
         ]
       },
@@ -355,20 +371,24 @@
         },
         "items": [
           {
-            "ru": "Запись видеоподкаста",
-            "en": "Video podcast recording"
+            "ru": "Организовывать запись подкастов",
+            "en": "Organise podcast recordings"
           },
           {
-            "ru": "Свет и звук на площадке",
-            "en": "Lighting and sound on set"
+            "ru": "Настраивать свет и звук",
+            "en": "Set up lighting and sound"
           },
           {
-            "ru": "Запись и обработка звука",
-            "en": "Audio recording and processing"
+            "ru": "Записывать аудио и видео",
+            "en": "Record audio and video"
           },
           {
-            "ru": "Аудиомонтаж подкастов",
-            "en": "Podcast audio editing"
+            "ru": "Монтировать и обрабатывать звук",
+            "en": "Edit and process audio"
+          },
+          {
+            "ru": "Готовить аудиоматериалы к публикации",
+            "en": "Prepare audio for release"
           }
         ]
       },
@@ -379,44 +399,56 @@
         },
         "items": [
           {
-            "ru": "Ведение YouTube-канала",
-            "en": "YouTube channel management"
+            "ru": "Вести YouTube-каналы",
+            "en": "Run YouTube channels"
           },
           {
-            "ru": "Дистрибуция подкаста",
-            "en": "Podcast distribution"
+            "ru": "Публиковать и дистрибутировать выпуски",
+            "en": "Publish and distribute episodes"
           },
           {
-            "ru": "Превью и обложки",
-            "en": "Thumbnails and cover art"
+            "ru": "Готовить превью и обложки, названия и описания выпусков",
+            "en": "Prepare thumbnails and cover art, episode titles and descriptions"
           },
           {
-            "ru": "Аналитика YouTube, Яндекс Музыки и Apple Podcasts",
-            "en": "YouTube, Yandex Music and Apple Podcasts analytics"
+            "ru": "Загружать выпуски на площадки",
+            "en": "Upload episodes to platforms"
+          },
+          {
+            "ru": "Анализировать статистику и охваты",
+            "en": "Analyse statistics and reach"
           }
         ]
       },
       {
         "title": {
-          "ru": "Сообщество и партнёры",
-          "en": "Community and partners"
+          "ru": "Сообщество и партнёрства",
+          "en": "Community and partnerships"
         },
         "items": [
           {
-            "ru": "Ведение Telegram-канала",
-            "en": "Running a Telegram channel"
+            "ru": "Вести Telegram-каналы",
+            "en": "Run Telegram channels"
           },
           {
-            "ru": "Общение с аудиторией",
-            "en": "Audience engagement"
+            "ru": "Развивать сообщества",
+            "en": "Grow communities"
           },
           {
-            "ru": "Переговоры с рекламодателями",
-            "en": "Advertiser negotiations"
+            "ru": "Общаться с аудиторией",
+            "en": "Engage with the audience"
           },
           {
-            "ru": "Бартерные партнёрства",
-            "en": "Barter partnerships"
+            "ru": "Договариваться о сотрудничестве",
+            "en": "Negotiate collaborations"
+          },
+          {
+            "ru": "Организовывать рекламные интеграции",
+            "en": "Organise sponsored integrations"
+          },
+          {
+            "ru": "Работать с партнёрами",
+            "en": "Work with partners"
           }
         ]
       }
@@ -427,18 +459,14 @@
           "ru": "Программы",
           "en": "Software"
         },
-        "items": "Notion, REAPER, Studio One, OBS Studio, Adobe Photoshop, CapCut, YouTube Studio, Mave"
+        "items": "DaVinci Resolve, REAPER, Studio One, OBS Studio, Adobe Photoshop, CapCut, VN"
       },
       {
         "title": {
           "ru": "AI-инструменты",
           "en": "AI tools"
         },
-        "items": "ChatGPT, Claude, Perplexity",
-        "note": {
-          "ru": "для исследования, идей и черновиков; итоговый текст и решения — мои",
-          "en": "for research, ideas and drafts; the final text and decisions are mine"
-        }
+        "items": "ChatGPT, Claude, Perplexity"
       },
       {
         "title": {
@@ -446,11 +474,22 @@
           "en": "Gear"
         },
         "items": {
-          "ru": "Focusrite Scarlett Solo, микрофон Fifine, софтбоксы",
-          "en": "Focusrite Scarlett Solo, Fifine microphone, softboxes"
+          "ru": "FIFINE AM8, Focusrite Scarlett Solo, iPhone 15 Pro, софтбокс Falcon Eyes FEA-SBII, видеосвет Ulanzi",
+          "en": "FIFINE AM8, Focusrite Scarlett Solo, iPhone 15 Pro, Falcon Eyes FEA-SBII softbox, Ulanzi video light"
         }
+      },
+      {
+        "title": {
+          "ru": "Сервисы и платформы",
+          "en": "Services & platforms"
+        },
+        "items": "Notion, Buildin, YouTube Studio, Mave Digital, Boosty"
       }
-    ]
+    ],
+    "toggle_hint": {
+      "ru": "Развернуть",
+      "en": "Expand"
+    }
   },
   "process": {
     "title": {
@@ -692,28 +731,6 @@
     "proofs_title": {
       "ru": "Что из этого вышло",
       "en": "What came of it"
-    },
-    "shorts_proof": {
-      "kicker": {
-        "ru": "Shorts",
-        "en": "Shorts"
-      },
-      "value": {
-        "ru": "3,3 млн",
-        "en": "3.3M"
-      },
-      "label": {
-        "ru": "просмотров у двух роликов по 30 и 19 секунд",
-        "en": "views on two clips of 30 and 19 seconds"
-      },
-      "text": {
-        "ru": "В июне–июле 2024 года мы с соведущей выпустили 11 Shorts — ролики-вопросы о героях и мире книг.",
-        "en": "In June and July 2024 my co-host and I released 11 Shorts, each built around one quick question about the books."
-      },
-      "source": {
-        "ru": "Публичные счётчики YouTube, 21 ноября 2026",
-        "en": "Public YouTube counts, Nov 21, 2026"
-      }
     },
     "film_proofs": [
       {
@@ -1105,6 +1122,14 @@
           }
         }
       ]
+    },
+    "platforms_label": {
+      "ru": "Слушать и смотреть",
+      "en": "Listen and watch"
+    },
+    "logo_alt": {
+      "ru": "Логотип «Ведьмина часа»: две ведьмы в розовых шляпах за столом со свечами",
+      "en": "Witching Hour logo: two witches in pink hats at a candlelit table"
     }
   },
   "moments": {

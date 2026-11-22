@@ -32,20 +32,32 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
 <section class="hero" aria-labelledby="hero-name">
   <div class="hero__img" aria-hidden="true">{{part:heroImage}}</div>
   <div class="hero__grade" aria-hidden="true"></div>
-  {{part:heroPhoto}}
-  <div class="hero__in wrap">
-    <div class="hero__copy">
-      <ul class="hero__roles">{{part:heroRoles}}</ul>
-      <h1 id="hero-name" class="hero__name">{{part:heroName}}</h1>
-      <p class="hero__lede"><b>{{t:hero.tagline}}</b> {{t:hero.positioning}}</p>
-      <p class="hero__results">{{t:hero.results}}</p>
-      <p class="hero__open"><span class="hero__open-l">{{t:ui.open_to_label}}:</span> {{t:hero.open_to}}</p>
-      <div class="hero__cta">
-        <a class="btn btn--rose" href="#process">{{t:cta.how_i_work}}<span aria-hidden="true" class="btn__arr">↓</span></a>
-        <a class="btn btn--line" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
+  <div class="hero__stage">
+    {{part:heroPhoto}}
+    <div class="hero__in wrap">
+      <div class="hero__copy">
+        <ul class="hero__roles">{{part:heroRoles}}</ul>
+        <div class="hero__id">
+          <h1 id="hero-name" class="hero__name">{{part:heroName}}</h1>
+          <p class="hero__tag">{{t:hero.tagline}}</p>
+        </div>
+        <p class="hero__lede">{{t:hero.positioning}}</p>
+        <p class="hero__results">{{t:hero.results}}</p>
+        <div class="hero__open">
+          <p class="hero__open-t">{{t:hero.open_title}}</p>
+          <p class="hero__open-r"><span class="sr">{{t:ui.open_to_label}}: </span>{{t:hero.open_to}}</p>
+          <ul class="hero__contacts" aria-label="{{t:hero.contacts_label}}">{{part:heroContacts}}</ul>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--rose" href="#process">{{t:cta.how_i_work}}<span aria-hidden="true" class="btn__arr">↓</span></a>
+          <a class="btn btn--rose" href="#skills">{{t:cta.what_i_do}}<span aria-hidden="true" class="btn__arr">↓</span></a>
+          <a class="btn btn--line" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
+        </div>
       </div>
     </div>
-    <dl class="hnums">{{part:heroNumbers}}</dl>
+  </div>
+  <div class="film-strip">
+    <dl class="hnums wrap">{{part:heroNumbers}}</dl>
   </div>
 </section>
 
@@ -74,19 +86,26 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
 </section>
 
 <!-- =========================== CASE =========================== -->
-<section class="case band band--cream" id="case" aria-labelledby="case-title">
+<section class="case band band--witch" id="case" aria-labelledby="case-title">
   <div class="wrap">
     <header class="case__head">
-      <h2 id="case-title" class="sectitle rv">{{t:case.title}}</h2>
+      <div class="case__brand rv">
+        {{part:caseLogo}}
+        <h2 id="case-title" class="sectitle">{{t:case.title}}</h2>
+        <a class="btn btn--rose case__yt" href="https://www.youtube.com/@witchinghourcast" target="_blank" rel="noopener">{{t:case.episodes.channel_label}}<span aria-hidden="true">↗</span></a>
+      </div>
       <p class="case__intro rv">{{t:case.intro}}</p>
+      <div class="case__links rv">
+        <h3 class="label">{{t:contact.project_links_title}}</h3>
+        <ul class="chips">{{part:projectLinks}}</ul>
+      </div>
     </header>
-    {{part:shortsProof}}
     <div class="proofs">{{part:filmProofs}}</div>
   </div>
 </section>
 
 <!-- =========================== CLIPS =========================== -->
-<section class="screening band band--rose" id="moments" aria-labelledby="moments-title">
+<section class="screening band band--witch" id="moments" aria-labelledby="moments-title">
   <div class="wrap">
     <header class="blockhead">
       <h2 id="moments-title" class="sectitle rv">{{t:moments.title}}</h2>
@@ -159,21 +178,22 @@ try{var r=d.referrer,own=r&&r.indexOf(location.origin)===0;if(d.documentElement.
 
 <!-- =========================== CONTACT =========================== -->
 <section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact__bg" aria-hidden="true"><picture><source type="image/webp" srcset="{{v:P}}assets/bg/library-contact.webp"><img src="{{v:P}}assets/bg/library-contact.jpg" width="1020" height="1080" alt="" loading="lazy" decoding="async"></picture></div>
   <div class="wrap">
     <div class="contact__top">
       <h2 id="contact-title" class="contact__title rv">{{t:contact.title}}</h2>
       <div class="contact__aside rv">
         <p class="contact__lede">{{t:contact.lede}}</p>
         <div class="contact__actions">
-          <a class="btn btn--rose btn--lg" href="https://t.me/alissayeya" target="_blank" rel="noopener">{{t:cta.telegram}}</a>
-          <a class="btn btn--line btn--lg" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
+          <a class="btn btn--rose" href="https://t.me/alissayeya" target="_blank" rel="noopener">{{t:cta.telegram}}</a>
+          <a class="btn btn--line" href="{{v:cvPdf}}" download>{{t:cta.download_cv}}{{part:iconDown}}</a>
         </div>
       </div>
     </div>
     <ul class="contact__list">{{part:contactList}}</ul>
     <div class="contact__links rv">
       <h3 class="label">{{t:contact.project_links_title}}</h3>
-      <ul>{{part:projectLinks}}</ul>
+      <ul class="chips">{{part:projectLinks}}</ul>
     </div>
   </div>
 </section>
